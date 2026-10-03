@@ -39,6 +39,11 @@ Se filmará a 10-15 parejas en una sesión continua de 10 minutos con el siguien
 * **Fase B (Dúo de CI - 5 min):** Interacción física. La necesidad de compartir peso fuerza la activación de MA 1 y MA 2.
 * **Fase C (Solo Eco - 2 min):** Se separan y vuelven a bailar solos. 
 
+### Flexibilidad y Líneas de Investigación Alternativas
+Para mitigar el riesgo académico en caso de que la hipótesis A-B-A arroje resultados nulos, el mismo *pipeline* computacional permite pivotar inmediatamente hacia dos líneas alternativas robustas:
+1. **Sincronización Intra-Dúo (Cross-Correlation):** Medir el acoplamiento temporal (Phase Locking Value y rezago τ) de las velocidades durante la Fase B.
+2. **Comparación Novato vs. Experto:** Comparar la distribución de Jerk y conservación de energía entre parejas de distintos niveles de experiencia.
+
 ## 5. Avances Previos (Prueba de Concepto - PoC)
 
 Para validar la viabilidad computacional de este proyecto, ya se ha desarrollado una Prueba de Concepto (PoC) en Python. El pipeline actual es capaz de:
