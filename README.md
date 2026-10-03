@@ -1,4 +1,4 @@
-# CI Movement Analysis: The Somatic Echo
+# CI Movement Analysis: Kinematic Signatures & The Somatic Echo
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-brightgreen.svg)
