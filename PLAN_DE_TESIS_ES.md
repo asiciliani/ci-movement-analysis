@@ -50,9 +50,17 @@ Para validar la viabilidad computacional de este proyecto, ya se ha desarrollado
 
 La existencia de este pipeline garantiza que el riesgo técnico central (la extracción de features cinemáticos) está resuelto, permitiendo enfocar los 6 meses de tesis en la recolección de datos, el análisis de oclusiones severas y el modelado estadístico.
 
-## 6. Extensión Exploratoria: Modelos Multimodales (VLMs)
+## 6. Extensión Exploratoria: Arquitectura Híbrida (YOLO + VLMs)
 
-Durante situaciones de oclusión severa (ej. *puppy piles* o levantamientos invertidos), los trackers heurísticos top-down como YOLO suelen fallar al generar "esqueletos araña" debido a la fusión de *bounding boxes*. Como extensión exploratoria y base para trabajo futuro, se investigará una arquitectura híbrida de prueba de concepto: utilizar **Vision-Language Models (VLMs)** o Modelos Fundacionales semánticos para desenredar visualmente los cuerpos en los *frames* donde la heurística matemática de YOLO falla, demostrando la superioridad del entendimiento semántico sobre el heurístico en topologías complejas.
+Durante situaciones de oclusión severa (ej. *puppy piles* o levantamientos invertidos), los trackers heurísticos top-down como YOLO suelen fallar al generar "esqueletos araña" debido a la fusión de *bounding boxes*. 
+
+Como extensión exploratoria, se propone diseñar y evaluar conceptualmente un **Tracker Híbrido (Heurístico-Semántico)**:
+1. **Pipeline Base (Rápido):** YOLOv8 procesa los frames a alta velocidad (60 FPS).
+2. **Trigger de Oclusión:** Cuando la intersección (IoU) de dos *bounding boxes* supera un umbral crítico (ej. > 0.85) y la confianza cae, el sistema pausa.
+3. **Escalamiento Semántico (VLM Fallback):** Ese frame específico se envía a un Modelo Fundacional Multimodal (VLM, ej. Gemini/GPT-4V) mediante un *prompt* que le pide desenredar los cuerpos basándose en contexto semántico (ropa, anatomía, gravedad).
+4. **Reanudación:** El VLM devuelve las coordenadas corregidas, el sistema actualiza el estado, y YOLO retoma el tracking rápido.
+
+Esta prueba de concepto demostrará la superioridad de combinar heurísticas matemáticas con entendimiento semántico para topologías humanas complejas.
 
 ## 7. Arquitectura Computacional
 
