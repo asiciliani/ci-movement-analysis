@@ -1,9 +1,9 @@
-# CI Movement Analysis: Kinematic Signatures
+# CI Movement Analysis: The Somatic Echo
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-brightgreen.svg)
 
-This repository contains the computational pipeline for the Licenciatura thesis: **"Cinemática Computacional: Extracción Empírica de Firmas de Movimiento en Contact Improvisation."** (Universidad de Buenos Aires - Exactas).
+This repository contains the computational pipeline for the Licenciatura thesis: **"El Eco Somático: Extracción Empírica de Firmas Cinemáticas en Contact Improvisation."** (Universidad de Buenos Aires - Exactas).
 
 ## 🧠 Core Concept
 Contact Improvisation (CI) dancers develop specific "Movement Algorithms" (MAs) to manage gravity, momentum, and shared weight safely. This project uses 2D Pose Estimation and Time-Series Analysis to **empirically detect the mathematical signatures (traits)** that define a CI duet, abandoning rigid laboratory protocols in favor of analyzing wild, ecological data (Jams and practices).

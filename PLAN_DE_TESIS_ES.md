@@ -1,6 +1,6 @@
 # Plan de Tesis de Licenciatura
 
-**Título propuesto:** *Cinemática Computacional: Extracción Empírica de Firmas de Movimiento en Contact Improvisation.*  
+**Título propuesto:** *El Eco Somático: Extracción Empírica de Firmas Cinemáticas en Contact Improvisation.*  
 **Carrera:** Licenciatura en Ciencias de la Computación (FCEN - UBA)  
 **Tesista:** [Tu Nombre]  
 **Director/a:** [A definir]  
