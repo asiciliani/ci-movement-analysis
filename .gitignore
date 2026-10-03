@@ -1,0 +1,38 @@
+# Python & Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# PyTorch / Model Weights
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# Video Binaries (Raw & Annotated Renders - download/generate locally)
+*.mp4
+*.avi
+*.mov
+*.mkv
+videos/*.mp4
+outputs/*.mp4
+
+# Temporary preview frames
+outputs/preview_frames/
+outputs/user_video_previews/
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log

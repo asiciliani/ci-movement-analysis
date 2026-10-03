@@ -1,0 +1,10 @@
+# Core dependencies for Contact Improvisation movement analysis PoC
+torch>=2.0.0
+torchvision>=0.15.0
+ultralytics>=8.0.0
+opencv-python-headless>=4.8.0
+pandas>=2.0.0
+numpy>=1.22.0
+scipy>=1.9.0
+matplotlib>=3.6.0
+seaborn>=0.12.0
