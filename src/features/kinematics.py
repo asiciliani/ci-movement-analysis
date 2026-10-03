@@ -36,24 +36,23 @@ def filter_teleport_jumps(pos_x: np.ndarray, pos_y: np.ndarray, max_jump: float 
     return px, py
 
 
-def compute_smoothed_velocity(
+def compute_smoothed_kinematics(
     pos_x: np.ndarray,
     pos_y: np.ndarray,
     fps: float,
-    window_length: int = 7,
-    polyorder: int = 2,
+    window_length: int = 11,
+    polyorder: int = 3,
     max_physical_speed: float = 2000.0
-) -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
+) -> Dict[str, np.ndarray]:
     """
-    Computes smoothed velocity components (vx, vy) and speed |v|
+    Computes smoothed velocity, acceleration, jerk, and kinetic energy proxy
     using Savitzky-Golay differentiation.
-    Filters teleport jumps and clips outlier spikes.
     """
     dt = 1.0 / fps
     n = len(pos_x)
-    vx = np.full(n, np.nan)
-    vy = np.full(n, np.nan)
-    speed = np.full(n, np.nan)
+    
+    # Initialize arrays with NaNs
+    res = {k: np.full(n, np.nan) for k in ["vx", "vy", "speed", "ax", "ay", "accel", "jx", "jy", "jerk", "kinetic_energy"]}
 
     clean_x, clean_y = filter_teleport_jumps(pos_x, pos_y, max_jump=120.0)
 
@@ -65,32 +64,44 @@ def compute_smoothed_velocity(
 
     valid_mask = ~(np.isnan(cx) | np.isnan(cy))
     if np.sum(valid_mask) < 4:
-        return vx, vy, speed
+        return res
 
     if np.all(valid_mask) and n >= window_length:
         wl = window_length if window_length % 2 == 1 else window_length + 1
         wl = min(wl, n if n % 2 == 1 else n - 1)
         if wl > polyorder:
-            vx = savgol_filter(cx, window_length=wl, polyorder=polyorder, deriv=1, delta=dt)
-            vy = savgol_filter(cy, window_length=wl, polyorder=polyorder, deriv=1, delta=dt)
+            # 1st Derivative: Velocity
+            res["vx"] = savgol_filter(cx, window_length=wl, polyorder=polyorder, deriv=1, delta=dt)
+            res["vy"] = savgol_filter(cy, window_length=wl, polyorder=polyorder, deriv=1, delta=dt)
+            # 2nd Derivative: Acceleration
+            res["ax"] = savgol_filter(cx, window_length=wl, polyorder=polyorder, deriv=2, delta=dt)
+            res["ay"] = savgol_filter(cy, window_length=wl, polyorder=polyorder, deriv=2, delta=dt)
+            # 3rd Derivative: Jerk
+            res["jx"] = savgol_filter(cx, window_length=wl, polyorder=polyorder, deriv=3, delta=dt)
+            res["jy"] = savgol_filter(cy, window_length=wl, polyorder=polyorder, deriv=3, delta=dt)
         else:
-            vx = np.gradient(cx, dt)
-            vy = np.gradient(cy, dt)
+            res["vx"] = np.gradient(cx, dt)
+            res["vy"] = np.gradient(cy, dt)
     else:
-        vx = x_series.diff() / dt
-        vy = y_series.diff() / dt
-        vx = vx.to_numpy()
-        vy = vy.to_numpy()
+        res["vx"] = (x_series.diff() / dt).to_numpy()
+        res["vy"] = (y_series.diff() / dt).to_numpy()
 
-    raw_speed = np.sqrt(vx**2 + vy**2)
+    raw_speed = np.sqrt(res["vx"]**2 + res["vy"]**2)
 
     # Clip unphysical derivative spikes caused by detector flicker
-    speed = np.clip(raw_speed, 0.0, max_physical_speed)
+    res["speed"] = np.clip(raw_speed, 0.0, max_physical_speed)
     clip_mask = raw_speed > max_physical_speed
-    vx[clip_mask] *= (max_physical_speed / (raw_speed[clip_mask] + 1e-6))
-    vy[clip_mask] *= (max_physical_speed / (raw_speed[clip_mask] + 1e-6))
+    res["vx"][clip_mask] *= (max_physical_speed / (raw_speed[clip_mask] + 1e-6))
+    res["vy"][clip_mask] *= (max_physical_speed / (raw_speed[clip_mask] + 1e-6))
+    
+    # Magnitudes
+    res["accel"] = np.sqrt(res["ax"]**2 + res["ay"]**2)
+    res["jerk"] = np.sqrt(res["jx"]**2 + res["jy"]**2)
+    
+    # Kinetic Energy Proxy (proportional to v^2)
+    res["kinetic_energy"] = res["speed"]**2
 
-    return vx, vy, speed
+    return res
 
 
 def compute_directional_similarity(
@@ -238,25 +249,23 @@ def extract_features_timeseries(
     # Interpolate short occlusions for smoother kinematics
     df = interpolate_trajectories(df, max_gap=15)
 
-    # Compute smoothed velocities for Torso and Pelvis
+    # Compute smoothed kinematics (velocity, acceleration, jerk, energy)
     for part in ["torso", "pelvis"]:
-        vx_A, vy_A, speed_A = compute_smoothed_velocity(
+        kin_A = compute_smoothed_kinematics(
             df[f"{part}_A_x"].to_numpy(), df[f"{part}_A_y"].to_numpy(), fps
         )
-        vx_B, vy_B, speed_B = compute_smoothed_velocity(
+        kin_B = compute_smoothed_kinematics(
             df[f"{part}_B_x"].to_numpy(), df[f"{part}_B_y"].to_numpy(), fps
         )
 
-        df[f"{part}_A_vx"] = vx_A
-        df[f"{part}_A_vy"] = vy_A
-        df[f"{part}_A_speed"] = speed_A
-
-        df[f"{part}_B_vx"] = vx_B
-        df[f"{part}_B_vy"] = vy_B
-        df[f"{part}_B_speed"] = speed_B
+        for metric in ["vx", "vy", "speed", "accel", "jerk", "kinetic_energy"]:
+            df[f"{part}_A_{metric}"] = kin_A[metric]
+            df[f"{part}_B_{metric}"] = kin_B[metric]
 
         # Directional cosine similarity
-        df[f"dir_sim_{part}"] = compute_directional_similarity(vx_A, vy_A, vx_B, vy_B)
+        df[f"dir_sim_{part}"] = compute_directional_similarity(
+            kin_A["vx"], kin_A["vy"], kin_B["vx"], kin_B["vy"]
+        )
 
     # Normalized distances (relative to frame diagonal for resolution invariance)
     diag = np.sqrt(frame_width**2 + frame_height**2)
