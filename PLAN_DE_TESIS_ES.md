@@ -33,11 +33,20 @@ Se extraerá la cinemática 2D de videos reales (jams, prácticas y performances
 * **Concepto:** Los cuerpos se sincronizan para compartir el centro de gravedad.
 * **Firma Matemática:** Alta **Correlación Cruzada (Cross-Correlation)** temporal entre las velocidades de ambos bailarines, comportándose matemáticamente como un péndulo acoplado.
 
-## 4. Diseño Experimental (Análisis Descriptivo)
+## 4. Diseño Metodológico Mixto
 
-Se abandonan los protocolos de laboratorio rígidos (como el A-B-A) en favor de un análisis ecológico y descriptivo. Se procesará un corpus de videos de CI extraídos de *jams* y prácticas reales. El análisis comparará empíricamente:
-1. Las distribuciones de Jerk y Energía entre bailarines **Novatos vs. Expertos** para probar que los "rasgos del CI" son habilidades motrices adquiribles.
-2. Momentos de danza individual vs. danza de contacto dentro del mismo flujo natural para observar cuándo se activan las firmas de acoplamiento.
+Para garantizar el éxito y la amplitud de la tesis, se propone un enfoque metodológico mixto con dos fases complementarias:
+
+### Fase 1: Análisis Ecológico y Descriptivo (Extracción de Firmas)
+Antes de probar si el CI modifica el movimiento individual, primero debemos definir matemáticamente qué es el CI. Se procesará un corpus de videos "in the wild" (jams, prácticas, YouTube) para extraer empíricamente las firmas de "Yield", "Momentum Ride" y "Physical Listening". 
+* **Objetivo:** Comparar estas métricas entre bailarines Novatos vs. Expertos para probar que los "rasgos del CI" son habilidades motrices cuantificables y adquiribles.
+
+### Fase 2: Diseño Experimental Controlado (Protocolo A-B-A)
+Una vez definidas las firmas matemáticas del CI, se realizará un experimento controlado para probar la hipótesis del "Eco Somático". Se filmará a 10-15 parejas en una sesión continua de 10 minutos:
+* **Fase A (Solo Base - 2 min):** Los bailarines se mueven de forma independiente (Línea base).
+* **Fase B (Dúo de CI - 5 min):** Interacción física (Activación de firmas cinemáticas diádicas).
+* **Fase C (Solo Eco - 2 min):** Retorno al movimiento individual.
+* **Objetivo:** Comparar estadísticamente el *Jerk* y la Energía de la Fase C contra la Fase A. Si existe una diferencia significativa, se probará empíricamente que la interacción reescribió temporalmente los algoritmos motores individuales.
 
 ## 5. Avances Previos (Prueba de Concepto - PoC)
 
