@@ -39,9 +39,22 @@ Se filmará a 10-15 parejas en una sesión continua de 10 minutos con el siguien
 * **Fase B (Dúo de CI - 5 min):** Interacción física. La necesidad de compartir peso fuerza la activación de MA 1 y MA 2.
 * **Fase C (Solo Eco - 2 min):** Se separan y vuelven a bailar solos. 
 
-Se comparará estadísticamente la Fase A contra la Fase C. Si el descenso al suelo en la Fase C presenta un *Jerk* matemáticamente menor que en la Fase A, se probará la existencia del "Eco Somático".
+## 5. Avances Previos (Prueba de Concepto - PoC)
 
-## 5. Arquitectura Computacional
+Para validar la viabilidad computacional de este proyecto, ya se ha desarrollado una Prueba de Concepto (PoC) en Python. El pipeline actual es capaz de:
+* Ingestar videos crudos de *Contact Improvisation*.
+* Extraer el esqueleto de múltiples bailarines y mantener sus identidades.
+* Calcular derivadas de alto orden (Aceleración y Jerk) mediante filtros de Savitzky-Golay.
+* Estimar proxies de Energía Cinética y proximidad espacial.
+* Generar dashboards visuales y videos anotados automáticamente.
+
+La existencia de este pipeline garantiza que el riesgo técnico central (la extracción de features cinemáticos) está resuelto, permitiendo enfocar los 6 meses de tesis en la recolección de datos, el análisis de oclusiones severas y el modelado estadístico.
+
+## 6. Extensión Exploratoria: Modelos Multimodales (VLMs)
+
+Durante situaciones de oclusión severa (ej. *puppy piles* o levantamientos invertidos), los trackers heurísticos top-down como YOLO suelen fallar al generar "esqueletos araña" debido a la fusión de *bounding boxes*. Como extensión exploratoria y base para trabajo futuro, se investigará una arquitectura híbrida de prueba de concepto: utilizar **Vision-Language Models (VLMs)** o Modelos Fundacionales semánticos para desenredar visualmente los cuerpos en los *frames* donde la heurística matemática de YOLO falla, demostrando la superioridad del entendimiento semántico sobre el heurístico en topologías complejas.
+
+## 7. Arquitectura Computacional
 
 El desarrollo técnico para la Licenciatura incluye:
 1. **Computer Vision:** Uso de YOLOv8-Pose para extracción multi-persona, junto con tracking de identidad persistente mediante bipartite Hungarian matching adaptado para manejar oclusión.
@@ -49,7 +62,7 @@ El desarrollo técnico para la Licenciatura incluye:
 3. **Análisis de Series Temporales:** Análisis de Componentes Principales (PCA) para grados de libertad, y métricas de correlación temporal.
 4. **Modelado Estadístico:** Modelos Lineales Mixtos (LMM) en Python (`statsmodels`) para evaluar la significancia estadística de la diferencia entre Fase A y C considerando la dependencia intra-pareja.
 
-## 6. Cronograma Propuesto (6 Meses)
+## 8. Cronograma Propuesto (6 Meses)
 
 * **Mes 1:** Reclutamiento de participantes y recolección de datos (filmación de las 15 parejas).
 * **Mes 2:** Refinamiento del pipeline de estimación de pose y tracking sobre los videos recolectados.
