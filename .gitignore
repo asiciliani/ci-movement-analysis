@@ -37,3 +37,4 @@ Thumbs.db
 .idea/
 *.log
 outputs/*\n!outputs/.gitkeep\nplot_echo.py
+EMAIL_DRAFTS_DIRECTORS.md
