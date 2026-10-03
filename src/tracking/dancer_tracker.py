@@ -74,17 +74,26 @@ class TwoDancerTracker:
         x1, y1, x2, y2 = det.bbox
         return float(max(0.0, (x2 - x1) * (y2 - y1)))
 
-    def _initialize_dancers(self, detections: List[PoseDetection]):
+    def _initialize_dancers(self, detections: List[PoseDetection]) -> bool:
         """Initialize dancers on first frame with >= 2 detections, picking the 2 largest foreground people."""
+        if len(detections) < 2:
+            return False
         # Sort by bounding box area descending to get foreground dancers
         sorted_by_area = sorted(detections, key=self._bbox_area, reverse=True)
         top_two = sorted_by_area[:2]
+        area_0 = self._bbox_area(top_two[0])
+        area_1 = self._bbox_area(top_two[1])
+
+        # Both must be substantial foreground detections, not a foreground dancer + distant spectator
+        if area_0 > 0 and (area_1 / area_0 < 0.35):
+            return False
 
         # Order top two by x-coordinate: left is Dancer A, right is Dancer B
         sorted_dets = sorted(top_two, key=lambda d: d.torso_center[0])
         self.dancer_A.update(sorted_dets[0])
         self.dancer_B.update(sorted_dets[1])
         self.initialized = True
+        return True
 
     def step(
         self,
@@ -96,8 +105,7 @@ class TwoDancerTracker:
         Returns (det_A, det_B). Either can be None if not found/detected.
         """
         if not self.initialized:
-            if len(detections) >= 2:
-                self._initialize_dancers(detections)
+            if self._initialize_dancers(detections):
                 sorted_by_area = sorted(detections, key=self._bbox_area, reverse=True)[:2]
                 sorted_dets = sorted(sorted_by_area, key=lambda d: d.torso_center[0])
                 return sorted_dets[0], sorted_dets[1]
@@ -119,12 +127,14 @@ class TwoDancerTracker:
                     det.track_id in self.dancer_B.associated_track_ids
                 )
             )
-            # Retain if it matches known track ID or is at least 20% of foreground size
-            if is_known_id or ref_area <= 0 or area >= 0.20 * ref_area:
+            # Retain if it matches known track ID or is at least 35% of foreground size
+            if is_known_id or ref_area <= 0 or area >= 0.35 * ref_area:
                 candidate_dets.append(det)
 
         if not candidate_dets:
-            candidate_dets = detections
+            self.dancer_A.mark_missing()
+            self.dancer_B.mark_missing()
+            return None, None
 
         # Predict positions using current velocity
         pred_A = (
