@@ -10,3 +10,11 @@
 * **El Problema:** ¿Quién decide bailar con quién en una Jam con 20 personas?
 * **Métricas:** Cada bailarín es un "Nodo". La probabilidad de que hagan contacto es un "Edge" (Arista). Se predice la formación de duetos antes de que ocurran basándose en los vectores de acercamiento.
 * **Ideal si el LIAA quiere:** Estudiar sociología computacional, toma de decisiones (decision-making) y formación de redes sociales físicas en tiempo real.
+
+## 7. Clasificación de Estados: Biomecánica vs. Arte (El "Solo" dentro del Dueto)
+**Enfoque:** Usar la IA para segmentar la transición entre la "física de supervivencia" y la "expresión artística". Basado en la filosofía de Daniel Lepkoff.
+* **El Problema:** El CI navega constantemente entre dos mundos: el Flujo Biomecánico (puro soporte de peso, reflejos, evasión de impacto) y la Improvisación Artística (autonomía, teatro, expresión visual). ¿Podemos enseñarle a una máquina a distinguir matemáticamente cuándo ocurre el arte?
+* **Métricas:** Modelos de Clustering (ej. Hidden Markov Models) sobre la divergencia de trayectorias. 
+  - *Estado Biomecánico:* Distancia cercana a cero, alta similitud direccional, Jerk ultra-bajo (física pura).
+  - *Estado Artístico:* Aumento de distancia, alta "Autonomía" matemática (divergencia de trayectorias), picos de Jerk intencionales (gestualidad).
+* **Ideal si el LIAA quiere:** Publicar en la intersección dorada entre Humanidades Digitales, Teoría del Arte y Machine Learning puro (unsupervised clustering).
