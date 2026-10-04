@@ -11,8 +11,8 @@ Hoy, 40 años después, la Inteligencia Artificial y la Visión Computacional (Y
 En los años 80, los ingenieros informáticos filmaron a los pájaros en pleno vuelo (*Swarm Intelligence* / Boids) para descubrir los algoritmos matemáticos que les permitían girar al mismo tiempo sin chocar, inspirando la robótica descentralizada. 
 En este proyecto, los bailarines de Contact Improvisation son los pájaros. Se estudia el CI como el límite absoluto de la cognición corporizada humana para extraer la "Fórmula del Acuerdo Físico" y enseñársela a las máquinas.
 
-## 🎯 El Eje Central (MVP): Clasificación de Estados
-El corazón del proyecto no es solo medir movimiento, sino entrenar un modelo de Machine Learning No Supervisado (ej. K-Means) para que lea la cinemática de los cuerpos y **clasifique en qué "Estado" de la danza se encuentran**:
+## 🎯 Uno de los Ejes Clave: Clasificación de Estados
+Uno de los objetivos más ambiciosos es entrenar un modelo de Machine Learning No Supervisado (ej. K-Means) para que lea la cinemática de los cuerpos y **clasifique en qué "Estado" de la danza se encuentran**:
 1. **Flujo Biomecánico:** Uso inercial de las leyes de Newton. Velocidades compartidas, bajo *Jerk*, soporte óseo (esquelético) de peso.
 2. **Improvisación Artística / Autonomía:** Ruptura voluntaria del flujo. Mayor separación, gestualidad teatral, aceleraciones bruscas.
 
