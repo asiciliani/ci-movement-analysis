@@ -25,8 +25,3 @@
 * **Métricas:** Usando el dataset de las poses 2D, se entrena un modelo predictivo. Se le da a la IA el inicio de una caída (los primeros 2 segundos) y se le pide que "alucine" o prediga cómo va a resolverse el movimiento en los siguientes 3 segundos. Si la IA logra predecir con precisión el "Yield" y la rodada al piso, significa que ha construido un *World Model* (Modelo del Mundo) físico y biomecánico de Gastón.
 * **Ideal si el LIAA quiere:** Meterse de lleno en la tecnología de punta actual (Generative AI, World Models, Joint-Embedding Predictive Architectures) aplicados no a generar videos falsos, sino a entender cómo el cerebro humano predice las trayectorias motoras del otro para no chocar.
 
-## 9. Rama de Interacción Humano-Computadora (HCI): Sonificación y Bio-Feedback en Tiempo Real
-**Enfoque:** Llevar el algoritmo fuera de la computadora y convertirlo en una Instalación Interactiva para bailarines.
-* **El Problema:** El análisis a posteriori de videos es útil para la ciencia, pero no ayuda a los bailarines mientras están bailando. ¿Podemos crear un "espejo somático"?
-* **Métricas:** Conectar el pipeline de YOLOv8 y el cálculo de Jerk/Sincronía a una cámara web en vivo. El algoritmo traduce la "aspereza" del movimiento (Jerk) o la "empatía" (Autonomía/Distancia) en **Música o Proyecciones Visuales en tiempo real (Sonificación)**. Si los bailarines entran en un estado de "Flujo Biomecánico", la música se armoniza; si hay desconexión o alto impacto, el sonido cambia.
-* **Ideal si el LIAA quiere:** Publicar en conferencias de *Human-Computer Interaction (HCI)*, cruzar la frontera hacia el Arte Interactivo, y crear una herramienta que los propios artistas puedan usar para entrenar su "Awareness" somático propuesto por Lepkoff.
