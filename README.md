@@ -7,6 +7,12 @@ Cuando George Lucas concibió Star Wars, tuvo que empezar por el Episodio IV por
 En 1988, Steve Paxton (creador del CI) publicó su obra *"Fall After Newton"*, intentando explicar la danza puramente a través de la gravedad, la inercia y las leyes del movimiento. Paxton tenía la teoría correcta, pero no tenía la tecnología para medirla empíricamente; dependía de la observación humana a ojo desnudo. Isaac Newton observó la manzana caer, pero los bailarines de CI *eligen ser la manzana*.
 Hoy, 40 años después, la Inteligencia Artificial y la Visión Computacional (YOLOv8) finalmente nos otorgan las herramientas algorítmicas para extraer, medir y cuantificar las fuerzas invisibles (Aceleración, Jerk) de las que Paxton hablaba. 
 
+
+
+### 🌌 El Paralelismo de LIGO y las Ondas Gravitacionales
+En 1916, Albert Einstein predijo matemáticamente la existencia de las ondas gravitacionales, pero afirmó que la humanidad jamás tendría la tecnología para medirlas. Tuvieron que pasar exactamente 100 años hasta que, en 2016, el proyecto LIGO construyó láseres lo suficientemente sensibles para probar empíricamente su teoría. 
+El Contact Improvisation vive un momento idéntico. Steve Paxton teorizó la física newtoniana de la danza en los 80s, pero carecía de la tecnología de medición. Hoy, nuestros algoritmos de Inteligencia Artificial (YOLOv8, Pose Estimation) son el "LIGO de la danza": el láser que finalmente tiene la sensibilidad suficiente para cuantificar el *Jerk*, la Inercia y la Gravedad en el movimiento humano.
+
 ## 🕊️ La Metáfora Central: "Los humanos como la bandada"
 En los años 80, los ingenieros informáticos filmaron a los pájaros en pleno vuelo (*Swarm Intelligence* / Boids) para descubrir los algoritmos matemáticos que les permitían girar al mismo tiempo sin chocar, inspirando la robótica descentralizada. 
 En este proyecto, los bailarines de Contact Improvisation son los pájaros. Se estudia el CI como el límite absoluto de la cognición corporizada humana para extraer la "Fórmula del Acuerdo Físico" y enseñársela a las máquinas.
