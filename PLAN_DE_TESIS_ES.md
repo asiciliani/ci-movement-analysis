@@ -81,3 +81,10 @@ Durante situaciones de oclusión severa (ej. *puppy piles* o levantamientos inve
 * **Mes 4:** Análisis estadístico descriptivo (Novatos vs Expertos, Distribuciones).
 * **Mes 5:** Redacción de la tesis y generación de visualizaciones (Storytelling Graphs).
 * **Mes 6:** Correcciones finales y defensa.
+
+## Análisis Macro-Espacial (Perspectiva Cenital)
+Mientras que las cámaras horizontales permiten extraer micro-firmas biomecánicas (Jerk, Energía, Pose), las **cámaras cenitales (desde arriba)** se utilizarán para una capa de análisis completamente distinta: la dinámica ecológica. 
+Ignorando la pose de 17 puntos (que se degrada en perspectiva top-down), se extraerá el centroide 2D (Bounding Box) de cada bailarín sobre el plano del suelo para mapear el comportamiento macro-espacial:
+- **Floor Utilization (Heatmaps):** Patrones de ocupación del espacio durante una Jam.
+- **Flujos de Orbitación:** Cálculo de trayectorias espaciales y velocidad de traslación por el salón.
+- **Dinámica de Multitudes:** Evasión de obstáculos (otras parejas) en la pista.
