@@ -18,3 +18,9 @@
   - *Estado Biomecánico:* Distancia cercana a cero, alta similitud direccional, Jerk ultra-bajo (física pura).
   - *Estado Artístico:* Aumento de distancia, alta "Autonomía" matemática (divergencia de trayectorias), picos de Jerk intencionales (gestualidad).
 * **Ideal si el LIAA quiere:** Publicar en la intersección dorada entre Humanidades Digitales, Teoría del Arte y Machine Learning puro (unsupervised clustering).
+
+## 8. Rama Generativa: "Gemelos Digitales" y Predicción Motora (World Models)
+**Enfoque:** Entrenar una Inteligencia Artificial Generativa (Transformers/Modelos de Difusión) para predecir el futuro del movimiento.
+* **El Problema:** El Contact Improvisation se basa puramente en la física (gravedad, inercia, conservación de energía). ¿Puede una Red Neuronal aprender de forma implícita "Las Leyes de la Física del CI"?
+* **Métricas:** Usando el dataset de las poses 2D, se entrena un modelo predictivo. Se le da a la IA el inicio de una caída (los primeros 2 segundos) y se le pide que "alucine" o prediga cómo va a resolverse el movimiento en los siguientes 3 segundos. Si la IA logra predecir con precisión el "Yield" y la rodada al piso, significa que ha construido un *World Model* (Modelo del Mundo) físico y biomecánico de Gastón.
+* **Ideal si el LIAA quiere:** Meterse de lleno en la tecnología de punta actual (Generative AI, World Models, Joint-Embedding Predictive Architectures) aplicados no a generar videos falsos, sino a entender cómo el cerebro humano predice las trayectorias motoras del otro para no chocar.
