@@ -77,3 +77,9 @@ outputs/**/*_features.csv
 outputs/**/*legacy*
 scripts/channels.local.txt
 outputs/**/*_report.html
+outputs/*.png
+outputs/*/*.png
+!outputs/claims/*.png
+!outputs/coupling/*.png
+!outputs/design/*.png
+!outputs/external_*/*.png
