@@ -1,90 +1,82 @@
 # Plan de Tesis de Licenciatura
 
-**Título propuesto:** *El Eco Somático: Extracción Empírica de Firmas Cinemáticas en Contact Improvisation.*  
-**Carrera:** Licenciatura en Ciencias de la Computación (FCEN - UBA)  
-**Tesista:** [Tu Nombre]  
-**Director/a:** [A definir]  
-**Co-director/a:** [A definir]  
+**Título propuesto:** *Escucha física en Contact Improvisation: medición del acoplamiento interpersonal desde video con un tracker de dúos validado.*
+**Carrera:** Licenciatura en Ciencias de la Computación (FCEN - UBA)
+**Tesista:** [Tu Nombre] · **Director/a:** [A definir] · **Co-director/a:** [A definir]
 
 ---
 
 ## 1. Resumen
+El Contact Improvisation (CI) es una práctica diádica en la que dos personas comparten peso y
+momentum sin coreografía. Esta tesis construye y valida un instrumento de visión por computadora
+para medir el **acoplamiento cinemático** entre dos bailarines a partir de video ordinario, y lo
+usa para responder una pregunta concreta: **¿el acoplamiento entre los bailarines persiste cuando
+no están en contacto físico?** (la "escucha física" que la comunidad describe cualitativamente).
 
-El *Contact Improvisation* (CI) es una práctica de movimiento diádico donde los bailarines comparten peso de forma continua. Esta tesis propone investigar computacionalmente si es posible **detectar empíricamente los "rasgos" (firmas cinemáticas) que definen al CI** utilizando Inteligencia Artificial. Mediante técnicas de Visión en Computadora (Estimación de Pose 2D) y análisis de series temporales, se extraerán las métricas físicas fundamentales que separan a un dúo de CI de cualquier otra interacción humana: la evasión de colisiones (minimización de *Jerk*), la transferencia de momentum, y la sincronización (escucha física).
+## 2. Por qué esta rama y no otras (evidencia de la prueba de concepto, octubre 2026)
+* Es la única pregunta que el instrumento puede contestar con un diseño propio. Con video público
+  **no se puede decidir** (auditoría del 7/10, `AUDIT.md` 24-31): en 5 de 10 clips "dúo" el par
+  trackeado era incorrecto (espectadores, una sombra, un montaje, un trío); el test de
+  desplazamiento circular da "acoplamiento" también en esos pares equivocados; en los 6 clips con
+  las personas correctas el acoplamiento sobrevive todos los nulos (incluidos pseudo-pares, 5/6),
+  pero son casi todo contacto (control positivo), y sin contacto se pudo testear 1 clip (n.s.). La solución es de diseño: grabar en cada sesión un bloque solo-solo (mismo
+  cuarto, cámara y silencio, sin relacionarse) como nulo que comparte todos los confundidores.
+* **Validación externa con verdad conocida (7/10):** en los datos públicos de Bigand et al. (2024,
+  *Current Biology*; 35 díadas, 1.120 ensayos con/sin cortina × misma/distinta música) el test
+  ingenuo da "acoplamiento" en 63 % de los ensayos sin ningún canal entre los bailarines, mientras
+  que nuestro contraste dentro de la díada (ver vs cortina) detecta el acoplamiento por el compañero
+  (27-28 de 35 díadas, p < 0.001) y sobrevive degradado a video 2-D con ruido. Con 8 ensayos de 1 min
+  por condición, 15-20 díadas dan potencia 0.8-0.98 (AUDIT 34-37). En CoMPAS3D (salsa, roles
+  conocidos) el retardo NO identifica a quien lidera (AUDIT 36).
+* Las medidas de suavidad por ventana (SPARC, jerk) están dominadas por el ruido del estimador de
+  pose a 24-30 fps (ventanas adyacentes con 75 % de solapamiento correlacionan ≈ 0). Sirven sólo
+  agregadas por minutos, y por eso la hipótesis del "eco somático" (A-B-A) queda como estudio
+  secundario condicionado a grabaciones a 60 fps calibradas.
+* El tracking en contacto es el problema técnico real: la detección simultánea cae de 89 % a 65 %
+  en ventanas de contacto, y la verificación manual muestra etiquetas en terceros tras los
+  levantamientos. Validarlo es una contribución de Computación en sí misma.
 
-## 2. Motivación y Planteo del Problema
+## 3. Hipótesis
+* **H3 (acoplamiento):** la correlación cruzada con retardo entre las velocidades de los dos
+  bailarines supera la batería de nulos de `METHODS.md` §7 (circular, local, bandas, cámara,
+  escala, audio, pseudo-pares); el test circular solo es necesario pero no suficiente.
+* **H3b (escucha física, contraste primario):** en frames **sin** contacto, el acoplamiento del
+  bloque dúo-sin-contacto (N) es mayor que el del bloque solo-solo (S) de la misma díada
+  (Wilcoxon entre díadas), y mayor que el de pseudo-pares entre díadas.
+* **H3c (liderazgo) — descartada tal como estaba:** en CoMPAS3D (salsa, roles conocidos, mocap) el
+  retardo de la correlación de señales de cuerpo entero no identifica a quien lidera (AUDIT 36).
+  Sólo se retoma si una medida direccional a nivel de miembros se valida antes en ese dataset.
+* **H1 (secundaria):** la suavidad agregada difiere entre contacto y no contacto (el PoC sugiere
+  *menor* suavidad en contacto).
 
-La mayoría de las investigaciones en análisis computacional del movimiento se centran en posturas aisladas o deportes estructurados. El análisis de interacciones humanas de alta oclusión (como el CI) representa un desafío abierto en Computer Vision. 
-El problema central es: **¿Cuáles son las firmas matemáticas exactas de un dúo de Contact Improvisation exitoso?** Al extraer estos rasgos empíricamente, podemos cuantificar habilidades somáticas que antes se consideraban puramente subjetivas.
+## 4. Metodología
+1. **Instrumento.** YOLOv8-pose + BoT-SORT/ReID + capa de asignación de dos bailarines con cue de
+   apariencia (color de ropa), compensación del movimiento de cámara, derivadas sólo sobre tramos
+   detectados, unidades calibradas, piso de ruido por grabación (`METHODS.md`).
+2. **Validación del tracker.** Auditoría de par (¿son las dos personas correctas?) como compuerta de
+   inclusión, y anotación manual de identidad en ≥ 10 clips × 30 s (hojas de contacto de
+   `audit_identity.py`); métricas: fracción de frames con etiqueta correcta, intercambios A/B,
+   captura de terceros (espectadores, sombras). Taxonomía de fallas del corpus público como
+   resultado. Comparación con y sin cue de apariencia y con/sin ReID.
+3. **Corpus.** (a) Clips públicos filtrados automáticamente (cámara fija o compensable, dos personas
+   de cuerpo entero, ≥ 640 px, ≥ 24 fps); (b) grabaciones propias con cámara fija, grilla de piso,
+   consentimiento y comité de ética (`DATA_COLLECTION_PROTOCOL.md`).
+4. **Análisis.** Tests dentro de cada video y combinación entre videos (test de signos, Wilcoxon,
+   estimador intra-grupo con errores robustos); nulos por datos sustitutos para toda correlación.
 
-## 3. Firmas Cinemáticas (Traits) Analizadas
+## 5. Avances (PoC auditada)
+Pipeline en dos etapas con tracks crudos; filtro de cámara; compensación; unidades; piso de ruido;
+tests sintéticos; `analyze_claims.py` reproduce todos los números del plan desde `outputs/dataset/`.
 
-Se extraerá la cinemática 2D de videos reales (jams, prácticas y performances) para detectar empíricamente tres rasgos fundamentales del CI:
+## 6. Trabajo futuro (fuera de la tesis)
+Eco somático A-B-A con grabaciones a 60 fps; grafos de proximidad en jams; modelos predictivos;
+aplicaciones clínicas o de robótica.
 
-### Rasgo 1: "The Yield" (Ceder al impacto)
-* **Concepto:** El bailarín absorbe la fuerza extendiendo el tiempo de desaceleración al ir al suelo o chocar con su compañero.
-* **Firma Matemática:** Minimización del **Jerk** ($\frac{da}{dt}$). Un algoritmo activo de "Yield" aplana la curva de jerk, evitando picos de colisión.
-
-### Rasgo 2: "Momentum Ride" (Transferencia de Energía)
-* **Concepto:** Los expertos redirigen el momentum existente en lugar de usar fuerza muscular.
-* **Firma Matemática:** Conservación de la **Energía Cinética del Sistema** ($E_{total} \approx E_A + E_B$). Cuando el bailarín A frena, la energía se transfiere al bailarín B sin perder fluidez.
-
-### Rasgo 3: "Physical Listening" (Acoplamiento de Osciladores)
-* **Concepto:** Los cuerpos se sincronizan para compartir el centro de gravedad.
-* **Firma Matemática:** Alta **Correlación Cruzada (Cross-Correlation)** temporal entre las velocidades de ambos bailarines, comportándose matemáticamente como un péndulo acoplado.
-
-## 4. Diseño Metodológico Mixto
-
-Para garantizar el éxito y la amplitud de la tesis, se propone un enfoque metodológico mixto con dos fases complementarias:
-
-### Fase 1: Análisis Ecológico y Descriptivo (Extracción de Firmas)
-Antes de probar si el CI modifica el movimiento individual, primero debemos definir matemáticamente qué es el CI. Se procesará un corpus de videos "in the wild" (jams, prácticas, YouTube) para extraer empíricamente las firmas de "Yield", "Momentum Ride" y "Physical Listening". 
-* **Objetivo:** Comparar estas métricas entre bailarines Novatos vs. Expertos para probar que los "rasgos del CI" son habilidades motrices cuantificables y adquiribles.
-
-### Fase 2: Diseño Experimental Controlado (Protocolo A-B-A)
-Una vez definidas las firmas matemáticas del CI, se realizará un experimento controlado para probar la hipótesis del "Eco Somático". Se filmará a 10-15 parejas en una sesión continua de 10 minutos:
-* **Fase A (Solo Base - 2 min):** Los bailarines se mueven de forma independiente (Línea base).
-* **Fase B (Dúo de CI - 5 min):** Interacción física (Activación de firmas cinemáticas diádicas).
-* **Fase C (Solo Eco - 2 min):** Retorno al movimiento individual.
-* **Objetivo:** Comparar estadísticamente el *Jerk* y la Energía de la Fase C contra la Fase A. Si existe una diferencia significativa, se probará empíricamente que la interacción reescribió temporalmente los algoritmos motores individuales.
-
-## 5. Avances Previos (Prueba de Concepto - PoC)
-
-Para validar la viabilidad computacional de este proyecto, ya se ha desarrollado una Prueba de Concepto (PoC) en Python. El pipeline actual es capaz de:
-* Ingestar videos crudos de *Contact Improvisation*.
-* Extraer el esqueleto de múltiples bailarines y mantener sus identidades.
-* Calcular derivadas de alto orden (Aceleración y Jerk) mediante filtros de Savitzky-Golay.
-* Estimar proxies de Energía Cinética y proximidad espacial.
-* Generar dashboards visuales (KDE, Boxplots) y videos anotados automáticamente.
-
-La existencia de este pipeline garantiza que el riesgo técnico central (la extracción de features cinemáticos) está resuelto.
-
-## 6. Extensión Exploratoria: Arquitectura Híbrida (YOLO + VLMs)
-
-Durante situaciones de oclusión severa (ej. *puppy piles* o levantamientos invertidos), los trackers heurísticos top-down como YOLO suelen fallar al generar "esqueletos araña". Como extensión exploratoria, se propone diseñar conceptualmente un **Tracker Híbrido**:
-1. **Pipeline Base:** YOLOv8 procesa los frames a alta velocidad.
-2. **Trigger de Oclusión:** Cuando la intersección (IoU) de dos *bounding boxes* supera un umbral crítico (ej. > 0.85), el sistema pausa.
-3. **Escalamiento Semántico:** Ese frame se envía a un Modelo Fundacional Multimodal (VLM) para desenredar los cuerpos basándose en contexto semántico.
-
-## 7. Arquitectura Computacional
-
-1. **Computer Vision:** YOLOv8-Pose con tracking de identidad persistente (bipartite Hungarian matching).
-2. **Procesamiento de Señales:** Filtrado Savitzky-Golay para suavizar el ruido temporal.
-3. **Análisis de Series Temporales:** Análisis de Componentes Principales (PCA) y métricas de correlación temporal.
-4. **Modelado Estadístico:** Modelos Lineales Mixtos (LMM) y distribuciones de densidad (KDE).
-
-## 8. Cronograma Propuesto (6 Meses)
-
-* **Mes 1:** Recolección de corpus de videos (jams y prácticas) y curaduría de clips.
-* **Mes 2:** Refinamiento del pipeline de estimación de pose sobre los videos recolectados.
-* **Mes 3:** Extracción de features (Jerk, Energía, Cross-Correlation) y validación de las señales.
-* **Mes 4:** Análisis estadístico descriptivo (Novatos vs Expertos, Distribuciones).
-* **Mes 5:** Redacción de la tesis y generación de visualizaciones (Storytelling Graphs).
-* **Mes 6:** Correcciones finales y defensa.
-
-## Análisis Macro-Espacial (Perspectiva Cenital)
-Mientras que las cámaras horizontales permiten extraer micro-firmas biomecánicas (Jerk, Energía, Pose), las **cámaras cenitales (desde arriba)** se utilizarán para una capa de análisis completamente distinta: la dinámica ecológica. 
-Ignorando la pose de 17 puntos (que se degrada en perspectiva top-down), se extraerá el centroide 2D (Bounding Box) de cada bailarín sobre el plano del suelo para mapear el comportamiento macro-espacial:
-- **Floor Utilization (Heatmaps):** Patrones de ocupación del espacio durante una Jam.
-- **Flujos de Orbitación:** Cálculo de trayectorias espaciales y velocidad de traslación por el salón.
-- **Dinámica de Multitudes:** Evasión de obstáculos (otras parejas) en la pista.
+## 7. Cronograma (6 meses)
+* **Mes 1:** corpus propio (≥ 6 dúos, cámara fija) + anotación de identidad en 10 clips.
+* **Mes 2:** validación del tracker (métricas de identidad; ablaciones apariencia / ReID).
+* **Mes 3:** acoplamiento H3/H3b/H3c en el corpus propio (N vs S); el corpus público sólo como
+  validación del instrumento y demostración de los nulos.
+* **Mes 4:** H1 agregada; robustez (ventanas, umbral de contacto, surrogates alternativos).
+* **Mes 5:** redacción y figuras reproducibles.
+* **Mes 6:** correcciones y defensa.

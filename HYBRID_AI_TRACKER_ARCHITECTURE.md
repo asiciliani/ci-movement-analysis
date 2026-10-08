@@ -4,7 +4,7 @@
 
 ## The Problem: Severe Multi-Person Occlusion
 In Contact Improvisation (CI), dancers frequently enter states of severe topological entanglement (e.g., lifts, shared floorwork). 
-During our experiment on a 5-second clip of a heavy lift (Gastón & Paula), traditional top-down pose estimators (YOLOv8-Pose) failed. 
+During our experiment on a 5-second clip of a heavy lift (field-recording duet), traditional top-down pose estimators (YOLOv8-Pose) failed. 
 * **The Failure Mode:** The heuristic tracker draws a single bounding box around the tangled mass and attempts to fit a single 17-point skeleton to it, resulting in "spider-skeletons" and catastrophic identity swapping (e.g., attaching Dancer A's legs to Dancer B's inverted head).
 
 ## The Solution: Multimodal Semantic AI
