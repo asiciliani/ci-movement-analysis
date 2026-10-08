@@ -1,0 +1,1319 @@
+{
+  "meta": {
+    "count": 105342,
+    "db_response_time_ms": 205,
+    "page": 1,
+    "per_page": 10,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (contact improvisation)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "contact improvisation",
+            "operator": "has"
+          }
+        ]
+      },
+      "url": "/works?filter=fulltext.search:contact improvisation&per_page=10&page=1"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W2111628838",
+      "display_name": "Analyzing the Past to Prepare for the Future: Writing a Literature Review",
+      "publication_year": 2002,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5076319270",
+            "display_name": "Jane Webster",
+            "orcid": "https://orcid.org/0000-0002-0350-9115",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-0350-9115"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I204722609",
+              "display_name": "Queen's University",
+              "ror": "https://ror.org/02y72wh86",
+              "country_code": "CA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I204722609"
+              ]
+            }
+          ],
+          "countries": [
+            "CA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jane Webster",
+          "raw_affiliation_strings": [
+            "Queen\u2019s School of Business, Queen\u2019s University, Kingston, ON K7L 3N6, Canada",
+            "Queen's Univ., Kingston, ON (Canada)"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Queen\u2019s School of Business, Queen\u2019s University, Kingston, ON K7L 3N6, Canada",
+              "institution_ids": [
+                "https://openalex.org/I204722609"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Queen's Univ., Kingston, ON (Canada)",
+              "institution_ids": [
+                "https://openalex.org/I204722609"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5000935199",
+            "display_name": "Richard Thomas Watson",
+            "orcid": "https://orcid.org/0000-0003-0664-8337",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-0664-8337"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I165733156",
+              "display_name": "University of Georgia",
+              "ror": "https://ror.org/00te3t702",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I165733156"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Richard T. Watson",
+          "raw_affiliation_strings": [
+            "Terry College of Business, The University of Georgia, Athens, GA 30602\u20136273, U.S.A",
+            "The University of Georgia, Athens, GA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Terry College of Business, The University of Georgia, Athens, GA 30602\u20136273, U.S.A",
+              "institution_ids": [
+                "https://openalex.org/I165733156"
+              ]
+            },
+            {
+              "raw_affiliation_string": "The University of Georgia, Athens, GA",
+              "institution_ids": [
+                "https://openalex.org/I165733156"
+              ]
+            }
+          ]
+        }
+      ],
+      "cited_by_count": 7370
+    },
+    {
+      "id": "https://openalex.org/W2116339812",
+      "display_name": "The Virtual Community: Homesteading on the Electronic Frontier",
+      "publication_year": 1994,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5046784761",
+            "display_name": "Howard Rheingold",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": true,
+          "raw_author_name": "Howard Rheingold",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "cited_by_count": 5706
+    },
+    {
+      "id": "https://openalex.org/W2162739315",
+      "display_name": "Guidelines for conducting and reporting case study research in software engineering",
+      "publication_year": 2008,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5087032437",
+            "display_name": "Per Runeson",
+            "orcid": "https://orcid.org/0000-0003-2795-4851",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-2795-4851"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I187531555",
+              "display_name": "Lund University",
+              "ror": "https://ror.org/012a77v79",
+              "country_code": "SE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I187531555"
+              ]
+            }
+          ],
+          "countries": [
+            "SE"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Per Runeson",
+          "raw_affiliation_strings": [
+            "Department Computer Science, Lund University, Box 118, SE-221 00, Lund, Sweden"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department Computer Science, Lund University, Box 118, SE-221 00, Lund, Sweden",
+              "institution_ids": [
+                "https://openalex.org/I187531555"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5045592913",
+            "display_name": "Martin H\u00f6st",
+            "orcid": "https://orcid.org/0000-0002-9360-8693",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-9360-8693"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I187531555",
+              "display_name": "Lund University",
+              "ror": "https://ror.org/012a77v79",
+              "country_code": "SE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I187531555"
+              ]
+            }
+          ],
+          "countries": [
+            "SE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Martin H\u00f6st",
+          "raw_affiliation_strings": [
+            "Department Computer Science, Lund University, Box 118, SE-221 00, Lund, Sweden"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department Computer Science, Lund University, Box 118, SE-221 00, Lund, Sweden",
+              "institution_ids": [
+                "https://openalex.org/I187531555"
+              ]
+            }
+          ]
+        }
+      ],
+      "cited_by_count": 3870
+    },
+    {
+      "id": "https://openalex.org/W2067369167",
+      "display_name": "The Ripple Effect: Emotional Contagion and its Influence on Group Behavior",
+      "publication_year": 2002,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5076032030",
+            "display_name": "Sigal G. Barsade",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I32971472",
+              "display_name": "Yale University",
+              "ror": "https://ror.org/03v76x132",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I32971472"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Sigal G. Barsade",
+          "raw_affiliation_strings": [
+            "Yale University",
+            "YALE UNIVERSITY (New haven, CT, US)"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Yale University",
+              "institution_ids": [
+                "https://openalex.org/I32971472"
+              ]
+            },
+            {
+              "raw_affiliation_string": "YALE UNIVERSITY (New haven, CT, US)",
+              "institution_ids": [
+                "https://openalex.org/I32971472"
+              ]
+            }
+          ]
+        }
+      ],
+      "cited_by_count": 3375
+    },
+    {
+      "id": "https://openalex.org/W1490995146",
+      "display_name": "The economic development of Latin America and its principal problems",
+      "publication_year": 1950,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5029440564",
+            "display_name": "Ra\u00fal Prebisch",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": true,
+          "raw_author_name": "Ra\u00fal Prebisch",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "cited_by_count": 3337
+    },
+    {
+      "id": "https://openalex.org/W2112957339",
+      "display_name": "Confronting the Challenges of Participatory Culture: Media Education for the 21st Century",
+      "publication_year": 2006,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5009274666",
+            "display_name": "Henry Jenkins",
+            "orcid": "https://orcid.org/0000-0003-2221-9583",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-2221-9583"
+            ]
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": true,
+          "raw_author_name": "Henry Jenkins",
+          "raw_affiliation_strings": [],
+          "raw_orcid": "https://orcid.org/0000-0003-2221-9583",
+          "affiliations": []
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5070514261",
+            "display_name": "Ravi Purushotma",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Ravi Purushotma",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "cited_by_count": 3184
+    },
+    {
+      "id": "https://openalex.org/W1538934614",
+      "display_name": "Sustainable Rural Livelihoods: A Framework for Analysis",
+      "publication_year": 1998,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5058545794",
+            "display_name": "Ian Scoones",
+            "orcid": "https://orcid.org/0000-0001-8547-4464",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-8547-4464"
+            ]
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": true,
+          "raw_author_name": "Ian Scoones",
+          "raw_affiliation_strings": [],
+          "raw_orcid": "https://orcid.org/0000-0001-8547-4464",
+          "affiliations": []
+        }
+      ],
+      "cited_by_count": 3118
+    },
+    {
+      "id": "https://openalex.org/W3035686316",
+      "display_name": "Setting the future of digital and social media marketing research: Perspectives and research propositions",
+      "publication_year": 2020,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5048622877",
+            "display_name": "Yogesh Kumar Dwivedi",
+            "orcid": "https://orcid.org/0000-0002-5547-9990",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-5547-9990"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I39586589",
+              "display_name": "Swansea University",
+              "ror": "https://ror.org/053fq8t95",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I39586589"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Yogesh K. Dwivedi",
+          "raw_affiliation_strings": [
+            "Emerging Markets Research Centre (EMaRC), School of Management, Swansea University, UK"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Emerging Markets Research Centre (EMaRC), School of Management, Swansea University, UK",
+              "institution_ids": [
+                "https://openalex.org/I39586589"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5033472055",
+            "display_name": "Elvira Ismagilova",
+            "orcid": "https://orcid.org/0000-0001-9634-194X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-9634-194X"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I139894009",
+              "display_name": "University of Bradford",
+              "ror": "https://ror.org/00vs8d940",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I139894009"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Elvira Ismagilova",
+          "raw_affiliation_strings": [
+            "International Business, Marketing and Branding Research Centre, School of Management, University of Bradford, Bradford, UK"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "International Business, Marketing and Branding Research Centre, School of Management, University of Bradford, Bradford, UK",
+              "institution_ids": [
+                "https://openalex.org/I139894009"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "D. Laurie Hughes",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I39586589",
+              "display_name": "Swansea University",
+              "ror": "https://ror.org/053fq8t95",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I39586589"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "D. Laurie Hughes",
+          "raw_affiliation_strings": [
+            "Emerging Markets Research Centre (EMaRC), School of Management, Swansea University, Bay Campus, UK"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Emerging Markets Research Centre (EMaRC), School of Management, Swansea University, Bay Campus, UK",
+              "institution_ids": [
+                "https://openalex.org/I39586589"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5035388558",
+            "display_name": "Jamie Carlson",
+            "orcid": "https://orcid.org/0000-0002-1622-5939",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-1622-5939"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I78757542",
+              "display_name": "University of Newcastle Australia",
+              "ror": "https://ror.org/00eae9z71",
+              "country_code": "AU",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I78757542"
+              ]
+            }
+          ],
+          "countries": [
+            "AU"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jamie Carlson",
+          "raw_affiliation_strings": [
+            "Faculty of Business and Law, University of Newcastle, Newcastle, Australia"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Faculty of Business and Law, University of Newcastle, Newcastle, Australia",
+              "institution_ids": [
+                "https://openalex.org/I78757542"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5022339119",
+            "display_name": "Raffaele Filieri",
+            "orcid": "https://orcid.org/0000-0002-3534-8547",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-3534-8547"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I161463649",
+              "display_name": "Audencia Business School",
+              "ror": "https://ror.org/000axn811",
+              "country_code": "FR",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I161463649"
+              ]
+            }
+          ],
+          "countries": [
+            "FR"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Raffaele Filieri",
+          "raw_affiliation_strings": [
+            "Audencia Business School, Marketing Department, Nantes, France"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Audencia Business School, Marketing Department, Nantes, France",
+              "institution_ids": [
+                "https://openalex.org/I161463649"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5033583529",
+            "display_name": "Jenna Jacobson",
+            "orcid": "https://orcid.org/0000-0002-1371-1077",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-1371-1077"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I530967",
+              "display_name": "Toronto Metropolitan University",
+              "ror": "https://ror.org/05g13zd79",
+              "country_code": "CA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I530967"
+              ]
+            }
+          ],
+          "countries": [
+            "CA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jenna Jacobson",
+          "raw_affiliation_strings": [
+            "Ted Rogers School of Management, Ryerson University, Toronto, Canada"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Ted Rogers School of Management, Ryerson University, Toronto, Canada",
+              "institution_ids": [
+                "https://openalex.org/I530967"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5024653552",
+            "display_name": "Varsha Jain",
+            "orcid": "https://orcid.org/0000-0002-6740-4857",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-6740-4857"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210147161",
+              "display_name": "Mudra Institute of Communications Ahmedabad",
+              "ror": "https://ror.org/03thb9733",
+              "country_code": "IN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I4210147161"
+              ]
+            }
+          ],
+          "countries": [
+            "IN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Varsha Jain",
+          "raw_affiliation_strings": [
+            "Marketing Area, MICA, Ahmedabad, India"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Marketing Area, MICA, Ahmedabad, India",
+              "institution_ids": [
+                "https://openalex.org/I4210147161"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5034162449",
+            "display_name": "Heikki Karjaluoto",
+            "orcid": "https://orcid.org/0000-0002-5696-7355",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-5696-7355"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I94722563",
+              "display_name": "University of Jyv\u00e4skyl\u00e4",
+              "ror": "https://ror.org/05n3dz165",
+              "country_code": "FI",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I94722563"
+              ]
+            }
+          ],
+          "countries": [
+            "FI"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Heikki Karjaluoto",
+          "raw_affiliation_strings": [
+            "Marketing/School of Business and Economics, University of Jyv\u00e4skyl\u00e4, Finland"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Marketing/School of Business and Economics, University of Jyv\u00e4skyl\u00e4, Finland",
+              "institution_ids": [
+                "https://openalex.org/I94722563"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5024354224",
+            "display_name": "Hajer K\u00e9fi",
+            "orcid": "https://orcid.org/0000-0001-7080-079X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-7080-079X"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2802331213",
+              "display_name": "Paris School of Business",
+              "ror": "https://ror.org/01y414495",
+              "country_code": "FR",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I2802331213"
+              ]
+            }
+          ],
+          "countries": [
+            "FR"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Hajer Kefi",
+          "raw_affiliation_strings": [
+            "PSB, Paris School of Business, Paris, France"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "PSB, Paris School of Business, Paris, France",
+              "institution_ids": [
+                "https://openalex.org/I2802331213"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5087677475",
+            "display_name": "Anjala Selena Krishen",
+            "orcid": "https://orcid.org/0000-0002-4749-5130",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-4749-5130"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I133999245",
+              "display_name": "University of Nevada, Las Vegas",
+              "ror": "https://ror.org/0406gha72",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I133999245"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Anjala S. Krishen",
+          "raw_affiliation_strings": [
+            "Marketing & International Business, University of Nevada, Las Vegas, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Marketing & International Business, University of Nevada, Las Vegas, USA",
+              "institution_ids": [
+                "https://openalex.org/I133999245"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5102904102",
+            "display_name": "Vikram Kumar",
+            "orcid": "https://orcid.org/0009-0003-4193-6382",
+            "observed_orcids": [
+              "https://orcid.org/0009-0003-4193-6382"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I244572783",
+              "display_name": "Symbiosis International University",
+              "ror": "https://ror.org/005r2ww51",
+              "country_code": "IN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I244572783"
+              ]
+            }
+          ],
+          "countries": [
+            "IN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Vikram Kumar",
+          "raw_affiliation_strings": [
+            "Symbiosis Institute of Business Management, Pune, India",
+            "Symbiosis International (Deemed University), Pune, India"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Symbiosis Institute of Business Management, Pune, India",
+              "institution_ids": [
+                "https://openalex.org/I244572783"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Symbiosis International (Deemed University), Pune, India",
+              "institution_ids": [
+                "https://openalex.org/I244572783"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5019934911",
+            "display_name": "Mohammad M. Rahman",
+            "orcid": "https://orcid.org/0000-0001-5177-9024",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-5177-9024"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I139418187",
+              "display_name": "Shippensburg University",
+              "ror": "https://ror.org/048arep70",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I139418187"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Mohammad M. Rahman",
+          "raw_affiliation_strings": [
+            "John L. Grove College of Business, Shippensburg University, Shippensburg, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "John L. Grove College of Business, Shippensburg University, Shippensburg, USA",
+              "institution_ids": [
+                "https://openalex.org/I139418187"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5072261829",
+            "display_name": "Ramakrishnan Raman",
+            "orcid": "https://orcid.org/0000-0003-3642-6989",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-3642-6989"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I244572783",
+              "display_name": "Symbiosis International University",
+              "ror": "https://ror.org/005r2ww51",
+              "country_code": "IN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I244572783"
+              ]
+            }
+          ],
+          "countries": [
+            "IN"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Ramakrishnan Raman",
+          "raw_affiliation_strings": [
+            "Symbiosis Institute of Business Management, Pune, India",
+            "Symbiosis International (Deemed University), Pune, India"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Symbiosis Institute of Business Management, Pune, India",
+              "institution_ids": [
+                "https://openalex.org/I244572783"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Symbiosis International (Deemed University), Pune, India",
+              "institution_ids": [
+                "https://openalex.org/I244572783"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5030459068",
+            "display_name": "Philipp A. Rauschnabel",
+            "orcid": "https://orcid.org/0000-0003-2188-6747",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-2188-6747"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I40527276",
+              "display_name": "Universit\u00e4t der Bundeswehr M\u00fcnchen",
+              "ror": "https://ror.org/05kkv3f82",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I1315109972",
+                "https://openalex.org/I40527276",
+                "https://openalex.org/I4387152969"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Philipp A. Rauschnabel",
+          "raw_affiliation_strings": [
+            "College of Business, Digital Marketing and Media Innovation, Universit\u00e4t der Bundeswehr M\u00fcnchen, Neubiberg, Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "College of Business, Digital Marketing and Media Innovation, Universit\u00e4t der Bundeswehr M\u00fcnchen, Neubiberg, Germany",
+              "institution_ids": [
+                "https://openalex.org/I40527276"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Jennifer Rowley",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I11983389",
+              "display_name": "Manchester Metropolitan University",
+              "ror": "https://ror.org/02hstj355",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I11983389"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jennifer Rowley",
+          "raw_affiliation_strings": [
+            "Marketing, Retail, and Tourism, Faculty of Business and Law, Manchester Metropolitan University, Manchester, UK"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Marketing, Retail, and Tourism, Faculty of Business and Law, Manchester Metropolitan University, Manchester, UK",
+              "institution_ids": [
+                "https://openalex.org/I11983389"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5049194925",
+            "display_name": "Jari Salo",
+            "orcid": "https://orcid.org/0000-0002-4661-2307",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-4661-2307"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I133731052",
+              "display_name": "University of Helsinki",
+              "ror": "https://ror.org/040af2s02",
+              "country_code": "FI",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I133731052"
+              ]
+            }
+          ],
+          "countries": [
+            "FI"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jari Salo",
+          "raw_affiliation_strings": [
+            "Department of Economics and Management, University of Helsinki, Helsinki, Finland"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Economics and Management, University of Helsinki, Helsinki, Finland",
+              "institution_ids": [
+                "https://openalex.org/I133731052"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5071278389",
+            "display_name": "Gina A. Tran",
+            "orcid": "https://orcid.org/0000-0002-4237-636X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-4237-636X"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2801014300",
+              "display_name": "Florida Gulf Coast University",
+              "ror": "https://ror.org/05tc5bm31",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I2801014300"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Gina A. Tran",
+          "raw_affiliation_strings": [
+            "Marketing Department, Lutgert College of Business, Florida Gulf Coast University, Fort Myers, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Marketing Department, Lutgert College of Business, Florida Gulf Coast University, Fort Myers, USA",
+              "institution_ids": [
+                "https://openalex.org/I2801014300"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5071592530",
+            "display_name": "Yichuan Wang",
+            "orcid": "https://orcid.org/0000-0003-1575-0245",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-1575-0245"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I91136226",
+              "display_name": "University of Sheffield",
+              "ror": "https://ror.org/05krs5044",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I91136226"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Yichuan Wang",
+          "raw_affiliation_strings": [
+            "Sheffield University Management School, University of Sheffield, Sheffield, UK"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Sheffield University Management School, University of Sheffield, Sheffield, UK",
+              "institution_ids": [
+                "https://openalex.org/I91136226"
+              ]
+            }
+          ]
+        }
+      ],
+      "cited_by_count": 2620
+    },
+    {
+      "id": "https://openalex.org/W2010189956",
+      "display_name": "Rural development : putting the last first",
+      "publication_year": 1983,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5031133573",
+            "display_name": "Robert Chambers",
+            "orcid": "https://orcid.org/0000-0001-8475-4501",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-8475-4501"
+            ]
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": true,
+          "raw_author_name": "Robert Chambers",
+          "raw_affiliation_strings": [],
+          "raw_orcid": "https://orcid.org/0000-0001-8475-4501",
+          "affiliations": []
+        }
+      ],
+      "cited_by_count": 2603
+    },
+    {
+      "id": "https://openalex.org/W3088283486",
+      "display_name": "A Systematic Review of the Literature on Digital Transformation: Insights and Implications for Strategy and Organizational Change",
+      "publication_year": 2020,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5024377549",
+            "display_name": "Andr\u00e9 Hanelt",
+            "orcid": "https://orcid.org/0000-0002-4202-2596",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-4202-2596"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I106157433",
+              "display_name": "University of Kassel",
+              "ror": "https://ror.org/04zc7p361",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I106157433"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Andr\u00e9 Hanelt",
+          "raw_affiliation_strings": [
+            "University of Kassel"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Kassel",
+              "institution_ids": [
+                "https://openalex.org/I106157433"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5008709888",
+            "display_name": "Ren\u00e9 Bohnsack",
+            "orcid": "https://orcid.org/0000-0002-7498-4810",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-7498-4810",
+              "https://orcid.org/0009-0006-3112-3515"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I25169866",
+              "display_name": "Universidade Cat\u00f3lica Portuguesa",
+              "ror": "https://ror.org/03b9snr86",
+              "country_code": "PT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I25169866"
+              ]
+            }
+          ],
+          "countries": [
+            "PT"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Ren\u00e9 Bohnsack",
+          "raw_affiliation_strings": [
+            "Cat\u00f3lica Lisbon School of Business &amp; Economics"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Cat\u00f3lica Lisbon School of Business &amp; Economics",
+              "institution_ids": [
+                "https://openalex.org/I25169866"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5006419639",
+            "display_name": "David Marz",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I74656192",
+              "display_name": "University of G\u00f6ttingen",
+              "ror": "https://ror.org/01y9bpm73",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I74656192"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "David Marz",
+          "raw_affiliation_strings": [
+            "University of Goettingen"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University of Goettingen",
+              "institution_ids": [
+                "https://openalex.org/I74656192"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5049235169",
+            "display_name": "Claudia Marante",
+            "orcid": "https://orcid.org/0000-0003-0402-3632",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-0402-3632"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I25169866",
+              "display_name": "Universidade Cat\u00f3lica Portuguesa",
+              "ror": "https://ror.org/03b9snr86",
+              "country_code": "PT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I25169866"
+              ]
+            }
+          ],
+          "countries": [
+            "PT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Cl\u00e1udia Antunes Marante",
+          "raw_affiliation_strings": [
+            "Cat\u00f3lica Lisbon School of Business &amp; Economics"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Cat\u00f3lica Lisbon School of Business &amp; Economics",
+              "institution_ids": [
+                "https://openalex.org/I25169866"
+              ]
+            }
+          ]
+        }
+      ],
+      "cited_by_count": 2477
+    }
+  ],
+  "group_by": []
+}

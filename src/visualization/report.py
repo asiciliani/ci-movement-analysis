@@ -47,6 +47,7 @@ def generate_html_report(
     if global_xcorr_info:
         peak_lag = global_xcorr_info.get("peak_lag", 0.0)
         peak_corr = global_xcorr_info.get("peak_corr", 0.0)
+        surrogate_p = global_xcorr_info.get("surrogate_p", None)
         interp = "Simultaneous Movement"
         if peak_lag > 0.05:
             interp = f"Dancer A tends to precede Dancer B by {peak_lag:.2f}s"
@@ -55,7 +56,7 @@ def generate_html_report(
         peak_lag_str = f"""
         <div class="card p-3 mb-4 border-primary">
             <h5>Global Time-Lagged Coupling</h5>
-            <p class="mb-1"><strong>Peak Lag (τ*):</strong> {peak_lag:+.2f} seconds | <strong>Peak Correlation (R):</strong> {peak_corr:.2f}</p>
+            <p class="mb-1"><strong>Peak Lag (τ*):</strong> {peak_lag:+.2f} seconds | <strong>Peak Correlation (R):</strong> {peak_corr:.2f}{f" | <strong>surrogate p:</strong> {surrogate_p:.3f}" if surrogate_p is not None else ""}</p>
             <p class="mb-0 text-muted"><strong>Interpretation:</strong> {interp}</p>
         </div>
         """

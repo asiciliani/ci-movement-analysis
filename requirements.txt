@@ -1,10 +1,15 @@
-# Core dependencies for Contact Improvisation movement analysis PoC
+# Core dependencies
 torch>=2.0.0
 torchvision>=0.15.0
-ultralytics>=8.0.0
+ultralytics>=8.3.0          # BoT-SORT with ReID (configs/botsort_reid.yaml)
 opencv-python-headless>=4.8.0
 pandas>=2.0.0
 numpy>=1.22.0
 scipy>=1.9.0
 matplotlib>=3.6.0
 seaborn>=0.12.0
+statsmodels>=0.14.0         # mixed-effects models in src/analysis/claims.py
+tabulate>=0.9.0             # markdown tables in analyze_claims.py
+pytest>=7.0
+# Optional: LLM video interpreter (llm_video_interpreter.py)
+google-genai

@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "count": 4,
+    "db_response_time_ms": 40,
+    "page": 1,
+    "per_page": 1,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (FlickrCI3D: A Dataset for 3D Human Pose Estimation in Close Interaction)",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "FlickrCI3D: A Dataset for 3D Human Pose Estimation in Close Interaction",
+            "operator": "has"
+          }
+        ]
+      },
+      "url": "/works?filter=fulltext.search:FlickrCI3D: A Dataset for 3D Human Pose Estimation in Close Interaction&per_page=1&page=1"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W4387421617",
+      "display_name": "Embracing Contact: Detecting Parent-Infant Interactions",
+      "publication_year": 2023,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5016693560",
+            "display_name": "Metehan Doyran",
+            "orcid": "https://orcid.org/0000-0002-9016-955X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-9016-955X"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I193662353",
+              "display_name": "Utrecht University",
+              "ror": "https://ror.org/04pp8hn57",
+              "country_code": "NL",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I193662353"
+              ]
+            }
+          ],
+          "countries": [
+            "NL"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Metehan Doyran",
+          "raw_affiliation_strings": [
+            "Utrecht University, Netherlands"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-9016-955X",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Utrecht University, Netherlands",
+              "institution_ids": [
+                "https://openalex.org/I193662353"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5087762753",
+            "display_name": "Ronald W. Poppe",
+            "orcid": "https://orcid.org/0000-0002-0843-7878",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-0843-7878"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I193662353",
+              "display_name": "Utrecht University",
+              "ror": "https://ror.org/04pp8hn57",
+              "country_code": "NL",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I193662353"
+              ]
+            }
+          ],
+          "countries": [
+            "NL"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Ronald Poppe",
+          "raw_affiliation_strings": [
+            "Utrecht University, Netherlands"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-0843-7878",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Utrecht University, Netherlands",
+              "institution_ids": [
+                "https://openalex.org/I193662353"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5105769246",
+            "display_name": "Albert Ali Salah",
+            "orcid": "https://orcid.org/0000-0001-6342-428X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-6342-428X"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I193662353",
+              "display_name": "Utrecht University",
+              "ror": "https://ror.org/04pp8hn57",
+              "country_code": "NL",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I193662353"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4405392",
+              "display_name": "Bo\u011fazi\u00e7i University",
+              "ror": "https://ror.org/03z9tma90",
+              "country_code": "TR",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I4405392"
+              ]
+            }
+          ],
+          "countries": [
+            "NL",
+            "TR"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Albert Ali Salah",
+          "raw_affiliation_strings": [
+            "Utrecht University, Netherlands and Computer Engineering, Bogazici University, Turkey"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-6342-428X",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Utrecht University, Netherlands and Computer Engineering, Bogazici University, Turkey",
+              "institution_ids": [
+                "https://openalex.org/I193662353",
+                "https://openalex.org/I4405392"
+              ]
+            }
+          ]
+        }
+      ],
+      "cited_by_count": 7
+    }
+  ],
+  "group_by": []
+}

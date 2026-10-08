@@ -91,16 +91,21 @@ class PoseDetection:
 
 class PoseDetector:
     """Wrapper around YOLOv8-pose with optional tracker."""
-    def __init__(self, model_name: str = "yolov8n-pose.pt", conf_thresh: float = 0.25):
+    DEFAULT_TRACKER = str(Path(__file__).resolve().parents[2] / "configs" / "botsort_reid.yaml")
+
+    def __init__(self, model_name: str = "yolov8n-pose.pt", conf_thresh: float = 0.25, tracker_config: Optional[str] = None):
         from ultralytics import YOLO
         self.model = YOLO(model_name)
         self.conf_thresh = conf_thresh
+        # BoT-SORT with ReID by default (see configs/botsort_reid.yaml). Pass "bytetrack.yaml"
+        # or "botsort.yaml" to use the Ultralytics built-ins.
+        self.tracker_config = tracker_config or self.DEFAULT_TRACKER
 
     def detect_frame(
         self,
         frame: np.ndarray,
         track: bool = True,
-        tracker_config: str = "bytetrack.yaml"
+        tracker_config: Optional[str] = None
     ) -> List[PoseDetection]:
         """
         Runs pose estimation on a single BGR image.
@@ -110,7 +115,7 @@ class PoseDetector:
             results = self.model.track(
                 frame,
                 persist=True,
-                tracker=tracker_config,
+                tracker=tracker_config or self.tracker_config,
                 conf=self.conf_thresh,
                 verbose=False
             )

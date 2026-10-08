@@ -1,276 +1,319 @@
 """
-Kinematics and Feature Extraction for Contact Improvisation movement analysis.
-Computes positions, velocities, inter-dancer distances, directional coordination,
-and contact proxies from tracked dancer keypoints.
-"""
+Kinematics for Contact Improvisation duets.
 
-from typing import Optional, Dict, Any, Tuple, List
+Design rules (all of them came out of the Oct-2026 audit):
+1. Nothing is differentiated across a tracking gap. Derivatives are computed on contiguous
+   runs of *detected* frames only; gaps of at most `max_fill` frames are filled linearly and
+   flagged; the half-window at every run edge is discarded.
+2. Every quantity is reported in pixels (for plotting / backward compatibility) AND in
+   calibrated units: metres if `px_per_meter` is known, otherwise "body lengths" (bl),
+   i.e. the dancer's median trunk length. Columns in calibrated units end in `_u`.
+3. The estimator noise floor is reported next to the data: keypoint jitter is estimated
+   from the residual of the smoothing filter and propagated through the derivative filter.
+4. Raw jerk magnitude is kept only as a diagnostic. Smoothness claims should use SPARC/LDLJ
+   on windows (see smoothness.py) which are dimensionless.
+"""
+from __future__ import annotations
+
+from typing import Dict, Any, Optional, Tuple, List
 import numpy as np
 import pandas as pd
-from scipy.signal import savgol_filter
-from src.pose.pose_detector import KEYPOINT_INDEX
+from scipy.signal import savgol_filter, savgol_coeffs
+
+SG_WINDOW = 11
+SG_POLY = 3
 
 
-def interpolate_trajectories(df: pd.DataFrame, max_gap: int = 15) -> pd.DataFrame:
-    """
-    Interpolates missing (NaN) values in coordinate columns using linear interpolation.
-    Gaps larger than max_gap remain NaN to prevent false interpolation over long absences.
-    """
-    df_clean = df.copy()
-    coord_cols = [c for c in df.columns if any(k in c for k in ["_x", "_y", "dist", "speed"])]
-    for col in coord_cols:
-        df_clean[col] = df_clean[col].interpolate(method="linear", limit=max_gap, limit_direction="both")
-    return df_clean
-
-
-def filter_teleport_jumps(pos_x: np.ndarray, pos_y: np.ndarray, max_jump: float = 120.0) -> Tuple[np.ndarray, np.ndarray]:
-    """Replaces single-frame teleport jumps (tracker glitches) with NaNs."""
-    px = pos_x.copy()
-    py = pos_y.copy()
-    for i in range(1, len(px)):
-        if not (np.isnan(px[i]) or np.isnan(px[i-1]) or np.isnan(py[i]) or np.isnan(py[i-1])):
-            dist = np.sqrt((px[i] - px[i-1])**2 + (py[i] - py[i-1])**2)
-            if dist > max_jump:
-                px[i] = np.nan
-                py[i] = np.nan
-    return px, py
-
-
-def compute_smoothed_kinematics(
-    pos_x: np.ndarray,
-    pos_y: np.ndarray,
-    fps: float,
-    window_length: int = 11,
-    polyorder: int = 3,
-    max_physical_speed: float = 2000.0
-) -> Dict[str, np.ndarray]:
-    """
-    Computes smoothed velocity, acceleration, jerk, and kinetic energy proxy
-    using Savitzky-Golay differentiation.
-    """
-    dt = 1.0 / fps
-    n = len(pos_x)
-    
-    # Initialize arrays with NaNs
-    res = {k: np.full(n, np.nan) for k in ["vx", "vy", "speed", "ax", "ay", "accel", "jx", "jy", "jerk", "kinetic_energy"]}
-
-    clean_x, clean_y = filter_teleport_jumps(pos_x, pos_y, max_jump=120.0)
-
-    # Interpolate short teleport gaps
-    x_series = pd.Series(clean_x).interpolate(limit=5)
-    y_series = pd.Series(clean_y).interpolate(limit=5)
-    cx = x_series.to_numpy()
-    cy = y_series.to_numpy()
-
-    valid_mask = ~(np.isnan(cx) | np.isnan(cy))
-    if np.sum(valid_mask) < 4:
-        return res
-
-    if np.all(valid_mask) and n >= window_length:
-        wl = window_length if window_length % 2 == 1 else window_length + 1
-        wl = min(wl, n if n % 2 == 1 else n - 1)
-        if wl > polyorder:
-            # 1st Derivative: Velocity
-            res["vx"] = savgol_filter(cx, window_length=wl, polyorder=polyorder, deriv=1, delta=dt)
-            res["vy"] = savgol_filter(cy, window_length=wl, polyorder=polyorder, deriv=1, delta=dt)
-            # 2nd Derivative: Acceleration
-            res["ax"] = savgol_filter(cx, window_length=wl, polyorder=polyorder, deriv=2, delta=dt)
-            res["ay"] = savgol_filter(cy, window_length=wl, polyorder=polyorder, deriv=2, delta=dt)
-            # 3rd Derivative: Jerk
-            res["jx"] = savgol_filter(cx, window_length=wl, polyorder=polyorder, deriv=3, delta=dt)
-            res["jy"] = savgol_filter(cy, window_length=wl, polyorder=polyorder, deriv=3, delta=dt)
+# ----------------------------------------------------------------------------- gaps & runs
+def fill_small_gaps(x: np.ndarray, max_fill: int) -> Tuple[np.ndarray, np.ndarray]:
+    """Linearly fill NaN gaps of length <= max_fill that are bounded by valid samples.
+    Returns (filled, filled_mask)."""
+    x = np.asarray(x, dtype=float).copy()
+    filled = np.zeros(len(x), bool)
+    if max_fill <= 0:
+        return x, filled
+    nan = ~np.isfinite(x)
+    i = 0
+    n = len(x)
+    while i < n:
+        if nan[i]:
+            j = i
+            while j < n and nan[j]:
+                j += 1
+            L = j - i
+            if 0 < i and j < n and L <= max_fill:
+                x[i:j] = np.linspace(x[i - 1], x[j], L + 2)[1:-1]
+                filled[i:j] = True
+            i = j
         else:
-            res["vx"] = np.gradient(cx, dt)
-            res["vy"] = np.gradient(cy, dt)
+            i += 1
+    return x, filled
+
+
+def valid_runs(mask: np.ndarray) -> List[Tuple[int, int]]:
+    """[start, end) index pairs of contiguous True values."""
+    runs, n, i = [], len(mask), 0
+    while i < n:
+        if mask[i]:
+            j = i
+            while j < n and mask[j]:
+                j += 1
+            runs.append((i, j))
+            i = j
+        else:
+            i += 1
+    return runs
+
+
+def remove_teleports(x: np.ndarray, y: np.ndarray, max_jump_px: float) -> Tuple[np.ndarray, np.ndarray, int]:
+    """NaN-out the destination of any single-frame jump larger than max_jump_px (tracker glitch / id swap)."""
+    x, y = x.copy(), y.copy()
+    d = np.hypot(np.diff(x), np.diff(y))
+    bad = np.where(np.isfinite(d) & (d > max_jump_px))[0] + 1
+    x[bad] = np.nan
+    y[bad] = np.nan
+    return x, y, int(len(bad))
+
+
+# ----------------------------------------------------------------------------- camera compensation
+def compensate_camera(pos: np.ndarray, camera_M: np.ndarray) -> Tuple[np.ndarray, Dict[str, float]]:
+    """
+    Remove camera ego-motion from a (N,2) px trajectory. camera_M[t] maps frame t-1 coordinates
+    to frame t coordinates (similarity transform). The dancer's own displacement in frame-t
+    coordinates is p_t - M_t(p_{t-1}); summing these gives a trajectory in a virtual static frame
+    (absolute offset is arbitrary; derivatives are unaffected). Frames whose transform is missing
+    or whose position is missing become gaps. Zoom is compensated per step but changes the px/bl
+    scale over time; the per-step scale factor is returned for screening.
+    """
+    n = len(pos)
+    q = np.full((n, 2), np.nan)
+    valid_M = np.isfinite(camera_M).all(axis=(1, 2))
+    scales = np.full(n, np.nan)
+    acc = None
+    for t in range(n):
+        p_t = pos[t]
+        if not np.isfinite(p_t).all():
+            acc = None
+            continue
+        if t == 0 or acc is None or not np.isfinite(pos[t - 1]).all():
+            acc = p_t.copy(); q[t] = acc; continue
+        if not valid_M[t]:
+            acc = None
+            continue
+        M = camera_M[t]
+        moved_prev = M[:, :2] @ pos[t - 1] + M[:, 2]
+        acc = acc + (p_t - moved_prev)
+        q[t] = acc
+        scales[t] = float(np.sqrt(abs(np.linalg.det(M[:, :2]))))
+    info = {"compensated_fraction": float(np.isfinite(q).all(axis=1).sum() / max(1, np.isfinite(pos).all(axis=1).sum())),
+            "zoom_p95_abs": float(np.nanpercentile(np.abs(scales - 1), 95)) if np.isfinite(scales).any() else float("nan")}
+    return q, info
+
+
+# ----------------------------------------------------------------------------- derivatives
+def differentiate_runs(x: np.ndarray, y: np.ndarray, fps: float, window: int = SG_WINDOW, poly: int = SG_POLY,
+                       max_fill: int = 2) -> Dict[str, np.ndarray]:
+    """Savitzky-Golay derivatives on contiguous detected runs. Returns dict with
+    x_s, y_s (smoothed), vx, vy, ax, ay, jx, jy, filled (bool), valid_deriv (bool), residual (px)."""
+    n = len(x)
+    dt = 1.0 / fps
+    xf, fx = fill_small_gaps(x, max_fill)
+    yf, fy = fill_small_gaps(y, max_fill)
+    filled = fx | fy
+    valid = np.isfinite(xf) & np.isfinite(yf)
+    out = {k: np.full(n, np.nan) for k in ("x_s", "y_s", "vx", "vy", "ax", "ay", "jx", "jy", "residual")}
+    half = window // 2
+    for s, e in valid_runs(valid):
+        if e - s < window:
+            continue
+        seg_x, seg_y = xf[s:e], yf[s:e]
+        for name, d in (("x_s", 0), ("vx", 1), ("ax", 2), ("jx", 3)):
+            out[name][s:e] = savgol_filter(seg_x, window, poly, deriv=d, delta=dt, mode="interp")
+        for name, d in (("y_s", 0), ("vy", 1), ("ay", 2), ("jy", 3)):
+            out[name][s:e] = savgol_filter(seg_y, window, poly, deriv=d, delta=dt, mode="interp")
+        out["residual"][s:e] = np.hypot(seg_x - out["x_s"][s:e], seg_y - out["y_s"][s:e])
+        # discard the poorly-conditioned edges of every run
+        for name in ("vx", "vy", "ax", "ay", "jx", "jy"):
+            out[name][s:s + half] = np.nan
+            out[name][e - half:e] = np.nan
+    out["filled"] = filled
+    out["valid_deriv"] = np.isfinite(out["vx"]) & np.isfinite(out["jx"])
+    return out
+
+
+def estimate_jitter_sigma(residual: np.ndarray) -> float:
+    """Per-axis keypoint jitter (px) from the smoothing residual: residual is the 2-D magnitude,
+    so sigma_axis ~ median(|r|) / 1.1774 for a Rayleigh distribution."""
+    r = residual[np.isfinite(residual)]
+    if len(r) < 50:
+        return float("nan")
+    return float(np.median(r) / 1.1774)
+
+
+def jerk_noise_floor(sigma_px: float, fps: float, window: int = SG_WINDOW, poly: int = SG_POLY) -> float:
+    """Expected jerk *magnitude* produced by white keypoint jitter of std sigma_px per axis,
+    through the same SG third-derivative filter. Mean of a Rayleigh with that sigma."""
+    c = savgol_coeffs(window, poly, deriv=3, delta=1.0 / fps)
+    s_axis = float(np.linalg.norm(c)) * sigma_px
+    return float(s_axis * np.sqrt(np.pi / 2))
+
+
+# ----------------------------------------------------------------------------- per-dancer kinematics
+def dancer_kinematics(pos: np.ndarray, fps: float, scale_px: float, max_jump_bl: float = 1.0,
+                      max_speed_u: float = 15.0, max_fill: int = 2) -> Dict[str, Any]:
+    """pos: (N,2) px positions with NaN where not detected. scale_px: px per unit (bl or m)."""
+    x, y = pos[:, 0].astype(float), pos[:, 1].astype(float)
+    if np.isfinite(scale_px) and scale_px > 0:
+        x, y, n_tele = remove_teleports(x, y, max_jump_bl * scale_px)
     else:
-        res["vx"] = (x_series.diff() / dt).to_numpy()
-        res["vy"] = (y_series.diff() / dt).to_numpy()
+        n_tele = 0
+    d = differentiate_runs(x, y, fps, max_fill=max_fill)
+    speed = np.hypot(d["vx"], d["vy"])
+    accel = np.hypot(d["ax"], d["ay"])
+    jerk = np.hypot(d["jx"], d["jy"])
+    # implausible speeds -> drop that frame's derivatives (never clip: clipping fabricates values)
+    if np.isfinite(scale_px) and scale_px > 0:
+        bad = speed > max_speed_u * scale_px
+        for arr in (speed, accel, jerk, d["vx"], d["vy"]):
+            arr[bad] = np.nan
+    else:
+        bad = np.zeros(len(x), bool)
+    sigma = estimate_jitter_sigma(d["residual"])
+    return {
+        "vx": d["vx"], "vy": d["vy"], "speed": speed, "accel": accel, "jerk": jerk,
+        "kinetic_energy": speed ** 2,  # mass-less proxy, px^2/s^2 ; use *_u version for comparisons
+        "filled": d["filled"], "valid_deriv": d["valid_deriv"] & ~bad,
+        "jitter_sigma_px": sigma, "n_teleports": n_tele, "n_implausible_speed": int(bad.sum()),
+        "jerk_noise_floor_px": jerk_noise_floor(sigma, fps) if np.isfinite(sigma) else float("nan"),
+    }
 
-    raw_speed = np.sqrt(res["vx"]**2 + res["vy"]**2)
 
-    # Clip unphysical derivative spikes caused by detector flicker
-    res["speed"] = np.clip(raw_speed, 0.0, max_physical_speed)
-    clip_mask = raw_speed > max_physical_speed
-    res["vx"][clip_mask] *= (max_physical_speed / (raw_speed[clip_mask] + 1e-6))
-    res["vy"][clip_mask] *= (max_physical_speed / (raw_speed[clip_mask] + 1e-6))
-    
-    # Magnitudes
-    res["accel"] = np.sqrt(res["ax"]**2 + res["ay"]**2)
-    res["jerk"] = np.sqrt(res["jx"]**2 + res["jy"]**2)
-    
-    # Kinetic Energy Proxy (proportional to v^2)
-    res["kinetic_energy"] = res["speed"]**2
-
-    return res
-
-
-def compute_directional_similarity(
-    vx_A: np.ndarray,
-    vy_A: np.ndarray,
-    vx_B: np.ndarray,
-    vy_B: np.ndarray,
-    speed_threshold: float = 2.0
-) -> np.ndarray:
-    """
-    Computes cosine similarity between velocity vectors of Dancer A and Dancer B:
-    cos_sim = (v_A . v_B) / (||v_A|| * ||v_B||)
-    Returns values in [-1, 1]. NaNs where either speed is below threshold.
-    """
+def compute_directional_similarity(vx_A, vy_A, vx_B, vy_B, speed_threshold: float = 0.0) -> np.ndarray:
     dot = vx_A * vx_B + vy_A * vy_B
-    norm_A = np.sqrt(vx_A**2 + vy_A**2)
-    norm_B = np.sqrt(vx_B**2 + vy_B**2)
-    denom = norm_A * norm_B
-
-    cos_sim = np.full_like(dot, np.nan)
-    valid = (denom > 1e-6) & (norm_A >= speed_threshold) & (norm_B >= speed_threshold)
-    cos_sim[valid] = dot[valid] / denom[valid]
-    return np.clip(cos_sim, -1.0, 1.0)
+    nA, nB = np.hypot(vx_A, vy_A), np.hypot(vx_B, vy_B)
+    denom = nA * nB
+    cos = np.full_like(dot, np.nan, dtype=float)
+    ok = np.isfinite(denom) & (denom > 1e-9) & (nA >= speed_threshold) & (nB >= speed_threshold)
+    cos[ok] = dot[ok] / denom[ok]
+    return np.clip(cos, -1.0, 1.0)
 
 
-def compute_keypoint_distance(
-    kpts_A: np.ndarray,
-    kpts_B: np.ndarray,
-    name_A: str,
-    name_B: str
-) -> float:
-    """Computes Euclidean distance between keypoint of A and keypoint of B."""
-    idx_A = KEYPOINT_INDEX[name_A]
-    idx_B = KEYPOINT_INDEX[name_B]
-    p_A = kpts_A[idx_A, :2]
-    p_B = kpts_B[idx_B, :2]
-    conf_A = kpts_A[idx_A, 2]
-    conf_B = kpts_B[idx_B, 2]
-    if conf_A < 0.25 or conf_B < 0.25:
-        return np.nan
-    return float(np.linalg.norm(p_A - p_B))
+# ----------------------------------------------------------------------------- frame table
+def build_frame_table(positions: Dict[str, np.ndarray], present: np.ndarray, fps: float, width: int, height: int,
+                      scale_A: float, scale_B: float, unit: str,
+                      contact_min_dist: Optional[np.ndarray] = None, hand_torso: Optional[np.ndarray] = None,
+                      camera_motion: Optional[np.ndarray] = None, extra: Optional[Dict[str, np.ndarray]] = None,
+                      contact_thresh_u: float = 0.35, camera_M: Optional[np.ndarray] = None) -> Tuple[pd.DataFrame, Dict[str, Any]]:
+    """positions: {'torso_A': (N,2), 'pelvis_A', 'body_A', 'torso_B', ...} in px, NaN when absent.
+    If camera_M is given, kinematics are computed on camera-compensated trajectories (positions and
+    inter-dancer distances stay in raw frame coordinates)."""
+    n = len(present)
+    pair_scale = np.nanmean([scale_A, scale_B])
+    df = pd.DataFrame({"frame": np.arange(n), "time_sec": np.arange(n) / fps,
+                       "present_A": present[:, 0].astype(bool), "present_B": present[:, 1].astype(bool)})
+    for key, arr in positions.items():
+        df[f"{key}_x"], df[f"{key}_y"] = arr[:, 0], arr[:, 1]
+    for part in ("pelvis", "torso", "body"):
+        d = np.linalg.norm(positions[f"{part}_A"] - positions[f"{part}_B"], axis=1)
+        df[f"dist_{part}"] = d
+        df[f"dist_{part}_u"] = d / pair_scale
+    if contact_min_dist is not None:
+        df["contact_proxy_min_dist"] = contact_min_dist
+        df["contact_proxy_min_dist_u"] = contact_min_dist / pair_scale
+        raw = pd.Series(df["contact_proxy_min_dist_u"] < contact_thresh_u, dtype=float)
+        raw[~np.isfinite(df["contact_proxy_min_dist_u"])] = np.nan
+        df["contact_state"] = raw.rolling(5, center=True, min_periods=3).median()
+    if hand_torso is not None:
+        df["contact_proxy_hand_torso"] = hand_torso
+        df["contact_proxy_hand_torso_u"] = hand_torso / pair_scale
+    if camera_motion is not None:
+        df["camera_motion_px"] = camera_motion
 
-
-def compute_min_keypoint_distance(
-    kpts_A: np.ndarray,
-    kpts_B: np.ndarray,
-    conf_thresh: float = 0.3
-) -> float:
-    """
-    Computes minimum Euclidean distance between all pairs of confident keypoints
-    between dancer A and dancer B (contact proxy).
-    """
-    mask_A = kpts_A[:, 2] >= conf_thresh
-    mask_B = kpts_B[:, 2] >= conf_thresh
-    if np.sum(mask_A) == 0 or np.sum(mask_B) == 0:
-        return np.nan
-
-    pts_A = kpts_A[mask_A, :2]
-    pts_B = kpts_B[mask_B, :2]
-    # Compute pairwise distance matrix
-    dists = np.linalg.norm(pts_A[:, None, :] - pts_B[None, :, :], axis=2)
-    return float(np.min(dists))
-
-
-def extract_features_timeseries(
-    records_A: List[Dict[str, Any]],
-    records_B: List[Dict[str, Any]],
-    fps: float,
-    frame_width: int,
-    frame_height: int
-) -> pd.DataFrame:
-    """
-    Aggregates per-frame records for Dancer A and Dancer B into a consolidated
-    feature DataFrame with all interpersonal metrics.
-    """
-    n_frames = max(len(records_A), len(records_B))
-    rows = []
-
-    for i in range(n_frames):
-        rec_A = records_A[i] if i < len(records_A) else {}
-        rec_B = records_B[i] if i < len(records_B) else {}
-
-        t = i / fps
-
-        # Pelvis positions
-        pelvis_A = rec_A.get("pelvis_pos", np.array([np.nan, np.nan]))
-        pelvis_B = rec_B.get("pelvis_pos", np.array([np.nan, np.nan]))
-
-        # Torso positions
-        torso_A = rec_A.get("torso_pos", np.array([np.nan, np.nan]))
-        torso_B = rec_B.get("torso_pos", np.array([np.nan, np.nan]))
-
-        # Body centers
-        body_A = rec_A.get("body_pos", np.array([np.nan, np.nan]))
-        body_B = rec_B.get("body_pos", np.array([np.nan, np.nan]))
-
-        # Keypoints
-        kpts_A = rec_A.get("keypoints", np.zeros((17, 3)))
-        kpts_B = rec_B.get("keypoints", np.zeros((17, 3)))
-
-        # Inter-dancer distances
-        dist_pelvis = np.linalg.norm(pelvis_A - pelvis_B) if not (np.isnan(pelvis_A).any() or np.isnan(pelvis_B).any()) else np.nan
-        dist_torso = np.linalg.norm(torso_A - torso_B) if not (np.isnan(torso_A).any() or np.isnan(torso_B).any()) else np.nan
-        dist_body = np.linalg.norm(body_A - body_B) if not (np.isnan(body_A).any() or np.isnan(body_B).any()) else np.nan
-
-        # Contact proxies
-        min_kpt_dist = compute_min_keypoint_distance(kpts_A, kpts_B)
-
-        # Specific landmark proximities
-        wrist_torso_candidates = [
-            compute_keypoint_distance(kpts_A, kpts_B, "left_wrist", "left_hip"),
-            compute_keypoint_distance(kpts_A, kpts_B, "right_wrist", "right_hip"),
-            compute_keypoint_distance(kpts_B, kpts_A, "left_wrist", "left_hip"),
-            compute_keypoint_distance(kpts_B, kpts_A, "right_wrist", "right_hip"),
-        ]
-        valid_wt = [d for d in wrist_torso_candidates if not np.isnan(d)]
-        d_wrists_torso = min(valid_wt) if valid_wt else np.nan
-
-        rows.append({
-            "frame": i,
-            "time_sec": t,
-            "present_A": rec_A.get("present", False),
-            "present_B": rec_B.get("present", False),
-            "pelvis_A_x": pelvis_A[0],
-            "pelvis_A_y": pelvis_A[1],
-            "pelvis_B_x": pelvis_B[0],
-            "pelvis_B_y": pelvis_B[1],
-            "torso_A_x": torso_A[0],
-            "torso_A_y": torso_A[1],
-            "torso_B_x": torso_B[0],
-            "torso_B_y": torso_B[1],
-            "body_A_x": body_A[0],
-            "body_A_y": body_A[1],
-            "body_B_x": body_B[0],
-            "body_B_y": body_B[1],
-            "dist_pelvis": dist_pelvis,
-            "dist_torso": dist_torso,
-            "dist_body": dist_body,
-            "contact_proxy_min_dist": min_kpt_dist,
-            "contact_proxy_hand_torso": d_wrists_torso,
-        })
-
-    df = pd.DataFrame(rows)
-
-    # Interpolate short occlusions for smoother kinematics
-    df = interpolate_trajectories(df, max_gap=15)
-
-    # Compute smoothed kinematics (velocity, acceleration, jerk, energy)
-    for part in ["torso", "pelvis"]:
-        kin_A = compute_smoothed_kinematics(
-            df[f"{part}_A_x"].to_numpy(), df[f"{part}_A_y"].to_numpy(), fps
-        )
-        kin_B = compute_smoothed_kinematics(
-            df[f"{part}_B_x"].to_numpy(), df[f"{part}_B_y"].to_numpy(), fps
-        )
-
-        for metric in ["vx", "vy", "speed", "accel", "jerk", "kinetic_energy"]:
-            df[f"{part}_A_{metric}"] = kin_A[metric]
-            df[f"{part}_B_{metric}"] = kin_B[metric]
-
-        # Directional cosine similarity
-        df[f"dir_sim_{part}"] = compute_directional_similarity(
-            kin_A["vx"], kin_A["vy"], kin_B["vx"], kin_B["vy"]
-        )
-
-    # Normalized distances (relative to frame diagonal for resolution invariance)
-    diag = np.sqrt(frame_width**2 + frame_height**2)
+    info: Dict[str, Any] = {"unit": unit, "scale_A_px": scale_A, "scale_B_px": scale_B, "fps": fps, "width": width, "height": height,
+                            "n_frames": n, "detected_fraction_A": float(present[:, 0].mean()), "detected_fraction_B": float(present[:, 1].mean()),
+                            "both_detected_fraction": float((present[:, 0] & present[:, 1]).mean())}
+    kin_pos = dict(positions)
+    if camera_M is not None:
+        comp_info = []
+        for key in ("torso_A", "torso_B", "pelvis_A", "pelvis_B"):
+            kin_pos[key], ci = compensate_camera(positions[key], camera_M)
+            comp_info.append(ci)
+        info["camera_compensated"] = True
+        info["camera_compensated_fraction"] = float(np.mean([c["compensated_fraction"] for c in comp_info]))
+        info["camera_zoom_p95_abs"] = float(np.nanmax([c["zoom_p95_abs"] for c in comp_info]))
+    else:
+        info["camera_compensated"] = False
+    for part in ("torso", "pelvis"):
+        kin = {}
+        for lab, sc in (("A", scale_A), ("B", scale_B)):
+            k = dancer_kinematics(kin_pos[f"{part}_{lab}"], fps, sc)
+            kin[lab] = k
+            for m in ("vx", "vy", "speed", "accel", "jerk", "kinetic_energy"):
+                df[f"{part}_{lab}_{m}"] = k[m]
+            df[f"{part}_{lab}_speed_u"] = k["speed"] / sc
+            df[f"{part}_{lab}_accel_u"] = k["accel"] / sc
+            df[f"{part}_{lab}_jerk_u"] = k["jerk"] / sc
+            df[f"{part}_{lab}_ke_u"] = (k["speed"] / sc) ** 2
+            df[f"{part}_{lab}_valid_deriv"] = k["valid_deriv"]
+            df[f"filled_{lab}"] = k["filled"] if part == "torso" else df.get(f"filled_{lab}", k["filled"])
+            info[f"{part}_{lab}_jitter_sigma_px"] = k["jitter_sigma_px"]
+            info[f"{part}_{lab}_jerk_noise_floor_px"] = k["jerk_noise_floor_px"]
+            info[f"{part}_{lab}_jerk_noise_floor_u"] = k["jerk_noise_floor_px"] / sc if np.isfinite(sc) else float("nan")
+            info[f"{part}_{lab}_median_jerk_u"] = float(np.nanmedian(df[f"{part}_{lab}_jerk_u"])) if np.isfinite(df[f"{part}_{lab}_jerk_u"]).any() else float("nan")
+            info[f"{part}_{lab}_teleports_removed"] = k["n_teleports"]
+            info[f"{part}_{lab}_implausible_speed_frames"] = k["n_implausible_speed"]
+        df[f"dir_sim_{part}"] = compute_directional_similarity(kin["A"]["vx"], kin["A"]["vy"], kin["B"]["vx"], kin["B"]["vy"])
+    diag = float(np.hypot(width, height))
     df["dist_pelvis_norm"] = df["dist_pelvis"] / diag
     df["dist_torso_norm"] = df["dist_torso"] / diag
-    df["contact_proxy_min_dist_norm"] = df["contact_proxy_min_dist"] / diag
+    if "contact_proxy_min_dist" in df:
+        df["contact_proxy_min_dist_norm"] = df["contact_proxy_min_dist"] / diag
+    if extra:
+        for k, v in extra.items():
+            df[k] = v
+    df["unit_scale_A_px"] = scale_A
+    df["unit_scale_B_px"] = scale_B
+    return df, info
 
-    return df
+
+# ----------------------------------------------------------------------------- windowed table
+def build_window_table(df: pd.DataFrame, fps: float, window_s: float = 4.0, step_s: float = 1.0, part: str = "torso") -> pd.DataFrame:
+    """Dimensionless smoothness per window, computed only on windows with complete, uninterrupted derivatives."""
+    from src.features.smoothness import sparc, ldlj, ke_transfer_r
+    W = int(round(window_s * fps)); S = max(1, int(round(step_s * fps)))
+    rows = []
+    n = len(df)
+    for s in range(0, n - W + 1, S):
+        e = s + W
+        seg = df.iloc[s:e]
+        row = {"t_start": seg.time_sec.iloc[0], "t_center": float(seg.time_sec.iloc[0] + window_s / 2), "t_end": seg.time_sec.iloc[-1],
+               "n_frames": W}
+        complete = {}
+        for lab in "AB":
+            ok = seg[f"{part}_{lab}_valid_deriv"].to_numpy().astype(bool)
+            frac = float(ok.mean()); complete[lab] = frac == 1.0
+            row[f"valid_fraction_{lab}"] = frac
+            sp = seg[f"{part}_{lab}_speed_u"].to_numpy()
+            row[f"mean_speed_u_{lab}"] = float(np.nanmean(sp)) if np.isfinite(sp).any() else np.nan
+            row[f"median_jerk_u_{lab}"] = float(np.nanmedian(seg[f"{part}_{lab}_jerk_u"])) if np.isfinite(seg[f"{part}_{lab}_jerk_u"]).any() else np.nan
+            if complete[lab]:
+                vel = seg[[f"{part}_{lab}_vx", f"{part}_{lab}_vy"]].to_numpy() / seg[f"unit_scale_{lab}_px"].iloc[0]
+                row[f"sparc_{lab}"] = sparc(sp, fps)
+                row[f"ldlj_{lab}"] = ldlj(vel, fps)
+            else:
+                row[f"sparc_{lab}"] = np.nan; row[f"ldlj_{lab}"] = np.nan
+        both = seg.present_A.to_numpy() & seg.present_B.to_numpy()
+        row["both_detected_fraction"] = float(both.mean())
+        row["mean_dist_torso_u"] = float(np.nanmean(seg["dist_torso_u"])) if np.isfinite(seg["dist_torso_u"]).any() else np.nan
+        if "contact_state" in seg:
+            cs = seg["contact_state"].to_numpy()
+            row["contact_fraction"] = float(np.nanmean(cs)) if np.isfinite(cs).any() else np.nan
+        row["mean_dir_sim"] = float(np.nanmean(seg[f"dir_sim_{part}"])) if np.isfinite(seg[f"dir_sim_{part}"]).any() else np.nan
+        if complete["A"] and complete["B"]:
+            row["ke_transfer_r"] = ke_transfer_r(seg[f"{part}_A_speed_u"].to_numpy(), seg[f"{part}_B_speed_u"].to_numpy(), fps)
+        else:
+            row["ke_transfer_r"] = np.nan
+        if "camera_motion_px" in seg:
+            row["camera_motion_p95_px"] = float(np.nanpercentile(seg["camera_motion_px"], 95)) if np.isfinite(seg["camera_motion_px"]).any() else np.nan
+        rows.append(row)
+    return pd.DataFrame(rows)

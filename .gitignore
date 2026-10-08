@@ -23,18 +23,56 @@ __pycache__/
 *.avi
 *.mov
 *.mkv
-videos/*.mp4
-outputs/*.mp4
+*.webm
+*.flv
+*.wmv
+*.m4v
+videos/*
+!videos/README.md
+outputs/**/*.mp4
 
-# Temporary preview frames
+# Temporary preview frames & temp files
 outputs/preview_frames/
 outputs/user_video_previews/
+*.part
+*.ytdl
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+*.log.*
+logs/
+
+# Documents & Private artifacts (per GEMINI.md: PDFs belong in tesis_escritura)
+*.pdf
+EMAIL_DRAFTS_DIRECTORS.md
 
 # OS and IDE files
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
-*.log
-outputs/*\n!outputs/.gitkeep\nplot_echo.py
-EMAIL_DRAFTS_DIRECTORS.md
+
+# Audit (Oct 2026): raw tracks / detections / logs / big aggregates stay local; release them via Zenodo, not git
+*.zip
+*.npz
+outputs/**/*_detections.csv
+outputs/**/*_features_legacy.csv
+outputs/dataset/frames.csv
+logs/
+videos/candidates/
+data_external/
+test_cv.tex
+
+# Pair audit (Oct 2026): human registries are tracked; images of identifiable people and per-clip
+# features derived from third-party footage stay local
+!videos/curation.csv
+!videos/candidates.csv
+outputs/**/*.jpg
+outputs/**/*_features.csv
+outputs/**/*legacy*
+scripts/channels.local.txt

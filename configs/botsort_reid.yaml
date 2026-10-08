@@ -1,0 +1,15 @@
+# BoT-SORT with appearance re-identification enabled (Ultralytics >= 8.3).
+# Used by default for duet tracking: ReID helps recover identities after the
+# dancers separate from a lift / roll, which is where IoU-only trackers swap.
+tracker_type: botsort
+track_high_thresh: 0.25
+track_low_thresh: 0.1
+new_track_thresh: 0.25
+track_buffer: 60          # keep lost tracks alive for 2 s at 30 fps (CI occlusions are long)
+match_thresh: 0.8
+fuse_score: True
+gmc_method: sparseOptFlow
+proximity_thresh: 0.5
+appearance_thresh: 0.25   # permissive: dancers change pose/orientation drastically
+with_reid: True
+model: auto

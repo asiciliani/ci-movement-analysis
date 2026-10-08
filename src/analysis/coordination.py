@@ -130,6 +130,34 @@ class CrossCorrelationAnalysis:
         }
 
 
+    @staticmethod
+    def surrogate_test(signal_A: np.ndarray, signal_B: np.ndarray, fps: float, max_lag_sec: float = 2.0,
+                       n_surrogates: int = 200, min_shift_sec: float = 5.0, seed: int = 0) -> Dict[str, float]:
+        """
+        Significance of the peak |cross-correlation| against circular-shift surrogates.
+        Shifting one signal by a random offset (>= min_shift_sec) preserves each signal's
+        autocorrelation and non-stationarity but destroys the true temporal alignment, so the
+        null distribution reflects what |r| looks like for two *unrelated* dancers with these
+        spectra. Reported: observed |r|, empirical p-value, and the null 95th percentile.
+        """
+        rng = np.random.default_rng(seed)
+        valid = ~(np.isnan(signal_A) | np.isnan(signal_B))
+        a, b = signal_A[valid], signal_B[valid]
+        n = len(a)
+        if n < int(fps * 10):
+            return {"observed_abs_r": float("nan"), "p_value": float("nan"), "null_95": float("nan"), "n_surrogates": 0}
+        _, _, _, r_obs = CrossCorrelationAnalysis.compute_xcorr(a, b, fps, max_lag_sec)
+        min_shift = int(min_shift_sec * fps)
+        null = []
+        for _ in range(n_surrogates):
+            k = int(rng.integers(min_shift, n - min_shift))
+            _, _, _, r = CrossCorrelationAnalysis.compute_xcorr(a, np.roll(b, k), fps, max_lag_sec)
+            null.append(abs(r))
+        null = np.array(null)
+        p = float((np.sum(null >= abs(r_obs)) + 1) / (len(null) + 1))
+        return {"observed_abs_r": float(abs(r_obs)), "p_value": p, "null_95": float(np.percentile(null, 95)), "n_surrogates": int(len(null))}
+
+
 class PhaseAnalysis:
     """Simple rhythm / phase coordination metrics via Hilbert transform."""
 
@@ -259,8 +287,10 @@ class AnnotationManager:
                 continue
 
             # Compute cross-correlation peak in this interval
-            s_A = sub["torso_A_speed"].to_numpy()
-            s_B = sub["torso_B_speed"].to_numpy()
+            colA = "torso_A_speed_u" if "torso_A_speed_u" in sub else "torso_A_speed"
+            colB = "torso_B_speed_u" if "torso_B_speed_u" in sub else "torso_B_speed"
+            s_A = sub[colA].to_numpy()
+            s_B = sub[colB].to_numpy()
             _, _, peak_lag, peak_corr = CrossCorrelationAnalysis.compute_xcorr(s_A, s_B, fps, max_lag_sec=2.0)
 
             summary_rows.append({
@@ -272,8 +302,9 @@ class AnnotationManager:
                 "median_dist_torso": float(sub["dist_torso"].median()),
                 "mean_dist_pelvis": float(sub["dist_pelvis"].mean()),
                 "mean_contact_proxy_min": float(sub["contact_proxy_min_dist"].mean()),
-                "mean_speed_A": float(sub["torso_A_speed"].mean()),
-                "mean_speed_B": float(sub["torso_B_speed"].mean()),
+                "mean_speed_A": float(sub[colA].mean()),
+                "mean_speed_B": float(sub[colB].mean()),
+                "contact_fraction": float(sub["contact_state"].mean()) if "contact_state" in sub else float("nan"),
                 "mean_dir_similarity": float(sub["dir_sim_torso"].mean()),
                 "peak_lag_sec": peak_lag,
                 "peak_xcorr": peak_corr,

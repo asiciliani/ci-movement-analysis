@@ -1,0 +1,659 @@
+{
+  "meta": {
+    "count": 2335,
+    "db_response_time_ms": 59,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "works where full text has (stemmed \"contact improvisation\")",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "fulltext.search",
+            "value": "\"contact improvisation\"",
+            "operator": "has"
+          }
+        ]
+      },
+      "url": "/works?filter=fulltext.search:%22contact improvisation%22&per_page=5&page=1"
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W2508843646",
+      "display_name": "Sharing the dance: contact improvisation and American culture",
+      "publication_year": 1991,
+      "authorships": [],
+      "cited_by_count": 311
+    },
+    {
+      "id": "https://openalex.org/W2072827202",
+      "display_name": "A comparison of Irish set dancing and exercises for people with Parkinson\u2019s disease: A phase II feasibility study",
+      "publication_year": 2013,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5110521042",
+            "display_name": "Daniele Volpe",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210108212",
+              "display_name": "Fatebenefratelli Hospital",
+              "ror": "https://ror.org/01x9zv505",
+              "country_code": "IT",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I4210108212",
+                "https://openalex.org/I4210153126"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210151250",
+              "display_name": "Ospedale San Raffaele Arcangelo",
+              "ror": "https://ror.org/04yaz0z51",
+              "country_code": "IT",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I4210108212",
+                "https://openalex.org/I4210151250",
+                "https://openalex.org/I4210153126"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Daniele Volpe",
+          "raw_affiliation_strings": [
+            "Department of Physical Medicine & Rehabilitation, S, Raffaele Arcangelo Fatebenefratelli Hospital, Cannaregio, Venice, 3458, Italy. dott.dvolpe@libero.it",
+            "Department of Physical Medicine & Rehabilitation, S. Raffaele Arcangelo Fatebenefratelli Hospital, Cannaregio, Venice, 3458, Italy"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Physical Medicine & Rehabilitation, S, Raffaele Arcangelo Fatebenefratelli Hospital, Cannaregio, Venice, 3458, Italy. dott.dvolpe@libero.it",
+              "institution_ids": [
+                "https://openalex.org/I4210151250"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Physical Medicine & Rehabilitation, S. Raffaele Arcangelo Fatebenefratelli Hospital, Cannaregio, Venice, 3458, Italy",
+              "institution_ids": [
+                "https://openalex.org/I4210108212",
+                "https://openalex.org/I4210151250"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5028202901",
+            "display_name": "Matteo Signorini",
+            "orcid": "https://orcid.org/0000-0002-9208-4023",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-9208-4023"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210108212",
+              "display_name": "Fatebenefratelli Hospital",
+              "ror": "https://ror.org/01x9zv505",
+              "country_code": "IT",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I4210108212",
+                "https://openalex.org/I4210153126"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210151250",
+              "display_name": "Ospedale San Raffaele Arcangelo",
+              "ror": "https://ror.org/04yaz0z51",
+              "country_code": "IT",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I4210108212",
+                "https://openalex.org/I4210151250",
+                "https://openalex.org/I4210153126"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Matteo Signorini",
+          "raw_affiliation_strings": [
+            "Department of Physical Medicine & Rehabilitation, S. Raffaele Arcangelo Fatebenefratelli Hospital, Cannaregio, Venice, 3458, Italy",
+            "Fatebenefratelli Association for Research, Rome, Italy"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Physical Medicine & Rehabilitation, S. Raffaele Arcangelo Fatebenefratelli Hospital, Cannaregio, Venice, 3458, Italy",
+              "institution_ids": [
+                "https://openalex.org/I4210108212",
+                "https://openalex.org/I4210151250"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Fatebenefratelli Association for Research, Rome, Italy",
+              "institution_ids": [
+                "https://openalex.org/I4210108212"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5086955735",
+            "display_name": "Anna Marchetto",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210108212",
+              "display_name": "Fatebenefratelli Hospital",
+              "ror": "https://ror.org/01x9zv505",
+              "country_code": "IT",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I4210108212",
+                "https://openalex.org/I4210153126"
+              ]
+            }
+          ],
+          "countries": [
+            "IT"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Anna Marchetto",
+          "raw_affiliation_strings": [
+            "Fatebenefratelli Association for Research, Rome, Italy"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Fatebenefratelli Association for Research, Rome, Italy",
+              "institution_ids": [
+                "https://openalex.org/I4210108212"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5113975932",
+            "display_name": "Timothy Lynch",
+            "orcid": "https://orcid.org/0000-0002-2380-8737",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-2380-8737"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2803071314",
+              "display_name": "Mater Misericordiae University Hospital",
+              "ror": "https://ror.org/040hqpc16",
+              "country_code": "IE",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I2803071314"
+              ]
+            }
+          ],
+          "countries": [
+            "IE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Timothy Lynch",
+          "raw_affiliation_strings": [
+            "Neurological Institute, Mater Misericordiae University Hospital, Dublin, Ireland"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Neurological Institute, Mater Misericordiae University Hospital, Dublin, Ireland",
+              "institution_ids": [
+                "https://openalex.org/I2803071314"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5023934541",
+            "display_name": "Meg E. Morris",
+            "orcid": "https://orcid.org/0000-0002-0114-4175",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-0114-4175"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I196829312",
+              "display_name": "La Trobe University",
+              "ror": "https://ror.org/01rxfrp27",
+              "country_code": "AU",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I196829312"
+              ]
+            }
+          ],
+          "countries": [
+            "AU"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Meg E Morris",
+          "raw_affiliation_strings": [
+            "Department of Physiotherapy, School of Allied Health, La Trobe University, La Trobe, 3086, Australia"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Physiotherapy, School of Allied Health, La Trobe University, La Trobe, 3086, Australia",
+              "institution_ids": [
+                "https://openalex.org/I196829312"
+              ]
+            }
+          ]
+        }
+      ],
+      "cited_by_count": 267
+    },
+    {
+      "id": "https://openalex.org/W2945900074",
+      "display_name": "Transcending Boundaries: Improvisation and Disability in Dance",
+      "publication_year": 2019,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5087544956",
+            "display_name": "Sarah Whatley",
+            "orcid": "https://orcid.org/0000-0001-7455-0847",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-7455-0847"
+            ]
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": true,
+          "raw_author_name": "Sarah Whatley",
+          "raw_affiliation_strings": [],
+          "raw_orcid": "https://orcid.org/0000-0001-7455-0847",
+          "affiliations": []
+        }
+      ],
+      "cited_by_count": 265
+    },
+    {
+      "id": "https://openalex.org/W2102437512",
+      "display_name": "Applying Intelligence to the Reflexes: Embodied Skills and Habits between Dreyfus and Descartes",
+      "publication_year": 2011,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5069103684",
+            "display_name": "John David Sutton",
+            "orcid": "https://orcid.org/0000-0003-3046-9785",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-3046-9785"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I99043593",
+              "display_name": "Macquarie University",
+              "ror": "https://ror.org/01sf06y89",
+              "country_code": "AU",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I99043593"
+              ]
+            }
+          ],
+          "countries": [
+            "AU"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "John Sutton",
+          "raw_affiliation_strings": [
+            "Macquarie University, Sydney, Australia",
+            "Macquarie University, Sydney-Austr\u00e1lia"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Macquarie University, Sydney, Australia",
+              "institution_ids": [
+                "https://openalex.org/I99043593"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Macquarie University, Sydney-Austr\u00e1lia",
+              "institution_ids": [
+                "https://openalex.org/I99043593"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5009840049",
+            "display_name": "Doris J. F. McIlwain",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I99043593",
+              "display_name": "Macquarie University",
+              "ror": "https://ror.org/01sf06y89",
+              "country_code": "AU",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I99043593"
+              ]
+            }
+          ],
+          "countries": [
+            "AU"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Doris McIlwain",
+          "raw_affiliation_strings": [
+            "Macquarie University, Sydney, Australia",
+            "Macquarie University, Sydney-Austr\u00e1lia"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Macquarie University, Sydney, Australia",
+              "institution_ids": [
+                "https://openalex.org/I99043593"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Macquarie University, Sydney-Austr\u00e1lia",
+              "institution_ids": [
+                "https://openalex.org/I99043593"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5074453946",
+            "display_name": "Wayne D. Christensen",
+            "orcid": "https://orcid.org/0000-0001-7146-285X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-7146-285X"
+            ]
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Wayne Christensen",
+          "raw_affiliation_strings": [
+            "Konrad Lorenz Institute, Vienna, Austria"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Konrad Lorenz Institute, Vienna, Austria",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5050150721",
+            "display_name": "Andrew M. Geeves",
+            "orcid": "https://orcid.org/0000-0002-5201-1495",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-5201-1495"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I99043593",
+              "display_name": "Macquarie University",
+              "ror": "https://ror.org/01sf06y89",
+              "country_code": "AU",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I99043593"
+              ]
+            }
+          ],
+          "countries": [
+            "AU"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Andrew Geeves",
+          "raw_affiliation_strings": [
+            "Macquarie University, Sydney, Australia",
+            "Macquarie University, Sydney-Austr\u00e1lia"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Macquarie University, Sydney, Australia",
+              "institution_ids": [
+                "https://openalex.org/I99043593"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Macquarie University, Sydney-Austr\u00e1lia",
+              "institution_ids": [
+                "https://openalex.org/I99043593"
+              ]
+            }
+          ]
+        }
+      ],
+      "cited_by_count": 257
+    },
+    {
+      "id": "https://openalex.org/W2517333631",
+      "display_name": "The Effects of Physical Activity in Parkinson\u2019s Disease: A Review",
+      "publication_year": 2016,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5025922387",
+            "display_name": "Martine Lauz\u00e9",
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I159129438",
+              "display_name": "Universit\u00e9 du Qu\u00e9bec \u00e0 Montr\u00e9al",
+              "ror": "https://ror.org/002rjbv21",
+              "country_code": "CA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I159129438",
+                "https://openalex.org/I49663120"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210126907",
+              "display_name": "Institut Universitaire de G\u00e9riatrie de Montr\u00e9al",
+              "ror": "https://ror.org/031z68d90",
+              "country_code": "CA",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210126907"
+              ]
+            }
+          ],
+          "countries": [
+            "CA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Martine Lauz\u00e9",
+          "raw_affiliation_strings": [
+            "Centre de Recherche Institut Universitaire de G\u00e9riatrie de Montr\u00e9al, Montr\u00e9al, QC, Canada",
+            "D\u00e9partement des sciences de l\u2019activit\u00e9 physique, Universit\u00e9 du Qu\u00e9bec \u00e0 Montr\u00e9al, QC, Canada"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Centre de Recherche Institut Universitaire de G\u00e9riatrie de Montr\u00e9al, Montr\u00e9al, QC, Canada",
+              "institution_ids": [
+                "https://openalex.org/I4210126907"
+              ]
+            },
+            {
+              "raw_affiliation_string": "D\u00e9partement des sciences de l\u2019activit\u00e9 physique, Universit\u00e9 du Qu\u00e9bec \u00e0 Montr\u00e9al, QC, Canada",
+              "institution_ids": [
+                "https://openalex.org/I159129438"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5042207282",
+            "display_name": "Jean\u2010Fran\u00e7ois Daneault",
+            "orcid": "https://orcid.org/0000-0002-8530-1827",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-8530-1827"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I136199984",
+              "display_name": "Harvard University",
+              "ror": "https://ror.org/03vek6s52",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I136199984"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210126907",
+              "display_name": "Institut Universitaire de G\u00e9riatrie de Montr\u00e9al",
+              "ror": "https://ror.org/031z68d90",
+              "country_code": "CA",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210126907"
+              ]
+            }
+          ],
+          "countries": [
+            "CA",
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jean-Francois Daneault",
+          "raw_affiliation_strings": [
+            "Centre de Recherche Institut Universitaire de G\u00e9riatrie de Montr\u00e9al, Montr\u00e9al, QC, Canada",
+            "Department of Physical Medicine and Rehabilitation, Harvard Medical School, Boston, MA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Centre de Recherche Institut Universitaire de G\u00e9riatrie de Montr\u00e9al, Montr\u00e9al, QC, Canada",
+              "institution_ids": [
+                "https://openalex.org/I4210126907"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Physical Medicine and Rehabilitation, Harvard Medical School, Boston, MA, USA",
+              "institution_ids": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5009989103",
+            "display_name": "Christian Duval",
+            "orcid": "https://orcid.org/0000-0001-5906-1041",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-5906-1041"
+            ]
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I159129438",
+              "display_name": "Universit\u00e9 du Qu\u00e9bec \u00e0 Montr\u00e9al",
+              "ror": "https://ror.org/002rjbv21",
+              "country_code": "CA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I159129438",
+                "https://openalex.org/I49663120"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210126907",
+              "display_name": "Institut Universitaire de G\u00e9riatrie de Montr\u00e9al",
+              "ror": "https://ror.org/031z68d90",
+              "country_code": "CA",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210126907"
+              ]
+            }
+          ],
+          "countries": [
+            "CA"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "Christian Duval",
+          "raw_affiliation_strings": [
+            "Centre de Recherche Institut Universitaire de G\u00e9riatrie de Montr\u00e9al, Montr\u00e9al, QC, Canada",
+            "D\u00e9partement des sciences de l\u2019activit\u00e9 physique, Universit\u00e9 du Qu\u00e9bec \u00e0 Montr\u00e9al, QC, Canada"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Centre de Recherche Institut Universitaire de G\u00e9riatrie de Montr\u00e9al, Montr\u00e9al, QC, Canada",
+              "institution_ids": [
+                "https://openalex.org/I4210126907"
+              ]
+            },
+            {
+              "raw_affiliation_string": "D\u00e9partement des sciences de l\u2019activit\u00e9 physique, Universit\u00e9 du Qu\u00e9bec \u00e0 Montr\u00e9al, QC, Canada",
+              "institution_ids": [
+                "https://openalex.org/I159129438"
+              ]
+            }
+          ]
+        }
+      ],
+      "cited_by_count": 215
+    }
+  ],
+  "group_by": []
+}
