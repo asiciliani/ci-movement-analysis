@@ -76,3 +76,4 @@ outputs/**/*.jpg
 outputs/**/*_features.csv
 outputs/**/*legacy*
 scripts/channels.local.txt
+outputs/**/*_report.html
