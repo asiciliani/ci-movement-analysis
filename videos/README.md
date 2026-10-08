@@ -1,13 +1,14 @@
 # Videos Directory
 
-Place input Contact Improvisation video clips (`.mp4`) in this folder.
+Input clips (`.mp4` / `.mov`) are not tracked in git. Each clip is identified only by its
+YouTube id or an internal stem; no performer names are stored in this repository.
 
-Due to file size constraints, raw video files are not tracked in git.
+| Stem | Source | Notes |
+|---|---|---|
+| `ci_duet_sample` | public performance recording, 30 s, 720p | benchmark clip with manual phase annotations |
+| `user_ci_video` | field footage (duet in a jam, 1080x1920 vertical, 29.97 fps, 3m44s) | **handheld / panning camera** (flagged by the ego-motion screen); other dancers in the background |
+| `<youtube id>` | first 60-90 s of a public YouTube video | downloaded with `scripts/acquire_videos.sh`; see `DATASET.md` for inclusion rules |
 
-### Benchmark Video
-* `ci_duet_sample.mp4`: Sasha Dodo & Dolores Dewhurst Marks duet (30s sample, 720p).
-  Can be obtained from open Contact Improvisation performance recordings.
-
-### User Video / Field Footage
-* `user_ci_video.mp4`: Contact Improvisation duet featuring **Gastón Noguera** (man) and **Paula Zacharías** (woman).
-  Studio recording in Buenos Aires (Full HD vertical 1080x1920, 29.97 fps, 3m 44s).
+Consent and licensing: footage of identifiable people is used only for pose extraction and is
+never redistributed. Field recordings made for the thesis (Phase 2) require written informed
+consent and ethics-committee approval before they enter the pipeline.

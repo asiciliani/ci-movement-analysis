@@ -1,0 +1,36 @@
+video,content,setting,source_group,reviewed_by,notes,pair_ok,labels_checked,label_errors,pair_note
+2xNjyXrOtdA,ci_dance,duet_bystanders,2xNjyXrOtdA,assistant_visual,duet watched by seated circle,no,24.0,24.0,tracked two seated spectators; retracked onto the dancers (auto-static) but both detected in only ~1/3 of frames and the clip cuts between camera angles -> stays excluded
+65S9nuRzK4Q,ci_dance,duet_bystanders,65S9nuRzK4Q,assistant_visual,close duet in studio,no,24.0,10.0,"trio/quartet, not a duet; labels hop between 4 people"
+QdKZlryJ4HY,ci_dance,duet_bystanders,QdKZlryJ4HY,assistant_visual,duet with people resting at wall,no,24.0,12.0,edited montage of several different duets (6 cuts in 60 s)
+X-7izu2QpqA,ci_dance,jam,X-7izu2QpqA,assistant_visual,group class; tracked pair is not a fixed duet,not_reviewed,,,
+ci_duet_sample,ci_dance,jam,cellist_performance,assistant_visual,performance with several dancers and live cello,not_reviewed,,,
+public_ci_video,ci_dance,jam,cellist_performance,assistant_visual,same event as ci_duet_sample / whole,not_reviewed,,,
+whole,ci_dance,jam,cellist_performance,assistant_visual,same event as ci_duet_sample / public_ci_video,not_reviewed,,,
+dGPRMNAECKM,ci_dance,duet,dGPRMNAECKM,assistant_visual,outdoor platform duet,partial,30.0,6.0,handheld with close-ups after 34 s; repeated A/B swaps
+exploration_video,ci_dance,jam,exploration_video,assistant_visual,multi-dancer jam,not_reviewed,,,
+f1o6FJL8bxM,ci_dance,jam,f1o6FJL8bxM,assistant_visual,several dancers on floor,not_reviewed,,,
+hJQgFDsAms4,ci_dance,duet,hJQgFDsAms4,assistant_visual,stage duet,yes,28.0,1.0,dim stage; 1 swap plus ~3 uncertain in floor work
+iOEZ3i9rgYM,ci_dance,duet,iOEZ3i9rgYM,assistant_visual,outdoor duet on water platform,partial,32.0,5.0,handheld pan; A/B swap during lifts (speed magnitude largely unaffected)
+iYdwYBTa4Kk,ci_dance,jam,iYdwYBTa4Kk,assistant_visual,small group with objects; title card at start,not_reviewed,,,
+ibiza_ci,ci_dance,jam,ibiza,assistant_visual,group class of 4+,not_reviewed,,,
+ibiza_small,ci_dance,jam,ibiza,assistant_visual,same event as ibiza_ci,not_reviewed,,,
+kxztAr2tQmE,ci_dance,duet,kxztAr2tQmE,assistant_visual,empty-studio duet far from camera,yes,30.0,1.0,"static camera, empty studio; 1 swap during a wrap"
+oB8MuarHT8E,ci_dance,jam,oB8MuarHT8E,assistant_visual,jam with musicians and crowd shots,not_reviewed,,,
+swmrAJkYrlY,ci_dance,duet_bystanders,swmrAJkYrlY,assistant_visual,duet with others in background,yes,24.0,0.0,consistent A/B; long walk/talk stretches between acro
+user_ci_video,ci_dance,jam,user_field,assistant_visual,field recording of a jam; floor work,not_reviewed,,,
+user_small,ci_dance,jam,user_field,assistant_visual,same event as user_ci_video,not_reviewed,,,
+yI_UKzqbrbw,ci_dance,duet,yI_UKzqbrbw,assistant_visual,studio duet,no,24.0,10.0,A tracks a dancer's SHADOW on the wall; edited (wide shot then close-up)
+zQRF2sLK1vY,ci_dance,duet_bystanders,zQRF2sLK1vY,assistant_visual,duet with people lying on floor,partial,22.0,4.0,retracked from detections with 9 bystander ids excluded (retrack_from_detections.py); was: B on a bystander for ~1/2 of the clip; now 1 bystander capture + A/B swaps in 22 checked
+6BuVFmf4P74,videoconference,none,zoom_series,assistant_visual,talking heads; no dance,na,,,
+OkwfGM7pad8,videoconference,none,zoom_series,assistant_visual,talking heads; no dance,na,,,
+Pbtdv8JjBzc,videoconference,none,zoom_series,assistant_visual,talking heads; no dance,na,,,
+WiG1BTRJMIU,videoconference,none,zoom_series,assistant_visual,talking heads; no dance,na,,,
+WivRIl8ZBPA,videoconference,none,zoom_series,assistant_visual,talking heads; no dance,na,,,
+gVGen9nQvxg,videoconference,none,zoom_series,assistant_visual,talking heads; no dance,na,,,
+gvlGAl5a24I,videoconference,none,zoom_series,assistant_visual,talking heads; no dance,na,,,
+k5Bfof2rsNw,videoconference,none,zoom_series,assistant_visual,talking heads; no dance,na,,,
+rx7pHCBitAk,videoconference,none,zoom_series,assistant_visual,talking heads; no dance,na,,,
+xeUSDR9SutE,videoconference,none,zoom_series,assistant_visual,talking heads; no dance,na,,,
+occlusion_test,ci_dance,jam,user_field,assistant_visual,excerpt of user_ci_video (frame-hash match 100%),not_reviewed,,,
+Rc9vIJt00vs,ci_dance,duet,Rc9vIJt00vs,assistant_visual,outdoor deck duet; handheld with pans; 60 fps,partial,24,7,only two people present (no bystanders); frequent A/B swaps
+vinlwkaIW4c,ci_dance,duet,vinlwkaIW4c,assistant_visual,empty-studio duet; slow handheld pans,partial,24,8,only two people present; frequent A/B swaps (white vs black tops)
