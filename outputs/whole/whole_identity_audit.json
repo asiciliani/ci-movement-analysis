@@ -1,0 +1,276 @@
+{
+  "video": "whole.mp4",
+  "n_frames": 6663,
+  "frames_scored": 6098,
+  "appearance_separability": 0.6479922414131322,
+  "frames_where_both_look_swapped": 883,
+  "swap_like_fraction": 0.14480157428665136,
+  "swap_like_segments": [
+    {
+      "start": 134,
+      "end": 142,
+      "sec": 4.5
+    },
+    {
+      "start": 145,
+      "end": 157,
+      "sec": 4.8
+    },
+    {
+      "start": 529,
+      "end": 539,
+      "sec": 17.6
+    },
+    {
+      "start": 559,
+      "end": 566,
+      "sec": 18.6
+    },
+    {
+      "start": 679,
+      "end": 682,
+      "sec": 22.6
+    },
+    {
+      "start": 691,
+      "end": 709,
+      "sec": 23.0
+    },
+    {
+      "start": 747,
+      "end": 795,
+      "sec": 24.9
+    },
+    {
+      "start": 839,
+      "end": 859,
+      "sec": 28.0
+    },
+    {
+      "start": 864,
+      "end": 882,
+      "sec": 28.8
+    },
+    {
+      "start": 886,
+      "end": 909,
+      "sec": 29.5
+    },
+    {
+      "start": 1181,
+      "end": 1193,
+      "sec": 39.4
+    },
+    {
+      "start": 1209,
+      "end": 1215,
+      "sec": 40.3
+    },
+    {
+      "start": 1518,
+      "end": 1533,
+      "sec": 50.6
+    },
+    {
+      "start": 1584,
+      "end": 1587,
+      "sec": 52.8
+    },
+    {
+      "start": 1598,
+      "end": 1602,
+      "sec": 53.3
+    },
+    {
+      "start": 1605,
+      "end": 1614,
+      "sec": 53.5
+    },
+    {
+      "start": 1619,
+      "end": 1636,
+      "sec": 54.0
+    },
+    {
+      "start": 1724,
+      "end": 1732,
+      "sec": 57.5
+    },
+    {
+      "start": 1817,
+      "end": 1820,
+      "sec": 60.6
+    },
+    {
+      "start": 1928,
+      "end": 1973,
+      "sec": 64.3
+    },
+    {
+      "start": 1999,
+      "end": 2013,
+      "sec": 66.6
+    },
+    {
+      "start": 2017,
+      "end": 2026,
+      "sec": 67.2
+    },
+    {
+      "start": 2164,
+      "end": 2176,
+      "sec": 72.1
+    },
+    {
+      "start": 2188,
+      "end": 2203,
+      "sec": 72.9
+    },
+    {
+      "start": 2206,
+      "end": 2212,
+      "sec": 73.5
+    },
+    {
+      "start": 2316,
+      "end": 2320,
+      "sec": 77.2
+    },
+    {
+      "start": 2338,
+      "end": 2360,
+      "sec": 77.9
+    },
+    {
+      "start": 2545,
+      "end": 2560,
+      "sec": 84.8
+    },
+    {
+      "start": 2620,
+      "end": 2625,
+      "sec": 87.3
+    },
+    {
+      "start": 2630,
+      "end": 2659,
+      "sec": 87.7
+    },
+    {
+      "start": 2807,
+      "end": 2884,
+      "sec": 93.6
+    },
+    {
+      "start": 2890,
+      "end": 2943,
+      "sec": 96.3
+    },
+    {
+      "start": 2953,
+      "end": 2957,
+      "sec": 98.4
+    },
+    {
+      "start": 2965,
+      "end": 2985,
+      "sec": 98.8
+    },
+    {
+      "start": 3080,
+      "end": 3085,
+      "sec": 102.7
+    },
+    {
+      "start": 3206,
+      "end": 3225,
+      "sec": 106.9
+    },
+    {
+      "start": 3491,
+      "end": 3501,
+      "sec": 116.4
+    },
+    {
+      "start": 3504,
+      "end": 3507,
+      "sec": 116.8
+    },
+    {
+      "start": 3510,
+      "end": 3513,
+      "sec": 117.0
+    },
+    {
+      "start": 3594,
+      "end": 3611,
+      "sec": 119.8
+    },
+    {
+      "start": 3615,
+      "end": 3620,
+      "sec": 120.5
+    },
+    {
+      "start": 3963,
+      "end": 3970,
+      "sec": 132.1
+    },
+    {
+      "start": 3976,
+      "end": 3983,
+      "sec": 132.5
+    },
+    {
+      "start": 4027,
+      "end": 4060,
+      "sec": 134.2
+    },
+    {
+      "start": 4078,
+      "end": 4083,
+      "sec": 135.9
+    },
+    {
+      "start": 4097,
+      "end": 4107,
+      "sec": 136.6
+    },
+    {
+      "start": 4268,
+      "end": 4272,
+      "sec": 142.3
+    },
+    {
+      "start": 5128,
+      "end": 5140,
+      "sec": 170.9
+    },
+    {
+      "start": 5147,
+      "end": 5174,
+      "sec": 171.6
+    },
+    {
+      "start": 5389,
+      "end": 5393,
+      "sec": 179.6
+    },
+    {
+      "start": 5396,
+      "end": 5413,
+      "sec": 179.9
+    },
+    {
+      "start": 5507,
+      "end": 5540,
+      "sec": 183.6
+    },
+    {
+      "start": 6220,
+      "end": 6229,
+      "sec": 207.3
+    }
+  ],
+  "note": "separability < 0.2 means the two dancers' clothes are too similar for this check"
+}

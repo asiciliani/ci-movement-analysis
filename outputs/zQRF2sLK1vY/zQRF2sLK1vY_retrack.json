@@ -1,0 +1,29 @@
+{
+  "excluded_track_ids": [
+    3,
+    8,
+    21,
+    35,
+    36,
+    70,
+    79,
+    179,
+    182
+  ],
+  "auto_static": null,
+  "n_frames": 1800,
+  "initialized": true,
+  "detected_fraction_A": 0.7755555555555556,
+  "detected_fraction_B": 0.7227777777777777,
+  "dropouts_A": 51,
+  "dropouts_B": 78,
+  "tracker_id_switches_A": 65,
+  "tracker_id_switches_B": 59,
+  "suspected_identity_swaps": 11,
+  "frames_with_extra_people": 130,
+  "distinct_tracker_ids_A": 24,
+  "distinct_tracker_ids_B": 25,
+  "appearance_weight": 0.5,
+  "appearance_separability": 0.5341597639312463,
+  "appearance_overrides": 70
+}

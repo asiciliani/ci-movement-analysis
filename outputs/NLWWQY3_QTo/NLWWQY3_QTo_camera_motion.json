@@ -1,0 +1,10 @@
+{
+  "frames_measured": 842,
+  "threshold_px": 5.76,
+  "median_motion_px": 0.028906747658910326,
+  "p95_motion_px": 0.23261511975368498,
+  "moving_fraction": 0.0,
+  "camera_static": true,
+  "stride": 2,
+  "video": "NLWWQY3_QTo.mp4"
+}

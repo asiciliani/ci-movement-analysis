@@ -1,0 +1,10 @@
+{
+  "frames_measured": 0,
+  "threshold_px": 1.1520000000000001,
+  "median_motion_px": null,
+  "p95_motion_px": null,
+  "moving_fraction": 0.0,
+  "camera_static": false,
+  "stride": 2,
+  "video": "uS1JQ-LY8Fs.mp4"
+}

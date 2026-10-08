@@ -1,0 +1,10 @@
+{
+  "frames_measured": 102,
+  "threshold_px": 5.76,
+  "median_motion_px": 15.984934383108826,
+  "p95_motion_px": 53.83193543024479,
+  "moving_fraction": 0.8431372549019608,
+  "camera_static": false,
+  "stride": 2,
+  "video": "oB8MuarHT8E.mp4"
+}

@@ -1,0 +1,10 @@
+{
+  "frames_measured": 432,
+  "threshold_px": 5.76,
+  "median_motion_px": 29.50785009376911,
+  "p95_motion_px": 62.21559661529057,
+  "moving_fraction": 1.0,
+  "camera_static": false,
+  "stride": 2,
+  "video": "oNZe588clcw.mp4"
+}

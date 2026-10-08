@@ -1,0 +1,10 @@
+{
+  "video": "f1o6FJL8bxM.mp4",
+  "n_frames": 1800,
+  "frames_scored": 1788,
+  "appearance_separability": 0.7185656421288183,
+  "frames_where_both_look_swapped": 0,
+  "swap_like_fraction": 0.0,
+  "swap_like_segments": [],
+  "note": "separability < 0.2 means the two dancers' clothes are too similar for this check"
+}

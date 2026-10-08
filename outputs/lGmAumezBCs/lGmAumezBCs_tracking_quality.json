@@ -1,0 +1,31 @@
+{
+  "video": "lGmAumezBCs.mp4",
+  "width": 854,
+  "height": 480,
+  "fps": 29.97002997002997,
+  "n_frames": 1800,
+  "model": "yolov8n-pose.pt",
+  "tracker": "/home/andisici/Documents/Exactas/tesis/configs/botsort_reid.yaml",
+  "initialized": true,
+  "detected_fraction_A": 0.6477777777777778,
+  "detected_fraction_B": 0.8533333333333334,
+  "dropouts_A": 44,
+  "dropouts_B": 62,
+  "tracker_id_switches_A": 50,
+  "tracker_id_switches_B": 50,
+  "suspected_identity_swaps": 1,
+  "frames_with_extra_people": 390,
+  "distinct_tracker_ids_A": 24,
+  "distinct_tracker_ids_B": 28,
+  "appearance_weight": 0.5,
+  "appearance_separability": 0.5266666114177869,
+  "appearance_overrides": 75,
+  "camera_motion": {
+    "frames_measured": 934,
+    "threshold_px": 2.562,
+    "median_motion_px": 2.607215166091919,
+    "p95_motion_px": 15.242210292816155,
+    "moving_fraction": 0.5064239828693791,
+    "camera_static": false
+  }
+}

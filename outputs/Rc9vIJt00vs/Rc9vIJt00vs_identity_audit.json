@@ -1,0 +1,126 @@
+{
+  "video": "Rc9vIJt00vs.mp4",
+  "n_frames": 5395,
+  "frames_scored": 3983,
+  "appearance_separability": 0.6286847468727887,
+  "frames_where_both_look_swapped": 271,
+  "swap_like_fraction": 0.06803916645744414,
+  "swap_like_segments": [
+    {
+      "start": 1375,
+      "end": 1383,
+      "sec": 22.9
+    },
+    {
+      "start": 1403,
+      "end": 1440,
+      "sec": 23.4
+    },
+    {
+      "start": 1460,
+      "end": 1463,
+      "sec": 24.4
+    },
+    {
+      "start": 1467,
+      "end": 1470,
+      "sec": 24.5
+    },
+    {
+      "start": 1485,
+      "end": 1493,
+      "sec": 24.8
+    },
+    {
+      "start": 1496,
+      "end": 1512,
+      "sec": 25.0
+    },
+    {
+      "start": 1531,
+      "end": 1534,
+      "sec": 25.5
+    },
+    {
+      "start": 1537,
+      "end": 1547,
+      "sec": 25.6
+    },
+    {
+      "start": 1551,
+      "end": 1573,
+      "sec": 25.9
+    },
+    {
+      "start": 1721,
+      "end": 1728,
+      "sec": 28.7
+    },
+    {
+      "start": 1759,
+      "end": 1776,
+      "sec": 29.3
+    },
+    {
+      "start": 1805,
+      "end": 1809,
+      "sec": 30.1
+    },
+    {
+      "start": 2117,
+      "end": 2123,
+      "sec": 35.3
+    },
+    {
+      "start": 2126,
+      "end": 2129,
+      "sec": 35.5
+    },
+    {
+      "start": 2137,
+      "end": 2149,
+      "sec": 35.7
+    },
+    {
+      "start": 2242,
+      "end": 2258,
+      "sec": 37.4
+    },
+    {
+      "start": 2269,
+      "end": 2272,
+      "sec": 37.9
+    },
+    {
+      "start": 3302,
+      "end": 3305,
+      "sec": 55.1
+    },
+    {
+      "start": 3583,
+      "end": 3586,
+      "sec": 59.8
+    },
+    {
+      "start": 4031,
+      "end": 4036,
+      "sec": 67.3
+    },
+    {
+      "start": 4791,
+      "end": 4794,
+      "sec": 79.9
+    },
+    {
+      "start": 5035,
+      "end": 5038,
+      "sec": 84.0
+    },
+    {
+      "start": 5287,
+      "end": 5305,
+      "sec": 88.2
+    }
+  ],
+  "note": "separability < 0.2 means the two dancers' clothes are too similar for this check"
+}

@@ -1,0 +1,10 @@
+{
+  "frames_measured": 140,
+  "threshold_px": 2.562,
+  "median_motion_px": 16.01648425044135,
+  "p95_motion_px": 37.64080892387344,
+  "moving_fraction": 0.95,
+  "camera_static": false,
+  "stride": 2,
+  "video": "lGmAumezBCs.mp4"
+}

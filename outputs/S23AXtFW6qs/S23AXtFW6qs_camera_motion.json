@@ -1,0 +1,10 @@
+{
+  "frames_measured": 256,
+  "threshold_px": 5.76,
+  "median_motion_px": 21.76286524362615,
+  "p95_motion_px": 81.99917683494769,
+  "moving_fraction": 0.921875,
+  "camera_static": false,
+  "stride": 2,
+  "video": "S23AXtFW6qs.mp4"
+}

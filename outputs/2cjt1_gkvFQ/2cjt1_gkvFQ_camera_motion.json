@@ -1,0 +1,10 @@
+{
+  "frames_measured": 247,
+  "threshold_px": 2.136,
+  "median_motion_px": 0.0,
+  "p95_motion_px": 0.3280276722584391,
+  "moving_fraction": 0.004048582995951417,
+  "camera_static": true,
+  "stride": 2,
+  "video": "2cjt1_gkvFQ.mp4"
+}

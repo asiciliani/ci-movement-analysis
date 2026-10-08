@@ -1,0 +1,26 @@
+{
+  "video": "ci_duet_sample.mp4",
+  "n_frames": 900,
+  "frames_scored": 662,
+  "appearance_separability": 0.5098365225260786,
+  "frames_where_both_look_swapped": 50,
+  "swap_like_fraction": 0.0755287009063444,
+  "swap_like_segments": [
+    {
+      "start": 229,
+      "end": 250,
+      "sec": 7.6
+    },
+    {
+      "start": 259,
+      "end": 266,
+      "sec": 8.6
+    },
+    {
+      "start": 824,
+      "end": 832,
+      "sec": 27.5
+    }
+  ],
+  "note": "separability < 0.2 means the two dancers' clothes are too similar for this check"
+}

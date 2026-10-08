@@ -1,0 +1,10 @@
+{
+  "frames_measured": 22,
+  "threshold_px": 3.84,
+  "median_motion_px": 7.848323141735956,
+  "p95_motion_px": 36.58467510429761,
+  "moving_fraction": 0.6363636363636364,
+  "camera_static": false,
+  "stride": 2,
+  "video": "6_Ak86YoiR8.mp4"
+}

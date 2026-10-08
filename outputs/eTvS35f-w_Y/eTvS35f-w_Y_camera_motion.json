@@ -1,0 +1,10 @@
+{
+  "frames_measured": 254,
+  "threshold_px": 5.76,
+  "median_motion_px": 17.5411490587057,
+  "p95_motion_px": 52.60619600661561,
+  "moving_fraction": 0.8228346456692913,
+  "camera_static": false,
+  "stride": 2,
+  "video": "eTvS35f-w_Y.mp4"
+}

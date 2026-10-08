@@ -1,0 +1,36 @@
+{
+  "video": "oB8MuarHT8E.mp4",
+  "n_frames": 1501,
+  "frames_scored": 774,
+  "appearance_separability": 0.6101592686819578,
+  "frames_where_both_look_swapped": 69,
+  "swap_like_fraction": 0.08914728682170543,
+  "swap_like_segments": [
+    {
+      "start": 0,
+      "end": 33,
+      "sec": 0.0
+    },
+    {
+      "start": 50,
+      "end": 54,
+      "sec": 2.0
+    },
+    {
+      "start": 64,
+      "end": 82,
+      "sec": 2.6
+    },
+    {
+      "start": 110,
+      "end": 116,
+      "sec": 4.4
+    },
+    {
+      "start": 723,
+      "end": 727,
+      "sec": 28.9
+    }
+  ],
+  "note": "separability < 0.2 means the two dancers' clothes are too similar for this check"
+}

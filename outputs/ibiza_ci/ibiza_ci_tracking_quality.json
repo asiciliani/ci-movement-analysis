@@ -1,0 +1,28 @@
+{
+  "video": "ibiza_ci.mov",
+  "width": 3840,
+  "height": 2160,
+  "fps": 23.99325716426297,
+  "n_frames": 3416,
+  "model": "yolov8n-pose.pt",
+  "tracker": "/home/andisici/Documents/Exactas/tesis/configs/botsort_reid.yaml",
+  "initialized": true,
+  "detected_fraction_A": 0.9932669789227166,
+  "detected_fraction_B": 0.9938524590163934,
+  "dropouts_A": 7,
+  "dropouts_B": 10,
+  "tracker_id_switches_A": 126,
+  "tracker_id_switches_B": 121,
+  "suspected_identity_swaps": 0,
+  "frames_with_extra_people": 3120,
+  "distinct_tracker_ids_A": 60,
+  "distinct_tracker_ids_B": 52,
+  "camera_motion": {
+    "frames_measured": 2767,
+    "threshold_px": 11.52,
+    "median_motion_px": 8.651397705078125,
+    "p95_motion_px": 31.186109161376944,
+    "moving_fraction": 0.3794723527285869,
+    "camera_static": false
+  }
+}

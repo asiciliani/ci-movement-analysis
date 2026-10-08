@@ -1,0 +1,91 @@
+{
+  "video": "zQRF2sLK1vY.mp4",
+  "n_frames": 1800,
+  "frames_scored": 1603,
+  "appearance_separability": 0.7721512588184356,
+  "frames_where_both_look_swapped": 226,
+  "swap_like_fraction": 0.14098565190268247,
+  "swap_like_segments": [
+    {
+      "start": 596,
+      "end": 608,
+      "sec": 19.9
+    },
+    {
+      "start": 611,
+      "end": 622,
+      "sec": 20.4
+    },
+    {
+      "start": 739,
+      "end": 757,
+      "sec": 24.7
+    },
+    {
+      "start": 778,
+      "end": 799,
+      "sec": 26.0
+    },
+    {
+      "start": 820,
+      "end": 824,
+      "sec": 27.4
+    },
+    {
+      "start": 827,
+      "end": 839,
+      "sec": 27.6
+    },
+    {
+      "start": 842,
+      "end": 886,
+      "sec": 28.1
+    },
+    {
+      "start": 891,
+      "end": 897,
+      "sec": 29.7
+    },
+    {
+      "start": 903,
+      "end": 926,
+      "sec": 30.1
+    },
+    {
+      "start": 966,
+      "end": 970,
+      "sec": 32.2
+    },
+    {
+      "start": 984,
+      "end": 990,
+      "sec": 32.8
+    },
+    {
+      "start": 995,
+      "end": 999,
+      "sec": 33.2
+    },
+    {
+      "start": 1108,
+      "end": 1111,
+      "sec": 37.0
+    },
+    {
+      "start": 1124,
+      "end": 1138,
+      "sec": 37.5
+    },
+    {
+      "start": 1152,
+      "end": 1158,
+      "sec": 38.4
+    },
+    {
+      "start": 1182,
+      "end": 1185,
+      "sec": 39.4
+    }
+  ],
+  "note": "separability < 0.2 means the two dancers' clothes are too similar for this check"
+}

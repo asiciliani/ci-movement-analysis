@@ -1,0 +1,10 @@
+{
+  "frames_measured": 299,
+  "threshold_px": 11.52,
+  "median_motion_px": 20.117680076407435,
+  "p95_motion_px": 90.23678097144268,
+  "moving_fraction": 0.7859531772575251,
+  "camera_static": false,
+  "stride": 2,
+  "video": "ibiza_ci.mov"
+}

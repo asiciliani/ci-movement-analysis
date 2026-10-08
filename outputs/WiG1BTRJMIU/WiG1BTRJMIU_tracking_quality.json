@@ -1,0 +1,31 @@
+{
+  "video": "WiG1BTRJMIU.mp4",
+  "width": 1280,
+  "height": 720,
+  "fps": 25.0,
+  "n_frames": 2251,
+  "model": "yolov8n-pose.pt",
+  "tracker": "/home/andisici/Documents/Exactas/tesis/configs/botsort_reid.yaml",
+  "initialized": true,
+  "detected_fraction_A": 1.0,
+  "detected_fraction_B": 1.0,
+  "dropouts_A": 0,
+  "dropouts_B": 0,
+  "tracker_id_switches_A": 0,
+  "tracker_id_switches_B": 0,
+  "suspected_identity_swaps": 0,
+  "frames_with_extra_people": 1422,
+  "distinct_tracker_ids_A": 1,
+  "distinct_tracker_ids_B": 1,
+  "appearance_weight": 0.5,
+  "appearance_separability": NaN,
+  "appearance_overrides": 0,
+  "camera_motion": {
+    "frames_measured": 2129,
+    "threshold_px": 3.84,
+    "median_motion_px": 0.012555303983390331,
+    "p95_motion_px": 0.1385132014751434,
+    "moving_fraction": 0.0028182245185533112,
+    "camera_static": true
+  }
+}

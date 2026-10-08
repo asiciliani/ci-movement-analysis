@@ -1,0 +1,16 @@
+{
+  "video": "dGPRMNAECKM.mp4",
+  "n_frames": 1800,
+  "frames_scored": 1764,
+  "appearance_separability": 0.9146975668527024,
+  "frames_where_both_look_swapped": 49,
+  "swap_like_fraction": 0.027777777777777776,
+  "swap_like_segments": [
+    {
+      "start": 1411,
+      "end": 1453,
+      "sec": 47.1
+    }
+  ],
+  "note": "separability < 0.2 means the two dancers' clothes are too similar for this check"
+}

@@ -1,0 +1,56 @@
+{
+  "video": "ibiza_ci.mov",
+  "n_frames": 3416,
+  "frames_scored": 3416,
+  "appearance_separability": 0.9347885790251752,
+  "frames_where_both_look_swapped": 546,
+  "swap_like_fraction": 0.1598360655737705,
+  "swap_like_segments": [
+    {
+      "start": 514,
+      "end": 523,
+      "sec": 21.4
+    },
+    {
+      "start": 719,
+      "end": 741,
+      "sec": 30.0
+    },
+    {
+      "start": 938,
+      "end": 1097,
+      "sec": 39.1
+    },
+    {
+      "start": 1125,
+      "end": 1175,
+      "sec": 46.9
+    },
+    {
+      "start": 1232,
+      "end": 1297,
+      "sec": 51.3
+    },
+    {
+      "start": 1300,
+      "end": 1317,
+      "sec": 54.2
+    },
+    {
+      "start": 2078,
+      "end": 2195,
+      "sec": 86.6
+    },
+    {
+      "start": 2203,
+      "end": 2245,
+      "sec": 91.8
+    },
+    {
+      "start": 3054,
+      "end": 3106,
+      "sec": 127.3
+    }
+  ],
+  "note": "separability < 0.2 means the two dancers' clothes are too similar for this check"
+}

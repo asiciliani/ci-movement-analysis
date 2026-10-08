@@ -1,0 +1,10 @@
+{
+  "frames_measured": 181,
+  "threshold_px": 3.84,
+  "median_motion_px": 18.310027696094195,
+  "p95_motion_px": 46.617969080699275,
+  "moving_fraction": 0.9502762430939227,
+  "camera_static": false,
+  "stride": 2,
+  "video": "SQq1_bhD5q0.mp4"
+}

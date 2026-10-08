@@ -1,0 +1,31 @@
+{
+  "video": "ci_duet_sample.mp4",
+  "width": 1280,
+  "height": 720,
+  "fps": 30.0,
+  "n_frames": 900,
+  "model": "yolov8n-pose.pt",
+  "tracker": "/home/andisici/Documents/Exactas/tesis/configs/botsort_reid.yaml",
+  "initialized": true,
+  "detected_fraction_A": 0.6644444444444444,
+  "detected_fraction_B": 0.7388888888888889,
+  "dropouts_A": 61,
+  "dropouts_B": 42,
+  "tracker_id_switches_A": 64,
+  "tracker_id_switches_B": 54,
+  "suspected_identity_swaps": 8,
+  "frames_with_extra_people": 210,
+  "distinct_tracker_ids_A": 30,
+  "distinct_tracker_ids_B": 25,
+  "appearance_weight": 0.5,
+  "appearance_separability": 0.5661762751488004,
+  "appearance_overrides": 79,
+  "camera_motion": {
+    "frames_measured": 752,
+    "threshold_px": 3.84,
+    "median_motion_px": 7.292892932891846,
+    "p95_motion_px": 21.574237537384008,
+    "moving_fraction": 0.7792553191489362,
+    "camera_static": false
+  }
+}

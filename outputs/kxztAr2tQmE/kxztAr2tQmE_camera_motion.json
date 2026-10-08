@@ -1,0 +1,10 @@
+{
+  "frames_measured": 889,
+  "threshold_px": 3.84,
+  "median_motion_px": 0.024582111015518326,
+  "p95_motion_px": 2.9333642173702206,
+  "moving_fraction": 0.0044994375703037125,
+  "camera_static": true,
+  "stride": 2,
+  "video": "kxztAr2tQmE.mp4"
+}

@@ -1,0 +1,10 @@
+{
+  "frames_measured": 0,
+  "threshold_px": 3.24,
+  "median_motion_px": null,
+  "p95_motion_px": null,
+  "moving_fraction": 0.0,
+  "camera_static": false,
+  "stride": 2,
+  "video": "occlusion_test.mp4"
+}

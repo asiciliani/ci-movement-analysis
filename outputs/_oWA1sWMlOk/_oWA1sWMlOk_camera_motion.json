@@ -1,0 +1,10 @@
+{
+  "frames_measured": 811,
+  "threshold_px": 1.92,
+  "median_motion_px": 0.061460892125590055,
+  "p95_motion_px": 0.17500213577818402,
+  "moving_fraction": 0.0,
+  "camera_static": true,
+  "stride": 2,
+  "video": "_oWA1sWMlOk.mp4"
+}

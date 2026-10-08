@@ -1,0 +1,31 @@
+{
+  "video": "ZfdejcO5Sqw.mp4",
+  "width": 1920,
+  "height": 1080,
+  "fps": 23.976023976023978,
+  "n_frames": 1440,
+  "model": "yolov8n-pose.pt",
+  "tracker": "/home/andisici/Documents/Exactas/tesis/configs/botsort_reid.yaml",
+  "initialized": true,
+  "detected_fraction_A": 0.6534722222222222,
+  "detected_fraction_B": 0.6888888888888889,
+  "dropouts_A": 57,
+  "dropouts_B": 51,
+  "tracker_id_switches_A": 49,
+  "tracker_id_switches_B": 46,
+  "suspected_identity_swaps": 6,
+  "frames_with_extra_people": 15,
+  "distinct_tracker_ids_A": 25,
+  "distinct_tracker_ids_B": 21,
+  "appearance_weight": 0.5,
+  "appearance_separability": 0.6192979535620659,
+  "appearance_overrides": 44,
+  "camera_motion": {
+    "frames_measured": 1320,
+    "threshold_px": 5.76,
+    "median_motion_px": 13.590163230895996,
+    "p95_motion_px": 52.5877014160156,
+    "moving_fraction": 0.6106060606060606,
+    "camera_static": false
+  }
+}
