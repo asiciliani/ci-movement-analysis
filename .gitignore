@@ -83,3 +83,4 @@ outputs/*/*.png
 !outputs/coupling/*.png
 !outputs/design/*.png
 !outputs/external_*/*.png
+!outputs/describe/*.png
