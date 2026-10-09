@@ -85,3 +85,4 @@ outputs/*/*.png
 !outputs/external_*/*.png
 !outputs/describe/*.png
 !outputs/rolling/*.png
+!outputs/compare_genres/*.png
