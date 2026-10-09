@@ -247,3 +247,44 @@ def contact_centroids(kA: np.ndarray, kB: np.ndarray, thresh_px: np.ndarray | fl
     regA = np.array([REGIONS[i] for i in MA.argmax(1)], dtype=object); regB = np.array([REGIONS[i] for i in MB.argmax(1)], dtype=object)
     regA[~has] = None; regB[~has] = None
     return cA, cB, regA, regB
+
+
+# Canonical body chart (T-pose, body lengths, pelvis at the origin, +y up). A contact point is mapped to
+# (segment, position along it) and then to this chart, so a grip that stays on the same spot of the hand
+# keeps the same chart coordinate however the arm moves; only travel over the body surface moves it.
+TEMPLATE = {0: (0, 1.45), 1: (-0.06, 1.5), 2: (0.06, 1.5), 3: (-0.13, 1.45), 4: (0.13, 1.45),
+            5: (-0.4, 1.0), 6: (0.4, 1.0), 7: (-0.85, 1.0), 8: (0.85, 1.0), 9: (-1.3, 1.0), 10: (1.3, 1.0),
+            11: (-0.2, 0.0), 12: (0.2, 0.0), 13: (-0.22, -1.05), 14: (0.22, -1.05), 15: (-0.22, -2.05), 16: (0.22, -2.05)}
+
+
+def _closest_points_t(p1, p2, q1, q2):
+    """Like _closest_points but also returns the positions along each segment (0..1)."""
+    t = np.linspace(0, 1, 11)
+    P = p1[:, None, :] + t[None, :, None] * (p2 - p1)[:, None, :]
+    Q = q1[:, None, :] + t[None, :, None] * (q2 - q1)[:, None, :]
+    d = np.linalg.norm(P[:, :, None, :] - Q[:, None, :, :], axis=-1)
+    flat = d.reshape(len(d), -1).argmin(1); i, j = flat // 11, flat % 11; n = np.arange(len(d))
+    return t[i], t[j], d[n, i, j]
+
+
+def contact_surface(kA: np.ndarray, kB: np.ndarray, thresh_px):
+    """Per frame, the contact location on each body in the canonical body chart (weighted mean over all
+    segment pairs closer than thresh_px). Returns (chartA (N,2), chartB (N,2))."""
+    N = len(kA); th = np.broadcast_to(np.asarray(thresh_px, float), (N,))
+    sA = np.zeros((N, 2)); sB = np.zeros((N, 2)); W = np.zeros(N)
+    T = {k: np.array(v, float) for k, v in TEMPLATE.items()}
+    for ra, a1, a2 in ALL_SEGMENTS:
+        for rb, b1, b2 in ALL_SEGMENTS:
+            ok = (kA[:, [a1, a2], 2] >= CONF).all(1) & (kB[:, [b1, b2], 2] >= CONF).all(1)
+            if not ok.any():
+                continue
+            idx = np.flatnonzero(ok)
+            ta, tb, d = _closest_points_t(kA[idx, a1, :2], kA[idx, a2, :2], kB[idx, b1, :2], kB[idx, b2, :2])
+            w = np.clip(th[idx] - d, 0, None)
+            ca = T[a1][None] + ta[:, None] * (T[a2] - T[a1])[None]; cb = T[b1][None] + tb[:, None] * (T[b2] - T[b1])[None]
+            sA[idx] += w[:, None] * ca; sB[idx] += w[:, None] * cb; W[idx] += w
+    out = np.full((N, 2), np.nan), np.full((N, 2), np.nan); has = W > 0
+    out[0][has] = sA[has] / W[has, None]; out[1][has] = sB[has] / W[has, None]
+    # fold left/right: pose models often swap sides, and changing hands is not travel over the body surface
+    out[0][:, 0] = np.abs(out[0][:, 0]); out[1][:, 0] = np.abs(out[1][:, 0])
+    return out

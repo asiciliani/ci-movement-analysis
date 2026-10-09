@@ -9,9 +9,10 @@ For every contact bout (>= 1 s of continuous contact, depth-gated, see describe.
   spread        radius of the body-frame locations (median distance to their median, bl)
   regions       distinct body regions visited for >= 0.3 s (mode-filtered labels)
   hand_share    fraction of the bout in which the dominant contact region of either dancer is a hand
-A bout is labelled ROLL when net travel >= ROLL_TRAVEL_BL on at least one body or the contact passes through
->= ROLL_REGIONS regions; GRIP when net travel < GRIP_TRAVEL_BL and spread < GRIP_TRAVEL_BL on both bodies
-and a hand is involved most of the time; otherwise MIXED.
+Locations are on a canonical body chart (T-pose, body lengths): the contact point is mapped to its segment
+and position along it, so a hand grip keeps its coordinate however the arm moves. A bout is ROLL when the
+contact travels >= ROLL_TRAVEL_BL over at least one body surface, HOLD when it travels and spreads
+< GRIP_TRAVEL_BL on both bodies (a grip, a lean, a held carry), otherwise MIXED.
 Thresholds are first guesses to be checked on the sheets (check_roll_*.jpg / check_grip_*.jpg) and,
 later, against salsa (CoMPAS3D), where contact is mostly hand holds.
 
@@ -39,13 +40,13 @@ def bouts_for_clip(vid: str):
     tr = load_tracks(f"outputs/{vid}/{vid}_tracks.npz"); fps = float(tr.meta["fps"])
     kA, kB = tr.kpts[:, 0].astype(float), tr.kpts[:, 1].astype(float); both = tr.present.all(1)
     sA, sB = np.nanmedian(D.trunk_len(kA)), np.nanmedian(D.trunk_len(kB)); s = (sA + sB) / 2
-    _, _, dpx, _, _ = D.contact_points(kA, kB)
-    contact = median_filter((np.nan_to_num(dpx / s, nan=9) < CONTACT_BL) & D.same_depth(kA, kB, sA, sB), size=5).astype(bool) & both
+    _, _, dpx, r1, r2 = D.contact_points(kA, kB)
+    limb = np.array([(a in ("hand", "arm")) or (b in ("hand", "arm")) for a, b in zip(r1, r2)])   # see describe_duets: no depth gate for hand holds
+    contact = median_filter((np.nan_to_num(dpx / s, nan=9) < CONTACT_BL) & (D.same_depth(kA, kB, sA, sB) | limb), size=5).astype(bool) & both
     pA, pB, rA, rB = D.contact_centroids(kA, kB, CONTACT_BL * s)
-    # per-frame trunk length (rolling median) so that a body turning away from the camera keeps its units
-    LA = pd.Series(D.trunk_len(kA)).rolling(int(fps), center=True, min_periods=3).median().to_numpy()
-    LB = pd.Series(D.trunk_len(kB)).rolling(int(fps), center=True, min_periods=3).median().to_numpy()
-    locA, locB = D.body_frame(kA, pA, LA[:, None]), D.body_frame(kB, pB, LB[:, None])
+    # contact location on the canonical body chart (surface coordinate): a grip stays put even when the arm
+    # moves; only travel over the body surface counts (the trunk-frame version called salsa hand holds "rolls")
+    locA, locB = D.contact_surface(kA, kB, CONTACT_BL * s)
     rows = []
     for a, b in D.episodes(contact, fps, min_s=MIN_BOUT_S, merge_gap_s=0.3):
         rec = dict(video=vid, start_s=a / fps, end_s=b / fps, dur_s=(b - a) / fps, mid_frame=(a + b) // 2)
@@ -68,12 +69,9 @@ def bouts_for_clip(vid: str):
             rec[f"main_region_{lab}"] = r.mode().iat[0] if r.notna().any() else None
         hands = pd.Series([(x == "hand") or (y == "hand") for x, y in zip(rA[a:b], rB[a:b])])
         rec["hand_share"] = float(hands.mean())
-        travel = np.nanmax([rec["net_travel_A_bl"], rec["net_travel_B_bl"], 0]); nreg = max(rec["regions_A"], rec["regions_B"])
-        # a roll travels over the body, not along a hand-hold: require the contact to be mostly off the hands
-        travel = travel if rec["hand_share"] < 0.5 else 0.0
+        travel = np.nanmax([rec["net_travel_A_bl"], rec["net_travel_B_bl"], 0])
         still = all(np.nan_to_num(rec[k], nan=9) < GRIP_TRAVEL_BL for k in ("net_travel_A_bl", "net_travel_B_bl", "spread_A_bl", "spread_B_bl"))
-        rec["label"] = ("ROLL" if (travel >= ROLL_TRAVEL_BL or nreg >= ROLL_REGIONS)
-                        else "GRIP" if (still and rec["hand_share"] > 0.5) else "MIXED")
+        rec["label"] = "ROLL" if travel >= ROLL_TRAVEL_BL else "HOLD" if still else "MIXED"
         rows.append(rec)
     return rows, tr
 
@@ -110,10 +108,10 @@ def main():
         r, tr = bouts_for_clip(v); rows += r; TR[v] = tr
     B = pd.DataFrame(rows); B.to_csv(OUT / "bouts.csv", index=False)
     pc = B.groupby("video").agg(bouts=("label", "size"), roll=("label", lambda x: (x == "ROLL").mean()),
-                                grip=("label", lambda x: (x == "GRIP").mean()), median_dur_s=("dur_s", "median"),
+                                hold=("label", lambda x: (x == "HOLD").mean()), median_dur_s=("dur_s", "median"),
                                 median_travel_bl=("net_travel_A_bl", "median"), hand_share=("hand_share", "median")).round(2)
     pc.to_csv(OUT / "per_clip.csv")
-    for lab in ("ROLL", "GRIP", "MIXED"):
+    for lab in ("ROLL", "HOLD", "MIXED"):
         sub = B[B.label == lab].sample(min(6, (B.label == lab).sum()), random_state=0) if (B.label == lab).any() else B.iloc[:0]
         strips = [s for s in (strip(r.video, TR[r.video], r.start_s, r.end_s) for r in sub.itertuples()) if s is not None]
         if strips:

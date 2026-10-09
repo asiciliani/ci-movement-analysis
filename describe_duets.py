@@ -44,7 +44,10 @@ def clip_analysis(vid: str):
     sA, sB = np.nanmedian(D.trunk_len(kA)), np.nanmedian(D.trunk_len(kB)); s = (sA + sB) / 2
     dmin, rA, rB, _ = D.contact_regions(kA, kB, s, CONTACT_BL)
     dmin[~both] = np.nan
-    depth_ok = D.same_depth(kA, kB, sA, sB)
+    # depth gate only for body-to-body overlaps: an arm's-length hand hold between dancers at different
+    # depths is real contact (salsa known-answer check, AUDIT 40)
+    limb = np.array([(a in ("hand", "arm")) or (b in ("hand", "arm")) for a, b in zip(rA, rB)])
+    depth_ok = D.same_depth(kA, kB, sA, sB) | limb
     contact = median_filter((np.nan_to_num(dmin, nan=9) < CONTACT_BL) & depth_ok, size=5).astype(bool) & both
     lvA, lvB = D.level(kA, sA), D.level(kB, sB)
     aer = D.aerial_support(kA, kB, sA, sB, contact)

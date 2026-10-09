@@ -35,7 +35,7 @@ def main():
             b = pd.DataFrame(bouts)
             row.update(genre=genre, n_bouts=len(b),
                        roll_share=float((b.label == "ROLL").mean()) if len(b) else np.nan,
-                       grip_share=float((b.label == "GRIP").mean()) if len(b) else np.nan,
+                       hold_share=float((b.label == "HOLD").mean()) if len(b) else np.nan,
                        hand_share=float(b.hand_share.median()) if len(b) else np.nan,
                        hand_hand_share=float(np.mean([r == ("hand", "hand") for r in rg])) if len(rg) else np.nan,
                        torso_share=float(np.mean(["torso" in r for r in rg])) if len(rg) else np.nan)
@@ -43,7 +43,7 @@ def main():
             print(f"[compare] {genre} {v}: contact {row['contact_frac']:.0%} weight-share/min {row['weight_share_per_min']:.1f} "
                   f"hand-hand {row['hand_hand_share']:.0%} torso {row['torso_share']:.0%} floor {row['frac_floor']:.0%}")
     df = pd.DataFrame(rows); df.to_csv(OUT / "per_clip.csv", index=False)
-    cols = ["contact_frac", "weight_share_per_min", "frac_floor", "frac_standing", "hand_hand_share", "torso_share", "roll_share", "grip_share"]
+    cols = ["contact_frac", "weight_share_per_min", "frac_floor", "frac_standing", "hand_hand_share", "torso_share", "roll_share", "hold_share"]
     tab = df.groupby("genre")[cols].median().T.round(3)
     tests = {c: stats.mannwhitneyu(df[df.genre == "CI"][c].dropna(), df[df.genre == "salsa"][c].dropna()).pvalue
              if df[df.genre == "salsa"][c].notna().sum() >= 2 else np.nan for c in cols}
@@ -55,7 +55,7 @@ def main():
     md = [f"# CI vs salsa with the same video pipeline ({len(ci)} CI clips, {len(salsa)} salsa clips)\n",
           "Medians per genre (each clip one observation). Salsa = CoMPAS3D renders (CC BY-NC 4.0), first 60 s.\n",
           tab.to_markdown(), "\n\n## Contact regions (pooled share of contact frames)\n", reg.to_markdown(),
-          "\n\nKnown-answer expectations for salsa: hand-hand dominant, standing ~100 %, weight sharing ~0, GRIP > ROLL."]
+          "\n\nKnown-answer expectations for salsa: hand-hand dominant, standing ~100 %, weight sharing ~0, HOLD > ROLL."]
     (OUT / "report.md").write_text("\n".join(md)); print("\n".join(md))
 
 
