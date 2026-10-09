@@ -84,3 +84,4 @@ outputs/*/*.png
 !outputs/design/*.png
 !outputs/external_*/*.png
 !outputs/describe/*.png
+!outputs/rolling/*.png

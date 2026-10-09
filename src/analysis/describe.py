@@ -171,3 +171,79 @@ def pose_features(k: np.ndarray, scale: float) -> pd.DataFrame:
         "stance_width": np.abs(pt(15)[:, 0] - pt(16)[:, 0]) / scale,
     }
     return pd.DataFrame(f)
+
+
+# ---------------------------------------------------------------------------------------------------
+# Rolling point of contact: where on each body the contact is, in that body's own reference frame
+# ---------------------------------------------------------------------------------------------------
+ALL_SEGMENTS = [(r, a, b) for r, segs in SEGMENTS.items() for a, b in segs if a != b]
+
+
+def _closest_points(p1, p2, q1, q2):
+    """Approximate closest points between segments p1p2 and q1q2 (arrays (N,2)) by sampling 11 points
+    on each segment; returns (point_on_p, point_on_q, distance)."""
+    t = np.linspace(0, 1, 11)
+    P = p1[:, None, :] + t[None, :, None] * (p2 - p1)[:, None, :]          # (N,11,2)
+    Q = q1[:, None, :] + t[None, :, None] * (q2 - q1)[:, None, :]
+    d = np.linalg.norm(P[:, :, None, :] - Q[:, None, :, :], axis=-1)        # (N,11,11)
+    flat = d.reshape(len(d), -1).argmin(1); i, j = flat // 11, flat % 11
+    n = np.arange(len(d))
+    return P[n, i], Q[n, j], d[n, i, j]
+
+
+def contact_points(kA: np.ndarray, kB: np.ndarray):
+    """Per frame: the closest pair of points between any segment of A and any segment of B.
+    Returns (ptA (N,2), ptB (N,2), dist_px (N,), regionA (N,), regionB (N,))."""
+    N = len(kA); best = np.full(N, np.inf); pA = np.full((N, 2), np.nan); pB = np.full((N, 2), np.nan)
+    rA = np.full(N, None, dtype=object); rB = np.full(N, None, dtype=object)
+    for ra, a1, a2 in ALL_SEGMENTS:
+        for rb, b1, b2 in ALL_SEGMENTS:
+            ok = (kA[:, [a1, a2], 2] >= CONF).all(1) & (kB[:, [b1, b2], 2] >= CONF).all(1)
+            if not ok.any():
+                continue
+            x, y, d = _closest_points(kA[ok, a1, :2], kA[ok, a2, :2], kB[ok, b1, :2], kB[ok, b2, :2])
+            idx = np.flatnonzero(ok); better = d < best[idx]; ii = idx[better]
+            best[ii] = d[better]; pA[ii] = x[better]; pB[ii] = y[better]; rA[ii] = ra; rB[ii] = rb
+    best[~np.isfinite(best)] = np.nan
+    return pA, pB, best, rA, rB
+
+
+def body_frame(k: np.ndarray, pts: np.ndarray, scale) -> np.ndarray:
+    """Express image points in the dancer's own frame: origin at the pelvis, +y along the trunk
+    (pelvis -> shoulders), x perpendicular; units of body length. A point that stays at the same place
+    on the body keeps the same coordinates however the body moves or turns in the image."""
+    hp = (k[:, 11, :2] + k[:, 12, :2]) / 2; sh = (k[:, 5, :2] + k[:, 6, :2]) / 2
+    ok = (k[:, [5, 6, 11, 12], 2] >= CONF).all(1)
+    u = sh - hp; L = np.linalg.norm(u, axis=1, keepdims=True); u = u / np.maximum(L, 1e-6)
+    v = np.stack([u[:, 1], -u[:, 0]], axis=1)                        # perpendicular
+    rel = pts - hp
+    out = np.stack([np.einsum("ij,ij->i", rel, v), np.einsum("ij,ij->i", rel, u)], axis=1) / scale
+    out[~ok] = np.nan
+    return out
+
+
+def contact_centroids(kA: np.ndarray, kB: np.ndarray, thresh_px: np.ndarray | float):
+    """Stable contact location: the weighted mean of the closest points of ALL segment pairs closer than
+    thresh_px (weight = thresh - d), instead of the single closest pair, whose argmin flips between
+    neighbouring segments frame to frame. Also returns, per frame, the region of A and of B carrying the
+    largest weight. Returns (cA (N,2), cB (N,2), regA, regB)."""
+    N = len(kA); th = np.broadcast_to(np.asarray(thresh_px, float), (N,))
+    sA = np.zeros((N, 2)); sB = np.zeros((N, 2)); W = np.zeros(N)
+    wr_A = {r: np.zeros(N) for r in REGIONS}; wr_B = {r: np.zeros(N) for r in REGIONS}
+    for ra, a1, a2 in ALL_SEGMENTS:
+        for rb, b1, b2 in ALL_SEGMENTS:
+            ok = (kA[:, [a1, a2], 2] >= CONF).all(1) & (kB[:, [b1, b2], 2] >= CONF).all(1)
+            if not ok.any():
+                continue
+            idx = np.flatnonzero(ok)
+            x, y, d = _closest_points(kA[idx, a1, :2], kA[idx, a2, :2], kB[idx, b1, :2], kB[idx, b2, :2])
+            w = np.clip(th[idx] - d, 0, None)
+            sA[idx] += w[:, None] * x; sB[idx] += w[:, None] * y; W[idx] += w
+            wr_A[ra][idx] += w; wr_B[rb][idx] += w
+    has = W > 0
+    cA = np.full((N, 2), np.nan); cB = np.full((N, 2), np.nan)
+    cA[has] = sA[has] / W[has, None]; cB[has] = sB[has] / W[has, None]
+    MA = np.stack([wr_A[r] for r in REGIONS], 1); MB = np.stack([wr_B[r] for r in REGIONS], 1)
+    regA = np.array([REGIONS[i] for i in MA.argmax(1)], dtype=object); regB = np.array([REGIONS[i] for i in MB.argmax(1)], dtype=object)
+    regA[~has] = None; regB[~has] = None
+    return cA, cB, regA, regB

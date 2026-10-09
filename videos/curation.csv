@@ -13,7 +13,7 @@ hJQgFDsAms4,ci_dance,duet,hJQgFDsAms4,assistant_visual,stage duet,yes,28.0,1.0,d
 iOEZ3i9rgYM,ci_dance,duet,iOEZ3i9rgYM,assistant_visual,outdoor duet on water platform,partial,32.0,5.0,handheld pan; A/B swap during lifts (speed magnitude largely unaffected)
 iYdwYBTa4Kk,ci_dance,jam,iYdwYBTa4Kk,assistant_visual,small group with objects; title card at start,not_reviewed,,,
 ibiza_ci,ci_dance,jam,ibiza,assistant_visual,group class of 4+,not_reviewed,,,
-ibiza_small,ci_dance,jam,ibiza,assistant_visual,same event as ibiza_ci,not_reviewed,,,
+ibiza_small,ci_dance,jam,ibiza,assistant_visual,same event as ibiza_ci,no,,,
 kxztAr2tQmE,ci_dance,duet,kxztAr2tQmE,assistant_visual,empty-studio duet far from camera,yes,30.0,1.0,"static camera, empty studio; 1 swap during a wrap"
 oB8MuarHT8E,ci_dance,jam,oB8MuarHT8E,assistant_visual,jam with musicians and crowd shots,not_reviewed,,,
 swmrAJkYrlY,ci_dance,duet_bystanders,swmrAJkYrlY,assistant_visual,duet with others in background,yes,24.0,0.0,consistent A/B; long walk/talk stretches between acro
@@ -34,3 +34,10 @@ xeUSDR9SutE,videoconference,none,zoom_series,assistant_visual,talking heads; no 
 occlusion_test,ci_dance,jam,user_field,assistant_visual,excerpt of user_ci_video (frame-hash match 100%),not_reviewed,,,
 Rc9vIJt00vs,ci_dance,duet,Rc9vIJt00vs,assistant_visual,outdoor deck duet; handheld with pans; 60 fps,partial,24,7,only two people present (no bystanders); frequent A/B swaps
 vinlwkaIW4c,ci_dance,duet,vinlwkaIW4c,assistant_visual,empty-studio duet; slow handheld pans,partial,24,8,only two people present; frequent A/B swaps (white vs black tops)
+kMkJpfUGZz8,ci_dance,duet,kMkJpfUGZz8,assistant_visual,studio duet two men; panning camera,partial,24,4,right two people; some A/B swaps (similar clothes)
+uS1JQ-LY8Fs,ci_dance,duet,uS1JQ-LY8Fs,assistant_visual,old low-res stage duet at 15 fps; mostly standing,yes,24,0,consistent labels; little contact
+ZfdejcO5Sqw,ci_dance,duet,concrete_building_duet,assistant_visual,edited outdoor duet (several angles),partial,24,5,only two people; swaps across cuts
+ul2LMUIuwno,ci_dance,duet,concrete_building_duet,assistant_visual,same pair and place as ZfdejcO5Sqw,partial,24,5,only two people; swaps
+S23AXtFW6qs,ci_dance,jam,S23AXtFW6qs,assistant_visual,crowded jam with handheld camera,no,24,,tracked pair not a stable duet
+lGmAumezBCs,ci_dance,jam,lGmAumezBCs,assistant_visual,edited close-ups; trio,no,24,,labels hop between people
+u9AhpFxfEfs,ci_dance,jam,u9AhpFxfEfs,assistant_visual,promotional edit of a jam with titles,no,24,,many cuts
