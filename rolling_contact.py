@@ -84,7 +84,7 @@ def draw(frame, k, color):
 
 def strip(vid, tr, start_s, end_s, n=4, w=300):
     """n frames across one bout, side by side, with both skeletons."""
-    vp = (sorted(glob.glob(f"videos/{vid}.*")) or [None])[0]; fps = tr.meta["fps"]
+    vp = (sorted(glob.glob(f"videos/{vid}.*")) + sorted(glob.glob(f"videos/full/{vid}.*")) or [None])[0]; fps = tr.meta["fps"]
     cap = cv2.VideoCapture(vp); tiles = []
     for t in np.linspace(start_s, end_s, n):
         fi = int(t * fps); cap.set(1, fi); ok, f = cap.read()
@@ -101,6 +101,7 @@ def strip(vid, tr, start_s, end_s, n=4, w=300):
 def main():
     cur = pd.read_csv("videos/curation.csv")
     vids = cur[cur.pair_ok.isin(["yes", "partial"]) & (cur.content == "ci_dance")].video.unique().tolist()
+    vids = [v for v in vids if f"{v}_full" not in vids]          # prefer the full-length version of a clip
     rows, TR = [], {}
     for v in vids:
         if not Path(f"outputs/{v}/{v}_tracks.npz").exists():

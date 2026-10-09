@@ -110,7 +110,7 @@ def sheet(items, path, title_fn, n=12, w=400):
     """items: list of (video, frame_idx, label). Writes a grid of frames with both skeletons."""
     tiles = []
     for vid, fi, label in items[:n]:
-        vp = (sorted(glob.glob(f"videos/{vid}.*")) or [None])[0]
+        vp = (sorted(glob.glob(f"videos/{vid}.*")) + sorted(glob.glob(f"videos/full/{vid}.*")) or [None])[0]
         if vp is None:
             continue
         cap = cv2.VideoCapture(vp); cap.set(1, int(fi)); ok, f = cap.read(); cap.release()
@@ -136,7 +136,8 @@ TRACKS = {}
 
 def main():
     cur = pd.read_csv("videos/curation.csv")
-    vids = cur[cur.pair_ok.isin(["yes", "partial"])].video.tolist()
+    vids = cur[cur.pair_ok.isin(["yes", "partial"]) & (cur.content == "ci_dance")].video.tolist()
+    vids = [v for v in vids if f"{v}_full" not in vids]          # prefer the full-length version of a clip
     rows, events, regs, feats = [], [], {}, []
     for v in vids:
         row, ev, rg, ft, tr = clip_analysis(v); TRACKS[v] = tr

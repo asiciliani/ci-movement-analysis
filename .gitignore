@@ -86,3 +86,4 @@ outputs/*/*.png
 !outputs/describe/*.png
 !outputs/rolling/*.png
 !outputs/compare_genres/*.png
+!outputs/grammar/*.png

@@ -26,6 +26,7 @@ def main():
     cur = pd.read_csv("videos/curation.csv")
     ci = [v for v in cur[cur.pair_ok.isin(["yes", "partial"]) & (cur.content == "ci_dance")].video.unique()
           if Path(f"outputs/{v}/{v}_tracks.npz").exists()]
+    ci = [v for v in ci if f"{v}_full" not in ci]                # prefer the full-length version of a clip
     salsa = sorted(p.parent.name for p in Path("outputs").glob("salsa_*/salsa_*_tracks.npz"))
     rows, regs = [], {"CI": [], "salsa": []}
     for genre, vids in (("CI", ci), ("salsa", salsa)):

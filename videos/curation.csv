@@ -32,12 +32,24 @@ k5Bfof2rsNw,videoconference,none,zoom_series,assistant_visual,talking heads; no 
 rx7pHCBitAk,videoconference,none,zoom_series,assistant_visual,talking heads; no dance,na,,,
 xeUSDR9SutE,videoconference,none,zoom_series,assistant_visual,talking heads; no dance,na,,,
 occlusion_test,ci_dance,jam,user_field,assistant_visual,excerpt of user_ci_video (frame-hash match 100%),not_reviewed,,,
-Rc9vIJt00vs,ci_dance,duet,Rc9vIJt00vs,assistant_visual,outdoor deck duet; handheld with pans; 60 fps,partial,24,7,only two people present (no bystanders); frequent A/B swaps
-vinlwkaIW4c,ci_dance,duet,vinlwkaIW4c,assistant_visual,empty-studio duet; slow handheld pans,partial,24,8,only two people present; frequent A/B swaps (white vs black tops)
-kMkJpfUGZz8,ci_dance,duet,kMkJpfUGZz8,assistant_visual,studio duet two men; panning camera,partial,24,4,right two people; some A/B swaps (similar clothes)
-uS1JQ-LY8Fs,ci_dance,duet,uS1JQ-LY8Fs,assistant_visual,old low-res stage duet at 15 fps; mostly standing,yes,24,0,consistent labels; little contact
-ZfdejcO5Sqw,ci_dance,duet,concrete_building_duet,assistant_visual,edited outdoor duet (several angles),partial,24,5,only two people; swaps across cuts
-ul2LMUIuwno,ci_dance,duet,concrete_building_duet,assistant_visual,same pair and place as ZfdejcO5Sqw,partial,24,5,only two people; swaps
-S23AXtFW6qs,ci_dance,jam,S23AXtFW6qs,assistant_visual,crowded jam with handheld camera,no,24,,tracked pair not a stable duet
-lGmAumezBCs,ci_dance,jam,lGmAumezBCs,assistant_visual,edited close-ups; trio,no,24,,labels hop between people
-u9AhpFxfEfs,ci_dance,jam,u9AhpFxfEfs,assistant_visual,promotional edit of a jam with titles,no,24,,many cuts
+Rc9vIJt00vs,ci_dance,duet,Rc9vIJt00vs,assistant_visual,outdoor deck duet; handheld with pans; 60 fps,partial,24.0,7.0,only two people present (no bystanders); frequent A/B swaps
+vinlwkaIW4c,ci_dance,duet,vinlwkaIW4c,assistant_visual,empty-studio duet; slow handheld pans,partial,24.0,8.0,only two people present; frequent A/B swaps (white vs black tops)
+kMkJpfUGZz8,ci_dance,duet,kMkJpfUGZz8,assistant_visual,studio duet two men; panning camera,partial,24.0,4.0,right two people; some A/B swaps (similar clothes)
+uS1JQ-LY8Fs,ci_dance,duet,uS1JQ-LY8Fs,assistant_visual,old low-res stage duet at 15 fps; mostly standing,yes,24.0,0.0,consistent labels; little contact
+ZfdejcO5Sqw,ci_dance,duet,concrete_building_duet,assistant_visual,edited outdoor duet (several angles),no,24.0,5.0,only two people; swaps across cuts; excluded: tilted cinematic camera invalidates up/down measures
+ul2LMUIuwno,ci_dance,duet,concrete_building_duet,assistant_visual,same pair and place as ZfdejcO5Sqw,no,24.0,5.0,only two people; swaps; excluded: tilted cinematic camera invalidates up/down measures
+S23AXtFW6qs,ci_dance,jam,S23AXtFW6qs,assistant_visual,crowded jam with handheld camera,no,24.0,,tracked pair not a stable duet
+lGmAumezBCs,ci_dance,jam,lGmAumezBCs,assistant_visual,edited close-ups; trio,no,24.0,,labels hop between people
+u9AhpFxfEfs,ci_dance,jam,u9AhpFxfEfs,assistant_visual,promotional edit of a jam with titles,no,24.0,,many cuts
+kxztAr2tQmE_full,ci_dance,duet,kxztAr2tQmE,assistant_visual,full length at 15 fps; title cards at start/end,yes,24.0,1.0,clean empty-studio duet
+swmrAJkYrlY_full,ci_dance,duet_bystanders,swmrAJkYrlY,assistant_visual,full length at 15 fps,partial,24.0,2.0,right pair; a third person passes behind at times
+hJQgFDsAms4_full,ci_dance,duet,hJQgFDsAms4,assistant_visual,full 9.5 min historical stage duet at 15 fps,partial,24.0,4.0,right pair; swaps (similar dark clothes)
+iOEZ3i9rgYM_full,ci_dance,duet,iOEZ3i9rgYM,assistant_visual,full length at 15 fps,partial,24.0,3.0,right pair; swaps in lifts
+dGPRMNAECKM_full,ci_dance,duet,dGPRMNAECKM,assistant_visual,full length; handheld with close-ups,partial,24.0,5.0,right people; framing changes
+zQRF2sLK1vY_full,ci_dance,duet_bystanders,zQRF2sLK1vY,assistant_visual,full length,no,24.0,8.0,B often on bystanders lying on the floor (needs retrack_from_detections)
+Rc9vIJt00vs_full,ci_dance,duet,Rc9vIJt00vs,assistant_visual,full length; silhouettes against the sunset at the end,partial,24.0,4.0,only two people; swaps
+vinlwkaIW4c_full,ci_dance,duet,vinlwkaIW4c,assistant_visual,full length,partial,24.0,4.0,only two people; swaps
+kMkJpfUGZz8_full,ci_dance,duet,kMkJpfUGZz8,assistant_visual,full length; ends on an audience shot,partial,24.0,3.0,right pair; swaps
+uS1JQ-LY8Fs_full,ci_dance,duet,uS1JQ-LY8Fs,assistant_visual,full length; low-res stage,yes,24.0,1.0,consistent
+ZfdejcO5Sqw_full,ci_dance,duet,concrete_building_duet,assistant_visual,cinematic edit with tilted camera,no,24.0,,tilted camera invalidates up/down measures (levels / weight sharing)
+ul2LMUIuwno_full,ci_dance,duet,concrete_building_duet,assistant_visual,cinematic with tilted camera,no,24.0,,same as ZfdejcO5Sqw_full
