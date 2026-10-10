@@ -1,0 +1,31 @@
+id,video,release_s,contact_dur_s,next,n_releases_clip,verdict,note,recontact_s,gap_max_dist_bl
+0,zQRF2sLK1vY,22.589233333333333,0.4337666666666667,near,6,false_release,contact resumes at +0.2 s (cartwheel over partner),0.07,0.0
+1,zQRF2sLK1vY,26.559866666666668,0.6006,near,6,real,step apart,9.21,2.84
+2,zQRF2sLK1vY,58.5585,0.9009,near,6,real,separate,,2.46
+3,kxztAr2tQmE_full,7.666666666666667,0.5333333333333333,near,12,unclear,"tiny figures, hand touches",0.53,0.88
+4,kxztAr2tQmE_full,67.13333333333334,1.8666666666666667,near,12,false_release,"flicker, still touching",0.13,0.43
+5,kxztAr2tQmE_full,67.93333333333334,0.6666666666666666,near,12,real,separate,,0.77
+6,swmrAJkYrlY_full,112.66666666666669,1.8,near,45,false_release,"embrace, one dancer lost",0.73,0.0
+7,swmrAJkYrlY_full,122.2,0.7333333333333333,near,45,false_release,"flicker, side by side touching",0.13,0.31
+8,swmrAJkYrlY_full,173.06666666666666,0.8,near,45,real,walk apart,4.13,3.19
+9,hJQgFDsAms4_full,433.3333333333333,0.4666666666666667,near,50,false_release,"carry/lift, lifted dancer lost",0.33,0.01
+10,hJQgFDsAms4_full,438.6,1.6666666666666667,near,50,false_release,"partner bent behind, lost",1.13,0.48
+11,hJQgFDsAms4_full,447.26666666666665,0.8666666666666667,near,50,false_release,"back contact, distance > threshold",0.67,0.24
+12,iOEZ3i9rgYM_full,19.53333333333333,1.7333333333333334,near,23,false_release,"flicker, standing in contact",0.33,0.4
+13,iOEZ3i9rgYM_full,119.6,1.0,near,23,false_release,"overhead carry, one dancer lost",2.93,0.27
+14,iOEZ3i9rgYM_full,146.46666666666667,2.7333333333333334,near,23,false_release,flicker,0.13,0.01
+15,dGPRMNAECKM_full,5.4,5.4,near,28,unclear,raised hands touching/hovering,0.27,0.42
+16,dGPRMNAECKM_full,132.0,0.6,near,28,real,"separate, arms reaching",2.0,1.55
+17,dGPRMNAECKM_full,172.0,0.9333333333333332,near,28,unclear,camera too close,1.67,1.26
+18,Rc9vIJt00vs_full,34.46666666666667,2.533333333333333,near,35,real,"apart briefly, then hand contact",0.73,0.54
+19,Rc9vIJt00vs_full,39.4,2.6666666666666665,near,35,false_release,partner occluded behind,0.13,0.1
+20,Rc9vIJt00vs_full,209.6,0.4,near,35,false_release,"tangled on floor, detections lost",2.33,0.98
+21,vinlwkaIW4c_full,7.933333333333334,0.8,near,37,false_release,"tiny figures, one skeleton for both",1.33,0.01
+22,vinlwkaIW4c_full,73.46666666666667,1.0666666666666669,near,37,unclear,"falls to floor, maybe hand hold",2.33,0.87
+23,vinlwkaIW4c_full,105.2,0.7333333333333333,near,37,false_release,"embrace, flicker",0.33,0.08
+24,kMkJpfUGZz8_full,6.2,0.6666666666666666,near,19,real,walk apart,7.8,3.83
+25,kMkJpfUGZz8_full,45.0,1.0,near,19,real,walk apart,3.6,2.56
+26,kMkJpfUGZz8_full,191.9333333333333,3.066666666666667,near,19,real,walk apart,,3.61
+27,uS1JQ-LY8Fs_full,242.0,0.9333333333333332,near,57,false_contact,contact frames are with one dancer missing / depth (partner far behind),0.13,0.03
+28,uS1JQ-LY8Fs_full,299.26666666666665,0.7333333333333333,near,57,false_release,flicker,0.2,0.43
+29,uS1JQ-LY8Fs_full,375.06666666666666,2.333333333333333,near,57,unclear,"standing side by side, maybe not touching",0.33,0.41

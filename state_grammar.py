@@ -30,9 +30,10 @@ from src.analysis import describe as D
 OUT = Path("outputs/grammar"); OUT.mkdir(parents=True, exist_ok=True)
 STATES = ["apart", "near", "contact", "share", "floor"]
 HYST_OUT = 0.40
+SEP_BL = 0.5      # a release counts only if the bodies get this far apart before touching again (hand check, AUDIT 43)
 
 
-def frame_states(vid: str):
+def frame_states(vid: str, return_dist: bool = False):
     tr = load_tracks(f"outputs/{vid}/{vid}_tracks.npz"); fps = float(tr.meta["fps"])
     kA, kB = tr.kpts[:, 0].astype(float), tr.kpts[:, 1].astype(float); both = tr.present.all(1)
     sA, sB = np.nanmedian(D.trunk_len(kA)), np.nanmedian(D.trunk_len(kB)); s = (sA + sB) / 2
@@ -47,12 +48,21 @@ def frame_states(vid: str):
         on = (d[i] < 0.25 and gate[i]) if not on else (d[i] <= HYST_OUT)
         contact[i] = on
     contact = median_filter(contact, size=5).astype(bool)
+    # merge contact episodes whose gap never reaches SEP_BL: in the hand check (outputs/grammar/contact_check.csv)
+    # 14/15 false releases (flicker, a dancer lost in an embrace or carry) stayed <= 0.48 bl, all 9 real ones >= 0.54
+    if SEP_BL:
+        idx = np.flatnonzero(contact)
+        for a, b in zip(idx[:-1], idx[1:]):
+            if b - a > 1 and np.nanmax(np.r_[dmin[a + 1:b], 0]) <= SEP_BL:
+                contact[a + 1:b] = True
     share = median_filter(np.nan_to_num(np.abs(D.aerial_support(kA, kB, sA, sB, contact))) > 0, size=5).astype(bool)
     floor = (np.nan_to_num(D.level(kA, sA), nan=9) < 0.6) | (np.nan_to_num(D.level(kB, sB), nan=9) < 0.6)
     st = np.where(share, "share", np.where(floor, "floor", np.where(contact, "contact",
                   np.where(np.nan_to_num(dmin, nan=99) < 1.0, "near", "apart")))).astype(object)
     st[~both | ~np.isfinite(dmin)] = None
     ser = pd.Series(st).ffill(limit=int(fps))          # bridge detection gaps <= 1 s
+    if return_dist:
+        return ser.to_numpy(), fps, dmin, both
     return ser.to_numpy(), fps
 
 
@@ -111,7 +121,7 @@ def main(hyst_out: float = 0.40):
           "States per frame (see docstring); detection gaps <= 1 s bridged; episodes >= 0.3 s.\n",
           "## Per duet\n", pc.round(2).to_markdown(index=False),
           f"\n\n## Pooled transition probabilities (row = current state, {int(T_all.values.sum())} transitions)\n", P_all.to_markdown(),
-          "\n\nCaveats: 'contact' and 'share' are 2-D detectors validated by eye (AUDIT 38-40); A/B identity does not matter "
+          "\n\nCaveats: 'contact' and 'share' are 2-D detectors validated by eye (AUDIT 38-40); releases need SEP_BL separation (hand check, AUDIT 43); A/B identity does not matter "
           "here (states are symmetric)."]
     (OUT / "report.md").write_text("\n".join(md)); print("\n".join(md[2:5]))
 

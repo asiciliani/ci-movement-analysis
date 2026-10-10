@@ -1,0 +1,21 @@
+id,video,release_s,contact_dur_s,next,n_releases_clip,verdict,note
+0,zQRF2sLK1vY,24.79143333333333,0.4337666666666667,near,3,real,separate
+1,zQRF2sLK1vY,26.559866666666668,0.6006,near,3,real,step apart (same event as round-1 #1)
+2,kxztAr2tQmE_full,7.666666666666667,0.5333333333333333,near,5,unclear,"tiny figures, hand touches (same event as round-1 #3)"
+3,kxztAr2tQmE_full,64.4,5.6,near,5,real,"brief gap, re-contact at +1 s"
+4,swmrAJkYrlY_full,158.26666666666668,14.266666666666667,near,21,unclear,"close-up, side by side"
+5,swmrAJkYrlY_full,177.53333333333333,0.3333333333333333,near,21,unclear,"side by side, contact itself doubtful"
+6,hJQgFDsAms4_full,336.53333333333336,0.3333333333333333,near,9,real,"separate, partner to floor"
+7,hJQgFDsAms4_full,529.0666666666667,1.5333333333333334,near,9,false_release,"hand on head, dancer in black lost on dark background"
+8,iOEZ3i9rgYM_full,89.06666666666666,11.533333333333331,near,3,unclear,raised hands almost touching
+9,iOEZ3i9rgYM_full,225.4,13.6,near,3,false_release,"carry over back, one dancer lost"
+10,dGPRMNAECKM_full,138.53333333333333,1.0,near,9,real,separate
+11,dGPRMNAECKM_full,155.86666666666667,1.3333333333333333,near,9,unclear,"facing, maybe hand on shoulder"
+12,Rc9vIJt00vs_full,16.733333333333334,1.9333333333333331,near,12,false_release,standing side by side in contact
+13,Rc9vIJt00vs_full,212.86666666666667,0.9333333333333332,near,12,false_release,"tangled on floor, detections lost"
+14,vinlwkaIW4c_full,183.0,0.3333333333333333,near,17,real,steps away from partner on floor
+15,vinlwkaIW4c_full,205.2,1.1333333333333333,near,17,unclear,one dancer lost
+16,kMkJpfUGZz8_full,33.733333333333334,2.8666666666666667,near,8,real,walk apart
+17,kMkJpfUGZz8_full,66.0,0.6,near,8,real,separate
+18,uS1JQ-LY8Fs_full,150.33333333333334,16.333333333333332,near,27,real,"jump away, brief"
+19,uS1JQ-LY8Fs_full,319.3333333333333,0.3333333333333333,near,27,real,"kick, apart"
