@@ -65,7 +65,9 @@ outputs/**/*_features_legacy.csv
 outputs/dataset/frames.csv
 logs/
 videos/candidates/
-data_external/
+data_external/*/*
+!data_external/*/*.sh
+!data_external/*/*.py
 test_cv.tex
 
 # Pair audit (Oct 2026): human registries are tracked; images of identifiable people and per-clip
@@ -87,3 +89,4 @@ outputs/*/*.png
 !outputs/rolling/*.png
 !outputs/compare_genres/*.png
 !outputs/grammar/*.png
+!outputs/rolling_3d/*.png

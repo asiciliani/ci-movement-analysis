@@ -1,0 +1,1179 @@
+seq,start_s,end_s,label,cls,noise_m,grip_frac,surface_frac,hand_trunk_frac,travel_m
+Pair1_song1_take1,0.96,3.3,"Right turn for the follower, normal open hold","turn, hands held",0.009901439638819983,0.4084507042253521,0.0,0.0,
+Pair1_song1_take1,3.316,5.676,Change of Directions (Swap Position),other,0.009901439638819983,0.16901408450704225,0.04225352112676056,0.0,
+Pair1_song1_take1,5.69,8.24,"Basic step, facing the line of dance",other,0.009901439638819983,1.0,0.0,0.0,
+Pair1_song1_take1,8.24,10.83,"Basic step, facing the line of dance",other,0.009901439638819983,1.0,0.0,0.0,
+Pair1_song1_take1,10.83,13.37,"Right turn for the leader, right turn for the follower, normal open hold","turn, hands held",0.009901439638819983,0.36363636363636365,0.0,0.0,
+Pair1_song1_take1,13.37,15.93,"Basic step, facing the line of dance",other,0.009901439638819983,0.7763157894736842,0.0,0.0,
+Pair1_song1_take1,15.93,18.48,"XBL with normal closed hold, the leader's right to the follower left, hands down",closed hold,0.009901439638819983,0.948051948051948,0.3246753246753247,0.0,
+Pair1_song1_take1,18.48,21.036,"Right turn for the leader, right turn for the follower, normal open hold, hands change on the back of the leader and then over the follower",hand travels over body,0.009901439638819983,0.2727272727272727,0.0,0.0,
+Pair1_song1_take1,21.04,23.42,"Right hand throw for the follower, crossed hold",open hold,0.009901439638819983,0.8309859154929577,0.0,0.0,
+Pair1_song1_take1,23.436,26.156,Double hand throw with normal open hold,open hold,0.009901439638819983,0.8024691358024691,0.0,0.0,
+Pair1_song1_take1,26.16,28.68,"Basic step, facing the line of dance",other,0.009901439638819983,0.9736842105263158,0.0,0.0,
+Pair1_song1_take1,28.68,30.916,"Right turn for the follower, crossed hold","turn, hands held",0.009901439638819983,0.5074626865671642,0.1044776119402985,0.0,
+Pair1_song1_take1,30.93,33.47,"Right turn for the leader, crossed hold","turn, hands held",0.009901439638819983,0.4675324675324675,0.16883116883116883,0.09090909090909091,
+Pair1_song1_take1,33.476,36.036,"Left hand throw for the follower, crossed hold",open hold,0.009901439638819983,0.4025974025974026,0.03896103896103896,0.0,
+Pair1_song1_take1,36.05,38.51,"Basic step, facing the line of dance",other,0.009901439638819983,0.6621621621621622,0.35135135135135137,0.25675675675675674,
+Pair1_song1_take1,38.516,41.076,XBL with a left (inside) turn for the follower,other,0.009901439638819983,0.8181818181818182,0.0,0.0,
+Pair1_song1_take1,41.09,43.56,"Basic step, facing the line of dance",other,0.009901439638819983,1.0,0.04054054054054054,0.04054054054054054,
+Pair1_song1_take1,43.56,46.15,"Side basic step with normal open hold, facing the line of dance",open hold,0.009901439638819983,1.0,0.0,0.0,
+Pair1_song1_take1,46.15,48.63,"Side basic step with normal open hold, facing the line of dance",open hold,0.009901439638819983,1.0,0.06756756756756757,0.06756756756756757,
+Pair1_song1_take1,48.636,51.276,"Side basic step with normal open hold, facing the line of dance",open hold,0.009901439638819983,1.0,0.0,0.0,
+Pair1_song1_take1,51.28,53.72,"Basic step, facing the line of dance",other,0.009901439638819983,1.0,0.0,0.0,
+Pair1_song1_take1,53.72,56.236,"Right turn for the follower, normal open hold","turn, hands held",0.009901439638819983,0.2631578947368421,0.0,0.0,
+Pair1_song1_take1,56.24,58.71,"Right turn for the leader, normal open hold, hands change behind the leader, change of directions",hand travels over body,0.009901439638819983,0.0,0.21621621621621623,0.13513513513513514,
+Pair1_song1_take1,58.716,61.356,"Right hand throw for the follower, crossed hold",open hold,0.009901439638819983,0.5822784810126582,0.0,0.0,
+Pair1_song1_take1,61.37,63.75,"Right turn for the leader, crossed hold","turn, hands held",0.009901439638819983,0.5352112676056338,0.028169014084507043,0.028169014084507043,
+Pair1_song1_take1,63.756,66.316,"Basic step, facing the line of dance",other,0.009901439638819983,1.0,0.0,0.0,
+Pair1_song1_take1,66.32,68.89,Change of Directions (Swap Position) with Left HL for the lady,other,0.009901439638819983,0.6753246753246753,0.4935064935064935,0.4805194805194805,
+Pair1_song1_take1,68.89,71.35,Change of Directions (Swap Position) back to normal open hold from Left HL for the lady,open hold,0.009901439638819983,0.8108108108108109,0.6081081081081081,0.527027027027027,0.4428047187719682
+Pair1_song1_take1,71.35,73.95,"Basic step, facing the line of dance",other,0.009901439638819983,0.7692307692307693,0.0,0.0,
+Pair1_song1_take1,73.956,76.476,"Basic step, facing the line of dance",other,0.009901439638819983,0.3815789473684211,0.0,0.0,
+Pair1_song1_take1,76.48,78.91,"Basic step, facing the line of dance",other,0.009901439638819983,0.8904109589041096,0.0,0.0,
+Pair1_song1_take1,78.916,81.476,"Right turn for the follower, normal open hold","turn, hands held",0.009901439638819983,0.5194805194805194,0.0,0.0,
+Pair1_song1_take1,81.49,83.96,"Basic step, facing the line of dance",other,0.009901439638819983,0.9594594594594594,0.0,0.0,
+Pair1_song1_take1,83.96,86.476,"Basic step, facing the line of dance",other,0.009901439638819983,1.0,0.0,0.0,
+Pair1_song1_take1,86.5,88.97,"Basic step, facing the line of dance",other,0.009901439638819983,1.0,0.0,0.0,
+Pair1_song1_take1,88.97,91.516,Left turn for the follower,other,0.009901439638819983,0.7894736842105263,0.0,0.0,
+Pair1_song1_take1,91.53,94.15,"Basic step, facing the line of dance",other,0.009901439638819983,0.9113924050632911,0.06329113924050633,0.05063291139240506,
+Pair1_song1_take1,94.156,96.55,"Basic step, facing the line of dance",other,0.009901439638819983,1.0,0.0,0.0,
+Pair1_song1_take1,96.55,99.09,XBL with normal open hold,open hold,0.009901439638819983,1.0,0.2894736842105263,0.09210526315789473,
+Pair1_song1_take1,99.09,101.71,"Basic step, facing the line of dance",other,0.009901439638819983,1.0,0.0,0.0,
+Pair1_song1_take1,101.71,104.11,"Basic step, facing the line of dance",other,0.009901439638819983,1.0,0.0,0.0,
+Pair1_song1_take1,104.116,106.63,"Basic step, facing the line of dance",other,0.009901439638819983,0.4533333333333333,0.0,0.0,
+Pair1_song1_take1,106.63,109.19,"Basic step, facing the line of dance",other,0.009901439638819983,1.0,0.0,0.0,
+Pair1_song1_take1,109.196,111.716,XBL with a right (outside) turn for the follower,other,0.009901439638819983,0.5526315789473685,0.25,0.19736842105263158,
+Pair1_song1_take1,111.73,114.2,"Basic step, facing the line of dance",other,0.009901439638819983,0.52,0.0,0.0,
+Pair1_song1_take1,114.2,116.716,Change of Directions (Swap Position),other,0.009901439638819983,1.0,0.30666666666666664,0.04,
+Pair1_song1_take1,116.72,119.28,"Right turn for the leader, right turn for the follower, normal open hold, hands change behind the leader and then over the follower",hand travels over body,0.009901439638819983,0.42857142857142855,0.025974025974025976,0.0,
+Pair1_song1_take1,119.28,121.876,"Basic step, facing the line of dance",other,0.009901439638819983,0.9230769230769231,0.02564102564102564,0.0,
+Pair1_song1_take1,121.88,124.39,Change of Directions (Swap Position) with crossed hold,open hold,0.009901439638819983,0.36,0.24,0.06666666666666667,
+Pair1_song1_take1,124.396,126.87,"Right turn for the leader, crossed hold","turn, hands held",0.009901439638819983,0.64,0.24,0.24,
+Pair1_song1_take1,126.87,129.28,"Basic step, facing the line of dance",other,0.009901439638819983,1.0,0.0,0.0,
+Pair1_song1_take1,129.28,131.91,"Basic step, facing the line of dance",other,0.009901439638819983,1.0,0.0,0.0,
+Pair1_song1_take1,131.91,134.38,Cross back basic step with nomal open hold,open hold,0.009901439638819983,1.0,0.2702702702702703,0.13513513513513514,
+Pair1_song1_take1,134.396,136.916,Cross back basic step with nomal open hold,open hold,0.009901439638819983,1.0,0.2894736842105263,0.02631578947368421,
+Pair1_song1_take1,136.92,139.32,Cross back basic step with nomal open hold,open hold,0.009901439638819983,0.9861111111111112,0.1111111111111111,0.1111111111111111,
+Pair1_song1_take1,139.32,141.796,"Basic step, facing the line of dance",other,0.009901439638819983,1.0,0.0,0.0,
+Pair1_song1_take1,141.81,144.44,"Basic step, facing the line of dance",other,0.009901439638819983,1.0,0.0,0.0,
+Pair1_song1_take1,144.44,146.956,"Basic step, facing the line of dance",other,0.009901439638819983,0.7733333333333333,0.0,0.0,
+Pair1_song1_take1,146.97,149.7,"Right turn for the follower, normal open hold","turn, hands held",0.009901439638819983,0.35365853658536583,0.12195121951219512,0.0,
+Pair1_song3_take1,0.0,1.71,"Basic step, facing the line of dance",other,0.007081792972515422,0.0,0.0,0.0,
+Pair1_song3_take1,1.72,3.96,"Basic step, facing the line of dance",other,0.007081792972515422,0.417910447761194,0.0,0.0,
+Pair1_song3_take1,3.97,6.47,Change of Directions (Swap Position) for the follower with normal open hold,open hold,0.007081792972515422,0.41333333333333333,0.16,0.0,
+Pair1_song3_take1,6.48,9.12,"Basic step, facing the line of dance",other,0.007081792972515422,0.4430379746835443,0.0,0.0,
+Pair1_song3_take1,9.13,11.65,"Basic step, facing the line of dance",other,0.007081792972515422,0.9078947368421053,0.0,0.0,
+Pair1_song3_take1,24.12,26.71,"Basic step with styling, facing the line of dance",other,0.007081792972515422,0.8717948717948718,0.0,0.0,
+Pair1_song3_take1,26.72,29.2,Basic step while getting back to normal open hold,open hold,0.007081792972515422,0.6533333333333333,0.21333333333333335,0.0,
+Pair1_song3_take1,29.2,31.67,Change of Directions (Swap Position) for the follower with normal open hold,open hold,0.007081792972515422,0.3108108108108108,0.20270270270270271,0.10810810810810811,
+Pair1_song3_take1,31.68,34.32,"Right turn for the leader, right turn for the follower, normal open hold, hands change behind the leader and then over the follower",hand travels over body,0.007081792972515422,0.4050632911392405,0.0,0.0,
+Pair1_song3_take1,34.32,36.93,"Right turn for the leader, crossed hold","turn, hands held",0.007081792972515422,0.38461538461538464,0.0,0.0,
+Pair1_song3_take1,36.93,39.36,"Basic step, facing the line of dance",other,0.007081792972515422,0.6712328767123288,0.3561643835616438,0.3561643835616438,
+Pair1_song3_take1,39.36,41.87,"Basic step, facing the line of dance",other,0.007081792972515422,0.7105263157894737,0.0,0.0,
+Pair1_song3_take1,41.88,44.36,"Basic step, facing the line of dance",other,0.007081792972515422,0.5675675675675675,0.0,0.0,
+Pair1_song3_take1,44.37,46.96,"Basic step, facing the line of dance",other,0.007081792972515422,0.2857142857142857,0.0,0.0,
+Pair1_song3_take1,46.96,49.4,Regular Suzy Q,other,0.007081792972515422,0.7702702702702703,0.2972972972972973,0.0,
+Pair1_song3_take1,49.4,51.87,Regular Suzy Q,other,0.007081792972515422,1.0,0.0,0.0,
+Pair1_song3_take1,51.88,54.52,"Half Suzy Q on beat 1, 2, 3",other,0.007081792972515422,0.45569620253164556,0.08860759493670886,0.08860759493670886,
+Pair1_song3_take1,54.52,57.04,"Basic step, facing the line of dance",other,0.007081792972515422,0.7368421052631579,0.0,0.0,
+Pair1_song3_take1,57.04,59.52,"Right turn for the follower, normal open hold","turn, hands held",0.007081792972515422,0.35135135135135137,0.013513513513513514,0.0,
+Pair1_song3_take1,59.54,62.12,Change of Directions (Swap Position) for the follower with normal open hold,open hold,0.007081792972515422,0.4025974025974026,0.22077922077922077,0.0,
+Pair1_song3_take1,62.12,64.599,"Right turn for the leader, right turn for the follower, crossed hold","turn, hands held",0.007081792972515422,0.22972972972972974,0.0,0.0,
+Pair1_song3_take1,64.61,67.15,"Basic step, facing the line of dance",other,0.007081792972515422,0.8552631578947368,0.11842105263157894,0.039473684210526314,
+Pair1_song3_take1,67.16,69.68,Double hand throw with crossed hold,open hold,0.007081792972515422,0.3684210526315789,0.06578947368421052,0.06578947368421052,
+Pair1_song3_take1,69.68,72.23,"Comb on the leader with his left hand with crossed hold, XBL with normal open hold",open hold,0.007081792972515422,0.35526315789473684,0.6710526315789473,0.618421052631579,0.21266681374167384
+Pair1_song3_take1,72.24,74.8,"Basic step, facing the line of dance",other,0.007081792972515422,1.0,0.0,0.0,
+Pair1_song3_take1,74.8,77.25,"Basic step, facing the line of dance",other,0.007081792972515422,1.0,0.0,0.0,
+Pair1_song3_take1,77.25,79.8,"Basic step, facing the line of dance",other,0.007081792972515422,1.0,0.12987012987012986,0.12987012987012986,
+Pair1_song3_take1,79.81,82.3,Back basic step with normal open hold,open hold,0.007081792972515422,0.9733333333333334,0.25333333333333335,0.17333333333333334,
+Pair1_song3_take1,82.31,84.82,Back basic step with normal open hold,open hold,0.007081792972515422,0.9066666666666666,0.0,0.0,
+Pair1_song3_take1,84.82,87.58,"Basic step, facing the line of dance",other,0.007081792972515422,0.9518072289156626,0.0,0.0,
+Pair1_song3_take1,87.58,89.93,XBL with a right (outside) turn for the follower,other,0.007081792972515422,0.7142857142857143,0.18571428571428572,0.12857142857142856,
+Pair1_song3_take1,89.93,92.34,"Right turn for the leader, right turn for the follower, normal open hold, hands change behind the leader and then over the follower",hand travels over body,0.007081792972515422,0.2054794520547945,0.0,0.0,
+Pair1_song3_take1,92.34,94.86,Change of Directions (Swap Position) for the follower with crossed hold,open hold,0.007081792972515422,0.12,0.06666666666666667,0.0,
+Pair1_song3_take1,94.87,97.38,"Basic step, facing the line of dance",other,0.007081792972515422,0.7333333333333333,0.0,0.0,
+Pair1_song3_take1,97.38,99.98,"Basic step, facing the line of dance",other,0.007081792972515422,0.9230769230769231,0.0,0.0,
+Pair1_song3_take1,99.98,102.54,Left turn for the follower,other,0.007081792972515422,0.9090909090909091,0.05194805194805195,0.0,
+Pair1_song3_take1,102.54,105.02,"Basic step, facing the line of dance",other,0.007081792972515422,1.0,0.08108108108108109,0.08108108108108109,
+Pair1_song3_take1,105.03,107.89,XBL with a right (outside) turn for the follower,other,0.007081792972515422,0.5930232558139535,0.3488372093023256,0.3023255813953488,
+Pair1_song3_take1,107.9,110.1,"Right turn for the leader, right turn for the follower, normal open hold, hands change behind the leader and then over the follower",hand travels over body,0.007081792972515422,0.10606060606060606,0.09090909090909091,0.0,
+Pair1_song3_take1,110.1,112.55,Left turn for the leader with crossed hold,"turn, hands held",0.007081792972515422,0.3013698630136986,0.0,0.0,
+Pair1_song3_take1,112.55,115.1,"Basic step, facing the line of dance",other,0.007081792972515422,0.8441558441558441,0.19480519480519481,0.18181818181818182,
+Pair1_song3_take1,115.1,117.66,"Basic step, facing the line of dance with Check on the follower's hands with crossed hold",open hold,0.007081792972515422,0.631578947368421,0.881578947368421,0.6710526315789473,0.37487739223882266
+Pair1_song3_take1,117.66,120.26,,other,0.007081792972515422,1.0,0.3974358974358974,0.1794871794871795,
+Pair1_song3_take1,120.27,122.83,"Basic step, facing the line of dance",other,0.007081792972515422,0.7368421052631579,0.0,0.0,
+Pair1_song3_take1,122.83,125.34,Single hand throw with crossed hold,open hold,0.007081792972515422,0.6578947368421053,0.0,0.0,
+Pair1_song3_take1,125.35,127.81,Single hand throw with crossed hold,open hold,0.007081792972515422,1.0,0.0,0.0,
+Pair1_song3_take1,127.82,130.34,XBL with crossed hold,open hold,0.007081792972515422,0.5789473684210527,0.4473684210526316,0.2894736842105263,
+Pair1_song3_take1,130.35,132.89,"Right turn for the leader, right turn for the follower, normal open hold, hands change behind the leader and then over the follower",hand travels over body,0.007081792972515422,0.35526315789473684,0.039473684210526314,0.0,
+Pair1_song3_take1,132.9,135.34,"Basic step, facing the line of dance",other,0.007081792972515422,1.0,0.0,0.0,
+Pair1_song3_take1,135.34,137.86,"Basic step, facing the line of dance with Check on the follower's shoulder",other,0.007081792972515422,0.41333333333333333,0.6,0.6,0.21053554667027832
+Pair1_song3_take1,137.86,140.42,"Basic step, facing the line of dance",other,0.007081792972515422,0.4675324675324675,0.0,0.0,
+Pair1_song3_take1,140.43,142.89,"Right turn for the follower, normal open hold","turn, hands held",0.007081792972515422,0.4864864864864865,0.0,0.0,
+Pair1_song3_take1,142.9,145.38,"Right turn for the leader, right turn for the follower, normal open hold, hands change behind the leader and then over the follower",hand travels over body,0.007081792972515422,0.12162162162162163,0.0,0.0,
+Pair1_song3_take1,145.39,147.93,"Basic step, facing the line of dance with Check on the follower's shoulder",other,0.007081792972515422,0.06578947368421052,0.5921052631578947,0.5921052631578947,0.18623920063038818
+Pair1_song3_take1,147.94,150.38,"Basic step, facing the line of dance",other,0.007081792972515422,0.958904109589041,0.0,0.0,
+Pair2_song4_take1,0.0,1.47,"Basic step, facing the line of dance",other,0.008663996780199775,0.20454545454545456,0.6590909090909091,0.6363636363636364,
+Pair2_song4_take1,1.48,4.4,XBL with normal open hold ends with break,open hold,0.008663996780199775,0.0,0.3977272727272727,0.38636363636363635,
+Pair2_song4_take1,4.4,7.4,XBL with a right (outside) turn for the follower,other,0.008663996780199775,0.5777777777777777,0.2,0.13333333333333333,
+Pair2_song4_take1,7.4,10.39,XBL with normal open hold,open hold,0.008663996780199775,0.7303370786516854,0.3146067415730337,0.0449438202247191,
+Pair2_song4_take1,10.39,13.37,"XBL with a left (inside) turn for the follower ends with Right HL for the follower, ends with half right turn for the leader",other,0.008663996780199775,0.36666666666666664,0.5888888888888889,0.4,0.30417196293720494
+Pair2_song4_take1,13.37,16.36,"XBL with a left (inside) turn for the follower, late right turn for the leader",other,0.008663996780199775,0.34831460674157305,0.2696629213483146,0.12359550561797752,
+Pair2_song4_take1,16.36,19.33,"Right turn for the follower, crossed hold, ends with comb on the follower with the leader's right hand","turn, hands held",0.008663996780199775,0.25842696629213485,0.2808988764044944,0.15730337078651685,
+Pair2_song4_take1,19.33,22.32,Change of Directions (Swap Position) ends with break,other,0.008663996780199775,0.13333333333333333,0.15555555555555556,0.05555555555555555,
+Pair2_song4_take1,22.32,25.3,"XBL with a right (outside) turn for the follower, on the right side of the leader, ends with comb for the follower",other,0.008663996780199775,0.26666666666666666,0.5333333333333333,0.23333333333333334,0.17058242128337012
+Pair2_song4_take1,25.3,28.28,"XBL with a left (inside) turn for the follower, ends with Check by holding the follower's hand (hands down, crossed hold)","turn, hands held",0.008663996780199775,0.14606741573033707,0.7303370786516854,0.6741573033707865,0.4575849652420514
+Pair2_song4_take1,28.28,31.27,XBL with a left (inside) turn for the follower with late half right turn for the leader,other,0.008663996780199775,0.4,0.4444444444444444,0.17777777777777778,
+Pair2_song4_take1,31.27,34.23,Change of Directions (Swap Position) for the follower with normal open hold sliding from the follower's left hand to right hand,open hold,0.008663996780199775,0.14772727272727273,0.375,0.18181818181818182,
+Pair2_song4_take1,34.23,37.22,"XBL with a right (outside) turn for the follower on the right side of the leader, ends with Left HL for the follower",other,0.008663996780199775,0.43333333333333335,0.8333333333333334,0.7333333333333333,0.15885814420014024
+Pair2_song4_take1,37.229,40.219,"XBL with  double left (inside) turn for the follower with crossed hold on the right side of the leader, ends with late half right turn for the leader","turn, hands held",0.008663996780199775,0.25555555555555554,0.3,0.17777777777777778,
+Pair2_song4_take1,40.219,43.2,"Right turn for the follower, crossed hold, ends with comb on the follower with the leader's right hand","turn, hands held",0.008663996780199775,0.6,0.5888888888888889,0.43333333333333335,0.2770883419887927
+Pair2_song4_take1,43.2,46.1,XBL with crossed hold,open hold,0.008663996780199775,0.10344827586206896,0.4367816091954023,0.4367816091954023,
+Pair2_song4_take1,46.1,48.98,"XBL with a left (inside) turn for the follower with crossed hold, both hands ends with right Sombrero hold","turn, hands held",0.008663996780199775,0.0,0.8023255813953488,0.6162790697674418,0.3832843191657362
+Pair2_song4_take1,48.98,51.88,"XBL with a right (outside) turn for the follower, facing the same direction with the follower in front, ends with comb on the leader",other,0.008663996780199775,0.13793103448275862,0.367816091954023,0.367816091954023,
+Pair2_song4_take1,51.88,54.81,XBL with normal closed hold,closed hold,0.008663996780199775,0.4318181818181818,0.5568181818181818,0.5,
+Pair2_song4_take1,54.81,57.73,"XBL with a right (outside) turn for the follower, facing the same direction on the right side of the leader, ends with comb for the follower",other,0.008663996780199775,0.7471264367816092,0.5172413793103449,0.2988505747126437,0.23632481789519763
+Pair2_song4_take1,57.73,60.66,"Check by holding the follower's both hands (open hands down, Titanic for the lady in a shadow) after XBL with a left (inside) turn for the follower.",open hold,0.008663996780199775,0.48863636363636365,0.7386363636363636,0.32954545454545453,0.47028757068108384
+Pair2_song4_take1,60.66,63.73,"Change of Directions (Swap Position) with crossed hold, Comb on the leader with the leader's left hand",open hold,0.008663996780199775,0.391304347826087,0.5217391304347826,0.4673913043478261,0.49475201353221115
+Pair2_song4_take1,63.73,66.67,XBL with normal open hold ends with break,open hold,0.008663996780199775,0.29213483146067415,0.4606741573033708,0.4606741573033708,
+Pair2_song4_take1,66.67,69.59,XBL with a right (outside) turn for the follower,other,0.008663996780199775,0.5862068965517241,0.27586206896551724,0.1724137931034483,
+Pair2_song4_take1,69.6,72.53,"XBL with a left (inside) turn for the follower, both hands hold, ends with late half right turn for the leader",open hold,0.008663996780199775,0.7701149425287356,0.6666666666666666,0.08045977011494253,0.4247167489446521
+Pair2_song4_take1,72.54,75.39,Change of Directions (Swap Position) for the follower with normal open hold,open hold,0.008663996780199775,0.4117647058823529,0.10588235294117647,0.0,
+Pair2_song4_take1,75.39,78.17,"XBL with a right (outside) turn for the follower, on the right side of the leader, ends with comb for the follower",other,0.008663996780199775,0.6190476190476191,0.6190476190476191,0.4523809523809524,0.21239165141333052
+Pair2_song4_take1,78.17,80.88,"XBL with a left (inside) with normal open hold while hands change, Check by holding the follower's hand",hand travels over body,0.008663996780199775,0.4074074074074074,0.5061728395061729,0.5061728395061729,0.2647804188069759
+Pair2_song4_take1,80.88,83.46,"Right turn for the follower, comb on the follower with the leader's right hand, crossed hold","turn, hands held",0.008663996780199775,0.2857142857142857,0.37662337662337664,0.11688311688311688,
+Pair2_song4_take1,83.46,86.19,Change of Directions (Swap Position) for the follower with normal open hold,open hold,0.008663996780199775,0.1951219512195122,0.25609756097560976,0.13414634146341464,
+Pair2_song4_take1,86.19,88.78,"XBL with a left (inside) turn for the follower, both hands hold, ends with late half right turn for the leader",open hold,0.008663996780199775,0.7692307692307693,0.4358974358974359,0.16666666666666666,
+Pair2_song4_take1,88.78,91.43,"Right turn for the follower, crossed hold, ends with comb on the follower with the leader's right hand","turn, hands held",0.008663996780199775,0.4050632911392405,0.35443037974683544,0.13924050632911392,
+Pair2_song4_take1,91.43,94.08,"XBL with a left (inside) turn for the follower, ends with Check by holding the follower's hand (hands down, crossed hold)","turn, hands held",0.008663996780199775,0.3125,0.6625,0.6375,0.36329044630341867
+Pair2_song4_take1,94.08,96.73,XBL with a left (inside) turn for the follower with late half right turn for the leader,other,0.008663996780199775,0.5063291139240507,0.4936708860759494,0.12658227848101267,
+Pair2_song4_take1,96.73,99.36,"XBL with a left (inside) turn for the follower, ends with Check by holding the follower's hand (hands down)",other,0.008663996780199775,0.2911392405063291,0.6455696202531646,0.34177215189873417,0.5521324391778676
+Pair2_song4_take1,99.36,102.01,"Right turn for the follower, comb on the follower with the leader's right hand, normal onen hold",other,0.008663996780199775,0.15,0.2125,0.0125,
+Pair2_song4_take1,102.01,104.65,XBL with a left (inside) turn for the follower,other,0.008663996780199775,0.5443037974683544,0.27848101265822783,0.11392405063291139,
+Pair2_song4_take1,104.65,107.29,"XBL with a right (outside) turn for the follower while hands change, ends with comb on the leader",hand travels over body,0.008663996780199775,0.0379746835443038,0.5189873417721519,0.4177215189873418,
+Pair2_song4_take1,107.29,109.89,XBL with normal open hold,open hold,0.008663996780199775,0.34615384615384615,0.28205128205128205,0.2692307692307692,
+Pair2_song4_take1,109.89,112.44,"XBL with a right (outside) turn for the follower with left hand throw for the follower, ends with Left HL for the follower",other,0.008663996780199775,0.2727272727272727,0.45454545454545453,0.4155844155844156,
+Pair2_song4_take1,112.44,114.93,XBL with a left (inside) turn for the follower from Left HL for the follower,other,0.008663996780199775,0.3108108108108108,0.5,0.4864864864864865,
+Pair2_song4_take1,114.93,117.37,Change of Directions (Swap Position) ends with break,other,0.008663996780199775,0.4189189189189189,0.02702702702702703,0.013513513513513514,
+Pair2_song4_take1,117.37,119.58,XBL with a right (outside) turn for the follower with hands change behind the follower,hand travels over body,0.008663996780199775,0.696969696969697,0.42424242424242425,0.30303030303030304,
+Pair2_song4_take1,119.58,121.95,Copa on 1 with Titanic hold for the follower with change of directions (Swap position) for the follower,other,0.008663996780199775,0.647887323943662,0.4084507042253521,0.14084507042253522,
+Pair2_song4_take1,121.95,124.32,"XBL with a left (inside) turn for the follower starts with right hand throw for the follower, ends with Check by holding the follower's hand (hands down)",other,0.008663996780199775,0.4084507042253521,0.5070422535211268,0.49295774647887325,
+Pair2_song4_take1,124.32,126.67,XBL with a left (inside) turn for the follower with late half right turn for the leader,other,0.008663996780199775,0.4507042253521127,0.4507042253521127,0.09859154929577464,
+Pair2_song4_take1,126.67,129.1,"Right turn for the follower, comb on the follower with the leader's right hand, crossed hold","turn, hands held",0.008663996780199775,0.2876712328767123,0.3972602739726027,0.1780821917808219,
+Pair2_song4_take1,129.1,131.639,Change of Directions (Swap Position) ends with break,other,0.008663996780199775,0.039473684210526314,0.05263157894736842,0.0,
+Pair2_song4_take1,131.639,134.16,"XBL with a right (outside) turn for the follower, facing the same direction on the right side of the leader, ends with hand drop for the follower and late left half-turn for the follower",other,0.008663996780199775,0.4266666666666667,0.6266666666666667,0.36,0.47182958246083334
+Pair2_song4_take1,134.16,136.618,XBL with a left (inside) turn for the follower,other,0.008663996780199775,0.4864864864864865,0.21621621621621623,0.10810810810810811,
+Pair2_song4_take1,136.618,138.997,"XBL with a right (outside) turn for the follower, ends with left hand throw for the follower, normal open hold","turn, hands held",0.008663996780199775,0.38028169014084506,0.29577464788732394,0.2112676056338028,
+Pair2_song4_take1,138.997,141.387,"XBL with a left (inside) turn for the follower from Left HL for the follower, ends with late right turn for the follower",other,0.008663996780199775,0.20833333333333334,0.5138888888888888,0.5,
+Pair2_song4_take1,141.387,143.787,Change of Directions (Swap Position) for the follower with normal open hold ends with open break,open hold,0.008663996780199775,0.5972222222222222,0.19444444444444445,0.0,
+Pair2_song4_take1,143.787,146.177,"XBL with a right (outside) turn for the follower, facing the same direction on the right side of the leader, ends with hand drop for the follower, double left turn for the follower",other,0.008663996780199775,0.16666666666666666,0.4722222222222222,0.2777777777777778,
+Pair3_song1_take1,0.81,3.33,XBL with normal closed hold,closed hold,0.0071712463093571545,0.9333333333333333,1.0,1.0,0.06572747014359359
+Pair3_song1_take1,3.33,5.8,XBL with normal closed hold,closed hold,0.0071712463093571545,0.9466666666666667,0.9466666666666667,0.9466666666666667,0.05178005486007716
+Pair3_song1_take1,5.8,8.32,"Right turn for the follower, normal open hold","turn, hands held",0.0071712463093571545,0.8266666666666667,0.08,0.0,
+Pair3_song1_take1,8.32,10.84,"Enchufla with crossed hold, both hands",open hold,0.0071712463093571545,0.4342105263157895,0.10526315789473684,0.10526315789473684,
+Pair3_song1_take1,10.84,13.35,"Dile que no with normal closed hold, both hands",closed hold,0.0071712463093571545,0.3466666666666667,0.7733333333333333,0.7733333333333333,0.07165911916460085
+Pair3_song1_take1,13.35,15.87,Enchufla with normal open hold,open hold,0.0071712463093571545,0.8026315789473685,0.18421052631578946,0.18421052631578946,
+Pair3_song1_take1,15.87,18.37,"Dile que no with normal closed hold, both hands",closed hold,0.0071712463093571545,1.0,0.9466666666666667,0.9466666666666667,0.2707779416853766
+Pair3_song1_take1,18.38,20.9,"Right turn for the follower, normal open hold, ends with Left HL for the follower","turn, hands held",0.0071712463093571545,0.5263157894736842,0.4868421052631579,0.4868421052631579,
+Pair3_song1_take1,20.9,23.42,Left turn for the follower from Left HL for the follower,other,0.0071712463093571545,0.8266666666666667,0.21333333333333335,0.21333333333333335,
+Pair3_song1_take1,23.42,26.05,"Basic step, facing the line of dance",other,0.0071712463093571545,1.0,0.6329113924050633,0.6329113924050633,0.41144065726477175
+Pair3_song1_take1,26.05,28.57,XBL with normal closed hold,closed hold,0.0071712463093571545,0.6578947368421053,0.9736842105263158,0.9736842105263158,0.06091836244445435
+Pair3_song1_take1,28.57,31.08,XBL with a left (inside) turn for the follower with normal closed hold,closed hold,0.0071712463093571545,0.29333333333333333,0.6933333333333334,0.6666666666666666,0.27635069437579723
+Pair3_song1_take1,31.08,33.58,XBL with normal open hold,open hold,0.0071712463093571545,0.92,0.5066666666666667,0.49333333333333335,0.09617908899653597
+Pair3_song1_take1,33.58,36.09,Enchufla with normal open hold,open hold,0.0071712463093571545,0.8533333333333334,0.08,0.08,
+Pair3_song1_take1,36.09,38.61,Change of Directions (Swap Position),other,0.0071712463093571545,1.0,0.05263157894736842,0.05263157894736842,
+Pair3_song1_take1,38.61,41.13,"Basic step, facing the line of dance",other,0.0071712463093571545,1.0,0.0,0.0,
+Pair3_song1_take1,41.13,43.64,Enchufla with normal open hold with left turn for the leader,"turn, hands held",0.0071712463093571545,0.9342105263157895,0.32894736842105265,0.2236842105263158,
+Pair3_song1_take1,43.64,46.16,Enchufla with normal open hold,open hold,0.0071712463093571545,0.8533333333333334,0.05333333333333334,0.013333333333333334,
+Pair3_song1_take1,46.16,48.71,XBL with normal closed hold,closed hold,0.0071712463093571545,0.5844155844155844,0.9090909090909091,0.9090909090909091,0.3458158623228928
+Pair3_song1_take1,48.71,51.26,"Right turn for the follower, normal open hold, ends with Left HL for the follower","turn, hands held",0.0071712463093571545,0.5526315789473685,0.13157894736842105,0.039473684210526314,
+Pair3_song1_take1,51.26,53.78,"Enchufla from left HL for the follower, ends with body roll in arm lock with both hands",open hold,0.0071712463093571545,0.618421052631579,0.4342105263157895,0.23684210526315788,
+Pair3_song1_take1,53.78,56.3,Markers Swap issue,other,0.0071712463093571545,0.8026315789473685,1.0,1.0,0.23954149042849004
+Pair3_song1_take1,56.3,58.81,Markers Swap issue,other,0.0071712463093571545,0.9466666666666667,0.9733333333333334,0.9733333333333334,0.2602094882590225
+Pair3_song1_take1,58.81,61.33,XBL with normal open hold,open hold,0.0071712463093571545,1.0,1.0,0.9733333333333334,0.4162190601958468
+Pair3_song1_take1,61.33,63.82,"Right turn for the leader, normal open hold","turn, hands held",0.0071712463093571545,0.8266666666666667,0.16,0.13333333333333333,
+Pair3_song1_take1,63.82,66.37,XBL with normal open hold,open hold,0.0071712463093571545,0.974025974025974,0.4155844155844156,0.2597402597402597,0.45783460646783664
+Pair3_song1_take1,66.37,68.88,"Basic step, facing the line of dance",other,0.0071712463093571545,1.0,0.06666666666666667,0.02666666666666667,
+Pair3_song1_take1,68.88,71.39,XBL with normal open hold,open hold,0.0071712463093571545,1.0,0.7466666666666667,0.7466666666666667,0.3445076065353291
+Pair3_song1_take1,71.39,73.91,"Basic step, facing the line of dance",other,0.0071712463093571545,1.0,0.10526315789473684,0.10526315789473684,
+Pair3_song1_take1,73.91,76.42,XBL with normal open hold,open hold,0.0071712463093571545,0.9333333333333333,0.7066666666666667,0.7066666666666667,0.3944029270556445
+Pair3_song1_take1,76.42,78.94,"Right turn for the follower, normal open hold","turn, hands held",0.0071712463093571545,0.7105263157894737,0.11842105263157894,0.05263157894736842,
+Pair3_song1_take1,78.94,81.46,XBL with normal open hold,open hold,0.0071712463093571545,1.0,0.5733333333333334,0.5733333333333334,0.34803377227297083
+Pair3_song1_take1,81.46,83.97,"Right turn for the follower, normal open hold","turn, hands held",0.0071712463093571545,0.8026315789473685,0.039473684210526314,0.02631578947368421,
+Pair3_song1_take1,83.97,86.49,XBL with normal open hold,open hold,0.0071712463093571545,0.9866666666666667,0.4533333333333333,0.4266666666666667,0.2958190116863753
+Pair3_song1_take1,86.49,88.99,"Basic step, facing the line of dance",other,0.0071712463093571545,1.0,0.0,0.0,
+Pair3_song1_take1,88.99,91.58,XBL with normal open hold,open hold,0.0071712463093571545,1.0,0.8076923076923077,0.5,0.43278210294098757
+Pair3_song1_take1,91.58,94.1,"Right turn for the leader, normal open hold","turn, hands held",0.0071712463093571545,0.8026315789473685,0.09210526315789473,0.09210526315789473,
+Pair3_song1_take1,94.1,96.7,XBL with normal open hold,open hold,0.0071712463093571545,1.0,0.46153846153846156,0.14102564102564102,
+Pair3_song1_take1,96.7,99.22,"Basic step, facing the line of dance",other,0.0071712463093571545,1.0,0.05333333333333334,0.05333333333333334,
+Pair3_song1_take1,99.22,101.73,XBL with normal open hold,open hold,0.0071712463093571545,1.0,0.6133333333333333,0.49333333333333335,0.4674517882601122
+Pair3_song1_take1,101.73,104.25,"Basic step, facing the line of dance",other,0.0071712463093571545,1.0,0.0,0.0,
+Pair3_song1_take1,104.25,106.78,XBL with normal open hold,open hold,0.0071712463093571545,1.0,0.6447368421052632,0.34210526315789475,0.42342700495430813
+Pair3_song1_take1,106.78,109.29,"Right turn for the follower, normal open hold","turn, hands held",0.0071712463093571545,0.7466666666666667,0.2,0.12,
+Pair3_song1_take1,109.29,111.8,"Check by holding the follower's both hands (open hands down, Embrace for the lady in a shadow)  after XBL with a left (inside) turn for the follower.",closed hold,0.0071712463093571545,0.9473684210526315,0.7236842105263158,0.5921052631578947,0.4145577779716902
+Pair3_song1_take1,111.8,114.31,Right turn for the follower from Embrace for the follower to left HL for the follower,closed hold,0.0071712463093571545,0.84,0.30666666666666664,0.22666666666666666,
+Pair3_song1_take1,114.31,116.82,Enchufla from left HL for the follower,other,0.0071712463093571545,0.16,0.44,0.37333333333333335,
+Pair3_song1_take1,116.82,119.33,"Dile que no with normal closed hold, both hands",closed hold,0.0071712463093571545,0.4,0.8133333333333334,0.8133333333333334,0.341075747284022
+Pair3_song1_take1,119.33,121.85,"Right turn for the follower, normal open hold","turn, hands held",0.0071712463093571545,0.5526315789473685,0.19736842105263158,0.039473684210526314,
+Pair3_song1_take1,121.85,124.37,XBL with normal closed hold,closed hold,0.0071712463093571545,0.8552631578947368,0.8421052631578947,0.8421052631578947,0.45019753391056405
+Pair3_song1_take1,124.37,126.88,"Basic step, facing the line of dance",other,0.0071712463093571545,1.0,0.06666666666666667,0.02666666666666667,
+Pair3_song1_take1,126.88,129.44,XBL with normal open hold,open hold,0.0071712463093571545,1.0,0.6103896103896104,0.6103896103896104,0.41933251480817174
+Pair3_song1_take1,129.44,131.96,"Basic step, facing the line of dance",other,0.0071712463093571545,1.0,0.21333333333333335,0.21333333333333335,
+Pair3_song1_take1,131.969,134.479,XBL with normal open hold,open hold,0.0071712463093571545,1.0,0.52,0.3466666666666667,0.40142680871170133
+Pair3_song1_take1,134.479,136.999,"Right turn for the follower, normal open hold","turn, hands held",0.0071712463093571545,0.8133333333333334,0.06666666666666667,0.04,
+Pair3_song1_take1,136.999,139.519,XBL with a left (inside) turn for the follower,other,0.0071712463093571545,0.9605263157894737,0.3157894736842105,0.2631578947368421,
+Pair3_song1_take1,139.519,142.039,XBL with normal open hold,open hold,0.0071712463093571545,0.9736842105263158,0.3026315789473684,0.3026315789473684,
+Pair3_song1_take1,142.039,144.549,"Right turn for the follower, normal open hold","turn, hands held",0.0071712463093571545,0.9733333333333334,0.05333333333333334,0.0,
+Pair3_song1_take1,144.549,147.049,XBL with normal open hold,open hold,0.0071712463093571545,1.0,0.6133333333333333,0.5733333333333334,0.4718664304688286
+Pair3_song1_take1,147.049,149.569,"Basic step, facing the line of dance",other,0.0071712463093571545,1.0,0.039473684210526314,0.0,
+Pair3_song1_take1,149.569,150.87,Enchufla with normal open hold,open hold,0.0071712463093571545,0.8857142857142857,0.2,0.2,
+Pair3_song1_take2,0.0,1.33,XBL with normal open hold,open hold,0.007844907740356588,0.8974358974358975,0.717948717948718,0.717948717948718,
+Pair3_song1_take2,1.33,3.83,"Right turn for the follower, normal open hold, ends with Left HL for the follower","turn, hands held",0.007844907740356588,0.64,0.30666666666666664,0.10666666666666667,
+Pair3_song1_take2,3.83,6.43,Enchufla from left HL for the follower,other,0.007844907740356588,0.8846153846153846,0.47435897435897434,0.2692307692307692,
+Pair3_song1_take2,6.44,8.92,"Dile que no with normal closed hold, both hands",closed hold,0.007844907740356588,0.7297297297297297,0.8378378378378378,0.8378378378378378,0.42510621749454075
+Pair3_song1_take2,8.92,11.56,"Basic step, facing the line of dance",other,0.007844907740356588,1.0,0.06329113924050633,0.06329113924050633,
+Pair3_song1_take2,11.56,13.96,XBL with normal open hold,open hold,0.007844907740356588,1.0,0.7083333333333334,0.7083333333333334,0.5204431927796898
+Pair3_song1_take2,13.96,16.64,"Right turn for the follower, normal open hold","turn, hands held",0.007844907740356588,0.8395061728395061,0.1111111111111111,0.06172839506172839,
+Pair3_song1_take2,16.64,19.16,XBL with normal open hold,open hold,0.007844907740356588,1.0,0.64,0.30666666666666664,0.48647971506938814
+Pair3_song1_take2,19.16,21.64,"Basic step, facing the line of dance",other,0.007844907740356588,1.0,0.0,0.0,
+Pair3_song1_take2,21.64,24.16,Enchufla with normal open hold,open hold,0.007844907740356588,0.9466666666666667,0.3333333333333333,0.3333333333333333,
+Pair3_song1_take2,24.16,26.6,"Dile que no with normal closed hold, both hands",closed hold,0.007844907740356588,1.0,0.8513513513513513,0.8513513513513513,0.3316248640717407
+Pair3_song1_take2,26.6,29.16,"Right turn for the follower, normal open hold","turn, hands held",0.007844907740356588,0.9736842105263158,0.3157894736842105,0.10526315789473684,
+Pair3_song1_take2,29.16,31.72,XBL with normal open hold,open hold,0.007844907740356588,1.0,0.5584415584415584,0.5454545454545454,0.37873484251432393
+Pair3_song1_take2,31.72,34.2,"Right turn for the follower, normal open hold","turn, hands held",0.007844907740356588,0.8933333333333333,0.32,0.0,
+Pair3_song1_take2,34.2,36.68,Enchufla with normal open hold,open hold,0.007844907740356588,0.43243243243243246,0.36486486486486486,0.13513513513513514,
+Pair3_song1_take2,36.68,39.16,"Dile que no with normal closed hold, both hands",closed hold,0.007844907740356588,0.44594594594594594,0.8378378378378378,0.8378378378378378,0.322283441210126
+Pair3_song1_take2,39.16,41.76,"Right turn for the follower, normal open hold","turn, hands held",0.007844907740356588,0.8589743589743589,0.16666666666666666,0.1282051282051282,
+Pair3_song1_take2,41.76,44.28,XBL with normal open hold,open hold,0.007844907740356588,1.0,0.5789473684210527,0.5394736842105263,
+Pair3_song1_take2,44.28,46.8,Enchufla with normal open hold to Embrace hold,closed hold,0.007844907740356588,1.0,0.4342105263157895,0.4342105263157895,
+Pair3_song1_take2,46.8,49.32,Enchufla with normal open hold,open hold,0.007844907740356588,1.0,0.22666666666666666,0.22666666666666666,
+Pair3_song1_take2,49.32,51.92,"Dile que no with normal closed hold, both hands",closed hold,0.007844907740356588,1.0,0.7948717948717948,0.7948717948717948,0.4453962155593051
+Pair3_song1_take2,51.92,54.4,"Basic step, facing the line of dance",other,0.007844907740356588,1.0,0.18666666666666668,0.10666666666666667,
+Pair3_song1_take2,54.4,56.92,XBL with normal open hold,open hold,0.007844907740356588,1.0,0.5333333333333333,0.49333333333333335,0.5157817470989452
+Pair3_song1_take2,56.92,59.48,"Right turn for the leader, normal open hold","turn, hands held",0.007844907740356588,0.7922077922077922,0.06493506493506493,0.06493506493506493,
+Pair3_song1_take2,59.48,62.0,XBL with normal open hold,open hold,0.007844907740356588,1.0,0.3026315789473684,0.2894736842105263,
+Pair3_song1_take2,62.0,64.48,"Right turn for the follower, normal open hold","turn, hands held",0.007844907740356588,0.972972972972973,0.04054054054054054,0.02702702702702703,
+Pair3_song1_take2,64.48,67.08,"XBL with a left (inside) turn for the follower with normal open hold, hands down","turn, hands held",0.007844907740356588,0.9230769230769231,0.7564102564102564,0.717948717948718,0.5043460088895054
+Pair3_song1_take2,67.08,69.6,XBL with normal open hold,open hold,0.007844907740356588,1.0,0.4605263157894737,0.4605263157894737,0.4761400405615969
+Pair3_song1_take2,69.6,72.04,"Basic step, facing the line of dance",other,0.007844907740356588,1.0,0.0821917808219178,0.0821917808219178,
+Pair3_song1_take2,72.04,74.56,XBL with normal open hold with late right turn for the leader while hands change,hand travels over body,0.007844907740356588,1.0,0.4,0.4,0.13051112114151553
+Pair3_song1_take2,74.56,77.16,"Right turn for the follower, crossed hold","turn, hands held",0.007844907740356588,0.6538461538461539,0.11538461538461539,0.08974358974358974,
+Pair3_song1_take2,77.16,79.56,Enchufla with crossed hold to right sombrero hold,open hold,0.007844907740356588,0.75,0.2361111111111111,0.18055555555555555,
+Pair3_song1_take2,79.56,82.08,"Dile que no with normal closed hold, both hands",closed hold,0.007844907740356588,0.02631578947368421,1.0,1.0,0.17123481310512367
+Pair3_song1_take2,82.08,84.64,XBL with normal closed hold,closed hold,0.007844907740356588,0.5194805194805194,0.6493506493506493,0.6493506493506493,
+Pair3_song1_take2,84.64,87.16,"Right turn for the follower, normal open hold","turn, hands held",0.007844907740356588,1.0,0.013333333333333334,0.0,
+Pair3_song1_take2,87.16,89.76,Enchufla with normal open hold,open hold,0.007844907740356588,0.6538461538461539,0.46153846153846156,0.24358974358974358,
+Pair3_song1_take2,89.76,92.28,"Dile que no with normal closed hold, both hands",closed hold,0.007844907740356588,0.5,0.7631578947368421,0.7631578947368421,0.41135001026929213
+Pair3_song1_take2,92.28,94.76,"Right turn for the leader, normal open hold","turn, hands held",0.007844907740356588,0.7702702702702703,0.0,0.0,
+Pair3_song1_take2,94.76,97.2,XBL with normal open hold,open hold,0.007844907740356588,1.0,0.5675675675675675,0.5675675675675675,0.4873958859150315
+Pair3_song1_take2,97.2,99.8,"Right turn for the follower, normal open hold","turn, hands held",0.007844907740356588,0.6923076923076923,0.02564102564102564,0.0,
+Pair3_song1_take2,99.8,102.28,XBL with normal open hold,open hold,0.007844907740356588,1.0,0.6351351351351351,0.6351351351351351,0.5046306541473425
+Pair3_song1_take2,102.28,104.83,"Right turn for the follower, normal open hold","turn, hands held",0.007844907740356588,0.7763157894736842,0.06578947368421052,0.039473684210526314,
+Pair3_song1_take2,104.83,107.39,"Check by holding the follower's both hands (open hands down, Embrace for the lady in a shadow)  after XBL with a left (inside) turn for the follower.",closed hold,0.007844907740356588,1.0,0.6883116883116883,0.6883116883116883,0.6076261086556957
+Pair3_song1_take2,107.4,109.88,"Right turn for the follower, normal open hold, ends with Left HL for the follower","turn, hands held",0.007844907740356588,1.0,0.32432432432432434,0.25675675675675674,
+Pair3_song1_take2,109.88,112.4,Enchufla from left HL for the follower,other,0.007844907740356588,0.631578947368421,0.47368421052631576,0.42105263157894735,0.26417215914697717
+Pair3_song1_take2,112.4,114.92,"Basic step, facing the line of dance",other,0.007844907740356588,0.4266666666666667,0.7333333333333333,0.7333333333333333,0.04750400051289499
+Pair3_song1_take2,114.92,117.48,XBL with normal closed hold,closed hold,0.007844907740356588,1.0,0.8181818181818182,0.8181818181818182,0.3757710890310319
+Pair3_song1_take2,117.48,119.96,"Right turn for the follower, normal open hold","turn, hands held",0.007844907740356588,0.9054054054054054,0.10810810810810811,0.05405405405405406,
+Pair3_song1_take2,119.96,122.48,XBL with normal open hold,open hold,0.007844907740356588,1.0,0.5526315789473685,0.5394736842105263,0.4026678109014731
+Pair3_song1_take2,122.48,125.04,"Basic step, facing the line of dance",other,0.007844907740356588,1.0,0.0,0.0,
+Pair3_song1_take2,125.04,127.56,XBL with normal open hold,open hold,0.007844907740356588,1.0,0.4,0.12,
+Pair3_song1_take2,127.56,130.0,"Right turn for the follower, normal open hold","turn, hands held",0.007844907740356588,1.0,0.21621621621621623,0.0945945945945946,
+Pair3_song1_take2,130.0,132.52,XBL with normal open hold with late right turn for the leader while hands change,hand travels over body,0.007844907740356588,0.9866666666666667,0.52,0.5066666666666667,
+Pair3_song1_take2,132.52,135.12,"Right turn for the follower, crossed hold","turn, hands held",0.007844907740356588,0.34615384615384615,0.02564102564102564,0.0,
+Pair3_song1_take2,135.12,137.6,Enchufla with crossed hold to open hold while hands change,hand travels over body,0.007844907740356588,0.26666666666666666,0.30666666666666664,0.30666666666666664,
+Pair3_song1_take2,137.6,140.12,"Dile que no with normal closed hold, both hands",closed hold,0.007844907740356588,0.4533333333333333,0.9866666666666667,0.8133333333333334,0.4806023188725755
+Pair3_song1_take2,140.12,142.6,"Right turn for the follower, right turn for the leader, normal open hold, hands change over the follower  and then behind the leader",hand travels over body,0.007844907740356588,0.5733333333333334,0.2,0.04,
+Pair3_song1_take2,142.6,145.24,"Right turn for the follower, crossed hold","turn, hands held",0.007844907740356588,0.7721518987341772,0.02531645569620253,0.02531645569620253,
+Pair3_song1_take2,145.24,147.68,Enchufla with crossed hold to Titanic hold,open hold,0.007844907740356588,0.5753424657534246,0.2054794520547945,0.0958904109589041,
+Pair3_song1_take2,147.68,150.15,Copa with the follower's right (outside) turn with crossed hold,"turn, hands held",0.007844907740356588,0.7027027027027027,0.3783783783783784,0.33783783783783783,
+Pair3_song2_take1,0.0,2.54,"Basic step, facing the line of dance",other,0.004831185575976888,0.8157894736842105,1.0,1.0,0.13316180008904446
+Pair3_song2_take1,2.54,4.9,"Basic step, facing the line of dance with normal closed hand",closed hold,0.004831185575976888,1.0,1.0,1.0,0.1466371074515077
+Pair3_song2_take1,4.9,7.37,"Basic step, facing the line of dance with normal closed hand",closed hold,0.004831185575976888,1.0,1.0,1.0,0.0173108369497067
+Pair3_song2_take1,7.37,9.81,XBL with normal closed hold,closed hold,0.004831185575976888,1.0,1.0,1.0,0.11627439787168037
+Pair3_song2_take1,9.81,12.25,XBL with normal closed hold on the right side of the follower,closed hold,0.004831185575976888,1.0,1.0,1.0,0.08137783591031564
+Pair3_song2_take1,12.25,14.73,"Basic step, facing the line of dance",other,0.004831185575976888,0.7837837837837838,0.1891891891891892,0.13513513513513514,
+Pair3_song2_take1,14.73,17.13,XBL with a left (inside) turn for the follower,other,0.004831185575976888,1.0,0.3472222222222222,0.2916666666666667,
+Pair3_song2_take1,17.13,19.57,XBL with normal open hold,open hold,0.004831185575976888,1.0,0.4594594594594595,0.4594594594594595,
+Pair3_song2_take1,19.57,22.05,"Right turn for the follower, normal open hold","turn, hands held",0.004831185575976888,0.9459459459459459,0.02702702702702703,0.0,
+Pair3_song2_take1,22.05,24.45,XBL with normal open hold,open hold,0.004831185575976888,1.0,0.375,0.2361111111111111,
+Pair3_song2_take1,24.45,26.85,"Right turn for the follower, normal open hold","turn, hands held",0.004831185575976888,0.6944444444444444,0.0,0.0,
+Pair3_song2_take1,26.85,29.24,XBL with normal open hold,open hold,0.004831185575976888,1.0,0.5555555555555556,0.4444444444444444,0.12914829677311188
+Pair3_song2_take1,29.24,31.72,"Basic step, facing the line of dance",other,0.004831185575976888,1.0,0.0,0.0,
+Pair3_song2_take1,31.73,34.17,XBL with normal open hold,open hold,0.004831185575976888,1.0,0.6486486486486487,0.6486486486486487,0.3504426585293229
+Pair3_song2_take1,34.17,36.57,"Right turn for the follower, normal open hold","turn, hands held",0.004831185575976888,0.7638888888888888,0.08333333333333333,0.05555555555555555,
+Pair3_song2_take1,36.57,38.97,XBL with normal open hold,open hold,0.004831185575976888,1.0,0.4027777777777778,0.09722222222222222,
+Pair3_song2_take1,38.97,41.33,Enchufla with normal open hold,open hold,0.004831185575976888,1.0,0.3142857142857143,0.2857142857142857,
+Pair3_song2_take1,41.33,43.73,XBL with normal open hold,open hold,0.004831185575976888,1.0,1.0,0.9444444444444444,0.29882780453967706
+Pair3_song2_take1,43.73,46.17,XBL with normal open hold,open hold,0.004831185575976888,1.0,0.5675675675675675,0.5,
+Pair3_song2_take1,46.17,48.53,"Right turn for the follower, normal open hold","turn, hands held",0.004831185575976888,0.7857142857142857,0.0,0.0,
+Pair3_song2_take1,48.53,51.01,XBL with normal open hold,open hold,0.004831185575976888,1.0,0.64,0.48,0.44808378613402
+Pair3_song2_take1,51.01,53.41,"Basic step, facing the line of dance",other,0.004831185575976888,1.0,0.125,0.125,
+Pair3_song2_take1,53.41,55.69,XBL with normal open hold,open hold,0.004831185575976888,1.0,0.5882352941176471,0.5882352941176471,0.14656374039657946
+Pair3_song2_take1,55.69,58.13,"Basic step, facing the line of dance",other,0.004831185575976888,0.9863013698630136,0.0684931506849315,0.0684931506849315,
+Pair3_song2_take1,58.13,60.53,XBL with a left (inside) turn for the follower,other,0.004831185575976888,0.9444444444444444,0.375,0.375,
+Pair3_song2_take1,60.53,62.93,XBL with normal closed hold,closed hold,0.004831185575976888,0.9444444444444444,0.6111111111111112,0.6111111111111112,0.1460699939807087
+Pair3_song2_take1,62.93,65.33,"Basic step, facing the line of dance",other,0.004831185575976888,1.0,0.09722222222222222,0.09722222222222222,
+Pair3_song2_take1,65.33,67.73,XBL with a left (inside) turn for the follower with no hands after left hand throw,other,0.004831185575976888,0.7222222222222222,0.4166666666666667,0.1111111111111111,
+Pair3_song2_take1,67.73,70.13,XBL with normal closed hold,closed hold,0.004831185575976888,0.8611111111111112,0.8194444444444444,0.8055555555555556,0.42283610343643896
+Pair3_song2_take1,70.13,72.53,"Right turn for the leader, normal open hold","turn, hands held",0.004831185575976888,0.7083333333333334,0.09722222222222222,0.0,
+Pair3_song2_take1,72.53,74.93,XBL with normal open hold,open hold,0.004831185575976888,1.0,0.5,0.5,0.30800687191031306
+Pair3_song2_take1,74.93,77.33,"Right turn for the follower, normal open hold","turn, hands held",0.004831185575976888,0.7916666666666666,0.0,0.0,
+Pair3_song2_take1,77.33,79.81,XBL with normal open hold,open hold,0.004831185575976888,1.0,0.68,0.64,0.4435033254682128
+Pair3_song2_take1,79.81,82.01,"XBL with a left (inside) turn for the follower with normal open hold, hands down","turn, hands held",0.004831185575976888,1.0,0.3787878787878788,0.3787878787878788,
+Pair3_song2_take1,82.01,84.37,XBL with normal open hold,open hold,0.004831185575976888,1.0,0.5352112676056338,0.5352112676056338,0.21529300452056568
+Pair3_song2_take1,84.37,86.65,Basic step variation with normal open hold,open hold,0.004831185575976888,1.0,0.16176470588235295,0.16176470588235295,
+Pair3_song2_take1,86.65,89.09,XBL with normal open hold,open hold,0.004831185575976888,1.0,0.6575342465753424,0.589041095890411,0.21031053180081172
+Pair3_song2_take1,89.09,91.49,"Right turn for the follower, normal open hold","turn, hands held",0.004831185575976888,0.7916666666666666,0.05555555555555555,0.013888888888888888,
+Pair3_song2_take1,91.49,93.85,XBL with normal open hold with late right turn for the leader while hands change,hand travels over body,0.004831185575976888,1.0,0.5774647887323944,0.5774647887323944,0.22703469942882784
+Pair3_song2_take1,93.85,96.21,"Right turn for the leader, crossed hold","turn, hands held",0.004831185575976888,0.39436619718309857,0.1267605633802817,0.028169014084507043,
+Pair3_song2_take1,96.21,98.6,Enchufla with crossed hold to right sombrero hold,open hold,0.004831185575976888,0.2777777777777778,0.08333333333333333,0.06944444444444445,
+Pair3_song2_take1,98.6,100.96,"Enchufla with crossed hold, both hands",open hold,0.004831185575976888,0.5285714285714286,0.35714285714285715,0.3142857142857143,
+Pair3_song2_take1,100.96,103.28,"Dile que no with normal closed hold, both hands",closed hold,0.004831185575976888,0.4857142857142857,1.0,1.0,0.08039659393939062
+Pair3_song2_take1,103.28,105.6,XBL with normal closed hold,closed hold,0.004831185575976888,0.5857142857142857,0.8428571428571429,0.8428571428571429,0.04640592944394834
+Pair3_song2_take1,105.6,107.92,"Right turn for the follower, normal open hold","turn, hands held",0.004831185575976888,0.9130434782608695,0.0,0.0,
+Pair3_song2_take1,107.92,110.24,XBL with normal open hold with late right turn for the leader while hands change,hand travels over body,0.004831185575976888,0.9857142857142858,0.6857142857142857,0.44285714285714284,0.43051011138979517
+Pair3_song2_take1,110.24,112.56,"Right turn for the follower, crossed hold","turn, hands held",0.004831185575976888,0.7391304347826086,0.043478260869565216,0.043478260869565216,
+Pair3_song2_take1,112.56,114.88,"Enchufla with crossed hold, both hands",open hold,0.004831185575976888,1.0,0.07142857142857142,0.07142857142857142,
+Pair3_song2_take1,114.88,117.28,"Enchufla with crossed hold, both hands",open hold,0.004831185575976888,1.0,0.125,0.125,
+Pair3_song2_take1,117.28,119.64,"Enchufla with crossed hold, both hands",open hold,0.004831185575976888,0.9154929577464789,0.028169014084507043,0.028169014084507043,
+Pair3_song2_take1,119.64,122.0,XBL with normal open hold,open hold,0.004831185575976888,1.0,0.7323943661971831,0.7323943661971831,0.3513645715965285
+Pair3_song2_take1,122.0,124.28,"Right turn for the follower, normal open hold","turn, hands held",0.004831185575976888,0.9411764705882353,0.19117647058823528,0.058823529411764705,
+Pair3_song2_take1,124.28,126.68,XBL with normal open hold,open hold,0.004831185575976888,1.0,0.5694444444444444,0.5694444444444444,0.34512122266904194
+Pair3_song2_take1,126.68,129.039,"Basic step, facing the line of dance",other,0.004831185575976888,1.0,0.11267605633802817,0.09859154929577464,
+Pair3_song2_take1,129.039,131.36,XBL with normal open hold,open hold,0.004831185575976888,1.0,0.43478260869565216,0.43478260869565216,0.13676510801754513
+Pair3_song2_take1,131.36,133.72,"Open break, normal open hold",open hold,0.004831185575976888,0.647887323943662,0.0,0.0,
+Pair3_song2_take1,133.72,136.04,Natural top,other,0.004831185575976888,0.24285714285714285,0.8,0.7428571428571429,0.29811132953485436
+Pair3_song2_take1,136.04,138.28,XBL with normal closed hold,closed hold,0.004831185575976888,0.5970149253731343,0.7164179104477612,0.7164179104477612,0.10899696424981249
+Pair3_song2_take1,138.28,140.64,Back basic step with normal open hold,open hold,0.004831185575976888,0.704225352112676,0.08450704225352113,0.08450704225352113,
+Pair3_song2_take1,140.64,143.0,XBL with normal open hold with late right turn for the leader while hands change,hand travels over body,0.004831185575976888,1.0,0.4647887323943662,0.352112676056338,
+Pair3_song2_take1,143.0,145.28,"Right turn for the follower, crossed hold","turn, hands held",0.004831185575976888,0.7205882352941176,0.11764705882352941,0.058823529411764705,
+Pair3_song2_take1,145.28,147.64,"XBL with a left (inside) turn for the follower with crossed hold, no hands after right hand throw","turn, hands held",0.004831185575976888,0.0,0.4084507042253521,0.352112676056338,
+Pair3_song2_take1,147.64,149.87,XBL with normal open hold,open hold,0.004831185575976888,0.7910447761194029,0.3582089552238806,0.3582089552238806,
+Pair3_song2_take2,0.0,2.06,XBL with normal closed hold,closed hold,0.005044276861767863,0.45901639344262296,0.8032786885245902,0.8032786885245902,0.18907870891536294
+Pair3_song2_take2,2.06,4.43,"Basic step, facing the line of dance",other,0.005044276861767863,0.8873239436619719,0.0,0.0,
+Pair3_song2_take2,4.45,6.85,XBL with normal open hold,open hold,0.005044276861767863,1.0,0.5138888888888888,0.5138888888888888,0.2861853156148139
+Pair3_song2_take2,6.85,9.25,"Right turn for the follower, normal open hold","turn, hands held",0.005044276861767863,0.7361111111111112,0.05555555555555555,0.0,
+Pair3_song2_take2,9.25,11.69,XBL with normal open hold,open hold,0.005044276861767863,1.0,0.5616438356164384,0.547945205479452,0.3009387767615332
+Pair3_song2_take2,11.69,14.21,"Basic step, facing the line of dance",other,0.005044276861767863,1.0,0.0,0.0,
+Pair3_song2_take2,14.21,16.61,XBL with normal open hold,open hold,0.005044276861767863,1.0,0.6805555555555556,0.6805555555555556,0.36509818842623837
+Pair3_song2_take2,16.61,19.05,"Right turn for the follower, normal open hold","turn, hands held",0.005044276861767863,0.7534246575342466,0.1095890410958904,0.0273972602739726,
+Pair3_song2_take2,19.05,21.53,XBL with normal open hold,open hold,0.005044276861767863,1.0,0.43243243243243246,0.25675675675675674,0.37474017859766623
+Pair3_song2_take2,21.53,24.01,XBL with normal open hold,open hold,0.005044276861767863,1.0,0.4666666666666667,0.4666666666666667,0.14261488438734585
+Pair3_song2_take2,24.01,26.29,"Basic step, facing the line of dance",other,0.005044276861767863,1.0,0.0,0.0,
+Pair3_song2_take2,26.29,28.81,XBL with normal open hold,open hold,0.005044276861767863,1.0,0.5789473684210527,0.4605263157894737,0.39593081339199515
+Pair3_song2_take2,28.81,31.17,"Right turn for the follower, normal open hold","turn, hands held",0.005044276861767863,0.7183098591549296,0.056338028169014086,0.014084507042253521,
+Pair3_song2_take2,31.17,33.57,XBL with normal open hold,open hold,0.005044276861767863,1.0,0.5,0.3888888888888889,0.36364744474183264
+Pair3_song2_take2,33.57,35.97,"Basic step, facing the line of dance",other,0.005044276861767863,1.0,0.05555555555555555,0.013888888888888888,
+Pair3_song2_take2,35.97,38.41,XBL with normal open hold,open hold,0.005044276861767863,1.0,0.4794520547945205,0.410958904109589,0.31173459947102794
+Pair3_song2_take2,38.41,40.77,"Right turn for the follower, normal open hold","turn, hands held",0.005044276861767863,0.7887323943661971,0.2676056338028169,0.056338028169014086,
+Pair3_song2_take2,40.77,43.13,XBL with normal open hold,open hold,0.005044276861767863,1.0,0.7285714285714285,0.6285714285714286,0.41561856717347
+Pair3_song2_take2,43.13,45.61,"Basic step, facing the line of dance",other,0.005044276861767863,0.9466666666666667,0.0,0.0,
+Pair3_song2_take2,45.61,47.97,Enchufla with normal open hold,open hold,0.005044276861767863,1.0,0.19718309859154928,0.1267605633802817,
+Pair3_song2_take2,47.97,50.41,XBL with normal closed hold,closed hold,0.005044276861767863,1.0,0.6986301369863014,0.6438356164383562,0.20780656021943267
+Pair3_song2_take2,50.41,52.81,"Right turn for the follower, normal open hold","turn, hands held",0.005044276861767863,0.7222222222222222,0.1111111111111111,0.013888888888888888,
+Pair3_song2_take2,52.81,55.21,XBL with normal open hold,open hold,0.005044276861767863,1.0,0.5277777777777778,0.5277777777777778,
+Pair3_song2_take2,55.21,57.61,"Right turn for the follower, normal open hold","turn, hands held",0.005044276861767863,0.7916666666666666,0.041666666666666664,0.0,
+Pair3_song2_take2,57.61,60.01,XBL with normal open hold,open hold,0.005044276861767863,1.0,0.5277777777777778,0.5277777777777778,0.22739642334007915
+Pair3_song2_take2,60.01,62.41,"Right turn for the follower, normal open hold","turn, hands held",0.005044276861767863,0.9444444444444444,0.25,0.0,
+Pair3_song2_take2,62.41,64.81,Enchufla with normal open hold,open hold,0.005044276861767863,0.6805555555555556,0.3888888888888889,0.16666666666666666,
+Pair3_song2_take2,64.81,67.21,"Dile que no with normal closed hold, both hands",closed hold,0.005044276861767863,0.5694444444444444,0.7638888888888888,0.7638888888888888,0.2709824000044826
+Pair3_song2_take2,67.21,69.53,"Right turn for the follower, normal open hold","turn, hands held",0.005044276861767863,0.7681159420289855,0.0,0.0,
+Pair3_song2_take2,69.53,71.93,XBL with normal open hold,open hold,0.005044276861767863,1.0,0.3472222222222222,0.18055555555555555,
+Pair3_song2_take2,71.93,74.29,"Right turn for the follower, normal open hold","turn, hands held",0.005044276861767863,0.6197183098591549,0.014084507042253521,0.0,
+Pair3_song2_take2,74.29,76.73,XBL with normal open hold,open hold,0.005044276861767863,1.0,0.5753424657534246,0.5753424657534246,0.3607146298777378
+Pair3_song2_take2,76.73,78.97,"Right turn for the follower, normal open hold","turn, hands held",0.005044276861767863,0.7058823529411765,0.04411764705882353,0.0,
+Pair3_song2_take2,78.97,81.45,XBL with normal open hold with late right turn for the leader while hands change,hand travels over body,0.005044276861767863,0.7027027027027027,0.43243243243243246,0.13513513513513514,
+Pair3_song2_take2,81.45,83.77,"Right turn for the follower, crossed hold","turn, hands held",0.005044276861767863,0.44285714285714284,0.014285714285714285,0.014285714285714285,
+Pair3_song2_take2,83.77,86.05,XBL with crossed hold,open hold,0.005044276861767863,1.0,0.6617647058823529,0.3088235294117647,0.4086314965196874
+Pair3_song2_take2,86.05,88.53,"Right turn for the follower, crossed hold","turn, hands held",0.005044276861767863,0.9324324324324325,0.02702702702702703,0.0,
+Pair3_song2_take2,88.53,90.93,"Enchufla with crossed hold, both hands",open hold,0.005044276861767863,0.9861111111111112,0.18055555555555555,0.18055555555555555,
+Pair3_song2_take2,90.93,93.29,"Dile que no with normal open hold, both hands",open hold,0.005044276861767863,1.0,0.6056338028169014,0.6056338028169014,0.36294628569756676
+Pair3_song2_take2,93.29,95.65,"Right turn for the follower, normal open hold","turn, hands held",0.005044276861767863,0.7746478873239436,0.16901408450704225,0.028169014084507043,
+Pair3_song2_take2,95.65,98.01,"XBL with normal open hold, hands change to crossed hold",hand travels over body,0.005044276861767863,1.0,0.5352112676056338,0.4225352112676056,0.29789255320060737
+Pair3_song2_take2,98.01,100.37,"Right turn for the leader, crossed hold","turn, hands held",0.005044276861767863,0.7746478873239436,0.0,0.0,
+Pair3_song2_take2,100.37,102.73,"Basic step, facing the line of dance",other,0.005044276861767863,0.9857142857142858,0.12857142857142856,0.1,
+Pair3_song2_take2,102.73,104.93,"Basic step, facing the line of dance",other,0.005044276861767863,0.9545454545454546,0.0,0.0,
+Pair3_song2_take2,104.93,107.37,XBL with crossed hold to Right sombrero hold,open hold,0.005044276861767863,0.6216216216216216,0.8513513513513513,0.7297297297297297,0.21894569242664197
+Pair3_song2_take2,107.37,109.73,XBL with normal closed hold,closed hold,0.005044276861767863,0.8428571428571429,0.8571428571428571,0.8571428571428571,0.37603083613914456
+Pair3_song2_take2,109.73,112.13,"Basic step, facing the line of dance",other,0.005044276861767863,1.0,0.18055555555555555,0.16666666666666666,
+Pair3_song2_take2,112.13,114.49,XBL with a left (inside) turn for the follower,other,0.005044276861767863,1.0,0.4507042253521127,0.4225352112676056,
+Pair3_song2_take2,114.49,116.73,"Basic step, facing the line of dance",other,0.005044276861767863,1.0,0.11940298507462686,0.11940298507462686,
+Pair3_song2_take2,116.73,119.09,XBL with normal open hold,open hold,0.005044276861767863,1.0,0.5070422535211268,0.5070422535211268,0.27569823956740863
+Pair3_song2_take2,119.09,121.37,"Right turn for the follower, normal open hold","turn, hands held",0.005044276861767863,0.7536231884057971,0.2463768115942029,0.07246376811594203,
+Pair3_song2_take2,121.37,123.85,XBL with normal open hold,open hold,0.005044276861767863,1.0,0.527027027027027,0.527027027027027,0.28245675420236355
+Pair3_song2_take2,123.85,126.17,XBL with a left (inside) turn for the follower,other,0.005044276861767863,1.0,0.35714285714285715,0.32857142857142857,
+Pair3_song2_take2,126.17,128.449,"Basic step, facing the line of dance",other,0.005044276861767863,1.0,0.22058823529411764,0.1323529411764706,
+Pair3_song2_take2,128.449,130.85,XBL with normal open hold with late right turn for the leader while hands change,hand travels over body,0.005044276861767863,1.0,0.6805555555555556,0.6666666666666666,0.711487887374134
+Pair3_song2_take2,130.85,133.25,"Right turn for the follower, crossed hold to Right sombrero hold","turn, hands held",0.005044276861767863,0.9305555555555556,0.3611111111111111,0.125,
+Pair3_song2_take2,133.25,135.49,XBL with Right sombrero hold,other,0.005044276861767863,0.43283582089552236,0.9402985074626866,0.835820895522388,0.17432328069711717
+Pair3_song2_take2,135.49,137.73,"Basic step, facing the line of dance",other,0.005044276861767863,1.0,0.1791044776119403,0.1791044776119403,
+Pair3_song2_take2,137.73,140.09,"Basic step, facing the line of dance",other,0.005044276861767863,1.0,0.028169014084507043,0.028169014084507043,
+Pair3_song2_take2,140.09,142.37,XBL with normal open hold with late right turn for the leader while hands change,hand travels over body,0.005044276861767863,0.8985507246376812,0.37681159420289856,0.2753623188405797,
+Pair3_song2_take2,142.37,144.77,"Right turn for the leader, crossed hold","turn, hands held",0.005044276861767863,0.5555555555555556,0.013888888888888888,0.0,
+Pair3_song2_take2,144.77,147.09,XBL with normal open hold,open hold,0.005044276861767863,1.0,0.5942028985507246,0.5942028985507246,0.3491068080334138
+Pair3_song2_take2,147.09,149.29,XBL with a left (inside) turn for the follower with no hands after left hand throw,other,0.005044276861767863,0.6212121212121212,0.10606060606060606,0.10606060606060606,
+Pair3_song2_take2,149.3,150.917,XBL with normal open hold,open hold,0.005044276861767863,0.0,0.8181818181818182,0.8181818181818182,
+Pair3_song3_take1,0.0,1.77,"Right turn for the follower, crossed hold","turn, hands held",0.005997704489909717,0.5849056603773585,0.0,0.0,
+Pair3_song3_take1,1.78,4.24,XBL with crossed hold,open hold,0.005997704489909717,1.0,0.43243243243243246,0.2972972972972973,0.27352936086086177
+Pair3_song3_take1,4.24,6.82,XBL with crossed hold,open hold,0.005997704489909717,1.0,0.5454545454545454,0.42857142857142855,0.30050863339607703
+Pair3_song3_take1,6.82,9.34,"Basic step, facing the line of dance",other,0.005997704489909717,0.9868421052631579,0.0,0.0,
+Pair3_song3_take1,9.34,11.9,XBL with normal open hold,open hold,0.005997704489909717,1.0,0.5194805194805194,0.45454545454545453,
+Pair3_song3_take1,11.9,14.38,"Right turn for the follower, normal open hold","turn, hands held",0.005997704489909717,0.7567567567567568,0.06756756756756757,0.04054054054054054,
+Pair3_song3_take1,14.38,16.94,XBL with normal open hold,open hold,0.005997704489909717,1.0,0.3116883116883117,0.2597402597402597,
+Pair3_song3_take1,16.94,19.5,Enchufla with normal open hold with left turn for the leader,"turn, hands held",0.005997704489909717,0.6103896103896104,0.22077922077922077,0.18181818181818182,
+Pair3_song3_take1,19.5,22.02,Enchufla with normal open hold,open hold,0.005997704489909717,0.3333333333333333,0.3466666666666667,0.3466666666666667,
+Pair3_song3_take1,22.02,24.54,"Dile que no with normal closed hold, both hands, with late right turn for the follower",closed hold,0.005997704489909717,0.2236842105263158,0.6052631578947368,0.5131578947368421,
+Pair3_song3_take1,24.54,27.02,"Right turn for the follower, crossed hold","turn, hands held",0.005997704489909717,0.47297297297297297,0.013513513513513514,0.0,
+Pair3_song3_take1,27.02,29.5,XBL with crossed hold,open hold,0.005997704489909717,1.0,0.5466666666666666,0.4266666666666667,
+Pair3_song3_take1,29.5,32.1,"XBL with a left (inside) turn for the follower with crossed hold, hands down","turn, hands held",0.005997704489909717,0.8589743589743589,0.0,0.0,
+Pair3_song3_take1,32.1,34.54,"Basic step, facing the line of dance",other,0.005997704489909717,1.0,0.2191780821917808,0.2191780821917808,
+Pair3_song3_take1,34.54,37.14,XBL with normal open hold,open hold,0.005997704489909717,1.0,0.7051282051282052,0.48717948717948717,0.4624772862083678
+Pair3_song3_take1,37.14,39.62,"Right turn for the follower, normal open hold","turn, hands held",0.005997704489909717,0.7162162162162162,0.14864864864864866,0.0,
+Pair3_song3_take1,39.62,42.22,XBL with normal open hold,open hold,0.005997704489909717,1.0,0.3974358974358974,0.3974358974358974,0.42633804663358976
+Pair3_song3_take1,42.22,44.66,"Right turn for the leader, normal open hold","turn, hands held",0.005997704489909717,0.7123287671232876,0.1506849315068493,0.0547945205479452,
+Pair3_song3_take1,44.66,47.3,XBL with normal open hold,open hold,0.005997704489909717,1.0,0.35,0.35,
+Pair3_song3_take1,47.3,49.86,"Basic step, facing the line of dance",other,0.005997704489909717,1.0,0.21052631578947367,0.19736842105263158,
+Pair3_song3_take1,49.86,52.38,XBL with normal open hold,open hold,0.005997704489909717,1.0,0.5263157894736842,0.5263157894736842,0.36066654764749634
+Pair3_song3_take1,52.38,54.78,"Right turn for the follower, normal open hold","turn, hands held",0.005997704489909717,0.75,0.0,0.0,
+Pair3_song3_take1,54.78,57.42,XBL with normal open hold,open hold,0.005997704489909717,1.0,0.45569620253164556,0.189873417721519,0.3241963012380091
+Pair3_song3_take1,57.42,59.86,XBL with normal open hold,open hold,0.005997704489909717,0.8904109589041096,0.4520547945205479,0.4520547945205479,
+Pair3_song3_take1,59.86,62.34,"Right turn for the follower, normal open hold","turn, hands held",0.005997704489909717,0.92,0.2,0.18666666666666668,
+Pair3_song3_take1,62.34,64.98,XBL with normal open hold,open hold,0.005997704489909717,1.0,0.569620253164557,0.5569620253164557,0.46179152934347484
+Pair3_song3_take1,64.98,67.5,XBL with normal closed hold,closed hold,0.005997704489909717,0.4868421052631579,1.0,1.0,0.19629152075911793
+Pair3_song3_take1,67.5,70.02,XBL with normal closed hold,closed hold,0.005997704489909717,0.4266666666666667,1.0,1.0,0.20157647092611405
+Pair3_song3_take1,70.02,72.46,XBL with normal closed hold,closed hold,0.005997704489909717,0.547945205479452,0.726027397260274,0.726027397260274,0.47434392370217576
+Pair3_song3_take1,72.46,75.02,"Right turn for the leader, crossed hold","turn, hands held",0.005997704489909717,0.24675324675324675,0.09090909090909091,0.07792207792207792,
+Pair3_song3_take1,75.02,77.54,XBL with a left (inside) turn for the follower with no hands after left hand throw,other,0.005997704489909717,0.6447368421052632,0.13157894736842105,0.10526315789473684,
+Pair3_song3_take1,77.54,80.1,XBL with crossed hold,open hold,0.005997704489909717,0.974025974025974,0.5714285714285714,0.38961038961038963,0.520917329931304
+Pair3_song3_take1,80.1,82.58,XBL with crossed hold,open hold,0.005997704489909717,1.0,0.5135135135135135,0.24324324324324326,
+Pair3_song3_take1,82.58,85.14,"Right turn for the follower, crossed hold","turn, hands held",0.005997704489909717,0.7792207792207793,0.14285714285714285,0.1038961038961039,
+Pair3_song3_take1,85.14,87.81,XBL with normal open hold,open hold,0.005997704489909717,1.0,0.2625,0.0,
+Pair3_song3_take1,87.81,90.29,XBL with normal open hold,open hold,0.005997704489909717,1.0,0.5135135135135135,0.5135135135135135,0.47214605873822224
+Pair3_song3_take1,90.3,92.78,"Right turn for the follower, normal open hold","turn, hands held",0.005997704489909717,0.9594594594594594,0.08108108108108109,0.05405405405405406,
+Pair3_song3_take1,92.78,95.22,XBL with normal open hold,open hold,0.005997704489909717,1.0,0.4657534246575342,0.3150684931506849,
+Pair3_song3_take1,95.22,97.82,Enchufla with normal open hold with left turn for the leader,"turn, hands held",0.005997704489909717,0.7948717948717948,0.15384615384615385,0.15384615384615385,
+Pair3_song3_take1,97.82,100.34,Enchufla with normal open hold with left turn for the leader,"turn, hands held",0.005997704489909717,0.5921052631578947,0.14473684210526316,0.11842105263157894,
+Pair3_song3_take1,100.34,102.82,Enchufla with normal open hold,open hold,0.005997704489909717,0.527027027027027,0.28378378378378377,0.28378378378378377,
+Pair3_song3_take1,102.82,105.34,XBL with normal closed hold,closed hold,0.005997704489909717,0.4868421052631579,1.0,0.9868421052631579,0.1441182389051088
+Pair3_song3_take1,105.34,107.94,XBL with normal closed hold,closed hold,0.005997704489909717,0.5897435897435898,0.6794871794871795,0.6794871794871795,
+Pair3_song3_take1,107.94,110.42,"Right turn for the follower, normal open hold","turn, hands held",0.005997704489909717,1.0,0.04054054054054054,0.04054054054054054,
+Pair3_song3_take1,110.42,112.94,XBL with normal open hold,open hold,0.005997704489909717,1.0,0.42105263157894735,0.42105263157894735,
+Pair3_song3_take1,112.94,115.57,"Right turn for the follower, normal open hold","turn, hands held",0.005997704489909717,0.9746835443037974,0.0,0.0,
+Pair3_song3_take1,115.57,118.09,XBL with a left (inside) turn for the follower with no hands after left hand throw,other,0.005997704489909717,0.5733333333333334,0.06666666666666667,0.0,
+Pair3_song3_take1,118.09,120.57,XBL with normal closed hold,closed hold,0.005997704489909717,0.8666666666666667,0.7733333333333333,0.7733333333333333,0.41429284953902673
+Pair3_song3_take1,120.57,122.97,"Basic step, facing the line of dance",other,0.005997704489909717,0.9861111111111112,0.0,0.0,
+Pair3_song3_take1,122.97,125.49,Enchufla with normal open hold to Embrace hold,closed hold,0.005997704489909717,1.0,0.38666666666666666,0.38666666666666666,
+Pair3_song3_take1,125.49,128.169,Enchufla with normal open hold,open hold,0.005997704489909717,1.0,0.19753086419753085,0.19753086419753085,
+Pair3_song3_take1,128.169,130.729,"Dile que no with normal closed hold, both hands",closed hold,0.005997704489909717,0.8157894736842105,1.0,1.0,0.11053926428271005
+Pair3_song3_take1,130.729,133.25,XBL with normal closed hold,closed hold,0.005997704489909717,0.618421052631579,0.5921052631578947,0.5921052631578947,
+Pair3_song3_take1,133.25,135.73,Enchufla with normal open hold,open hold,0.005997704489909717,0.9459459459459459,0.40540540540540543,0.40540540540540543,
+Pair3_song3_take1,135.73,138.29,"Dile que no with normal closed hold, both hands",closed hold,0.005997704489909717,1.0,1.0,1.0,0.10184664454468581
+Pair3_song3_take1,138.29,140.85,XBL with normal closed hold,closed hold,0.005997704489909717,1.0,0.7662337662337663,0.7662337662337663,0.44399528200647637
+Pair3_song3_take1,140.85,143.45,XBL with a left (inside) turn for the follower with no hands after left hand throw,other,0.005997704489909717,0.5384615384615384,0.1794871794871795,0.10256410256410256,
+Pair3_song3_take1,148.37,150.73,,other,0.005997704489909717,0.0,0.0,0.0,
+Pair3_song4_take1,0.0,2.22,"Steps on beats 1, 3, 5, 7 on the same spot",other,0.005797278173191276,1.0,0.3333333333333333,0.0,
+Pair3_song4_take1,2.23,5.04,"Steps on beats 1, 3, 5, 7 on the same spot",other,0.005797278173191276,1.0,0.18823529411764706,0.047058823529411764,
+Pair3_song4_take1,5.05,8.09,XBL with normal closed hold,closed hold,0.005797278173191276,0.8791208791208791,0.9340659340659341,0.9340659340659341,0.09959920066052323
+Pair3_song4_take1,8.09,10.89,XBL with normal closed hold,closed hold,0.005797278173191276,0.8571428571428571,1.0,1.0,0.015598703059371234
+Pair3_song4_take1,10.89,13.89,XBL with normal closed hold,closed hold,0.005797278173191276,0.4777777777777778,1.0,1.0,0.03595484911629968
+Pair3_song4_take1,13.89,16.97,"Body roll Copa on beats 5, 6, 7 for the follower",other,0.005797278173191276,1.0,1.0,1.0,0.04998768921072631
+Pair3_song4_take1,16.97,19.93,XBL with normal closed hold,closed hold,0.005797278173191276,0.42045454545454547,1.0,1.0,0.41107840504717164
+Pair3_song4_take1,19.93,22.89,"Basic step, facing the line of dance",other,0.005797278173191276,1.0,0.0898876404494382,0.011235955056179775,
+Pair3_song4_take1,22.89,25.81,XBL with normal open hold,open hold,0.005797278173191276,1.0,0.32954545454545453,0.06818181818181818,
+Pair3_song4_take1,25.81,28.73,"Right turn for the leader, normal open hold","turn, hands held",0.005797278173191276,1.0,0.0,0.0,
+Pair3_song4_take1,28.73,31.73,XBL with normal open hold,open hold,0.005797278173191276,1.0,0.37777777777777777,0.34444444444444444,
+Pair3_song4_take1,31.73,34.69,"Right turn for the follower, normal open hold","turn, hands held",0.005797278173191276,0.6853932584269663,0.20224719101123595,0.0,
+Pair3_song4_take1,34.69,37.69,XBL with normal open hold,open hold,0.005797278173191276,0.43333333333333335,0.07777777777777778,0.0,
+Pair3_song4_take1,37.69,40.69,XBL with normal open hold with late right turn for the leader while hands change,hand travels over body,0.005797278173191276,0.9777777777777777,0.3888888888888889,0.36666666666666664,
+Pair3_song4_take1,40.69,43.61,"Right turn for the leader, crossed hold","turn, hands held",0.005797278173191276,0.8409090909090909,0.13636363636363635,0.0,
+Pair3_song4_take1,43.61,46.61,"Enchufla with crossed hold, both hands",open hold,0.005797278173191276,1.0,0.0,0.0,
+Pair3_song4_take1,46.61,49.61,"Enchufla with crossed hold, both hands",open hold,0.005797278173191276,1.0,0.03333333333333333,0.022222222222222223,
+Pair3_song4_take1,49.61,52.57,"Enchufla with crossed hold, both hands",open hold,0.005797278173191276,0.9325842696629213,0.15730337078651685,0.15730337078651685,
+Pair3_song4_take1,52.57,55.49,"Dile que no with normal open hold, both hands",open hold,0.005797278173191276,0.9195402298850575,0.6896551724137931,0.3793103448275862,0.33132660472878517
+Pair3_song4_take1,55.49,58.49,"Right turn for the follower, normal open hold","turn, hands held",0.005797278173191276,0.5555555555555556,0.05555555555555555,0.0,
+Pair3_song4_take1,58.49,61.37,XBL with normal open hold with late right turn for the leader while hands change,hand travels over body,0.005797278173191276,0.896551724137931,0.3103448275862069,0.19540229885057472,
+Pair3_song4_take1,61.37,64.33,"Right turn for the follower, crossed hold","turn, hands held",0.005797278173191276,0.7840909090909091,0.056818181818181816,0.0,
+Pair3_song4_take1,64.33,67.17,"XBL with a left (inside) turn for the follower with crossed hold, hands down","turn, hands held",0.005797278173191276,0.8953488372093024,0.20930232558139536,0.09302325581395349,
+Pair3_song4_take1,67.17,70.17,XBL with normal open hold,open hold,0.005797278173191276,0.9777777777777777,0.5,0.5,0.5144527901664129
+Pair3_song4_take1,70.17,72.73,"Check by holding the follower's both hands (open hands down, Embrace for the lady in a shadow)  after XBL with a left (inside) turn for the follower.",closed hold,0.005797278173191276,0.9868421052631579,0.7236842105263158,0.7236842105263158,0.48299875330466646
+Pair3_song4_take1,72.73,75.53,"XBL with a right (outside) turn for the follower on the right side of the leader, ends with Left HL for the follower",other,0.005797278173191276,0.7738095238095238,0.42857142857142855,0.39285714285714285,
+Pair3_song4_take1,75.53,78.21,Enchufla from left HL for the follower,other,0.005797278173191276,0.7037037037037037,0.4444444444444444,0.30864197530864196,
+Pair3_song4_take1,78.21,80.81,Enchufla with normal open hold with left turn for the leader,"turn, hands held",0.005797278173191276,0.3076923076923077,0.1794871794871795,0.1794871794871795,
+Pair3_song4_take1,80.81,83.49,Enchufla with normal open hold with left turn for the leader,"turn, hands held",0.005797278173191276,0.275,0.15,0.15,
+Pair3_song4_take1,83.49,86.29,Enchufla with normal open hold,open hold,0.005797278173191276,0.5952380952380952,0.19047619047619047,0.19047619047619047,
+Pair3_song4_take1,86.29,89.09,XBL with normal open hold,open hold,0.005797278173191276,1.0,0.47619047619047616,0.47619047619047616,
+Pair3_song4_take1,89.09,91.81,"Right turn for the follower, normal open hold","turn, hands held",0.005797278173191276,0.7804878048780488,0.012195121951219513,0.012195121951219513,
+Pair3_song4_take1,91.81,94.37,XBL with normal open hold,open hold,0.005797278173191276,1.0,0.5324675324675324,0.5324675324675324,0.4222765672121693
+Pair3_song4_take1,94.37,97.01,"Basic step, facing the line of dance",other,0.005797278173191276,1.0,0.16455696202531644,0.1518987341772152,
+Pair3_song4_take1,97.01,99.49,XBL with normal open hold,open hold,0.005797278173191276,0.9864864864864865,0.2702702702702703,0.1891891891891892,
+Pair3_song4_take1,99.49,102.09,Enchufla with normal open hold with left turn for the leader,"turn, hands held",0.005797278173191276,0.7564102564102564,0.15384615384615385,0.11538461538461539,
+Pair3_song4_take1,102.09,104.73,Enchufla with normal open hold with left turn for the leader,"turn, hands held",0.005797278173191276,0.6708860759493671,0.26582278481012656,0.26582278481012656,
+Pair3_song4_take1,104.73,107.29,Enchufla with normal open hold,open hold,0.005797278173191276,0.961038961038961,0.37662337662337664,0.37662337662337664,
+Pair3_song4_take1,107.29,109.69,"Dile que no with normal closed hold, both hands",closed hold,0.005797278173191276,0.5,1.0,1.0,0.24629381850918983
+Pair3_song4_take1,109.69,112.09,XBL with normal closed hold,closed hold,0.005797278173191276,0.4027777777777778,1.0,1.0,0.06584009033230587
+Pair3_song4_take1,112.09,114.57,XBL with normal closed hold,closed hold,0.005797278173191276,0.04,1.0,1.0,0.019038286352338528
+Pair3_song4_take1,114.57,117.05,Left Natural top,other,0.005797278173191276,0.13513513513513514,1.0,1.0,0.037680455264759334
+Pair3_song4_take1,117.05,119.41,XBL with normal closed hold,closed hold,0.005797278173191276,0.49295774647887325,0.8873239436619719,0.8873239436619719,0.3337094787257653
+Pair3_song4_take1,119.41,121.89,"Right turn for the follower, normal open hold","turn, hands held",0.005797278173191276,0.7567567567567568,0.013513513513513514,0.013513513513513514,
+Pair3_song4_take1,121.89,124.25,XBL with normal open hold,open hold,0.005797278173191276,1.0,0.323943661971831,0.23943661971830985,
+Pair3_song4_take1,124.25,126.77,"Right turn for the follower, normal open hold","turn, hands held",0.005797278173191276,1.0,0.11842105263157894,0.05263157894736842,
+Pair3_song4_take1,126.77,129.33,XBL with normal open hold,open hold,0.005797278173191276,1.0,0.39473684210526316,0.3684210526315789,
+Pair3_song4_take1,129.33,131.69,"XBL with a left (inside) turn for the follower with crossed hold, no hands after right hand throw","turn, hands held",0.005797278173191276,0.676056338028169,0.5352112676056338,0.15492957746478872,
+Pair3_song4_take1,131.69,134.17,XBL with normal closed hold,closed hold,0.005797278173191276,0.09333333333333334,0.84,0.84,0.4514380856395352
+Pair3_song4_take1,134.17,136.73,XBL with normal closed hold,closed hold,0.005797278173191276,0.7236842105263158,0.7236842105263158,0.7236842105263158,0.33029971235690697
+Pair3_song4_take1,136.73,139.01,"Right turn for the follower, normal open hold","turn, hands held",0.005797278173191276,0.8115942028985508,0.0,0.0,
+Pair3_song4_take1,139.01,141.29,"XBL with a left (inside) turn for the follower with normal open hold, hands down","turn, hands held",0.005797278173191276,0.9558823529411765,0.4117647058823529,0.39705882352941174,
+Pair3_song4_take1,141.29,143.69,"Right turn for the leader, right turn for the follower, normal open hold","turn, hands held",0.005797278173191276,0.7083333333333334,0.2222222222222222,0.041666666666666664,
+Pair3_song4_take1,143.69,146.01,XBL with normal closed hold,closed hold,0.005797278173191276,0.9428571428571428,1.0,1.0,0.049556735894893
+Pair3_song4_take1,146.01,148.37,XBL with normal closed hold,closed hold,0.005797278173191276,0.6056338028169014,0.6197183098591549,0.6197183098591549,
+Pair3_song4_take1,148.37,150.597,Enchufla with normal open hold,open hold,0.005797278173191276,0.7727272727272727,0.5,0.5,0.11277558543236901
+Pair3_song4_take2,0.0,2.11,"Right turn for the follower, normal open hold","turn, hands held",0.005579804172755307,0.8095238095238095,0.15873015873015872,0.0,
+Pair3_song4_take2,2.11,5.15,XBL with normal open hold,open hold,0.005579804172755307,0.5494505494505495,0.2967032967032967,0.23076923076923078,
+Pair3_song4_take2,5.15,8.109,XBL with normal open hold,open hold,0.005579804172755307,0.9550561797752809,0.34831460674157305,0.34831460674157305,
+Pair3_song4_take2,8.109,11.07,"Right turn for the follower, normal open hold","turn, hands held",0.005579804172755307,0.7865168539325843,0.011235955056179775,0.0,
+Pair3_song4_take2,11.07,14.07,XBL with normal open hold,open hold,0.005579804172755307,1.0,0.2222222222222222,0.2222222222222222,
+Pair3_song4_take2,14.08,17.03,"Right turn for the follower, normal open hold","turn, hands held",0.005579804172755307,1.0,0.06818181818181818,0.0,
+Pair3_song4_take2,17.03,19.95,XBL with normal open hold,open hold,0.005579804172755307,1.0,0.36363636363636365,0.22727272727272727,
+Pair3_song4_take2,19.95,22.95,XBL with a left (inside) turn for the follower with no hands after left hand throw,other,0.005579804172755307,0.6111111111111112,0.6,0.0,
+Pair3_song4_take2,22.95,25.87,XBL with normal open hold,open hold,0.005579804172755307,0.38636363636363635,0.75,0.75,0.30133669309305905
+Pair3_song4_take2,25.87,28.99,"Right turn for the follower, normal open hold","turn, hands held",0.005579804172755307,0.8817204301075269,0.0,0.0,
+Pair3_song4_take2,28.99,31.91,XBL with normal open hold,open hold,0.005579804172755307,1.0,0.4090909090909091,0.4090909090909091,
+Pair3_song4_take2,31.91,34.87,XBL with normal open hold,open hold,0.005579804172755307,1.0,0.6179775280898876,0.4044943820224719,0.10301003028703344
+Pair3_song4_take2,34.87,37.87,XBL with normal open hold,open hold,0.005579804172755307,1.0,0.12222222222222222,0.12222222222222222,
+Pair3_song4_take2,37.87,40.91,XBL with normal open hold,open hold,0.005579804172755307,1.0,0.27472527472527475,0.23076923076923078,
+Pair3_song4_take2,40.91,43.79,"Right turn for the follower, normal open hold","turn, hands held",0.005579804172755307,0.813953488372093,0.16279069767441862,0.0,
+Pair3_song4_take2,43.79,46.67,XBL with normal open hold with late right turn for the leader while hands change,hand travels over body,0.005579804172755307,0.8735632183908046,0.2413793103448276,0.14942528735632185,
+Pair3_song4_take2,46.67,49.63,"Right turn for the follower, crossed hold","turn, hands held",0.005579804172755307,0.6818181818181818,0.0,0.0,
+Pair3_song4_take2,49.63,52.63,"XBL with a left (inside) turn for the follower with crossed hold, hands down","turn, hands held",0.005579804172755307,0.4666666666666667,0.14444444444444443,0.0,
+Pair3_song4_take2,52.63,55.43,XBL with crossed hold,open hold,0.005579804172755307,1.0,0.4642857142857143,0.2857142857142857,
+Pair3_song4_take2,55.43,58.23,XBL with normal open hold,open hold,0.005579804172755307,1.0,0.4523809523809524,0.4523809523809524,0.1990204875075818
+Pair3_song4_take2,58.23,61.03,"Basic step, facing the line of dance",other,0.005579804172755307,1.0,0.09523809523809523,0.09523809523809523,
+Pair3_song4_take2,61.03,63.75,"Basic step, facing the line of dance",other,0.005579804172755307,0.8658536585365854,0.06097560975609756,0.0,
+Pair3_song4_take2,63.75,66.39,"Basic step, facing the line of dance",other,0.005579804172755307,0.8860759493670886,0.05063291139240506,0.0,
+Pair3_song4_take2,66.39,69.11,"XBL with normal open hold, hands change to crossed hold",hand travels over body,0.005579804172755307,0.9634146341463414,0.5853658536585366,0.5,
+Pair3_song4_take2,69.11,71.79,"Check by holding the follower's both hands (open hands down, Titanic for the lady in a shadow) after XBL with a left (inside) turn for the follower.",open hold,0.005579804172755307,1.0,0.2,0.0125,
+Pair3_song4_take2,71.79,74.51,"Check by holding the follower's both hands (open hands down, Titanic for the follower in a shadow) ends with right turn for the follower",open hold,0.005579804172755307,0.8414634146341463,0.2073170731707317,0.0,
+Pair3_song4_take2,74.51,77.27,XBL with crossed hold,open hold,0.005579804172755307,1.0,0.6987951807228916,0.5783132530120482,0.2652850085526389
+Pair3_song4_take2,77.27,80.03,XBL with crossed hold,open hold,0.005579804172755307,0.9390243902439024,0.573170731707317,0.3902439024390244,0.3337802922875143
+Pair3_song4_take2,80.03,82.67,XBL with crossed hold,open hold,0.005579804172755307,0.95,0.4,0.3375,
+Pair3_song4_take2,82.67,85.23,XBL with crossed hold,open hold,0.005579804172755307,1.0,0.5263157894736842,0.4473684210526316,0.1004878576599679
+Pair3_song4_take2,85.23,87.79,"Check by holding the follower's both hands (open hands down, Titanic for the lady in a shadow) after XBL with a left (inside) turn for the follower.",open hold,0.005579804172755307,0.935064935064935,0.2987012987012987,0.12987012987012986,
+Pair3_song4_take2,87.79,90.39,"Check by holding the follower's both hands (open hands down, Titanic for the follower in a shadow) ends with right turn for the follower",open hold,0.005579804172755307,0.6923076923076923,0.0641025641025641,0.0,
+Pair3_song4_take2,90.39,93.03,XBL with crossed hold,open hold,0.005579804172755307,1.0,0.5949367088607594,0.4177215189873418,0.16109891502761672
+Pair3_song4_take2,93.03,95.59,XBL with crossed hold,open hold,0.005579804172755307,0.948051948051948,0.42857142857142855,0.36363636363636365,
+Pair3_song4_take2,95.59,98.03,"Right turn for the follower, crossed hold","turn, hands held",0.005579804172755307,0.4383561643835616,0.0136986301369863,0.0,
+Pair3_song4_take2,98.03,100.51,"Enchufla with crossed hold, both hands",open hold,0.005579804172755307,0.9066666666666666,0.12,0.12,
+Pair3_song4_take2,100.51,102.83,"Enchufla with crossed hold, both hands",open hold,0.005579804172755307,1.0,0.07246376811594203,0.07246376811594203,
+Pair3_song4_take2,102.83,105.27,Enchufla with crossed hold to open hold while hands change,hand travels over body,0.005579804172755307,0.9864864864864865,0.08108108108108109,0.08108108108108109,
+Pair3_song4_take2,105.27,107.67,"Dile que no with normal open hold, both hands",open hold,0.005579804172755307,1.0,0.6944444444444444,0.6388888888888888,0.29705193465825225
+Pair3_song4_take2,107.67,110.19,"Right turn for the follower, normal open hold","turn, hands held",0.005579804172755307,0.8,0.06666666666666667,0.04,
+Pair3_song4_take2,110.19,112.59,XBL with normal open hold,open hold,0.005579804172755307,0.9166666666666666,0.4583333333333333,0.4027777777777778,
+Pair3_song4_take2,112.59,115.03,Enchufla with normal open hold with left turn for the leader,"turn, hands held",0.005579804172755307,0.726027397260274,0.4246575342465753,0.3561643835616438,0.40644661579526115
+Pair3_song4_take2,115.03,117.47,Enchufla with normal open hold,open hold,0.005579804172755307,0.4864864864864865,0.20270270270270271,0.20270270270270271,
+Pair3_song4_take2,117.47,119.91,XBL with normal closed hold,closed hold,0.005579804172755307,0.3013698630136986,1.0,1.0,0.04259759491460281
+Pair3_song4_take2,119.91,122.35,XBL with normal closed hold,closed hold,0.005579804172755307,0.6301369863013698,1.0,1.0,0.0840528415548238
+Pair3_song4_take2,122.35,124.75,"Basic step, facing the line of dance",other,0.005579804172755307,1.0,0.3194444444444444,0.3194444444444444,
+Pair3_song4_take2,124.75,127.19,"Right turn for the follower, normal open hold","turn, hands held",0.005579804172755307,0.7945205479452054,0.0273972602739726,0.0273972602739726,
+Pair3_song4_take2,127.19,129.55,XBL with a left (inside) turn for the follower,other,0.005579804172755307,0.9295774647887324,0.352112676056338,0.22535211267605634,
+Pair3_song4_take2,129.55,131.87,XBL with normal open hold with late right turn for the leader while hands change,hand travels over body,0.005579804172755307,0.9857142857142858,0.4142857142857143,0.4142857142857143,
+Pair3_song4_take2,131.87,134.23,"Right turn for the follower, crossed hold","turn, hands held",0.005579804172755307,0.8142857142857143,0.0,0.0,
+Pair3_song4_take2,134.23,136.63,Enchufla with crossed hold to open hold while hands change,hand travels over body,0.005579804172755307,0.7916666666666666,0.2361111111111111,0.2361111111111111,
+Pair3_song4_take2,136.63,138.99,XBL with a left (inside) turn for the follower,other,0.005579804172755307,0.8591549295774648,0.5211267605633803,0.39436619718309857,0.2571195904573235
+Pair3_song4_take2,138.99,141.39,"Basic step, facing the line of dance",other,0.005579804172755307,1.0,0.0,0.0,
+Pair3_song4_take2,141.39,143.71,XBL with normal open hold,open hold,0.005579804172755307,1.0,0.5,0.5,0.2067239814684924
+Pair3_song4_take2,143.71,146.19,Double hand throw with normal open hold,open hold,0.005579804172755307,0.972972972972973,0.33783783783783783,0.05405405405405406,
+Pair3_song4_take2,146.19,148.47,XBL with a left (inside) turn for the follower with no hands holding the weist of the follower,other,0.005579804172755307,0.0,0.8695652173913043,0.855072463768116,0.3800424665427115
+Pair3_song4_take2,148.47,150.664,XBL with normal closed hold,closed hold,0.005579804172755307,0.2,0.9076923076923077,0.9076923076923077,0.15333883805924226
+Pair4_song1_take1,0.0,1.33,"Basic step, facing the line of dance",other,0.004164102960933918,0.358974358974359,1.0,1.0,
+Pair4_song1_take1,1.34,3.62,"Basic step, facing the line of dance",other,0.004164102960933918,0.4852941176470588,0.25,0.22058823529411764,
+Pair4_song1_take1,3.62,6.14,XBL with normal open hold,open hold,0.004164102960933918,0.9210526315789473,0.5131578947368421,0.07894736842105263,0.47908850169956935
+Pair4_song1_take1,6.14,8.66,"Right turn for the follower, normal open hold","turn, hands held",0.004164102960933918,0.5733333333333334,0.36,0.05333333333333334,
+Pair4_song1_take1,8.66,11.14,Enchufla with normal open hold,open hold,0.004164102960933918,0.05333333333333334,0.6933333333333334,0.56,0.4549222408228811
+Pair4_song1_take1,11.14,13.66,Enchufla with normal open hold,open hold,0.004164102960933918,0.26666666666666666,0.18666666666666668,0.13333333333333333,
+Pair4_song1_take1,13.66,16.219,Dile que no with normal open hold,open hold,0.004164102960933918,0.2987012987012987,0.9090909090909091,0.7402597402597403,0.5665138387798564
+Pair4_song1_take1,16.219,18.7,"Basic step, facing the line of dance",other,0.004164102960933918,0.32,0.0,0.0,
+Pair4_song1_take1,18.7,21.3,"Right turn for the follower, normal open hold","turn, hands held",0.004164102960933918,0.717948717948718,0.16666666666666666,0.038461538461538464,
+Pair4_song1_take1,21.3,23.78,Enchufla with normal open hold,open hold,0.004164102960933918,0.28378378378378377,0.581081081081081,0.5135135135135135,0.3656138472578523
+Pair4_song1_take1,23.78,26.22,Enchufla with normal open hold,open hold,0.004164102960933918,0.0410958904109589,0.136986301369863,0.0958904109589041,
+Pair4_song1_take1,26.22,28.82,Dile que no with normal open hold,open hold,0.004164102960933918,0.2564102564102564,0.8589743589743589,0.7435897435897436,0.5616056211626346
+Pair4_song1_take1,28.82,31.34,"Basic step, facing the line of dance",other,0.004164102960933918,0.8421052631578947,0.06578947368421052,0.06578947368421052,
+Pair4_song1_take1,31.34,33.86,Check by holding the follower's hand (open hands down) after XBL with a left (inside) turn for the follower.,other,0.004164102960933918,0.7733333333333333,0.6266666666666667,0.22666666666666666,0.4838061947859381
+Pair4_song1_take1,33.86,36.42,Copa with the follower's left (inside) turn by holding the follower's hip,other,0.004164102960933918,0.05194805194805195,1.0,1.0,0.17333483416857176
+Pair4_song1_take1,36.42,38.98,360 XBL,other,0.004164102960933918,0.33766233766233766,0.8831168831168831,0.7012987012987013,0.5483230681464145
+Pair4_song1_take1,38.98,41.65,"Right turn for the follower, normal open hold, ends with Left HL for the follower","turn, hands held",0.004164102960933918,0.575,0.5,0.5,
+Pair4_song1_take1,41.65,44.05,Enchufla with normal open hold with left turn for the leader,"turn, hands held",0.004164102960933918,0.7638888888888888,0.625,0.4722222222222222,
+Pair4_song1_take1,44.06,46.66,Enchufla with normal open hold,open hold,0.004164102960933918,0.1282051282051282,0.24358974358974358,0.24358974358974358,
+Pair4_song1_take1,46.66,49.04,Dile que no with normal closed hold,closed hold,0.004164102960933918,0.2638888888888889,0.8194444444444444,0.7361111111111112,0.47135028478396807
+Pair4_song1_take1,49.04,51.6,"Basic step, facing the line of dance",other,0.004164102960933918,0.2857142857142857,0.0,0.0,
+Pair4_song1_take1,51.6,54.04,"Check by holding the follower's both hands (open hands down, Embrace for the lady in a shadow)",closed hold,0.004164102960933918,0.0,0.5753424657534246,0.4246575342465753,0.4066201068356163
+Pair4_song1_take1,54.04,56.56,"Reverse check by holding the follower's both hands (open hands down, Embrace for the lady in a shadow)",closed hold,0.004164102960933918,0.12,0.8533333333333334,0.8533333333333334,0.6083875827786102
+Pair4_song1_take1,56.56,59.08,"Basic step, facing the line of dance",other,0.004164102960933918,0.7105263157894737,0.06578947368421052,0.013157894736842105,
+Pair4_song1_take1,59.08,61.6,XBL with normal closed hold,closed hold,0.004164102960933918,0.25,0.75,0.7105263157894737,0.5216744453785496
+Pair4_song1_take1,61.6,64.12,"Right turn for the follower, normal open hold, ends with Left HL for the follower","turn, hands held",0.004164102960933918,0.4,0.5066666666666667,0.41333333333333333,
+Pair4_song1_take1,64.12,66.64,Enchufla from left HL for the follower with left turn for the leader,other,0.004164102960933918,0.27631578947368424,0.5789473684210527,0.42105263157894735,0.5250962042319286
+Pair4_song1_take1,66.64,69.2,Enchufla with normal open hold,open hold,0.004164102960933918,0.03896103896103896,0.16883116883116883,0.12987012987012986,
+Pair4_song1_take1,69.2,71.68,Dile que no with normal closed hold,closed hold,0.004164102960933918,0.36486486486486486,0.8783783783783784,0.6891891891891891,0.5653449290011644
+Pair4_song1_take1,71.68,74.2,"Basic step, facing the line of dance",other,0.004164102960933918,0.34210526315789475,0.0,0.0,
+Pair4_song1_take1,74.2,76.72,XBL with a left (inside) turn for the follower,other,0.004164102960933918,0.06666666666666667,0.2,0.04,
+Pair4_song1_take1,76.72,79.24,XBL with normal closed hold,closed hold,0.004164102960933918,0.34210526315789475,0.7368421052631579,0.6578947368421053,0.5611866385526425
+Pair4_song1_take1,79.24,81.76,"Basic step, facing the line of dance",other,0.004164102960933918,0.16,0.0,0.0,
+Pair4_song1_take1,81.76,84.32,"Basic step, facing the line of dance",other,0.004164102960933918,0.4935064935064935,0.12987012987012986,0.025974025974025976,
+Pair4_song1_take1,84.32,86.84,"Right turn for the follower, crossed hold, left HL for the follower, ends with comb on the follower with the leader's right hand","turn, hands held",0.004164102960933918,0.3026315789473684,0.4605263157894737,0.40789473684210525,
+Pair4_song1_take1,86.84,89.36,Left turn for the follower from Left HL for the follower,other,0.004164102960933918,0.0,0.92,0.92,0.13157927722468368
+Pair4_song1_take1,89.36,91.88,XBL with normal closed hold,closed hold,0.004164102960933918,0.02631578947368421,0.9605263157894737,0.9210526315789473,0.40688773236818726
+Pair4_song1_take1,91.88,94.4,"Basic step, facing the line of dance",other,0.004164102960933918,0.5657894736842105,0.013157894736842105,0.0,
+Pair4_song1_take1,94.4,96.88,"Basic step, facing the line of dance",other,0.004164102960933918,0.527027027027027,0.6216216216216216,0.5540540540540541,0.32775992564739753
+Pair4_song1_take1,96.88,99.48,XBL with normal closed hold on the right side of the leader,closed hold,0.004164102960933918,0.6794871794871795,1.0,1.0,0.36583931522196234
+Pair4_song1_take1,99.48,102.0,"Basic step, facing the line of dance",other,0.004164102960933918,0.47368421052631576,1.0,1.0,0.11065229321187631
+Pair4_song1_take1,102.0,104.6,"Basic step, facing the line of dance",other,0.004164102960933918,0.3717948717948718,1.0,1.0,0.07789107477872174
+Pair4_song1_take1,104.6,107.12,Hip movement on the same spot,other,0.004164102960933918,0.52,0.4,0.4,
+Pair4_song1_take1,117.08,119.56,XBL with normal closed hold,closed hold,0.004164102960933918,0.40540540540540543,0.6891891891891891,0.5540540540540541,0.5242628357522264
+Pair4_song1_take1,119.56,122.2,"Basic step, facing the line of dance",other,0.004164102960933918,0.25,0.025,0.0,
+Pair4_song1_take1,122.2,124.68,"Right turn for the follower, normal open hold","turn, hands held",0.004164102960933918,0.8378378378378378,0.22972972972972974,0.17567567567567569,
+Pair4_song1_take1,124.68,127.2,Enchufla with normal open hold with left turn for the leader,"turn, hands held",0.004164102960933918,0.35526315789473684,0.23684210526315788,0.19736842105263158,
+Pair4_song1_take1,127.2,129.759,Enchufla with normal open hold with left turn for the leader,"turn, hands held",0.004164102960933918,0.07894736842105263,0.17105263157894737,0.09210526315789473,
+Pair4_song1_take1,129.759,132.2,Enchufla with normal open hold,open hold,0.004164102960933918,0.726027397260274,0.273972602739726,0.1506849315068493,
+Pair4_song1_take1,132.2,134.76,Dile que no with normal open hold,open hold,0.004164102960933918,0.23376623376623376,0.8181818181818182,0.7272727272727273,0.5915301532206262
+Pair4_song1_take1,134.76,137.28,"Basic step, facing the line of dance",other,0.004164102960933918,0.05263157894736842,0.0,0.0,
+Pair4_song1_take1,137.28,139.84,"Right turn for the follower, normal open hold, ends with Left HL for the follower","turn, hands held",0.004164102960933918,0.5194805194805194,0.7922077922077922,0.5584415584415584,0.5999238640046033
+Pair4_song1_take1,139.84,142.36,Enchufla from left HL for the follower with left turn for the leader,other,0.004164102960933918,0.25333333333333335,0.30666666666666664,0.21333333333333335,
+Pair4_song1_take1,142.36,144.88,Enchufla with normal open hold,open hold,0.004164102960933918,0.02631578947368421,0.32894736842105265,0.2236842105263158,
+Pair4_song1_take1,144.88,147.32,Dile que no with normal closed hold,closed hold,0.004164102960933918,0.3561643835616438,0.821917808219178,0.6986301369863014,0.5911405699746548
+Pair4_song1_take1,147.32,150.0,"Basic step, facing the line of dance",other,0.004164102960933918,0.4567901234567901,0.0,0.0,
+Pair4_song1_take2,0.0,1.64,"Basic step, facing the line of dance",other,0.004588188158041411,0.02040816326530612,0.3469387755102041,0.2653061224489796,
+Pair4_song1_take2,1.64,4.0,Dile que no with normal open hold,open hold,0.004588188158041411,0.16901408450704225,0.7323943661971831,0.6197183098591549,0.4174829081431966
+Pair4_song1_take2,4.0,6.44,"Basic step, facing the line of dance",other,0.004588188158041411,0.0958904109589041,0.0,0.0,
+Pair4_song1_take2,6.44,8.96,"Right turn for the follower, normal open hold","turn, hands held",0.004588188158041411,0.48,0.30666666666666664,0.06666666666666667,
+Pair4_song1_take2,8.96,11.52,Enchufla with normal open hold,open hold,0.004588188158041411,0.11688311688311688,0.16883116883116883,0.07792207792207792,
+Pair4_song1_take2,11.52,14.04,Dile que no with normal closed hold,closed hold,0.004588188158041411,0.19736842105263158,0.7368421052631579,0.6578947368421053,0.31587879933261215
+Pair4_song1_take2,14.04,16.52,Change of Directions (Swap Position) for the follower with normal open hold ends with open break,open hold,0.004588188158041411,0.33783783783783783,0.13513513513513514,0.0945945945945946,
+Pair4_song1_take2,16.52,19.04,Enchufla with normal open hold,open hold,0.004588188158041411,0.5526315789473685,0.10526315789473684,0.10526315789473684,
+Pair4_song1_take2,19.04,21.56,Dile que no with normal closed hold,closed hold,0.004588188158041411,0.26666666666666666,0.8266666666666667,0.6933333333333334,0.5804524903426559
+Pair4_song1_take2,21.56,24.12,"Basic step, facing the line of dance",other,0.004588188158041411,0.025974025974025976,0.0,0.0,
+Pair4_song1_take2,24.12,26.64,"Right turn for the follower, normal open hold, ends with Left HL for the follower","turn, hands held",0.004588188158041411,0.5657894736842105,0.5789473684210527,0.3815789473684211,0.5187748688066036
+Pair4_song1_take2,26.64,29.16,Copa on 1 with Reverse back-to-back Titanic hold for the follower,other,0.004588188158041411,0.5333333333333333,0.38666666666666666,0.3333333333333333,
+Pair4_song1_take2,29.16,31.64,"Basic step, facing the line of dance",other,0.004588188158041411,0.14666666666666667,0.0,0.0,
+Pair4_song1_take2,31.64,34.12,"XBL with a left (inside) turn for the follower, crossed hold with both hands, ends with Left HL for the follower","turn, hands held",0.004588188158041411,0.25675675675675674,0.527027027027027,0.44594594594594594,0.33748837009479854
+Pair4_song1_take2,34.12,36.76,Enchufla from left HL for the follower with right turn for the leader to left HL for the leader,other,0.004588188158041411,0.6582278481012658,0.620253164556962,0.4810126582278481,0.47320300528536346
+Pair4_song1_take2,36.76,39.28,Enchufla with crossed hold,open hold,0.004588188158041411,0.10526315789473684,0.3026315789473684,0.27631578947368424,
+Pair4_song1_take2,39.28,41.76,Dile que no with normal closed hold,closed hold,0.004588188158041411,0.40540540540540543,0.9324324324324325,0.8648648648648649,0.5588443113161158
+Pair4_song1_take2,41.76,44.24,"Basic step, facing the line of dance",other,0.004588188158041411,0.22666666666666666,0.0,0.0,
+Pair4_song1_take2,44.24,46.76,"Basic step, facing the line of dance",other,0.004588188158041411,0.02666666666666667,0.0,0.0,
+Pair4_song1_take2,46.76,49.28,Left turn for the leader,other,0.004588188158041411,0.02631578947368421,0.42105263157894735,0.35526315789473684,0.3164421187629797
+Pair4_song1_take2,49.28,51.79,Enchufla with normal open hold,open hold,0.004588188158041411,0.0,0.6,0.5066666666666667,0.46348346279419916
+Pair4_song1_take2,51.79,54.39,Enchufla with normal open hold,open hold,0.004588188158041411,0.0641025641025641,0.6025641025641025,0.5384615384615384,0.361928356062962
+Pair4_song1_take2,54.39,56.87,Enchufla with normal open hold with left turn for the leader,"turn, hands held",0.004588188158041411,0.06666666666666667,0.17333333333333334,0.10666666666666667,
+Pair4_song1_take2,56.87,59.43,Enchufla with normal open hold,open hold,0.004588188158041411,0.6052631578947368,0.14473684210526316,0.14473684210526316,
+Pair4_song1_take2,59.43,61.87,Dile que no with normal closed hold,closed hold,0.004588188158041411,0.36486486486486486,0.918918918918919,0.7837837837837838,0.5451129847709999
+Pair4_song1_take2,61.87,64.39,"Basic step, facing the line of dance",other,0.004588188158041411,0.28,0.05333333333333334,0.0,
+Pair4_song1_take2,64.39,66.95,"Basic step, facing the line of dance with normal closed hand while change of directions (Swap Position) to facing perpendicular to the line of dance",closed hold,0.004588188158041411,0.7532467532467533,0.8051948051948052,0.8051948051948052,0.3390333864291184
+Pair4_song1_take2,66.95,69.47,"Basic step, facing perpendicular to the line of dance with normal closed hand while change of directions (Swap Position) to facing the line of dance",closed hold,0.004588188158041411,0.7631578947368421,1.0,1.0,0.1290306722665386
+Pair4_song1_take2,69.47,71.99,"Basic step, facing perpendicular to the line of dance with normal closed hand while change of directions (Swap Position) to facing the line of dance",closed hold,0.004588188158041411,0.48,1.0,1.0,0.05415511237325603
+Pair4_song1_take2,71.99,74.51,Steps sideways on the beat 1 and 5,other,0.004588188158041411,0.8026315789473685,1.0,1.0,0.03482208820558671
+Pair4_song1_take2,74.51,77.03,Steps sideways on the beat 1 and 5,other,0.004588188158041411,0.7333333333333333,1.0,0.9733333333333334,0.0539482846685958
+Pair4_song1_take2,77.03,79.59,"Basic step, facing the line of dance",other,0.004588188158041411,0.6883116883116883,0.0,0.0,
+Pair4_song1_take2,79.59,82.11,Check by holding the follower's hand (open hands down) after XBL with a left (inside) turn for the follower.,other,0.004588188158041411,0.7368421052631579,0.5921052631578947,0.3026315789473684,0.5072765223587316
+Pair4_song1_take2,82.11,84.67,Copa with the follower's left (inside) turn by holding the follower's hip,other,0.004588188158041411,0.0,1.0,1.0,0.5862506231495888
+Pair4_song1_take2,84.67,87.19,XBL with normal closed hold,closed hold,0.004588188158041411,0.36,0.8666666666666667,0.8133333333333334,0.4928706048587391
+Pair4_song1_take2,87.19,89.71,"Basic step, facing the line of dance",other,0.004588188158041411,0.02631578947368421,0.0,0.0,
+Pair4_song1_take2,89.71,92.19,"Right turn for the follower, normal open hold, ends with Left HL for the follower","turn, hands held",0.004588188158041411,0.4864864864864865,0.7297297297297297,0.6081081081081081,0.45304286580108216
+Pair4_song1_take2,92.19,94.75,Walking around the partner from left HL for the follower,hand travels over body,0.004588188158041411,0.2727272727272727,0.36363636363636365,0.35064935064935066,
+Pair4_song1_take2,94.75,97.27,Enchufla with normal open hold,open hold,0.004588188158041411,0.23684210526315788,0.2236842105263158,0.21052631578947367,
+Pair4_song1_take2,97.27,99.71,Dile que no with normal closed hold,closed hold,0.004588188158041411,0.3150684931506849,0.8767123287671232,0.7397260273972602,0.522235653118373
+Pair4_song1_take2,99.71,102.35,"Basic step, facing the line of dance",other,0.004588188158041411,0.05063291139240506,0.0,0.0,
+Pair4_song1_take2,102.35,104.87,"Basic step, facing the line of dance",other,0.004588188158041411,0.0,0.0,0.0,
+Pair4_song1_take2,104.87,107.31,Steps sideways on the beat 1 and 5 on the same spot,other,0.004588188158041411,0.0,0.0,0.0,
+Pair4_song1_take2,117.43,119.99,Dile que no with normal closed hold,closed hold,0.004588188158041411,0.2857142857142857,0.6753246753246753,0.5714285714285714,0.5702986636493521
+Pair4_song1_take2,119.99,122.47,"Basic step, facing the line of dance",other,0.004588188158041411,0.22666666666666666,0.0,0.0,
+Pair4_song1_take2,122.47,124.99,"Check by holding the follower's both hands (open hands down, Embrace for the lady in a shadow)",closed hold,0.004588188158041411,0.0,0.5066666666666667,0.4266666666666667,
+Pair4_song1_take2,124.99,127.47,"Reverse check by holding the follower's both hands (open hands down, Embrace for the lady in a shadow)",closed hold,0.004588188158041411,0.09333333333333334,0.84,0.7866666666666666,0.5794628723574915
+Pair4_song1_take2,127.47,130.11,"Basic step, facing the line of dance",other,0.004588188158041411,0.11392405063291139,0.02531645569620253,0.02531645569620253,
+Pair4_song1_take2,130.11,132.51,XBL with a left (inside) turn for the follower,other,0.004588188158041411,0.1111111111111111,0.5138888888888888,0.3194444444444444,0.3899824575689743
+Pair4_song1_take2,132.51,135.11,XBL with normal closed hold,closed hold,0.004588188158041411,0.28205128205128205,0.6538461538461539,0.5128205128205128,0.5811645440188676
+Pair4_song1_take2,135.11,137.63,"Basic step, facing the line of dance",other,0.004588188158041411,0.38666666666666666,0.0,0.0,
+Pair4_song1_take2,137.63,140.11,Double right turn for the follower with normal open hold,"turn, hands held",0.004588188158041411,0.36,0.21333333333333335,0.0,
+Pair4_song1_take2,140.11,142.63,Enchufla with normal open hold with left turn for the leader,"turn, hands held",0.004588188158041411,0.28,0.24,0.18666666666666668,
+Pair4_song1_take2,142.63,145.19,Enchufla with normal open hold,open hold,0.004588188158041411,0.0,0.19480519480519481,0.11688311688311688,
+Pair4_song1_take2,145.19,147.63,Dile que no with normal closed hold,closed hold,0.004588188158041411,0.1917808219178082,0.7945205479452054,0.7397260273972602,0.46932283942587416
+Pair4_song1_take2,147.63,150.26,"Basic step, facing the line of dance",other,0.004588188158041411,0.0,0.0,0.0,
+Pair4_song2_take1,3.92,6.24,"Basic step, facing the line of dance",other,0.00456817031917574,0.0,0.0,0.0,
+Pair4_song2_take1,6.24,8.64,"Basic step, facing the line of dance",other,0.00456817031917574,0.041666666666666664,0.0,0.0,
+Pair4_song2_take1,8.64,11.08,"Basic step, facing the line of dance with normal closed hand",closed hold,0.00456817031917574,0.5342465753424658,0.7534246575342466,0.7534246575342466,0.17221595704812237
+Pair4_song2_take1,11.08,13.48,"Basic step, facing the line of dance with normal closed hand while change of directions (Swap Position) to facing perpendicular to the line of dance",closed hold,0.00456817031917574,1.0,1.0,1.0,0.03695465647755417
+Pair4_song2_take1,13.48,15.92,"Basic step, facing perpendicular to the line of dance with normal closed hand while change of directions (Swap Position) to facing the line of dance",closed hold,0.00456817031917574,0.9315068493150684,1.0,1.0,0.05865396575864345
+Pair4_song2_take1,15.92,18.36,Steps sideways on the beat 1 and 5,other,0.00456817031917574,1.0,1.0,1.0,0.050549016948186476
+Pair4_song2_take1,18.36,20.84,Steps sideways on the beat 1 and 3,other,0.00456817031917574,0.9066666666666666,1.0,1.0,0.04279619459296043
+Pair4_song2_take1,20.84,23.28,"Basic step, facing the line of dance with normal closed hand",closed hold,0.00456817031917574,0.7534246575342466,1.0,1.0,0.05136256986419927
+Pair4_song2_take1,23.28,25.68,"Basic step, facing the line of dance with normal closed hand",closed hold,0.00456817031917574,0.875,1.0,0.9861111111111112,0.06092405928018131
+Pair4_song2_take1,25.68,28.04,"Basic step, facing the line of dance",other,0.00456817031917574,0.4225352112676056,0.28169014084507044,0.2535211267605634,
+Pair4_song2_take1,28.04,30.48,XBL with a right (outside) turn for the follower,other,0.00456817031917574,0.0958904109589041,0.7671232876712328,0.6986301369863014,0.27589744296020297
+Pair4_song2_take1,30.48,32.92,XBL with normal closed hold,closed hold,0.00456817031917574,0.3561643835616438,0.8767123287671232,0.7534246575342466,0.5315174452505836
+Pair4_song2_take1,32.92,35.36,"Basic step, facing the line of dance",other,0.00456817031917574,0.0,0.0,0.0,
+Pair4_song2_take1,35.36,37.8,Enchufla with normal open hold with left turn for the leader,"turn, hands held",0.00456817031917574,0.4594594594594595,0.2972972972972973,0.25675675675675674,
+Pair4_song2_take1,37.8,40.2,Enchufla with normal open hold,open hold,0.00456817031917574,0.3194444444444444,0.1527777777777778,0.125,
+Pair4_song2_take1,40.2,42.56,Dile que no with normal closed hold,closed hold,0.00456817031917574,0.2857142857142857,0.7714285714285715,0.6857142857142857,0.4975601953643901
+Pair4_song2_take1,42.56,44.96,Basic step Guapea,other,0.00456817031917574,1.0,0.3472222222222222,0.1388888888888889,
+Pair4_song2_take1,44.96,47.44,Basic step Guapea,other,0.00456817031917574,1.0,0.26666666666666666,0.0,
+Pair4_song2_take1,47.44,49.76,Siete,other,0.00456817031917574,0.34782608695652173,0.4492753623188406,0.43478260869565216,
+Pair4_song2_take1,49.76,52.08,Basic step Guapea,other,0.00456817031917574,0.9571428571428572,0.17142857142857143,0.08571428571428572,
+Pair4_song2_take1,52.08,54.6,"XBL with a right (outside) turn for the follower on the right side of the leader, ends with Left HL for the follower",other,0.00456817031917574,0.47368421052631576,0.4868421052631579,0.3684210526315789,
+Pair4_song2_take1,54.6,57.0,Enchufla from left HL for the follower with right turn for the leader to left HL for the leader,other,0.00456817031917574,0.6805555555555556,0.6805555555555556,0.5,0.5094719838717623
+Pair4_song2_take1,57.0,59.44,"Enchufla with crossed hold, left turn for the follower","turn, hands held",0.00456817031917574,0.0821917808219178,0.2191780821917808,0.1780821917808219,
+Pair4_song2_take1,59.44,61.8,Dile que no with normal closed hold,closed hold,0.00456817031917574,0.4084507042253521,0.8873239436619719,0.8450704225352113,0.5472741546290896
+Pair4_song2_take1,61.8,64.16,Basic step Guapea,other,0.00456817031917574,0.8571428571428571,0.37142857142857144,0.15714285714285714,
+Pair4_song2_take1,64.16,66.48,Basic step Guapea,other,0.00456817031917574,1.0,0.0,0.0,
+Pair4_song2_take1,66.48,68.84,Basic step Guapea,other,0.00456817031917574,0.971830985915493,0.0,0.0,
+Pair4_song2_take1,68.84,71.16,Enchufla with normal open hold,open hold,0.00456817031917574,0.18840579710144928,0.5072463768115942,0.4782608695652174,
+Pair4_song2_take1,71.16,73.64,Enchufla with normal open hold with left turn for the leader,"turn, hands held",0.00456817031917574,0.0,0.17333333333333334,0.09333333333333334,
+Pair4_song2_take1,73.64,76.04,Basic step while getting back to normal open hold,open hold,0.00456817031917574,0.5277777777777778,0.18055555555555555,0.027777777777777776,
+Pair4_song2_take1,76.04,78.48,"Basic step, facing the line of dance",other,0.00456817031917574,0.4520547945205479,0.1095890410958904,0.0,
+Pair4_song2_take1,78.48,80.8,Basic step Guapea,other,0.00456817031917574,1.0,0.22857142857142856,0.18571428571428572,
+Pair4_song2_take1,80.8,83.08,Enchufla with normal open hold with left turn for the leader,"turn, hands held",0.00456817031917574,0.25,0.25,0.07352941176470588,
+Pair4_song2_take1,83.08,85.48,Enchufla with normal open hold,open hold,0.00456817031917574,0.3611111111111111,0.3194444444444444,0.18055555555555555,
+Pair4_song2_take1,85.48,87.88,Dile que no with normal closed hold,closed hold,0.00456817031917574,0.3888888888888889,0.8611111111111112,0.7638888888888888,0.4612463542184051
+Pair4_song2_take1,87.88,90.24,Basic step Guapea,other,0.00456817031917574,0.8873239436619719,0.14084507042253522,0.0,
+Pair4_song2_take1,90.24,92.64,Basic step Guapea,other,0.00456817031917574,0.9583333333333334,0.1388888888888889,0.1111111111111111,
+Pair4_song2_take1,92.64,95.0,Natural top,other,0.00456817031917574,0.4084507042253521,0.5633802816901409,0.5633802816901409,
+Pair4_song2_take1,95.0,97.32,Enchufla with normal open hold with left turn for the leader,"turn, hands held",0.00456817031917574,0.391304347826087,0.43478260869565216,0.10144927536231885,
+Pair4_song2_take1,97.32,99.72,Dile que no with normal closed hold,closed hold,0.00456817031917574,0.1111111111111111,0.6944444444444444,0.6944444444444444,0.23286425349188347
+Pair4_song2_take1,99.72,102.04,Basic step Guapea,other,0.00456817031917574,0.8428571428571429,0.7857142857142857,0.38571428571428573,0.26475059892028846
+Pair4_song2_take1,102.04,104.32,Basic step Guapea,other,0.00456817031917574,1.0,0.2647058823529412,0.029411764705882353,
+Pair4_song2_take1,104.32,106.68,Basic step Guapea,other,0.00456817031917574,1.0,0.19718309859154928,0.14084507042253522,
+Pair4_song2_take1,106.68,108.96,Basic step Guapea,other,0.00456817031917574,0.7794117647058824,0.4852941176470588,0.23529411764705882,
+Pair4_song2_take1,108.96,111.32,"XBL with a right (outside) turn for the follower on the right side of the leader, ends with Left HL for the follower",other,0.00456817031917574,0.6619718309859155,0.6197183098591549,0.4084507042253521,0.28215965608592536
+Pair4_song2_take1,111.32,113.72,Change of Directions (Swap Position) back to normal open hold from Left HL for the lady,open hold,0.00456817031917574,0.1388888888888889,0.8055555555555556,0.75,0.46538682197526904
+Pair4_song2_take1,113.72,116.04,XBL with normal open hold,open hold,0.00456817031917574,0.0,1.0,1.0,0.5330014580561948
+Pair4_song2_take1,116.04,118.4,Basic step Guapea,other,0.00456817031917574,0.7887323943661971,0.11267605633802817,0.11267605633802817,
+Pair4_song2_take1,118.4,120.76,Basic step Guapea,other,0.00456817031917574,1.0,0.12857142857142856,0.0,
+Pair4_song2_take1,120.76,123.08,Basic step Guapea,other,0.00456817031917574,0.6857142857142857,0.4142857142857143,0.24285714285714285,
+Pair4_song2_take1,123.08,125.4,"XBL with a right (outside) turn for the follower with crossed hold on the right side of the leader, both hands, ends with right Sombrero hold","turn, hands held",0.00456817031917574,0.21428571428571427,0.6571428571428571,0.42857142857142855,0.2108883651921369
+Pair4_song2_take1,125.4,127.8,Dile que no with normal closed hold,closed hold,0.00456817031917574,0.4027777777777778,0.8472222222222222,0.7777777777777778,0.496361594238236
+Pair4_song2_take1,127.8,130.08,"Basic step, facing the line of dance",other,0.00456817031917574,1.0,0.0,0.0,
+Pair4_song2_take1,130.08,132.36,Basic step Guapea,other,0.00456817031917574,0.9264705882352942,0.23529411764705882,0.08823529411764706,
+Pair4_song2_take1,132.36,134.76,"XBL with a right (outside) turn for the follower with crossed hold on the right side of the leader, both hands, ends with right Sombrero hold","turn, hands held",0.00456817031917574,0.19444444444444445,0.4305555555555556,0.125,
+Pair4_song2_take1,134.76,137.04,Dile que no with normal closed hold,closed hold,0.00456817031917574,0.2753623188405797,0.7971014492753623,0.7536231884057971,0.12325733281079135
+Pair4_song2_take1,137.04,139.32,"Basic step, facing the line of dance",other,0.00456817031917574,1.0,0.0,0.0,
+Pair4_song2_take1,139.32,141.64,Basic step Guapea,other,0.00456817031917574,0.9571428571428572,0.21428571428571427,0.1,
+Pair4_song2_take1,141.64,144.0,Enchufla with crossed hold with left turn for the follower and left turn for the leader,"turn, hands held",0.00456817031917574,0.4084507042253521,0.36619718309859156,0.16901408450704225,
+Pair4_song2_take1,144.0,146.36,Enchufla with normal open hold,open hold,0.00456817031917574,0.08571428571428572,0.15714285714285714,0.12857142857142856,
+Pair4_song2_take1,146.36,148.72,XBL with normal closed hold,closed hold,0.00456817031917574,0.0,0.6338028169014085,0.5774647887323944,0.48431010621418036
+Pair4_song2_take2,23.97,26.41,XBL with normal closed hold,closed hold,0.004273587765992412,0.273972602739726,0.7808219178082192,0.7671232876712328,0.4903328336003746
+Pair4_song2_take2,26.41,28.81,"Basic step, facing the line of dance",other,0.004273587765992412,0.3472222222222222,0.0,0.0,
+Pair4_song2_take2,28.81,31.21,"Basic step, facing the line of dance",other,0.004273587765992412,0.5,0.0,0.0,
+Pair4_song2_take2,31.21,33.61,"Basic step, facing the line of dance",other,0.004273587765992412,0.4444444444444444,0.1111111111111111,0.09722222222222222,
+Pair4_song2_take2,33.61,36.05,XBL with normal closed hold,closed hold,0.004273587765992412,0.3835616438356164,0.7808219178082192,0.6438356164383562,0.4962185825251324
+Pair4_song2_take2,36.05,38.45,Natural top,other,0.004273587765992412,0.7222222222222222,0.7916666666666666,0.7916666666666666,0.20952837362568044
+Pair4_song2_take2,38.45,40.89,"Basic step with styling, facing the line of dance",other,0.004273587765992412,0.4383561643835616,0.0,0.0,
+Pair4_song2_take2,40.89,43.33,"Basic step, facing the line of dance",other,0.004273587765992412,0.6301369863013698,0.2191780821917808,0.0,
+Pair4_song2_take2,43.33,45.61,XBL with normal open hold,open hold,0.004273587765992412,0.3333333333333333,0.7391304347826086,0.5942028985507246,0.38558547512024943
+Pair4_song2_take2,45.61,48.05,"Basic step, facing the line of dance",other,0.004273587765992412,0.2328767123287671,0.0,0.0,
+Pair4_song2_take2,48.05,50.45,"Right turn for the follower, normal open hold, ends with Left HL for the follower","turn, hands held",0.004273587765992412,0.5138888888888888,0.8333333333333334,0.6111111111111112,0.49645366668618124
+Pair4_song2_take2,50.45,52.89,Walking around the partner from left HL for the follower,hand travels over body,0.004273587765992412,0.3835616438356164,0.5205479452054794,0.3698630136986301,
+Pair4_song2_take2,52.89,55.33,Change of Directions (Swap Position) for the follower with normal open hold,open hold,0.004273587765992412,0.1917808219178082,0.2054794520547945,0.1095890410958904,
+Pair4_song2_take2,55.33,57.61,Dile que no with normal closed hold,closed hold,0.004273587765992412,0.391304347826087,0.927536231884058,0.6231884057971014,0.5955626882109871
+Pair4_song2_take2,57.61,60.09,Basic step Guapea,other,0.004273587765992412,1.0,0.6351351351351351,0.0,0.023603680037459947
+Pair4_song2_take2,60.09,62.45,Basic step Guapea,other,0.004273587765992412,1.0,0.19718309859154928,0.1267605633802817,
+Pair4_song2_take2,62.45,64.81,Basic step Guapea,other,0.004273587765992412,1.0,0.09859154929577464,0.07042253521126761,
+Pair4_song2_take2,64.81,67.25,Siete,other,0.004273587765992412,0.3287671232876712,0.4794520547945205,0.3561643835616438,0.3151690819365165
+Pair4_song2_take2,67.25,69.57,Basic step Guapea,other,0.004273587765992412,0.9142857142857143,0.0,0.0,
+Pair4_song2_take2,69.57,71.94,Enchufla with normal open hold with left turn for the leader,"turn, hands held",0.004273587765992412,0.28169014084507044,0.19718309859154928,0.056338028169014086,
+Pair4_song2_take2,74.33,76.77,Dile que no with normal open hold,open hold,0.004273587765992412,0.3918918918918919,0.6486486486486487,0.5675675675675675,0.4626251859589665
+Pair4_song2_take2,76.77,79.17,Basic step Guapea,other,0.004273587765992412,1.0,0.18055555555555555,0.05555555555555555,
+Pair4_song2_take2,79.17,81.57,Basic step Guapea,other,0.004273587765992412,1.0,0.0,0.0,
+Pair4_song2_take2,81.57,83.85,Natural top with half left turn for the leader,other,0.004273587765992412,0.16176470588235295,0.6617647058823529,0.5441176470588235,0.2791327615137802
+Pair4_song2_take2,83.85,86.17,Enchufla with normal open hold,open hold,0.004273587765992412,0.24285714285714285,0.22857142857142856,0.15714285714285714,
+Pair4_song2_take2,86.17,88.49,Dile que no with normal closed hold,closed hold,0.004273587765992412,0.34782608695652173,0.8260869565217391,0.7536231884057971,0.28545031357202355
+Pair4_song2_take2,88.49,90.89,Basic step Guapea,other,0.004273587765992412,1.0,0.25,0.125,
+Pair4_song2_take2,90.89,93.25,Basic step Guapea,other,0.004273587765992412,1.0,0.11267605633802817,0.0,
+Pair4_song2_take2,93.25,95.69,Basic step Guapea,other,0.004273587765992412,0.958904109589041,0.1095890410958904,0.0,
+Pair4_song2_take2,95.69,98.05,"XBL with a right (outside) turn for the follower with crossed hold on the right side of the leader, both hands, ends with right Sombrero hold","turn, hands held",0.004273587765992412,0.19718309859154928,0.5352112676056338,0.16901408450704225,0.20492904532095627
+Pair4_song2_take2,98.05,100.41,Dile que no with normal closed hold,closed hold,0.004273587765992412,0.39436619718309857,0.7605633802816901,0.704225352112676,0.524421837175742
+Pair4_song2_take2,100.41,102.73,Basic step Guapea,other,0.004273587765992412,1.0,0.4057971014492754,0.17391304347826086,
+Pair4_song2_take2,102.73,105.05,Basic step Guapea,other,0.004273587765992412,1.0,0.1,0.0,
+Pair4_song2_take2,105.05,107.37,"XBL with a right (outside) turn for the follower on the right side of the leader, ends with Left HL for the follower",other,0.004273587765992412,0.6142857142857143,0.45714285714285713,0.35714285714285715,
+Pair4_song2_take2,107.37,109.81,Enchufla with crossed hold with left turn for the follower and right turn for the leader,"turn, hands held",0.004273587765992412,0.684931506849315,0.726027397260274,0.5342465753424658,0.45052418037357933
+Pair4_song2_take2,109.81,112.09,Enchufla with crossed hold to open hold while hands change,hand travels over body,0.004273587765992412,0.058823529411764705,0.23529411764705882,0.16176470588235295,
+Pair4_song2_take2,112.09,114.41,Dile que no with normal closed hold,closed hold,0.004273587765992412,0.4142857142857143,0.7428571428571429,0.6142857142857143,0.5242537719011693
+Pair4_song2_take2,114.41,116.73,Basic step Guapea,other,0.004273587765992412,1.0,0.17391304347826086,0.10144927536231885,
+Pair4_song2_take2,116.73,119.05,Basic step Guapea,other,0.004273587765992412,1.0,0.07142857142857142,0.0,
+Pair4_song2_take2,119.05,121.45,Natural top with half left turn for the leader,other,0.004273587765992412,0.18055555555555555,0.6388888888888888,0.5138888888888888,0.3101801609918999
+Pair4_song2_take2,121.45,123.77,Enchufla with normal open hold,open hold,0.004273587765992412,0.3142857142857143,0.22857142857142856,0.17142857142857143,
+Pair4_song2_take2,123.77,126.13,Dile que no with normal closed hold,closed hold,0.004273587765992412,0.38571428571428573,0.7285714285714285,0.6428571428571429,0.20900614057241337
+Pair4_song2_take2,126.13,128.449,Natural top with half left turn for the leader,other,0.004273587765992412,0.34285714285714286,0.4714285714285714,0.45714285714285713,0.15486753923926894
+Pair4_song2_take2,128.449,130.77,Enchufla with normal open hold,open hold,0.004273587765992412,0.2857142857142857,0.35714285714285715,0.18571428571428572,
+Pair4_song2_take2,130.77,133.09,Dile que no with normal closed hold,closed hold,0.004273587765992412,0.36231884057971014,0.855072463768116,0.7101449275362319,0.3901481766116836
+Pair4_song2_take2,133.09,135.41,Natural top,other,0.004273587765992412,0.45714285714285713,0.6428571428571429,0.5714285714285714,0.2729849247573433
+Pair4_song2_take2,135.41,137.81,Natural top,other,0.004273587765992412,0.25,0.5694444444444444,0.5416666666666666,0.16251167439520972
+Pair4_song2_take2,137.81,140.09,Enchufla with normal open hold,open hold,0.004273587765992412,0.19117647058823528,0.11764705882352941,0.10294117647058823,
+Pair4_song2_take2,140.09,142.41,Dile que no with normal closed hold,closed hold,0.004273587765992412,0.4142857142857143,0.8285714285714286,0.6142857142857143,0.5983478161511944
+Pair4_song2_take2,142.41,144.73,"Basic step, facing the line of dance",other,0.004273587765992412,0.36231884057971014,0.0,0.0,
+Pair4_song2_take2,144.73,147.13,"Right turn for the follower, normal open hold, ends with Left HL for the follower","turn, hands held",0.004273587765992412,0.4861111111111111,0.8333333333333334,0.6388888888888888,0.5774052275863715
+Pair4_song2_take2,147.13,149.37,Walking around the partner from left HL for the follower,hand travels over body,0.004273587765992412,0.4852941176470588,0.5,0.39705882352941174,
+Pair4_song2_take2,149.37,150.783,Enchufla with normal open hold,open hold,0.004273587765992412,0.10256410256410256,0.15384615384615385,0.05128205128205128,
+Pair4_song3_take1,7.778,10.338,"Basic step, facing the line of dance",other,0.0038133124238144537,0.5064935064935064,0.8961038961038961,0.7402597402597403,0.17645062101537845
+Pair4_song3_take1,10.338,12.898,"Basic step, facing the line of dance",other,0.0038133124238144537,0.7894736842105263,1.0,1.0,0.05065945295601125
+Pair4_song3_take1,12.898,15.458,"Basic step, facing the line of dance",other,0.0038133124238144537,0.5974025974025974,1.0,1.0,0.04335674826443594
+Pair4_song3_take1,15.458,17.938,XBL with normal closed hold,closed hold,0.0038133124238144537,0.30666666666666664,1.0,1.0,0.11444367416166167
+Pair4_song3_take1,17.938,20.538,"Basic step, facing the line of dance",other,0.0038133124238144537,0.9358974358974359,1.0,1.0,0.03236586646620624
+Pair4_song3_take1,20.538,23.058,XBL with a left (inside) turn for the follower with normal closed hold,closed hold,0.0038133124238144537,0.09333333333333334,0.9333333333333333,0.8,0.22417810826570542
+Pair4_song3_take1,23.058,25.538,"Basic step, facing the line of dance",other,0.0038133124238144537,0.68,1.0,1.0,0.19116318441945407
+Pair4_song3_take1,25.538,27.978,"Basic step, facing the line of dance with normal closed hand",closed hold,0.0038133124238144537,0.7397260273972602,1.0,1.0,0.13739991176008823
+Pair4_song3_take1,27.978,30.538,XBL with normal closed hold,closed hold,0.0038133124238144537,0.38961038961038963,0.8961038961038961,0.8961038961038961,0.23732177880380526
+Pair4_song3_take1,30.538,33.098,"Basic step, facing the line of dance",other,0.0038133124238144537,0.0,0.0,0.0,
+Pair4_song3_take1,33.1,35.72,"Right turn for the follower, normal open hold","turn, hands held",0.0038133124238144537,0.5,0.2948717948717949,0.15384615384615385,
+Pair4_song3_take1,35.72,38.27,Enchufla with normal open hold,open hold,0.0038133124238144537,0.24675324675324675,0.18181818181818182,0.15584415584415584,
+Pair4_song3_take1,38.27,40.708,Dile que no with normal closed hold,closed hold,0.0038133124238144537,0.3287671232876712,0.8767123287671232,0.7671232876712328,0.5784510559821664
+Pair4_song3_take1,40.708,43.228,"Basic step, facing the line of dance",other,0.0038133124238144537,0.3466666666666667,0.0,0.0,
+Pair4_song3_take1,43.228,45.788,"Basic step, facing the line of dance",other,0.0038133124238144537,0.5194805194805194,0.0,0.0,
+Pair4_song3_take1,45.788,48.228,"Right turn for the follower, normal open hold, ends with Left HL for the follower","turn, hands held",0.0038133124238144537,0.4657534246575342,0.5205479452054794,0.3013698630136986,
+Pair4_song3_take1,48.228,50.788,Change of Directions (Swap Position) with Reverse back-to-back Titanic hold from left HL for the follower to right HL for the follower,other,0.0038133124238144537,0.37662337662337664,0.7532467532467533,0.7012987012987013,0.6209272728818493
+Pair4_song3_take1,50.788,53.308,"Right turn for the follower from right HL, left turn for the follower",other,0.0038133124238144537,0.34210526315789475,0.42105263157894735,0.21052631578947367,
+Pair4_song3_take1,53.308,55.828,"Basic step, facing the line of dance",other,0.0038133124238144537,0.2,0.0,0.0,
+Pair4_song3_take1,55.828,58.428,"Basic step with styling, facing the line of dance",other,0.0038133124238144537,0.05128205128205128,0.0,0.0,
+Pair4_song3_take1,58.428,60.908,"Basic step, facing the line of dance",other,0.0038133124238144537,0.3333333333333333,0.0,0.0,
+Pair4_song3_take1,60.908,63.468,"Check by holding the follower's both hands (open hands down, Embrace for the lady in a shadow)",closed hold,0.0038133124238144537,0.025974025974025976,0.5064935064935064,0.42857142857142855,0.38470070793886063
+Pair4_song3_take1,63.468,65.988,"Reverse check by holding the follower's both hands (open hands down, Embrace for the lady in a shadow)",closed hold,0.0038133124238144537,0.14666666666666667,0.8666666666666667,0.8666666666666667,0.5963417319004104
+Pair4_song3_take1,65.988,68.548,"Basic step, facing the line of dance",other,0.0038133124238144537,0.2597402597402597,0.0,0.0,
+Pair4_song3_take1,68.548,71.028,"Basic step, facing the line of dance",other,0.0038133124238144537,0.0,0.0,0.0,
+Pair4_song3_take1,71.028,73.628,Change of Directions (Swap Position) for the follower with normal open hold ends with left turn for the leader,"turn, hands held",0.0038133124238144537,0.10256410256410256,0.5256410256410257,0.15384615384615385,0.4262279876159014
+Pair4_song3_take1,73.628,76.188,Enchufla with crossed hold,open hold,0.0038133124238144537,0.2857142857142857,0.42857142857142855,0.3246753246753247,
+Pair4_song3_take1,76.188,78.628,Dile que no with normal closed hold,closed hold,0.0038133124238144537,0.2876712328767123,0.7397260273972602,0.6027397260273972,0.5199560888910256
+Pair4_song3_take1,78.628,81.17,Hip movement on the same spot,other,0.0038133124238144537,0.0,0.0,0.0,
+Pair4_song3_take1,81.17,83.74,Hip movement on the same spot,other,0.0038133124238144537,0.4935064935064935,0.0,0.0,
+Pair4_song3_take1,83.74,86.5,Hip movement and shoulder movement on the same spot,other,0.0038133124238144537,0.3614457831325301,0.012048192771084338,0.012048192771084338,
+Pair4_song3_take1,86.5,89.08,"Basic step, facing the line of dance",other,0.0038133124238144537,0.6103896103896104,0.012987012987012988,0.0,
+Pair4_song3_take1,89.08,91.23,"XBL with a left (inside) turn for the follower with normal open hold, hands down","turn, hands held",0.0038133124238144537,0.078125,0.484375,0.28125,
+Pair4_song3_take1,91.23,93.72,"Basic step, facing the line of dance",other,0.0038133124238144537,0.0,0.0,0.0,
+Pair4_song3_take1,93.72,96.32,Check by holding the follower's hand (open hands down) after XBL with a left (inside) turn for the follower.,other,0.0038133124238144537,1.0,0.5769230769230769,0.358974358974359,0.5202670467747423
+Pair4_song3_take1,96.32,98.88,Copa with the follower's left (inside) turn by holding the follower's hip,other,0.0038133124238144537,0.23376623376623376,1.0,1.0,0.6230684566805722
+Pair4_song3_take1,98.88,101.4,360 XBL,other,0.0038133124238144537,0.3157894736842105,0.8289473684210527,0.6578947368421053,0.5634387586034626
+Pair4_song3_take1,101.4,103.92,"Right turn for the follower, normal open hold, ends with Left HL for the follower","turn, hands held",0.0038133124238144537,0.4533333333333333,0.7066666666666667,0.52,0.5237837762217201
+Pair4_song3_take1,103.92,106.36,Enchufla from left HL for the follower,other,0.0038133124238144537,0.0410958904109589,0.3561643835616438,0.3424657534246575,
+Pair4_song3_take1,106.36,109.02,"Basic step, facing the line of dance",other,0.0038133124238144537,0.275,0.0125,0.0,
+Pair4_song3_take1,109.02,111.54,Change of Directions (Swap Position) for the follower with normal open hold ends with left turn for the leader,"turn, hands held",0.0038133124238144537,0.34210526315789475,0.5657894736842105,0.3684210526315789,0.5181471230398681
+Pair4_song3_take1,111.55,114.03,"Enchufla with crossed hold, both hands",open hold,0.0038133124238144537,0.0945945945945946,0.8378378378378378,0.6891891891891891,0.35851522871578045
+Pair4_song3_take1,114.03,116.51,Enchufla with Titanic hold,other,0.0038133124238144537,0.0,1.0,0.9866666666666667,0.5006886732603079
+Pair4_song3_take1,116.51,118.99,Enchufla with Titanic hold,other,0.0038133124238144537,0.0,0.972972972972973,0.972972972972973,0.5348003685988886
+Pair4_song3_take1,118.99,121.55,"Enchufla with crossed hold, left turn for the leader","turn, hands held",0.0038133124238144537,0.5324675324675324,0.5714285714285714,0.5194805194805194,0.61475718667489
+Pair4_song3_take1,121.55,124.07,Enchufla with normal open hold,open hold,0.0038133124238144537,0.0,0.09210526315789473,0.02631578947368421,
+Pair4_song3_take1,124.07,126.63,Dile que no with normal closed hold,closed hold,0.0038133124238144537,0.27631578947368424,0.8289473684210527,0.7763157894736842,0.5121548395398176
+Pair4_song3_take1,126.63,129.09,"Basic step, facing the line of dance",other,0.0038133124238144537,0.14864864864864866,0.0,0.0,
+Pair4_song3_take1,129.09,131.729,Hip movement and shoulder movement on the same spot,other,0.0038133124238144537,0.0,0.0,0.0,
+Pair4_song3_take1,134.289,136.849,"Basic step, facing the line of dance",other,0.0038133124238144537,0.11688311688311688,0.0,0.0,
+Pair4_song3_take1,136.849,139.369,"Basic step, facing the line of dance",other,0.0038133124238144537,0.4605263157894737,0.0,0.0,
+Pair4_song3_take1,139.369,141.849,"Basic step, facing the line of dance",other,0.0038133124238144537,0.40540540540540543,0.0,0.0,
+Pair4_song3_take1,141.849,144.329,"Basic step, facing the line of dance",other,0.0038133124238144537,0.44594594594594594,0.13513513513513514,0.13513513513513514,
+Pair4_song3_take1,144.329,146.889,Enchufla with normal open hold,open hold,0.0038133124238144537,0.0,0.5194805194805194,0.4935064935064935,0.2184696901344272
+Pair4_song3_take1,146.889,149.29,Enchufla with normal open hold with left turn for the leader,"turn, hands held",0.0038133124238144537,0.08333333333333333,0.2222222222222222,0.041666666666666664,
+Pair4_song3_take1,149.3,151.885,Enchufla with normal open hold,open hold,0.0038133124238144537,0.0,0.1780821917808219,0.1643835616438356,
+Pair4_song3_take2,0.0,1.47,Steps sideways on the beat 1 and 3,other,0.006899082856696208,0.0,0.0,0.0,
+Pair4_song3_take2,1.49,3.4,Steps sideways on the beat 1 and 3,other,0.006899082856696208,0.0,0.0,0.0,
+Pair4_song3_take2,3.41,5.69,Steps sideways on the beat 1 and 3,other,0.006899082856696208,0.0,0.0,0.0,
+Pair4_song3_take2,5.69,8.25,Steps sideways on the beat 1 and 3,other,0.006899082856696208,0.1038961038961039,0.0,0.0,
+Pair4_song3_take2,8.25,10.69,"Basic step, facing the line of dance",other,0.006899082856696208,0.0,0.0,0.0,
+Pair4_song3_take2,15.72,18.32,"Basic step, facing the line of dance",other,0.006899082856696208,0.46153846153846156,0.0,0.0,
+Pair4_song3_take2,18.32,20.88,"Basic step, facing the line of dance with normal closed hand while change of directions (Swap Position) to facing perpendicular to the line of dance",closed hold,0.006899082856696208,0.7142857142857143,0.7142857142857143,0.7142857142857143,0.11026349390139838
+Pair4_song3_take2,20.88,23.36,"Basic step, facing perpendicular to the line of dance with normal closed hand while change of directions (Swap Position) to facing the line of dance",closed hold,0.006899082856696208,0.8378378378378378,1.0,1.0,0.05338432419883051
+Pair4_song3_take2,23.36,25.96,"Basic step, facing the line of dance",other,0.006899082856696208,0.48717948717948717,1.0,1.0,0.12169099322245419
+Pair4_song3_take2,25.96,28.6,"Basic step, facing the line of dance with normal closed hand",closed hold,0.006899082856696208,0.55,1.0,1.0,0.7525928964565779
+Pair4_song3_take2,28.6,30.96,"Basic step, facing the line of dance with normal closed hand",closed hold,0.006899082856696208,0.5428571428571428,1.0,1.0,0.03210623395158173
+Pair4_song3_take2,30.96,33.48,"Basic step, facing the line of dance with normal closed hand",closed hold,0.006899082856696208,0.4605263157894737,1.0,1.0,0.18234825779082098
+Pair4_song3_take2,33.48,36.0,Dile que no with normal closed hold,closed hold,0.006899082856696208,0.3815789473684211,0.8552631578947368,0.6710526315789473,0.41475209460254425
+Pair4_song3_take2,36.0,38.64,"Basic step, facing the line of dance",other,0.006899082856696208,0.34177215189873417,0.0,0.0,
+Pair4_song3_take2,38.64,41.08,,other,0.006899082856696208,0.273972602739726,0.0,0.0,
+Pair4_song3_take2,41.08,43.6,"Basic step, facing the line of dance",other,0.006899082856696208,0.27631578947368424,0.9736842105263158,0.9210526315789473,0.389466455752543
+Pair4_song3_take2,43.6,46.12,"Basic step, facing the line of dance with normal closed hand",closed hold,0.006899082856696208,0.49333333333333335,1.0,1.0,0.03848479189507407
+Pair4_song3_take2,46.12,48.64,XBL with normal closed hold on the right side of the leader,closed hold,0.006899082856696208,0.5131578947368421,1.0,0.9210526315789473,0.12264222246922984
+Pair4_song3_take2,48.64,51.16,XBL with normal closed hold on the right side of the leader,closed hold,0.006899082856696208,0.64,1.0,1.0,0.015126401336017985
+Pair4_song3_take2,51.16,53.72,XBL with normal closed hold on the right side of the leader,closed hold,0.006899082856696208,0.6233766233766234,1.0,1.0,0.06749313581146588
+Pair4_song3_take2,53.72,56.28,XBL with normal closed hold on the right side of the leader,closed hold,0.006899082856696208,0.36363636363636365,1.0,1.0,0.052979403968595254
+Pair4_song3_take2,56.28,58.8,Back basic step with normal open hold,open hold,0.006899082856696208,0.0,0.9342105263157895,0.9078947368421053,0.5707179574590593
+Pair4_song3_take2,58.8,61.08,Back basic step,other,0.006899082856696208,0.19117647058823528,0.9705882352941176,0.8823529411764706,0.619465612892708
+Pair4_song3_take2,61.08,63.76,Back basic step,other,0.006899082856696208,0.1125,0.85,0.825,0.6274682960632875
+Pair4_song3_take2,63.76,66.36,Enchufla with crossed hold to open hold while hands change,hand travels over body,0.006899082856696208,0.5512820512820513,0.23076923076923078,0.1282051282051282,
+Pair4_song3_take2,66.36,68.88,Enchufla with normal open hold,open hold,0.006899082856696208,0.18421052631578946,0.15789473684210525,0.13157894736842105,
+Pair4_song3_take2,68.88,71.44,Dile que no with normal closed hold,closed hold,0.006899082856696208,0.3116883116883117,0.8051948051948052,0.6623376623376623,0.5049023222758107
+Pair4_song3_take2,71.44,73.96,"Basic step with styling, facing the line of dance",other,0.006899082856696208,0.12,0.0,0.0,
+Pair4_song3_take2,73.96,76.44,"Check by holding the follower's both hands (open hands down, Embrace for the lady in a shadow)",closed hold,0.006899082856696208,0.4266666666666667,0.5733333333333334,0.32,
+Pair4_song3_take2,76.44,79.08,"Reverse check by holding the follower's both hands (open hands down, Embrace for the lady in a shadow)",closed hold,0.006899082856696208,0.3924050632911392,0.8227848101265823,0.7848101265822784,0.5885567284108238
+Pair4_song3_take2,79.08,81.6,"Basic step, facing the line of dance",other,0.006899082856696208,0.14473684210526316,0.0,0.0,
+Pair4_song3_take2,81.6,84.12,Hip movement and shoulder movement on the same spot,other,0.006899082856696208,0.0,0.0,0.0,
+Pair4_song3_take2,84.12,86.68,Hip movement and shoulder movement on the same spot,other,0.006899082856696208,0.0,0.0,0.0,
+Pair4_song3_take2,89.24,91.72,"Basic step, facing the line of dance",other,0.006899082856696208,0.02702702702702703,0.0,0.0,
+Pair4_song3_take2,91.72,94.16,"Basic step, facing the line of dance",other,0.006899082856696208,0.0,0.0,0.0,
+Pair4_song3_take2,94.16,96.64,"Basic step, facing the line of dance",other,0.006899082856696208,0.13333333333333333,0.0,0.0,
+Pair4_song3_take2,96.64,99.24,"Right turn for the follower, normal open hold, ends with Left HL for the follower","turn, hands held",0.006899082856696208,0.5128205128205128,0.6538461538461539,0.48717948717948717,0.5590244851034214
+Pair4_song3_take2,99.24,101.76,Walking around the partner from left HL for the follower,hand travels over body,0.006899082856696208,0.4,0.5066666666666667,0.3333333333333333,
+Pair4_song3_take2,101.76,104.28,Enchufla with normal open hold,open hold,0.006899082856696208,0.23684210526315788,0.2894736842105263,0.14473684210526316,
+Pair4_song3_take2,104.28,106.8,Dile que no with normal closed hold,closed hold,0.006899082856696208,0.3684210526315789,0.6842105263157895,0.631578947368421,0.46426494381956723
+Pair4_song3_take2,106.8,109.56,Basic step Guapea,other,0.006899082856696208,0.8536585365853658,0.15853658536585366,0.036585365853658534,
+Pair4_song3_take2,109.56,111.88,"XBL with a right (outside) turn for the follower on the right side of the leader, ends with Left HL for the follower",other,0.006899082856696208,0.3,0.6714285714285714,0.5428571428571428,0.2510909513099085
+Pair4_song3_take2,111.88,114.44,Enchufla from left HL for the follower,other,0.006899082856696208,0.6623376623376623,0.4935064935064935,0.37662337662337664,
+Pair4_song3_take2,114.44,116.96,Enchufla from left HL for the follower with left turn for the leader,other,0.006899082856696208,0.52,0.49333333333333335,0.37333333333333335,
+Pair4_song3_take2,116.96,119.48,Enchufla with normal open hold,open hold,0.006899082856696208,0.10526315789473684,0.21052631578947367,0.15789473684210525,
+Pair4_song3_take2,119.48,121.96,Dile que no with normal closed hold,closed hold,0.006899082856696208,0.35135135135135137,0.8243243243243243,0.6891891891891891,0.5564152305494776
+Pair4_song3_take2,121.96,124.56,"Basic step, facing the line of dance",other,0.006899082856696208,0.16666666666666666,0.0,0.0,
+Pair4_song3_take2,124.56,127.0,"Right turn for the follower, crossed hold, Left Half-HL for the follower","turn, hands held",0.006899082856696208,0.17567567567567569,0.47297297297297297,0.33783783783783783,
+Pair4_song3_take2,127.0,129.56,Left turn for the follower from Left HL for the follower,other,0.006899082856696208,0.0,0.9210526315789473,0.9078947368421053,0.1805294198223954
+Pair4_song3_take2,129.56,132.08,"XBL with normal open hold, starts with Comb on the leader with his left hand",open hold,0.006899082856696208,0.2894736842105263,0.7368421052631579,0.6447368421052632,0.42776598498576635
+Pair4_song3_take2,132.08,134.64,Hip movement on the same spot,other,0.006899082856696208,0.6493506493506493,0.025974025974025976,0.0,
+Pair4_song3_take2,134.64,137.2,"Basic step, facing the line of dance",other,0.006899082856696208,0.5194805194805194,0.0,0.0,
+Pair4_song3_take2,137.2,139.72,Check by holding the follower's hand (open hands down) after XBL with a left (inside) turn for the follower.,other,0.006899082856696208,1.0,0.56,0.18666666666666668,0.3085866713119897
+Pair4_song3_take2,139.72,142.2,"Basic step, facing the line of dance",other,0.006899082856696208,1.0,0.0,0.0,
+Pair4_song3_take2,142.2,144.72,Check by holding the follower's hand (open hands down) after XBL with a left (inside) turn for the follower.,other,0.006899082856696208,0.9733333333333334,0.4,0.02666666666666667,
+Pair4_song3_take2,144.72,147.28,"Basic step, facing the line of dance",other,0.006899082856696208,0.07792207792207792,0.0,0.0,
+Pair4_song3_take2,147.28,149.76,"Right turn for the follower, normal open hold","turn, hands held",0.006899082856696208,0.6756756756756757,0.13513513513513514,0.06756756756756757,
+Pair4_song3_take2,149.76,150.984,Enchufla with normal open hold,open hold,0.006899082856696208,0.20588235294117646,0.35294117647058826,0.3235294117647059,
+Pair4_song4_take1,0.0,2.16,"Basic step, facing the line of dance with normal closed hand",closed hold,0.005389044169923775,1.0,1.0,1.0,0.22375262133571577
+Pair4_song4_take1,2.16,5.4,Steps sideways on the beat 1 and 5,other,0.005389044169923775,1.0,1.0,1.0,0.21344978436991788
+Pair4_song4_take1,5.4,8.36,Steps sideways on the beat 1 and 3,other,0.005389044169923775,1.0,1.0,1.0,0.2341186607858582
+Pair4_song4_take1,8.36,11.36,"Basic step, facing the line of dance with normal closed hand",closed hold,0.005389044169923775,1.0,1.0,1.0,0.3232687341009899
+Pair4_song4_take1,11.36,14.28,"Basic step, facing the line of dance with normal closed hand",closed hold,0.005389044169923775,1.0,1.0,1.0,0.5056130088668996
+Pair4_song4_take1,14.28,17.2,"Basic step, facing the line of dance with normal closed hand",closed hold,0.005389044169923775,0.9659090909090909,1.0,1.0,0.3761922185240416
+Pair4_song4_take1,17.2,20.2,XBL with normal closed hold,closed hold,0.005389044169923775,0.2777777777777778,0.8666666666666667,0.8666666666666667,0.49748055794381846
+Pair4_song4_take1,20.2,23.16,"Basic step, facing the line of dance",other,0.005389044169923775,0.14772727272727273,0.0,0.0,
+Pair4_song4_take1,23.16,26.16,"Right turn for the follower, normal open hold","turn, hands held",0.005389044169923775,0.7,0.17777777777777778,0.0,
+Pair4_song4_take1,26.16,29.16,"Basic step, facing the line of dance",other,0.005389044169923775,0.16666666666666666,0.0,0.0,
+Pair4_song4_take1,29.16,32.0,Left turn for the leader with crossed hold,"turn, hands held",0.005389044169923775,0.06976744186046512,0.46511627906976744,0.3953488372093023,
+Pair4_song4_take1,32.0,35.04,"Basic step, facing the line of dance",other,0.005389044169923775,0.0989010989010989,0.13186813186813187,0.03296703296703297,
+Pair4_song4_take1,35.04,38.0,"Basic step, facing the line of dance",other,0.005389044169923775,0.6629213483146067,0.7191011235955056,0.6741573033707865,
+Pair4_song4_take1,38.0,40.96,"Basic step, facing the line of dance with normal closed hand",closed hold,0.005389044169923775,0.9318181818181818,1.0,1.0,0.16905293406936084
+Pair4_song4_take1,40.96,43.96,Steps sideways on the beat 1 and 5,other,0.005389044169923775,1.0,1.0,1.0,0.1511208073953511
+Pair4_song4_take1,43.96,46.96,Steps sideways on the beat 1 and 5,other,0.005389044169923775,1.0,1.0,1.0,0.050902302200051715
+Pair4_song4_take1,46.96,49.88,Steps sideways on the beat 1 and 5,other,0.005389044169923775,1.0,1.0,1.0,0.07087795598753314
+Pair4_song4_take1,49.88,52.96,"Basic step, facing the line of dance with normal closed hand",closed hold,0.005389044169923775,1.0,1.0,1.0,0.36619632048585693
+Pair4_song4_take1,52.96,55.84,"Basic step, facing the line of dance with normal closed hand",closed hold,0.005389044169923775,0.7011494252873564,1.0,1.0,0.21505433723140785
+Pair4_song4_take1,55.84,58.88,XBL with a left (inside) turn for the follower,other,0.005389044169923775,0.06593406593406594,0.7802197802197802,0.6373626373626373,0.49345604682831906
+Pair4_song4_take1,58.88,61.76,"Basic step, facing the line of dance with normal closed hand",closed hold,0.005389044169923775,0.45348837209302323,0.8023255813953488,0.8023255813953488,0.11458088270904798
+Pair4_song4_take1,61.76,64.72,XBL with a left (inside) turn for the follower with normal closed hold,closed hold,0.005389044169923775,0.10112359550561797,1.0,0.9887640449438202,0.36047332118544284
+Pair4_song4_take1,64.72,67.64,XBL with normal closed hold,closed hold,0.005389044169923775,0.23863636363636365,0.8068181818181818,0.6477272727272727,0.538573320779215
+Pair4_song4_take1,67.64,70.48,"Right turn for the follower, normal open hold","turn, hands held",0.005389044169923775,0.6588235294117647,0.3411764705882353,0.09411764705882353,
+Pair4_song4_take1,70.48,73.28,Steps sideways on the heels on the beat 5 and 7,other,0.005389044169923775,0.047619047619047616,0.0,0.0,
+Pair4_song4_take1,81.56,84.16,"Basic step, facing the line of dance",other,0.005389044169923775,0.358974358974359,0.0,0.0,
+Pair4_song4_take1,84.16,86.96,"Right turn for the follower, normal open hold, ends with Left HL for the follower","turn, hands held",0.005389044169923775,0.5714285714285714,0.7380952380952381,0.44047619047619047,0.5591169026716919
+Pair4_song4_take1,86.96,89.72,Enchufla from left HL for the follower,other,0.005389044169923775,0.5903614457831325,0.07228915662650602,0.024096385542168676,
+Pair4_song4_take1,89.72,92.4,"Basic step, facing the line of dance",other,0.005389044169923775,0.691358024691358,0.024691358024691357,0.024691358024691357,
+Pair4_song4_take1,92.4,95.16,"Right turn for the follower, crossed hold, Left Half-HL for the follower","turn, hands held",0.005389044169923775,0.573170731707317,0.5365853658536586,0.45121951219512196,0.33697980602000066
+Pair4_song4_take1,95.16,97.72,Left turn for the follower from Left HL for the follower,other,0.005389044169923775,0.14285714285714285,0.974025974025974,0.974025974025974,0.2704589030803467
+Pair4_song4_take1,97.72,100.28,Dile que no with normal closed hold,closed hold,0.005389044169923775,0.7532467532467533,0.7922077922077922,0.7532467532467533,0.4751753523273796
+Pair4_song4_take1,100.28,102.92,"Basic step, facing the line of dance",other,0.005389044169923775,0.25316455696202533,0.0,0.0,
+Pair4_song4_take1,102.92,105.48,"Basic step, facing the line of dance",other,0.005389044169923775,0.22077922077922077,0.0,0.0,
+Pair4_song4_take1,105.48,108.04,"Basic step, facing the line of dance",other,0.005389044169923775,0.37662337662337664,0.0,0.0,
+Pair4_song4_take1,108.04,110.56,"Right turn for the follower, normal open hold, ends with Left HL for the follower","turn, hands held",0.005389044169923775,0.52,0.6933333333333334,0.5066666666666667,0.558729558916117
+Pair4_song4_take1,110.56,112.96,Enchufla from left HL for the follower with left turn for the leader,other,0.005389044169923775,0.18055555555555555,0.3888888888888889,0.3611111111111111,
+Pair4_song4_take1,112.96,115.36,Enchufla with normal open hold,open hold,0.005389044169923775,0.375,0.2777777777777778,0.2638888888888889,
+Pair4_song4_take1,115.36,117.76,Enchufla with normal open hold,open hold,0.005389044169923775,0.19444444444444445,0.08333333333333333,0.041666666666666664,
+Pair4_song4_take1,117.76,120.32,Dile que no with normal closed hold,closed hold,0.005389044169923775,0.18181818181818182,0.7532467532467533,0.7012987012987013,0.437964714360187
+Pair4_song4_take1,120.32,122.76,"Basic step, facing the line of dance",other,0.005389044169923775,0.2602739726027397,0.0,0.0,
+Pair4_song4_take1,122.76,125.2,"Basic step, facing the line of dance",other,0.005389044169923775,0.3108108108108108,0.0,0.0,
+Pair4_song4_take1,125.2,127.64,"Basic step, facing the line of dance",other,0.005389044169923775,0.9178082191780822,0.2602739726027397,0.2602739726027397,
+Pair4_song4_take1,127.64,130.08,Enchufla with crossed hold with left turn for the follower and left turn for the leader,"turn, hands held",0.005389044169923775,0.3561643835616438,0.3150684931506849,0.0821917808219178,
+Pair4_song4_take1,130.08,132.56,Enchufla with crossed hold to right sombrero hold,open hold,0.005389044169923775,0.12162162162162163,0.6486486486486487,0.4594594594594595,0.15404167828662102
+Pair4_song4_take1,132.56,134.96,Dile que no with normal open hold,open hold,0.005389044169923775,0.09722222222222222,0.8333333333333334,0.8333333333333334,0.490339689313871
+Pair4_song4_take1,134.96,137.44,"Basic step, facing the line of dance",other,0.005389044169923775,0.9066666666666666,0.0,0.0,
+Pair4_song4_take1,137.44,139.88,Natural top,other,0.005389044169923775,0.6438356164383562,0.589041095890411,0.5616438356164384,0.13405269669894893
+Pair4_song4_take1,139.88,142.28,Natural top,other,0.005389044169923775,0.5694444444444444,0.8194444444444444,0.8194444444444444,0.2236829960503928
+Pair4_song4_take1,142.28,144.56,"Basic step, facing perpendicular to the line of dance with normal open hand while change of directions (Swap Position) to facing the line of dance",other,0.005389044169923775,0.7647058823529411,0.0,0.0,
+Pair4_song4_take1,144.56,146.92,"Basic step, facing the line of dance",other,0.005389044169923775,0.16901408450704225,0.028169014084507043,0.0,
+Pair4_song4_take1,146.92,149.27,"Basic step, facing the line of dance",other,0.005389044169923775,0.39436619718309857,0.0,0.0,
+Pair4_song4_take1,149.27,150.683,XBL with normal open hold,open hold,0.005389044169923775,0.0,0.07894736842105263,0.07894736842105263,
+Pair5_song1_take1,0.01,1.78,"Basic step, facing the line of dance",other,0.005589527518005215,0.16981132075471697,0.1509433962264151,0.1509433962264151,
+Pair5_song1_take1,1.79,3.92,"XBL with normal closed hold, the leader's right to the follower left, hands down",closed hold,0.005589527518005215,0.4375,0.390625,0.390625,
+Pair5_song1_take1,3.92,6.48,Natural top,other,0.005589527518005215,0.11688311688311688,0.4935064935064935,0.24675324675324675,
+Pair5_song1_take1,6.48,8.9,XBL with a left (inside) turn for the follower with a hand throw,other,0.005589527518005215,0.2465753424657534,0.1232876712328767,0.0821917808219178,
+Pair5_song1_take1,8.9,11.72,"XBL with normal closed hand, the leader's right to the follower left, hands down",closed hold,0.005589527518005215,0.4166666666666667,0.40476190476190477,0.40476190476190477,
+Pair5_song1_take1,11.72,14.34,"Side basic step with normal open holds, facing the line of dance",open hold,0.005589527518005215,0.9240506329113924,0.06329113924050633,0.0,
+Pair5_song1_take1,14.34,16.62,The follower executes a single right turn,other,0.005589527518005215,0.3088235294117647,0.5588235294117647,0.3382352941176471,
+Pair5_song1_take1,16.63,19.06,Comb on the follower's with the leader's left hand with a normal hold,other,0.005589527518005215,0.1643835616438356,0.7808219178082192,0.6712328767123288,0.18469190573508903
+Pair5_song1_take1,19.06,21.67,Follower  walks around the leader. ,hand travels over body,0.005589527518005215,0.189873417721519,0.17721518987341772,0.0379746835443038,
+Pair5_song1_take1,21.67,24.17,XBL with a left turn for the leader,other,0.005589527518005215,0.12,0.28,0.28,
+Pair5_song1_take1,24.17,26.71,"XBL with a right (outside) turn for the follower, facing the same direction with the leader in front",other,0.005589527518005215,0.3684210526315789,0.32894736842105265,0.18421052631578946,
+Pair5_song1_take1,26.71,29.31,Check by holding the follower's hands (closed hands down) after XBL with a left (inside) turn for the follower.,closed hold,0.005589527518005215,0.5769230769230769,0.8205128205128205,0.6410256410256411,0.45098158176865555
+Pair5_song1_take1,29.31,31.7,Check by holding the follower's hand (open hands down) after XBL with a left (inside) turn for the follower.,other,0.005589527518005215,0.5138888888888888,0.625,0.625,0.5120180164620972
+Pair5_song1_take1,31.7,34.32,Copa with the follower's double left (inside) turn,other,0.005589527518005215,0.0,0.41025641025641024,0.3974358974358974,
+Pair5_song1_take1,39.41,41.87,XBL with a right turn variation for the leader,other,0.005589527518005215,0.6621621621621622,0.47297297297297297,0.3783783783783784,
+Pair5_song1_take1,41.87,44.4,"Follower's right hand throw by leader's left hand, check by holding the follower's hand (open hands down) and the follower's inside turn",other,0.005589527518005215,0.8421052631578947,0.6052631578947368,0.6052631578947368,
+Pair5_song1_take1,44.4,46.99,XBL with a left (inside) turn for the follower with check on the follower's hip,other,0.005589527518005215,0.5064935064935064,1.0,1.0,0.5650039861905539
+Pair5_song1_take1,49.6,52.0,360 XBL,other,0.005589527518005215,0.0,0.9166666666666666,0.8888888888888888,0.47618901490646953
+Pair5_song1_take1,52.0,54.59,"XBL with normal closed hand, the leader's right to the follower left, hands down",closed hold,0.005589527518005215,0.16883116883116883,1.0,1.0,0.8894713501017769
+Pair5_song1_take1,54.6,57.2,XBL with a left (inside) turn for the follower,other,0.005589527518005215,0.3717948717948718,1.0,0.8076923076923077,0.10829371143225226
+Pair5_song1_take1,57.2,59.66,Change of Directions (Swap Position),other,0.005589527518005215,0.136986301369863,0.0410958904109589,0.0,
+Pair5_song1_take1,59.66,62.09,XBL with a left turn for the leader,other,0.005589527518005215,0.0136986301369863,0.3835616438356164,0.2465753424657534,
+Pair5_song1_take1,62.1,64.58," Crossed holds, hand drop with leader's right hand and follower's left hand, XBL with a right (outside) turn for the follower","turn, hands held",0.005589527518005215,0.40540540540540543,0.36486486486486486,0.08108108108108109,
+Pair5_song1_take1,64.58,66.99,"One right turn for the leader, arm loop following a right turn for the follower",other,0.005589527518005215,0.2638888888888889,0.027777777777777776,0.027777777777777776,
+Pair5_song1_take1,67.0,69.6,"Reverse right Half-HL for the follower, XBL with a right (outside) turn for the follower",other,0.005589527518005215,0.717948717948718,0.3076923076923077,0.20512820512820512,
+Pair5_song1_take1,69.61,72.01,"Facing the same direction, side to side walk change of directions, crossed hands",other,0.005589527518005215,0.6944444444444444,0.375,0.19444444444444445,
+Pair5_song1_take1,72.01,74.72,"Standard copa with change of directions, crossed hands",other,0.005589527518005215,0.9012345679012346,0.8888888888888888,0.49382716049382713,0.49086310484848417
+Pair5_song1_take1,74.72,77.2,"Body roll for the follower, XBL with a left (inside) turn for the follower",other,0.005589527518005215,0.3466666666666667,0.49333333333333335,0.12,
+Pair5_song1_take1,77.2,79.61,"XBL with normal closed hand, the leader's right to the follower left, hands down",closed hold,0.005589527518005215,0.5833333333333334,0.4027777777777778,0.4027777777777778,
+Pair5_song1_take1,79.62,82.21,"Right turn for the follower, left turn for the leader, normal open hold","turn, hands held",0.005589527518005215,0.14102564102564102,0.782051282051282,0.5,0.593299153107865
+Pair5_song1_take1,82.21,84.92,"Comb on the leader with his left hand, Comb on the follower with the leader's right hand, XBL with a left (inside) turn for the follower",other,0.005589527518005215,0.345679012345679,0.14814814814814814,0.08641975308641975,
+Pair5_song1_take1,84.92,87.3,Basic step variation with normal open hold,open hold,0.005589527518005215,1.0,0.06944444444444445,0.0,
+Pair5_song1_take1,87.3,89.75,"Basic step variation, the leader changes direction",other,0.005589527518005215,0.8493150684931506,0.1232876712328767,0.1095890410958904,
+Pair5_song1_take1,89.75,92.4,"XBL with left (inside) turn for the follower with a normal opend hold, left turn for the leader",other,0.005589527518005215,0.0375,0.475,0.1125,
+Pair5_song1_take1,97.44,100.05,"XBL with normal closed hold, the leader's right to the follower left, hands down",closed hold,0.005589527518005215,0.0,1.0,1.0,0.15455538229576218
+Pair5_song1_take1,100.05,102.56,"XBL with normal closed hold, the leader's right to the follower left, hands down",closed hold,0.005589527518005215,0.10666666666666667,0.4,0.36,
+Pair5_song1_take1,102.56,105.1,XBL with a left (inside) turn for the follower with a hand throw,other,0.005589527518005215,0.5064935064935064,0.07792207792207792,0.06493506493506493,
+Pair5_song1_take1,105.1,107.52,Arm lock with the right hand,other,0.005589527518005215,0.20833333333333334,0.3194444444444444,0.20833333333333334,
+Pair5_song1_take1,117.82,120.09,"XBL with normal closed hold, the leader's right to the follower left, hands down",closed hold,0.005589527518005215,0.4411764705882353,0.3382352941176471,0.2647058823529412,
+Pair5_song1_take1,120.09,122.61,"Double right turn for the follower, left turn for the leader with crossed hold","turn, hands held",0.005589527518005215,0.17105263157894737,0.23684210526315788,0.14473684210526316,
+Pair5_song1_take1,122.61,125.0,Copa with the gollower's right (outside) turn with crossed hold,"turn, hands held",0.005589527518005215,0.3888888888888889,0.4305555555555556,0.3472222222222222,
+Pair5_song1_take1,125.0,127.78,Double Hand throw with crossed hold and comb on the lady with the leader's right hand,open hold,0.005589527518005215,0.2289156626506024,0.5542168674698795,0.37349397590361444,0.5611991072698087
+Pair5_song1_take1,127.78,130.31,Crossed hold check with normal open hold,open hold,0.005589527518005215,0.7894736842105263,0.5263157894736842,0.3157894736842105,
+Pair5_song1_take1,130.31,132.8,"The leader's right turn with crossed hold, the leader ducks under the follower's left hand, ends facing the same direction with the lady in the back and hand drop","turn, hands held",0.005589527518005215,0.013333333333333334,0.37333333333333335,0.25333333333333335,
+Pair5_song1_take1,132.8,135.29,Double hand throw with normal open hold,open hold,0.005589527518005215,0.8648648648648649,0.36486486486486486,0.36486486486486486,
+Pair5_song1_take1,135.29,137.75,Copa with normal open hold on the left side of the leader,open hold,0.005589527518005215,0.6486486486486487,0.33783783783783783,0.2702702702702703,
+Pair5_song1_take1,137.75,140.22,"XBL with a left (inside) turn for the follower with normal open hold, hands down","turn, hands held",0.005589527518005215,1.0,0.5675675675675675,0.12162162162162163,0.503368118469862
+Pair5_song1_take1,140.22,142.89,Follower  walks around the leader with crossed hold,hand travels over body,0.005589527518005215,0.575,0.35,0.2625,
+Pair5_song1_take1,142.89,145.31,"XBL with a left (inside) turn for the follower, crossed hold, the leader facing perpendicular to the line of dance","turn, hands held",0.005589527518005215,0.3698630136986301,0.6164383561643836,0.4520547945205479,
+Pair5_song1_take1,145.31,147.8,"Right turn for the leader with crossed hold, ending with arm lock with the right hand for the leader and change of directions","turn, hands held",0.005589527518005215,0.7333333333333333,0.5333333333333333,0.14666666666666667,
+Pair5_song1_take1,147.8,150.3,"Comb on the follower with the leader's right hand, XBL with a left (inside) turn for the follower with normal open hold","turn, hands held",0.005589527518005215,0.30666666666666664,0.28,0.17333333333333334,
+Pair5_song1_take2,5.2,7.73,"Basic step, facing the line of dance with normal closed hand",closed hold,0.006150465705219225,1.0,1.0,0.02666666666666667,0.00016762029199821475
+Pair5_song1_take2,7.73,10.29,"XBL with normal closed hold, the leader's right to the follower left, hands down",closed hold,0.006150465705219225,1.0,1.0,0.0,6.512281129171189e-05
+Pair5_song1_take2,10.29,12.79,XBL with normal closed hold,closed hold,0.006150465705219225,1.0,1.0,0.0,2.00503668203594e-05
+Pair5_song1_take2,12.79,15.28,XBL with normal open hold ends with break,open hold,0.006150465705219225,1.0,1.0,0.14666666666666667,2.9508718815459967e-05
+Pair5_song1_take2,15.28,17.78,"XBL with a right (outside) turn for the follower, on the right side of the leader",other,0.006150465705219225,1.0,1.0,0.8266666666666667,7.519949450192989e-05
+Pair5_song1_take2,17.78,20.18,"Right turn for the follower with a kick delay, normal open hold","turn, hands held",0.006150465705219225,1.0,1.0,0.7222222222222222,0.0001658682365097079
+Pair5_song1_take2,20.19,22.82,Copa with normal open hold on the left side of the leader and comb on the follower,open hold,0.006150465705219225,1.0,1.0,0.31645569620253167,0.00023038847411152035
+Pair5_song1_take2,22.82,25.33,Copa on 2 with Embrace hold,closed hold,0.006150465705219225,1.0,1.0,0.18666666666666668,2.3141419923576818e-05
+Pair5_song1_take2,25.33,27.93,"XBL with a left (inside) turn for the follower starts with right hand throw for the follower, ends with late right half-turn for the leader",other,0.006150465705219225,1.0,1.0,0.2564102564102564,7.821118953302796e-05
+Pair5_song1_take2,27.94,30.54,"Copa on 2 with crossed hold on the left side of the leader with the left turn for the follower, ends with left turn for the leader with hand drop","turn, hands held",0.006150465705219225,1.0,1.0,0.46153846153846156,8.711974775785558e-05
+Pair5_song1_take2,30.54,33.0,XBL with a left (inside) turn for the follower with no hands after left hand throw,other,0.006150465705219225,1.0,1.0,0.22972972972972974,4.504142745099656e-05
+Pair5_song1_take2,33.0,35.5,XBL with normal closed hold ends with break,closed hold,0.006150465705219225,1.0,1.0,0.5333333333333333,1.146942485566595e-05
+Pair5_song1_take2,35.5,37.95,"XBL with a right (outside) turn for the follower, facing the same direction on the right side of the leader, ends with hand drop for the follower",other,0.006150465705219225,1.0,1.0,0.2465753424657534,4.3677358891014965e-05
+Pair5_song1_take2,37.96,40.46,"Copa on 2 with Titanic hold for the follower with crossed hold, ends with left turn for the leader","turn, hands held",0.006150465705219225,1.0,1.0,0.9466666666666667,6.336445750230199e-05
+Pair5_song1_take2,40.48,42.98,Swing step,other,0.006150465705219225,1.0,1.0,0.06666666666666667,5.699324035497525e-06
+Pair5_song1_take2,42.98,45.47,XBL with a right (outside) turn for the follower on the right side of the leader starts with right hand throw for the follower,other,0.006150465705219225,1.0,1.0,0.0,2.1539727169299633e-05
+Pair5_song1_take2,45.47,47.97,XBL with normal closed hold ends with break,closed hold,0.006150465705219225,1.0,1.0,0.0,1.4572653451863214e-06
+Pair5_song1_take2,47.97,50.47,"Right turn for the follower, normal open hold, ends with Left HL for the follower","turn, hands held",0.006150465705219225,1.0,1.0,0.24,0.00013992639261738762
+Pair5_song1_take2,50.47,52.96,"Change of direction, fake hands swap, ending with comb on the follower with the leader's righ hand and the follower's left hand",other,0.006150465705219225,1.0,1.0,0.24324324324324326,3.522686672438864e-05
+Pair5_song1_take2,52.96,55.45,Copa with the follower's left (inside) turn by holding the follower's hip,other,0.006150465705219225,1.0,1.0,0.4266666666666667,1.437511723602287e-05
+Pair5_song1_take2,55.45,57.95,XBL with normal closed hold ends with break,closed hold,0.006150465705219225,1.0,1.0,0.09333333333333334,4.529051847879084e-05
+Pair5_song1_take2,57.95,60.43,"Basic step, facing the line of dance",other,0.006150465705219225,1.0,1.0,0.22972972972972974,6.628611359564896e-05
+Pair5_song1_take2,60.43,63.03,"XBL with a left (inside) turn for the follower with normal open hold, hands down","turn, hands held",0.006150465705219225,1.0,1.0,0.16666666666666666,4.773670047175558e-06
+Pair5_song1_take2,63.03,65.65,Change of Directions (Swap Position) with Reverse back-to-back Titanic hold from left hand for the follower to right hand for the follower,other,0.006150465705219225,1.0,1.0,0.11392405063291139,1.9199250973011047e-05
+Pair5_song1_take2,65.65,68.1,XBL with  double left (inside) turn for the follower with crossed hold on the right side of the leader,"turn, hands held",0.006150465705219225,1.0,1.0,0.273972602739726,4.860285255100571e-05
+Pair5_song1_take2,68.1,70.71,Walks forward with the partner in a Sombrero hold ends with Change of Directions (Swap Position),other,0.006150465705219225,1.0,1.0,0.22784810126582278,4.862193188484817e-05
+Pair5_song1_take2,70.71,73.34,Walks forward with the partner in a Sombrero hold,other,0.006150465705219225,1.0,1.0,0.06329113924050633,8.082211731479412e-06
+Pair5_song1_take2,73.34,75.94,"XBL with a double right (outside) turn for the follower with crossed hold while hands change, ends with double hand throw for the follower",hand travels over body,0.006150465705219225,1.0,1.0,0.16666666666666666,3.986560108790062e-05
+Pair5_song1_take2,75.94,78.42,Comb on the follower with the leader's right hand with left HL for the leader,other,0.006150465705219225,1.0,1.0,0.13513513513513514,6.8030802177144255e-06
+Pair5_song1_take2,78.42,80.9,XBL with normal open hold ends with break,open hold,0.006150465705219225,1.0,1.0,0.02666666666666667,8.591912532917187e-06
+Pair5_song1_take2,80.9,83.42,"XBL with a right (outside) turn for the follower, on the right side of the leader, ends with comb for the leader",other,0.006150465705219225,1.0,1.0,0.24,3.243208192620807e-05
+Pair5_song1_take2,83.42,85.94,XBL with a left (inside) with normal open hold with hands change after comb on the follower and left hand throw for the follower,hand travels over body,0.006150465705219225,1.0,1.0,0.3684210526315789,0.00017365020353549168
+Pair5_song1_take2,85.94,88.38,"Basic step with styling, facing the line of dance",other,0.006150465705219225,1.0,1.0,0.7534246575342466,0.00044194594766893856
+Pair5_song1_take2,88.38,90.98,XBL with normal open hold,open hold,0.006150465705219225,1.0,1.0,0.3974358974358974,0.0010572179996571791
+Pair5_song1_take2,90.98,93.54,"XBL with a left (inside) turn for the follower, ends with Check by holding the follower's hand (hands down)",other,0.006150465705219225,1.0,1.0,0.16883116883116883,2.7461512797347547e-05
+Pair5_song1_take2,93.54,96.02,Enchufla with normal open hold with left turn for the leader,"turn, hands held",0.006150465705219225,1.0,1.0,0.16216216216216217,6.851846421204281e-05
+Pair5_song1_take2,96.02,98.46,"Enchufla with crossed hold, left turn for the leader","turn, hands held",0.006150465705219225,1.0,1.0,0.5753424657534246,0.0008363553028358568
+Pair5_song1_take2,98.46,101.06,Change of Directions (Swap Position) for the follower with crossed hold facing the same direction ends with Sombrero hold,open hold,0.006150465705219225,1.0,1.0,0.5256410256410257,6.1007474260772974e-05
+Pair5_song1_take2,101.06,103.66,"Arm lock with the leader's right hand with crossed hold, both hands, ends with right hand throw for the follower",open hold,0.006150465705219225,1.0,1.0,0.2948717948717949,0.0004487479164282107
+Pair5_song1_take2,103.66,106.18,Walking around the partner,hand travels over body,0.006150465705219225,1.0,1.0,0.6578947368421053,0.0005279684738330561
+Pair5_song1_take2,121.22,123.74,XBL with normal open hold,open hold,0.006150465705219225,1.0,1.0,0.3815789473684211,1.3556499552619589e-05
+Pair5_song1_take2,123.74,126.26,Triple right turn for the follower,other,0.006150465705219225,1.0,1.0,0.12,1.9810301421517955e-05
+Pair5_song1_take2,126.26,128.82,"Change of Directions (Swap Position) for the follower with crossed hold, right turn for the leader","turn, hands held",0.006150465705219225,1.0,1.0,0.38961038961038963,3.3474977814902424e-05
+Pair5_song1_take2,136.38,138.9,XBL with normal open hold ends with break,open hold,0.006150465705219225,1.0,1.0,0.5789473684210527,0.0007234404291615095
+Pair5_song1_take2,138.9,141.46,"Right turn for the follower, normal open hold, with hand drop ends with Left HL for the follower","turn, hands held",0.006150465705219225,1.0,1.0,0.5921052631578947,0.00014704680408352057
+Pair5_song1_take2,141.46,143.9,"XBL with a right (outside) turn for the follower, on the right side of the leader with left turn for the leader, ends with comb for the leader",other,0.006150465705219225,1.0,1.0,0.17567567567567569,1.3542564925613638e-05
+Pair5_song1_take2,143.9,146.42,Double hand throw with normal open hold into double HL,open hold,0.006150465705219225,1.0,1.0,0.17333333333333334,8.073964814561541e-05
+Pair5_song1_take2,146.42,149.02,"Change of Directions (Swap Position) with Reverse back-to-back Titanic hold from left HL for the follower, ends with late half-turn for the leader while hands change",hand travels over body,0.006150465705219225,1.0,1.0,0.28205128205128205,2.364349040389382e-05
+Pair5_song1_take2,149.02,150.73,"Check by holding the follower's both hands (open hands down, Titanic for the lady in a shadow) after XBL with a left (inside) turn for the follower.",open hold,0.006150465705219225,1.0,1.0,0.5625,0.0010082576376125871
+Pair5_song2_take1,0.0,1.96,"Basic step, facing the line of dance",other,0.006150465705219225,0.0,0.2413793103448276,0.2413793103448276,
+Pair5_song2_take1,1.96,4.16,XBL with normal open hold ends with break,open hold,0.006150465705219225,0.5606060606060606,0.3333333333333333,0.3181818181818182,
+Pair5_song2_take1,4.16,6.52,Natural top,other,0.006150465705219225,0.5492957746478874,0.5633802816901409,0.5633802816901409,
+Pair5_song2_take1,6.52,8.96,Natural top followed by Natural Top,other,0.006150465705219225,0.0,0.9041095890410958,0.8493150684931506,0.22271291902765264
+Pair5_song2_take1,8.96,11.4,Natural top followed by Natural Top,other,0.006150465705219225,0.0,1.0,1.0,0.6471503583255243
+Pair5_song2_take1,11.4,13.92,Natural top,other,0.006150465705219225,0.0,1.0,1.0,0.15138353633607496
+Pair5_song2_take1,13.92,16.2,XBL with a left (inside) turn for the follower,other,0.006150465705219225,0.15942028985507245,0.37681159420289856,0.3333333333333333,
+Pair5_song2_take1,16.2,18.64,"Right turn for the follower, crossed hold","turn, hands held",0.006150465705219225,0.3013698630136986,0.0684931506849315,0.0136986301369863,
+Pair5_song2_take1,18.64,21.08,"Change of Directions (Swap Position) for the follower with crossed hold, comb on the follower, late right turn for the leader","turn, hands held",0.006150465705219225,0.1232876712328767,0.7534246575342466,0.3424657534246575,0.2497677578141202
+Pair5_song2_take1,21.08,23.52,"Right turn for the follower, right turn for the leader, crossed hold, hands change over the follower and then behind the leader",hand travels over body,0.006150465705219225,0.1232876712328767,0.4794520547945205,0.2465753424657534,
+Pair5_song2_take1,23.52,25.92,XBL with a left (inside) turn for the follower with no hands holding the waist of the follower,other,0.006150465705219225,0.0,0.7916666666666666,0.7916666666666666,0.6721933064864898
+Pair5_song2_take1,25.92,28.36,XBL with normal open hold ends with break,open hold,0.006150465705219225,0.3561643835616438,0.3698630136986301,0.3698630136986301,
+Pair5_song2_take1,28.36,30.8,"XBL with a right (outside) turn for the follower on the right side of the leader, both hands hold, ends with late left turn for the leader",open hold,0.006150465705219225,0.527027027027027,0.5675675675675675,0.40540540540540543,
+Pair5_song2_take1,30.8,33.16,XBL with a left (inside) turn for the follower with double hand throw,other,0.006150465705219225,0.35714285714285715,0.2571428571428571,0.11428571428571428,
+Pair5_song2_take1,35.64,38.12,XBL with normal open hold ends with break,open hold,0.006150465705219225,0.5540540540540541,0.32432432432432434,0.32432432432432434,
+Pair5_song2_take1,38.12,40.52,"Right turn for the follower, crossed hold","turn, hands held",0.006150465705219225,0.4305555555555556,0.2916666666666667,0.08333333333333333,
+Pair5_song2_take1,40.52,42.92,Walking back in a circle with a partner in a right sombrero hold,other,0.006150465705219225,0.8472222222222222,1.0,1.0,0.09088200177505372
+Pair5_song2_take1,42.92,45.32,Walking back in a circle with a partner in a right sombrero hold,other,0.006150465705219225,1.0,1.0,1.0,0.049899095797593
+Pair5_song2_take1,45.32,47.72,Walking forward in a circle with a partner in a right sombrero hold,other,0.006150465705219225,1.0,1.0,1.0,0.04176625874549553
+Pair5_song2_take1,47.72,50.06,XBL with a right (outside) turn for the follower,other,0.006150465705219225,0.6142857142857143,0.38571428571428573,0.24285714285714285,
+Pair5_song2_take1,50.06,52.58,"XBL with a left (inside) turn for the follower with crossed hold, ends with left hand throw for the follower and a right half-turn for the follower","turn, hands held",0.006150465705219225,0.2894736842105263,0.0,0.0,
+Pair5_song2_take1,52.58,54.94,"XBL with a left (inside) turn for the follower, late right turn for the leader",other,0.006150465705219225,0.36619718309859156,0.2676056338028169,0.18309859154929578,
+Pair5_song2_take1,54.94,57.3,XBL with a left (inside) turn for the follower with no hands holding the waist of the follower,other,0.006150465705219225,0.0,0.8169014084507042,0.8169014084507042,0.6505930298053815
+Pair5_song2_take1,57.3,59.66,"XBL with a left (inside) turn for the follower with no hands holding the waist of the follower, ends with late half right turn for the leader still holding the waist of the follower",other,0.006150465705219225,0.0,0.9714285714285714,0.9714285714285714,0.2944311891112274
+Pair5_song2_take1,59.66,62.1,"XBL with a right (outside) turn for the follower with no hands holding the waist of the follower, ends with late half right turn for the leader still holding the waist of the follower",other,0.006150465705219225,0.0,0.6351351351351351,0.5945945945945946,0.6979435717990025
+Pair5_song2_take1,62.1,64.459,Copa by holding the follower's hips with change of directions for the leader,other,0.006150465705219225,0.0,0.9142857142857143,0.8142857142857143,0.38311825562037655
+Pair5_song2_take1,64.459,66.82,XBL with normal open hold ends with break,open hold,0.006150465705219225,0.6197183098591549,0.36619718309859156,0.36619718309859156,
+Pair5_song2_take1,66.82,69.26,Natural top,other,0.006150465705219225,0.3287671232876712,0.4931506849315068,0.4246575342465753,
+Pair5_song2_take1,69.26,71.62,Natural top,other,0.006150465705219225,0.28169014084507044,0.5211267605633803,0.4647887323943662,
+Pair5_song2_take1,71.62,73.98,"XBL with a left (inside) turn for the follower starts with right hand throw for the follower, ends with right half-turn for the leader",other,0.006150465705219225,0.36619718309859156,0.04225352112676056,0.0,
+Pair5_song2_take1,81.23,83.63,XBL with normal open hold,open hold,0.006150465705219225,0.3472222222222222,0.5833333333333334,0.4861111111111111,0.5759325158647554
+Pair5_song2_take1,83.63,86.07,"Double right turn for the follower, crossed hold, ends with double hand throw for the follower","turn, hands held",0.006150465705219225,0.5135135135135135,0.22972972972972974,0.0,
+Pair5_song2_take1,86.07,88.19,XBL with a left (inside) turn for the follower with normal open hold without letting the hands go,"turn, hands held",0.006150465705219225,0.4126984126984127,0.5555555555555556,0.15873015873015872,
+Pair5_song2_take1,88.19,90.67,XBL with a left (inside) turn for the follower with normal open hold without letting the hands go,"turn, hands held",0.006150465705219225,0.64,0.88,0.68,0.5609951981487212
+Pair5_song2_take1,90.67,92.99,XBL with normal closed hold,closed hold,0.006150465705219225,0.4782608695652174,0.9130434782608695,0.8695652173913043,0.45098564577373007
+Pair5_song2_take1,92.99,95.27,XBL with normal open hold ends with break,open hold,0.006150465705219225,0.2608695652173913,0.43478260869565216,0.43478260869565216,
+Pair5_song2_take1,95.27,97.71,Walking around the partner for the follower,hand travels over body,0.006150465705219225,0.1780821917808219,0.6301369863013698,0.6301369863013698,
+Pair5_song2_take1,97.71,100.07,"Change of Directions (Swap Position) for the follower with crossed hold, comb on the follower, late left turn for the leader","turn, hands held",0.006150465705219225,0.0,0.5211267605633803,0.2112676056338028,0.2821705451004439
+Pair5_song2_take1,100.07,102.43,Copa on 7 with Embrace hold,closed hold,0.006150465705219225,0.9285714285714286,0.5571428571428572,0.5571428571428572,
+Pair5_song2_take1,107.15,109.47,,other,0.006150465705219225,0.0,0.0,0.0,
+Pair5_song2_take1,114.06,116.5,XBL with normal open hold ends with break,open hold,0.006150465705219225,0.6756756756756757,0.35135135135135137,0.35135135135135137,
+Pair5_song2_take1,116.5,118.78,"XBL with a right (outside) turn for the follower, on the right side of the leader with left turn for the leader, ends with comb for the leader",other,0.006150465705219225,0.5588235294117647,0.7794117647058824,0.4411764705882353,0.35869229829937804
+Pair5_song2_take1,118.78,121.1,"XBL with a left (inside) turn for the follower, both hands hold, ends with late right turn for the leader with comb on the follower and then comb on the leader",open hold,0.006150465705219225,0.9285714285714286,0.6142857142857143,0.2857142857142857,0.413910903869631
+Pair5_song2_take1,121.1,123.46,"Right turn for the follower, right turn for the leader, crossed hold, hands change over the follower and then over the leader",hand travels over body,0.006150465705219225,0.21428571428571427,0.45714285714285713,0.37142857142857144,
+Pair5_song2_take1,123.46,125.82,XBL with a left (inside) turn for the follower ends with left hands throw for the follower,other,0.006150465705219225,0.8028169014084507,0.30985915492957744,0.14084507042253522,
+Pair5_song2_take1,125.82,128.18,"Right turn for the follower with normal open hold, ends with right hand throw with the leader's right hand","turn, hands held",0.006150465705219225,0.5915492957746479,0.6619718309859155,0.2112676056338028,0.42788326526928117
+Pair5_song2_take1,128.18,130.58,"Right hand throw with the leader's right hand, ends with left hand throw for the follower into left HL for the follower",other,0.006150465705219225,0.3333333333333333,0.4583333333333333,0.2361111111111111,
+Pair5_song2_take1,130.58,132.78,"Change of Directions (Swap Position) for the follower with crossed hold, late left turn for the leader","turn, hands held",0.006150465705219225,0.19696969696969696,0.45454545454545453,0.4090909090909091,
+Pair5_song2_take1,132.78,135.1,"Check by holding the follower's both hands (open hands down, Titanic for the lady in a shadow) after XBL with a left (inside) turn for the follower.",open hold,0.006150465705219225,0.42857142857142855,0.38571428571428573,0.17142857142857143,
+Pair5_song2_take1,135.1,137.54,"XBL with  double left (inside) turn for the follower with crossed hold on the right side of the leader, ends with late half right turn for the leader","turn, hands held",0.006150465705219225,0.6712328767123288,0.3013698630136986,0.2328767123287671,
+Pair5_song2_take1,137.54,139.82,"Change of Directions (Swap Position) for the follower with crossed hold, ends with right hand throw for the follower with the leader's left hand into right HL for the follower",open hold,0.006150465705219225,0.5882352941176471,0.5588235294117647,0.38235294117647056,
+Pair5_song2_take1,139.82,142.18,"Right turn for the follower from right HL, left turn for the follower",other,0.006150465705219225,0.6197183098591549,0.6056338028169014,0.5774647887323944,
+Pair5_song2_take1,142.18,144.54,XBL with a left (inside) turn for the follower with no hands after left hand throw,other,0.006150465705219225,0.28169014084507044,0.7183098591549296,0.4788732394366197,0.3756835991542637
+Pair5_song2_take1,144.54,146.82,XBL with normal open hold ends with break,open hold,0.006150465705219225,0.7794117647058824,0.29411764705882354,0.29411764705882354,
+Pair5_song2_take1,146.82,149.1,"XBL with a right (outside) turn for the follower with crossed hold on the right side of the leader while hands change, ends with right half-turn for the leader",hand travels over body,0.006150465705219225,0.6231884057971014,0.7101449275362319,0.5362318840579711,0.5607823625198658
+Pair5_song2_take1,149.11,150.75,XBL with a left (inside) turn for the follower,other,0.006150465705219225,0.2,0.8,0.5333333333333333,
+Pair5_song2_take2,7.6,10.04,XBL with normal closed hold,closed hold,0.005654229102700404,0.1917808219178082,1.0,1.0,0.1040719686094692
+Pair5_song2_take2,10.04,12.52,XBL with normal closed hold,closed hold,0.005654229102700404,0.24324324324324326,1.0,1.0,0.2563699628019179
+Pair5_song2_take2,12.52,14.92,XBL with normal closed hold,closed hold,0.005654229102700404,0.2916666666666667,1.0,0.9305555555555556,0.12470591726741437
+Pair5_song2_take2,14.92,17.32,XBL with normal open hold,open hold,0.005654229102700404,0.5833333333333334,0.375,0.3472222222222222,
+Pair5_song2_take2,17.32,19.8,"Right turn for the follower, normal open hold","turn, hands held",0.005654229102700404,0.29333333333333333,0.26666666666666666,0.22666666666666666,
+Pair5_song2_take2,19.8,22.2,XBL with normal open hold,open hold,0.005654229102700404,0.3055555555555556,0.3333333333333333,0.3333333333333333,
+Pair5_song2_take2,22.2,24.52,"XBL with a right (outside) turn for the follower, on the right side of the leader",other,0.005654229102700404,0.782608695652174,0.34782608695652173,0.21739130434782608,
+Pair5_song2_take2,24.52,27.04,XBL with a left (inside) turn for the follower with no hands after left hand throw,other,0.005654229102700404,0.5526315789473685,0.4473684210526316,0.4473684210526316,0.4189079027761001
+Pair5_song2_take2,34.24,36.68,XBL with normal open hold ends with break,open hold,0.005654229102700404,0.4520547945205479,0.3698630136986301,0.3698630136986301,
+Pair5_song2_take2,36.68,39.16,"XBL with a right (outside) turn for the follower, facing the same direction on the right side of the leader, ends with hand drop for the follower",other,0.005654229102700404,0.4864864864864865,0.36486486486486486,0.21621621621621623,
+Pair5_song2_take2,39.16,41.52,"XBL with a left (inside) turn for the follower, ends with Check by holding the follower's both hand (hands down, crossed hold)","turn, hands held",0.005654229102700404,0.3380281690140845,0.704225352112676,0.5774647887323944,0.4462584167925369
+Pair5_song2_take2,41.52,43.96,Copa on 7 with Embrace hold,closed hold,0.005654229102700404,0.3835616438356164,0.6301369863013698,0.6301369863013698,
+Pair5_song2_take2,43.96,46.24,XBL with a right (outside) turn for the follower from Embrace for the follower standing side by side with the man in a normal hold,closed hold,0.005654229102700404,0.21739130434782608,0.6376811594202898,0.2463768115942029,0.5103892811399254
+Pair5_song2_take2,46.24,48.72,"XBL with a left (inside) turn for the follower, late right turn for the leader",other,0.005654229102700404,0.1891891891891892,0.6216216216216216,0.5135135135135135,0.6199893940592148
+Pair5_song2_take2,48.72,51.16,Change of Directions (Swap Position) for the follower with normal open hold,open hold,0.005654229102700404,0.1780821917808219,0.136986301369863,0.0,
+Pair5_song2_take2,51.16,53.56,Change of Directions (Swap Position) for the follower with normal open hold ends with left turn for the leader,"turn, hands held",0.005654229102700404,0.06944444444444445,0.4305555555555556,0.4166666666666667,
+Pair5_song2_take2,53.56,55.96,"XBL with a right (outside) turn for the follower, facing the same direction on the right side of the leader",other,0.005654229102700404,0.3611111111111111,0.25,0.125,
+Pair5_song2_take2,55.96,58.32,Check by holding the follower's hand (open hands down) after XBL with a left (inside) turn for the follower.,other,0.005654229102700404,0.323943661971831,0.7183098591549296,0.5774647887323944,0.2520651502328913
+Pair5_song2_take2,58.32,60.72,"XBL with triple left (inside) turn for the follower on the right side of the leader with no hands after left hand throw, ends with left half-turn for the leader",other,0.005654229102700404,0.2222222222222222,0.3611111111111111,0.20833333333333334,
+Pair5_song2_take2,79.72,82.04,XBL with normal open hold ends with break,open hold,0.005654229102700404,0.7142857142857143,0.37142857142857144,0.37142857142857144,
+Pair5_song2_take2,82.04,84.52,Copa with the follower's right (outside) turn starts with right hand throw for the follower into reverse right half-HL,other,0.005654229102700404,0.43243243243243246,0.40540540540540543,0.33783783783783783,
+Pair5_song2_take2,84.52,86.84,"Change of Directions (Swap Position) for the follower with crossed hold, comb on the follower, ends with hands change behind the leader",hand travels over body,0.005654229102700404,0.21428571428571427,0.5714285714285714,0.37142857142857144,
+Pair5_song2_take2,86.84,89.28,"Right turn for the follower, normal open hold","turn, hands held",0.005654229102700404,0.0273972602739726,0.3835616438356164,0.1917808219178082,
+Pair5_song2_take2,89.28,91.52,"Right turn for the follower, normal open hold ends with open break","turn, hands held",0.005654229102700404,0.44776119402985076,0.2835820895522388,0.26865671641791045,
+Pair5_song2_take2,91.52,93.96,"XBL with a right (outside) turn for the follower, facing the same direction on the right side of the leader, ends with hand drop for the follower and late left turn for the follower",other,0.005654229102700404,0.1506849315068493,0.3287671232876712,0.2191780821917808,
+Pair5_song2_take2,93.96,96.24,XBL with crossed hold ends with break,open hold,0.005654229102700404,0.5072463768115942,0.43478260869565216,0.2463768115942029,
+Pair5_song2_take2,96.24,98.68,"XBL with triple right (inside) turn for the follower on the right side of the leader with no hands after right hand throw, ends with double right turn for the leader",other,0.005654229102700404,0.273972602739726,0.0684931506849315,0.0,
+Pair5_song2_take2,110.32,112.72,XBL with normal open hold,open hold,0.005654229102700404,0.5833333333333334,0.6527777777777778,0.5,0.6559137643954422
+Pair5_song2_take2,112.72,115.04,"Double right turn for the follower, left turn for the leader with normal open hold","turn, hands held",0.005654229102700404,0.9285714285714286,0.17142857142857143,0.04285714285714286,
+Pair5_song2_take2,115.04,117.4,Change of Directions (Swap Position) for the follower with normal open hold ends with double right turn for the leader,"turn, hands held",0.005654229102700404,0.22535211267605634,0.08450704225352113,0.04225352112676056,
+Pair5_song2_take2,119.76,122.08,XBL with normal open hold,open hold,0.005654229102700404,0.7571428571428571,0.44285714285714284,0.32857142857142857,
+Pair5_song2_take2,122.08,124.4,"Check by holding the follower's both hands (open hands down, Embrace for the lady in a shadow) start with left half-turn for the follower",closed hold,0.005654229102700404,0.5285714285714286,0.5714285714285714,0.5714285714285714,0.384279759716741
+Pair5_song2_take2,124.4,126.69,"Right turn for the follower from Embrace for the follower, ends with double hand throw for the follower",closed hold,0.005654229102700404,0.029411764705882353,0.058823529411764705,0.04411764705882353,
+Pair5_song2_take2,126.69,129.08,"Right turn for the follower, left turn for the leader, normal open hold, ends with comb on the leadere","turn, hands held",0.005654229102700404,0.1527777777777778,0.8055555555555556,0.5138888888888888,0.48051645428397577
+Pair5_song2_take2,129.08,131.37,"Right turn for the follower, normal open hold","turn, hands held",0.005654229102700404,0.13043478260869565,0.37681159420289856,0.014492753623188406,
+Pair5_song2_take2,131.37,133.73,"Change of Directions (Swap Position) for the follower with normal open hold, late left turn for the leader","turn, hands held",0.005654229102700404,0.3142857142857143,0.14285714285714285,0.07142857142857142,
+Pair5_song2_take2,133.73,136.05,XBL with normal open hold,open hold,0.005654229102700404,0.7142857142857143,0.45714285714285713,0.34285714285714286,
+Pair5_song2_take2,136.05,138.37,Steps sideways on the beat 5 and 7,other,0.005654229102700404,0.9142857142857143,0.08571428571428572,0.014285714285714285,
+Pair5_song2_take2,138.37,140.73,"Basic step, facing the line of dance",other,0.005654229102700404,0.5428571428571428,0.12857142857142856,0.12857142857142856,
+Pair5_song2_take2,140.73,142.97,"Change of Directions (Swap Position) for the follower with crossed hold, both hands, late left turn for the leader","turn, hands held",0.005654229102700404,0.20588235294117646,0.6764705882352942,0.47058823529411764,
+Pair5_song2_take2,142.97,145.33,"Right turn for the leader from left HL for the leader, ends with left hand throw for the follower",other,0.005654229102700404,0.2,0.2714285714285714,0.21428571428571427,
+Pair5_song2_take2,145.33,147.65,"Change of Directions (Swap Position) for the follower with crossed hold, ends with right hand throw for the follower",open hold,0.005654229102700404,0.42857142857142855,0.15714285714285714,0.1,
+Pair5_song2_take2,147.65,149.96,Copa on 7 with Embrace hold,closed hold,0.005654229102700404,0.2463768115942029,0.8695652173913043,0.8115942028985508,0.0896460127656087
