@@ -27,6 +27,7 @@ class DancerState:
         self.last_torso_pos: Optional[np.ndarray] = None
         self.last_pelvis_pos: Optional[np.ndarray] = None
         self.last_bbox_area: float = 0.0
+        self.last_bbox: Optional[np.ndarray] = None
         self.velocity: np.ndarray = np.zeros(2)
         self.missing_streak: int = 0
         self.associated_track_ids: Dict[int, int] = {} # track_id -> frequency count
@@ -43,6 +44,7 @@ class DancerState:
         new_pelvis = detection.pelvis_center
         x1, y1, x2, y2 = detection.bbox
         self.last_bbox_area = max(1.0, float((x2 - x1) * (y2 - y1)))
+        self.last_bbox = np.asarray(detection.bbox, dtype=float)
 
         if self.last_torso_pos is not None and dt > 0:
             self.velocity = (new_torso - self.last_torso_pos) / dt
@@ -80,6 +82,8 @@ class TwoDancerTracker:
         max_match_distance: float = 350.0,
         use_normalized: bool = False,
         appearance_weight: float = 0.0,
+        continuity_exempt: bool = True,
+        continuity_frames: int = 15,
     ):
         """
         Args:
@@ -99,6 +103,19 @@ class TwoDancerTracker:
         # models exist and are separable (distance between them > 0.2).
         self.appearance_weight = appearance_weight
         self.n_appearance_overrides: int = 0  # frames where appearance changed the geometric assignment
+        # A detection that continues a dancer (same tracker id, or overlapping the dancer's last box, within
+        # continuity_frames of the last assignment) is exempt from the size filter and from the hard clothing
+        # gates. Those two rules exist to reject bystanders, but they also rejected the dancers themselves when
+        # curled on the floor (small box) or inverted / half hidden (torso colours change): AUDIT 54.
+        self.continuity_exempt = continuity_exempt
+        self.continuity_frames = continuity_frames
+        self.n_continuity_rescues: int = 0    # detections kept only because of the exemption
+
+    def _continues(self, det: PoseDetection, dancer: DancerState) -> bool:
+        if not self.continuity_exempt or dancer.last_bbox is None or dancer.missing_streak > self.continuity_frames:
+            return False
+        same_id = det.track_id is not None and det.track_id == dancer.last_track_id
+        return same_id or _iou(np.asarray(det.bbox, dtype=float), dancer.last_bbox) > 0.3
 
     @staticmethod
     def _bbox_area(det: PoseDetection) -> float:
@@ -163,6 +180,8 @@ class TwoDancerTracker:
             # Retain if it matches known track ID or is at least 35% of foreground size
             if is_known_id or ref_area <= 0 or area >= 0.35 * ref_area:
                 candidate_dets.append(det)
+            elif self._continues(det, self.dancer_A) or self._continues(det, self.dancer_B):
+                candidate_dets.append(det); self.n_continuity_rescues += 1
 
         if not candidate_dets:
             self.dancer_A.mark_missing()
@@ -225,12 +244,15 @@ class TwoDancerTracker:
                     cost_matrix[0, j] += self.appearance_weight * (dA - dB) * self.max_match_distance
                     cost_matrix[1, j] += self.appearance_weight * (dB - dA) * self.max_match_distance
                     # hard gate: clothes clearly belong to the other dancer (or to nobody) -> forbid
-                    if dA > 0.45 and dA > dB + 0.15:
+                    contA, contB = self._continues(det, self.dancer_A), self._continues(det, self.dancer_B)
+                    gateA = (dA > 0.45 and dA > dB + 0.15) or (dA > 0.6 and dB > 0.6)   # second: looks like a bystander
+                    gateB = (dB > 0.45 and dB > dA + 0.15) or (dA > 0.6 and dB > 0.6)
+                    if gateA and not contA:
                         cost_matrix[0, j] = 1e9
-                    if dB > 0.45 and dB > dA + 0.15:
+                    if gateB and not contB:
                         cost_matrix[1, j] = 1e9
-                    if dA > 0.6 and dB > 0.6:   # looks like neither dancer (a bystander)
-                        cost_matrix[0, j] = 1e9; cost_matrix[1, j] = 1e9
+                    if (gateA and contA) or (gateB and contB):
+                        self.n_continuity_rescues += 1
         elif frame is not None and self.appearance_weight > 0:
             for j, det in enumerate(candidate_dets):
                 hists[j] = torso_histogram(frame, det.keypoints)
@@ -298,4 +320,6 @@ class TwoDancerTracker:
             "appearance_weight": self.appearance_weight,
             "appearance_separability": separability(self.dancer_A.appearance, self.dancer_B.appearance),
             "appearance_overrides": self.n_appearance_overrides,
+            "continuity_exempt": self.continuity_exempt,
+            "continuity_rescues": self.n_continuity_rescues,
         }
