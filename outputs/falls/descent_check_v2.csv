@@ -1,0 +1,22 @@
+id,video,dancer,start_s,end_s,dur_s,present,max_jump_bl,stab_drop_bl,valid,reject,verdict,note
+0,Rc9vIJt00vs_full,B,104.26666666666668,106.8,2.533333333333333,0.5652173913043478,0.4224297755495029,-0.1867250664623787,False,gap;no_drop,false,identity swap + inversion; tracks lost
+1,uS1JQ-LY8Fs_full,A,327.06666666666666,328.93333333333334,1.8666666666666667,1.0,0.2493076686281214,1.2829467589113162,True,,real_floor,"(= round-1 #14) standing -> slides down to sitting, solo"
+2,kxztAr2tQmE_full,B,34.86666666666667,35.93333333333333,1.0666666666666669,1.0,0.1833573212795742,0.8534231987752582,True,,real_low,"(= round-1 #13) standing -> kneels, pulling partner's legs"
+3,hJQgFDsAms4_full,B,105.8,107.4,1.6,0.6875,0.776543720267311,0.6729159633142351,False,gap;jump,real_floor,"standing -> down to the floor with partner, ends lying in a tangle; tracks jump"
+4,kMkJpfUGZz8_full,A,52.86666666666667,55.73333333333333,2.8666666666666667,0.8431372549019608,1.032463089246945,1.1082604700777443,False,gap;jump,real_low,"standing -> crouch under partner, hand to floor, rises again within 1 s"
+5,vinlwkaIW4c_full,A,119.26666666666668,121.8,2.533333333333333,0.6739130434782609,1.282703805881637,0.5935494534802888,False,gap;jump,false,"identity swap woman/man, then inversion"
+6,vinlwkaIW4c_full,A,190.53333333333333,191.26666666666668,0.7333333333333333,1.0,0.9033400277576836,0.8991111164018368,False,jump,kneel_to_floor,kneeling (read as standing) -> falls sideways to sitting
+7,hJQgFDsAms4_full,A,224.0,225.46666666666667,1.4666666666666666,1.0,0.141241734459354,0.5728097497647653,True,,real_floor,wide stance carrying partner on the back -> sits down on the floor
+8,zQRF2sLK1vY,B,47.31393333333333,47.78106666666667,0.4671333333333333,1.0,0.1071993696383671,0.5449050752313387,True,,real_low,"standing holding inverted partner -> one knee down, then both to the floor (plank-like, level < 0)"
+9,dGPRMNAECKM_full,A,33.53333333333333,34.93333333333333,1.4,1.0,0.1996013478473702,0.7773606835636554,True,,real_floor,"standing -> goes down with partner, ends in a floor tangle"
+10,Rc9vIJt00vs_full,A,90.26666666666668,90.6,0.3333333333333333,1.0,0.2463589108021598,0.5914925050219216,True,,real_low,standing -> deep squat over partner on all fours
+11,zQRF2sLK1vY,A,54.1541,54.6546,0.5005000000000001,1.0,0.1137961010076617,0.605893610188032,True,,real_low,"standing -> wide deep squat (horse stance), partner close"
+12,Rc9vIJt00vs_full,A,55.333333333333336,59.266666666666666,3.933333333333333,0.6417910447761194,0.358261342618536,0.6890195341897166,False,gap,real_floor,standing -> crouch -> lying on the floor; tracks overlap partner
+13,zQRF2sLK1vY,A,29.89653333333333,30.463766666666668,0.5672333333333334,1.0,0.1510442949443739,0.9919706617115588,True,,real_low,standing -> squat/kneel beside partner on the floor
+14,vinlwkaIW4c_full,B,84.2,85.4,1.2,0.5769230769230769,0.6016968675689934,1.7387987910912994,False,gap;jump,real_floor,standing -> crouch -> sitting then lying; track lost mid-descent
+15,vinlwkaIW4c_full,B,147.86666666666667,148.2,0.3333333333333333,0.8461538461538461,1.704637619514632,1.5604593309222583,False,gap;jump,false,identity swap: track jumps from standing man to sitting woman
+16,vinlwkaIW4c_full,B,143.46666666666667,144.06666666666666,0.6,1.0,0.3702787929135067,0.7348929810869291,True,,real_low,"squats down onto partner's thigh (sits on partner, not floor); identity swap afterwards"
+17,vinlwkaIW4c_full,B,73.33333333333333,73.6,0.2666666666666666,1.0,0.4454516712470404,1.1106325550575518,True,,real_floor,"off-balance backwards after a kick -> sits on the floor, partner then takes her hand"
+18,vinlwkaIW4c_full,B,6.933333333333334,10.266666666666667,3.333333333333333,0.6551724137931034,0.6968013963581876,0.9083244248389504,False,gap;jump,real_floor,(= round-1 #15) tangled with partner -> sits on floor; identity switch mid-descent
+19,vinlwkaIW4c_full,A,15.533333333333331,16.2,0.6666666666666666,0.6111111111111112,0.1812155242626249,1.572053219587479,False,gap,false,standing man never descends; track jumps to lying woman
+20,iOEZ3i9rgYM_full,B,174.13333333333333,175.6,1.4666666666666666,1.0,0.1077500131346702,0.5532402107117431,True,,real_low,standing -> deep squat behind crouching partner

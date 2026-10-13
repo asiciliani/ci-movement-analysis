@@ -120,7 +120,7 @@ def panel(m, i, a, b, t_rel, dur):
 def main(vid="kMkJpfUGZz8_full", start_s=65.0, dur_s=45.0):
     m = measures(vid); fps = m["fps"]
     a = int(start_s * fps); b = min(int((start_s + dur_s) * fps), len(m["st"]))
-    vp = (sorted(glob.glob(f"videos/{vid}.*")) + sorted(glob.glob(f"videos/full/{vid}.*")))[0]
+    vp = [x for d in ("videos", "videos/full", "videos/external") for x in sorted(glob.glob(f"{d}/{vid}.*"))][0]
     cap = cv2.VideoCapture(vp); cap.set(cv2.CAP_PROP_POS_FRAMES, a)
     ok, f = cap.read(); W = int(round(f.shape[1] * H / f.shape[0])); W += W % 2
     out = OUT / f"{vid}_{int(start_s)}s.mp4"

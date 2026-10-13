@@ -97,3 +97,6 @@ outputs/*/*.png
 !outputs/rolling_mesh/*.png
 !outputs/pose_models/*.png
 outputs/**/*.pkl
+outputs/review/
+outputs/falls/urfall/
+outputs/falls/*.log

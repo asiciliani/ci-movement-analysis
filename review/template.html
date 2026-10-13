@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><title>Revisión a mano</title>
+<style>
+ body{font-family:system-ui,sans-serif;background:#18181c;color:#eee;margin:0;padding:16px;max-width:980px;margin:auto}
+ video{width:100%;max-height:62vh;background:#000;border-radius:8px}
+ h1{font-size:18px;margin:4px 0} .q{font-size:20px;margin:12px 0 8px} .help{color:#aaa;font-size:14px;margin:4px 0 10px}
+ button{font-size:16px;padding:10px 14px;margin:4px 6px 4px 0;border-radius:8px;border:1px solid #555;background:#2a2a31;color:#eee;cursor:pointer}
+ button.sel{background:#3b82f6;border-color:#3b82f6} .bar{display:flex;justify-content:space-between;align-items:center;margin:8px 0}
+ .small{font-size:13px;color:#aaa} input{font-size:15px;padding:8px;width:60%;background:#2a2a31;color:#eee;border:1px solid #555;border-radius:6px}
+</style></head><body>
+<div class="bar"><h1 id="title"></h1><span class="small" id="prog"></span></div>
+<video id="v" autoplay loop muted playsinline></video>
+<div class="help" id="help"></div>
+<div class="q" id="q1"></div><div id="a1"></div>
+<div class="q" id="q2"></div><div id="a2"></div>
+<div style="margin-top:10px"><input id="note" placeholder="Nota opcional (por ej. 'se pierde un bailarín')"></div>
+<div class="bar"><div><button id="prev">← Anterior</button><button id="next">Siguiente →</button></div>
+<div><button id="exp">Exportar CSV</button></div></div>
+<div class="small">Teclas: 1-4 responden la primera pregunta, q/w/e la segunda, flechas para moverse. El video va a mitad de velocidad
+y se repite. A = azul, B = naranja. Las respuestas se guardan solas en este navegador.</div>
+<script>
+const ITEMS = __ITEMS__;
+const SETS = {
+ releases: {title:"Sueltas de contacto", help:"El borde blanco aparece cuando el programa dice que se soltaron.",
+   q1:"¿Se sueltan de verdad en ese momento?", a1:[["real","Sí, se separan"],["false_release","No, siguen en contacto"],["false_contact","Nunca estuvieron en contacto"],["unclear","No se puede saber"]], q2:null},
+ weight_share: {title:"Peso compartido", help:"El borde blanco marca cuando el programa dice que uno carga peso del otro.",
+   q1:"¿Uno está cargando peso del otro (encima del otro)?", a1:[["yes","Sí"],["no","No"],["unclear","No se puede saber"]],
+   q2:"Si es que sí: ¿quién está arriba?", a2:[["A","A (azul)"],["B","B (naranja)"],["unknown","No se ve / esqueletos mal"]]}
+};
+const KEY="ci_review_v1"; let ans=JSON.parse(localStorage.getItem(KEY)||"{}"); let i=0;
+for(let k=0;k<ITEMS.length;k++){ if(!ans[ITEMS[k].key]){i=k;break;} }
+const $=id=>document.getElementById(id);
+function save(){localStorage.setItem(KEY,JSON.stringify(ans));}
+function btns(el,opts,field){el.innerHTML="";(opts||[]).forEach(([v,l],n)=>{const b=document.createElement("button");b.textContent=(field=="a1"?(n+1):"qwe"[n])+" · "+l;
+  if((ans[ITEMS[i].key]||{})[field]==v)b.className="sel";b.onclick=()=>{set(field,v)};el.appendChild(b);});}
+function set(field,v){const k=ITEMS[i].key;ans[k]=ans[k]||{};ans[k][field]=v;save();const s=SETS[ITEMS[i].set];
+  if(field=="a1"&&!(s.q2&&v=="yes")){go(1)}else if(field=="a2"){go(1)}else render();}
+function render(){const it=ITEMS[i],s=SETS[it.set];$("title").textContent=s.title;$("help").textContent=s.help;
+  $("prog").textContent=(i+1)+" / "+ITEMS.length+"  ·  respondidos: "+Object.keys(ans).filter(k=>ans[k].a1).length;
+  if(!$("v").src.endsWith(it.clip))$("v").src=it.clip;$("q1").textContent=s.q1;btns($("a1"),s.a1,"a1");
+  $("q2").textContent=s.q2||"";btns($("a2"),s.q2?s.a2:[],"a2");$("note").value=(ans[it.key]||{}).note||"";}
+function go(d){i=Math.max(0,Math.min(ITEMS.length-1,i+d));render();}
+$("note").oninput=e=>{const k=ITEMS[i].key;ans[k]=ans[k]||{};ans[k].note=e.target.value;save();};
+$("prev").onclick=()=>go(-1);$("next").onclick=()=>go(1);
+$("exp").onclick=()=>{const rows=[["key","set","a1","a2","note"]].concat(ITEMS.map(it=>{const a=ans[it.key]||{};return [it.key,it.set,a.a1||"",a.a2||"",(a.note||"").replace(/"/g,"'")]}));
+  const csv=rows.map(r=>r.map(x=>'"'+x+'"').join(",")).join("\n");const a=document.createElement("a");
+  a.href=URL.createObjectURL(new Blob([csv],{type:"text/csv"}));a.download="answers_review.csv";a.click();};
+document.onkeydown=e=>{if(e.target.tagName=="INPUT")return;const s=SETS[ITEMS[i].set];
+  if("1234".includes(e.key)&&s.a1[+e.key-1])set("a1",s.a1[+e.key-1][0]);
+  const j="qwe".indexOf(e.key);if(j>=0&&s.q2&&s.a2[j])set("a2",s.a2[j][0]);
+  if(e.key=="ArrowRight")go(1);if(e.key=="ArrowLeft")go(-1);};
+render();
+</script></body></html>
