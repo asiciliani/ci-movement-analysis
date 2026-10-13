@@ -1,0 +1,112 @@
+id,video,frame,kind,src,state,tracks_n,weak_conf,note_check,gt_ok,gt_note
+0,Rc9vIJt00vs_full,251,hard,check2#12,near,2,0.72,standing side by side in contact,1,
+1,Rc9vIJt00vs_full,589,hard,check1#19,contact,1,0.0,partner occluded behind,1,
+2,Rc9vIJt00vs_full,1194,hard,entangled_weak,contact,1,0.0,,1,carry across shoulders
+3,Rc9vIJt00vs_full,2091,hard,entangled_weak,contact,0,0.0,,1,lift over back
+4,Rc9vIJt00vs_full,2252,hard,entangled_weak,contact,1,0.0,,1,
+5,Rc9vIJt00vs_full,2504,hard,entangled_weak,contact,1,0.0,,1,"carry in front, close-up"
+6,Rc9vIJt00vs_full,3142,hard,check1#20,contact,0,0.0,"tangled on floor, detections lost",1,bent tangle
+7,Rc9vIJt00vs_full,3191,hard,check2#13,contact,0,0.0,"tangled on floor, detections lost",1,embrace close-up
+8,Rc9vIJt00vs_full,4336,hard,entangled_weak,contact,1,0.0,,1,floor/headstand over partner
+9,dGPRMNAECKM_full,645,hard,entangled_weak,share,1,0.0,,1,floor tangle
+10,dGPRMNAECKM_full,1056,hard,entangled_weak,contact,1,0.0,,1,floor tangle
+11,dGPRMNAECKM_full,1521,hard,entangled_weak,contact,1,0.0,,0,"close-up, both heads and upper bodies out of frame"
+12,dGPRMNAECKM_full,2043,hard,entangled_weak,contact,1,0.0,,1,carry across shoulders; real bystander at right
+13,dGPRMNAECKM_full,2915,hard,entangled_weak,floor,0,0.0,,1,"sitting, one behind the other"
+14,hJQgFDsAms4_full,2143,hard,entangled_weak,contact,0,0.0,,1,"lift over back, dark stage"
+15,hJQgFDsAms4_full,2300,hard,entangled_weak,contact,1,0.0,,1,real audience in background
+16,hJQgFDsAms4_full,2490,hard,entangled_weak,contact,0,0.0,,1,"floor tangle, dark"
+17,hJQgFDsAms4_full,6004,hard,entangled_weak,contact,1,0.0,,1,one lying across the other lap
+18,hJQgFDsAms4_full,6498,hard,check1#9,contact,1,0.0,"carry/lift, lifted dancer lost",1,carry on shoulder
+19,hJQgFDsAms4_full,6580,hard,check1#10,contact,1,0.0,"partner bent behind, lost",1,partner bent behind
+20,hJQgFDsAms4_full,6708,hard,check1#11,contact,0,0.0,"back contact, distance > threshold",1,"embrace, dark clothes"
+21,hJQgFDsAms4_full,7342,hard,entangled_weak,floor,1,0.0,,1,"floor tangle, both in black"
+22,hJQgFDsAms4_full,7939,hard,check2#7,near,1,0.0,"hand on head, dancer in black lost on dark background",1,dancer in black on dark background
+23,iOEZ3i9rgYM_full,295,hard,check1#12,contact,2,0.81,"flicker, standing in contact",1,
+24,iOEZ3i9rgYM_full,471,hard,entangled_weak,contact,1,0.0,,1,lift over back
+25,iOEZ3i9rgYM_full,580,hard,entangled_weak,contact,1,0.0,,1,
+26,iOEZ3i9rgYM_full,1545,hard,entangled_weak,contact,1,0.0,,1,
+27,iOEZ3i9rgYM_full,1706,hard,entangled_weak,contact,1,0.0,,1,over back
+28,iOEZ3i9rgYM_full,1793,hard,check1#13,contact,1,0.0,"overhead carry, one dancer lost",1,lift embrace
+29,iOEZ3i9rgYM_full,2195,hard,check1#14,contact,1,0.0,flicker,1,
+30,iOEZ3i9rgYM_full,2579,hard,entangled_weak,contact,1,0.0,,1,over back
+31,iOEZ3i9rgYM_full,3379,hard,check2#9,contact,1,0.0,"carry over back, one dancer lost",1,
+32,kMkJpfUGZz8_full,837,hard,entangled_weak,floor,1,0.0,,1,
+33,kMkJpfUGZz8_full,1445,hard,entangled_weak,contact,1,0.0,,1,floor tangle
+34,kMkJpfUGZz8_full,1502,hard,entangled_weak,floor,1,0.0,,1,floor
+35,kMkJpfUGZz8_full,1726,hard,entangled_weak,floor,1,0.0,,1,floor tangle
+36,kMkJpfUGZz8_full,1891,hard,entangled_weak,floor,1,0.0,,1,floor tangle
+37,kxztAr2tQmE_full,370,hard,entangled_weak,floor,0,0.0,,1,"tiny figures, floor"
+38,kxztAr2tQmE_full,582,hard,entangled_weak,floor,1,0.0,,1,tiny figures
+39,kxztAr2tQmE_full,746,hard,entangled_weak,contact,0,0.0,,1,"tiny figures, carry"
+40,kxztAr2tQmE_full,792,hard,entangled_weak,contact,1,0.0,,1,
+41,kxztAr2tQmE_full,951,hard,entangled_weak,contact,1,0.0,,1,
+42,kxztAr2tQmE_full,1005,hard,check1#4,contact,1,0.0,"flicker, still touching",1,
+43,swmrAJkYrlY_full,282,hard,entangled_weak,contact,1,0.0,,1,real bystander
+44,swmrAJkYrlY_full,1041,hard,entangled_weak,contact,1,0.0,,1,real bystander
+45,swmrAJkYrlY_full,1394,hard,entangled_weak,contact,1,0.0,,1,lift close-up
+46,swmrAJkYrlY_full,1503,hard,entangled_weak,contact,1,0.0,,1,"both standing apart-ish, real bystanders"
+47,swmrAJkYrlY_full,1688,hard,check1#6,contact,1,0.0,"embrace, one dancer lost",1,
+48,swmrAJkYrlY_full,1831,hard,check1#7,contact,1,0.0,"flicker, side by side touching",1,
+49,swmrAJkYrlY_full,2576,hard,entangled_weak,contact,1,0.0,,0,second dancer hidden behind the first (only feet)
+50,uS1JQ-LY8Fs_full,1689,hard,entangled_weak,contact,1,0.0,,1,
+51,uS1JQ-LY8Fs_full,2424,hard,entangled_weak,contact,1,0.0,,1,
+52,uS1JQ-LY8Fs_full,2656,hard,entangled_weak,contact,1,0.0,,1,
+53,uS1JQ-LY8Fs_full,3426,hard,entangled_weak,contact,1,0.0,,1,
+54,uS1JQ-LY8Fs_full,3628,hard,check1#27,contact,1,0.0,contact frames are with one dancer missing / depth (partner far behind),0,partner hidden behind (only head/shoulder)
+55,uS1JQ-LY8Fs_full,4359,hard,entangled_weak,contact,1,0.0,,1,
+56,uS1JQ-LY8Fs_full,4493,hard,check1#28,contact,2,0.62,flicker,1,
+57,vinlwkaIW4c_full,10,hard,entangled_weak,contact,1,0.0,,1,
+58,vinlwkaIW4c_full,117,hard,check1#21,contact,1,0.0,"tiny figures, one skeleton for both",1,
+59,vinlwkaIW4c_full,805,hard,entangled_weak,contact,1,0.0,,1,lift
+60,vinlwkaIW4c_full,1189,hard,entangled_weak,contact,1,0.0,,1,lift
+61,vinlwkaIW4c_full,1417,hard,entangled_weak,floor,1,0.0,,1,floor
+62,vinlwkaIW4c_full,1576,hard,check1#23,contact,1,0.0,"embrace, flicker",1,
+63,vinlwkaIW4c_full,1719,hard,entangled_weak,contact,1,0.0,,1,one bent over the other
+64,vinlwkaIW4c_full,3077,hard,check2#15,contact,1,0.0,one dancer lost,1,
+65,zQRF2sLK1vY,141,hard,entangled_weak,contact,0,0.0,,1,blurred; real people lying in background
+66,zQRF2sLK1vY,675,hard,check1#0,contact,1,0.0,contact resumes at +0.2 s (cartwheel over partner),1,cartwheel over partner
+67,zQRF2sLK1vY,1048,hard,entangled_weak,floor,1,0.0,,1,floor tangle; real bystander
+68,zQRF2sLK1vY,1143,hard,entangled_weak,floor,1,0.0,,1,floor; real bystander
+69,zQRF2sLK1vY,1290,hard,entangled_weak,contact,0,0.0,,1,one folded on top of the other
+70,zQRF2sLK1vY,1408,hard,entangled_weak,contact,1,0.0,,1,lift
+71,Rc9vIJt00vs_full,1390,ordinary,ordinary,near,2,0.62,,1,
+72,Rc9vIJt00vs_full,1885,ordinary,ordinary,near,2,0.84,,1,
+73,Rc9vIJt00vs_full,2736,ordinary,ordinary,near,2,0.81,,0,one dancer hidden behind the other
+74,Rc9vIJt00vs_full,3420,ordinary,ordinary,near,2,0.76,,1,
+75,dGPRMNAECKM_full,487,ordinary,ordinary,near,2,0.88,,1,
+76,dGPRMNAECKM_full,710,ordinary,ordinary,near,2,0.79,,1,
+77,dGPRMNAECKM_full,1405,ordinary,ordinary,near,2,0.61,,1,
+78,dGPRMNAECKM_full,1984,ordinary,ordinary,near,2,0.62,,1,
+79,hJQgFDsAms4_full,10,ordinary,ordinary,near,2,0.63,,1,
+80,hJQgFDsAms4_full,8341,ordinary,ordinary,apart,2,0.73,,0,"tracks are on audience members, not a clean control frame"
+81,hJQgFDsAms4_full,8476,ordinary,ordinary,apart,2,0.62,,0,tracks are on audience members; dancers lying in black
+82,hJQgFDsAms4_full,8529,ordinary,ordinary,near,2,0.69,,0,tracks are on audience members; dancers lying in black
+83,iOEZ3i9rgYM_full,12,ordinary,ordinary,near,2,0.9,,1,
+84,iOEZ3i9rgYM_full,1350,ordinary,ordinary,near,2,0.84,,1,
+85,iOEZ3i9rgYM_full,1879,ordinary,ordinary,near,2,0.72,,1,
+86,iOEZ3i9rgYM_full,2438,ordinary,ordinary,near,2,0.68,,1,
+87,kMkJpfUGZz8_full,31,ordinary,ordinary,apart,2,0.79,,1,
+88,kMkJpfUGZz8_full,190,ordinary,ordinary,apart,2,0.82,,1,
+89,kMkJpfUGZz8_full,524,ordinary,ordinary,apart,2,0.79,,1,
+90,kMkJpfUGZz8_full,710,ordinary,ordinary,apart,2,0.81,,1,
+91,kxztAr2tQmE_full,74,ordinary,ordinary,apart,2,0.79,,1,
+92,kxztAr2tQmE_full,120,ordinary,ordinary,near,2,0.78,,1,
+93,kxztAr2tQmE_full,480,ordinary,ordinary,near,2,0.85,,1,
+94,kxztAr2tQmE_full,655,ordinary,ordinary,near,2,0.85,,1,
+95,swmrAJkYrlY_full,513,ordinary,ordinary,apart,2,0.75,,1,
+96,swmrAJkYrlY_full,627,ordinary,ordinary,apart,2,0.82,,1,
+97,swmrAJkYrlY_full,1215,ordinary,ordinary,apart,2,0.77,,1,
+98,swmrAJkYrlY_full,1779,ordinary,ordinary,near,2,0.87,,1,
+99,uS1JQ-LY8Fs_full,842,ordinary,ordinary,apart,2,0.89,,1,
+100,uS1JQ-LY8Fs_full,4075,ordinary,ordinary,apart,2,0.74,,1,
+101,uS1JQ-LY8Fs_full,4866,ordinary,ordinary,near,2,0.74,,1,
+102,uS1JQ-LY8Fs_full,5188,ordinary,ordinary,apart,2,0.86,,1,
+103,vinlwkaIW4c_full,588,ordinary,ordinary,near,2,0.74,,1,
+104,vinlwkaIW4c_full,1236,ordinary,ordinary,apart,2,0.84,,1,
+105,vinlwkaIW4c_full,2790,ordinary,ordinary,near,2,0.83,,1,
+106,vinlwkaIW4c_full,3172,ordinary,ordinary,apart,2,0.73,,1,
+107,zQRF2sLK1vY,823,ordinary,ordinary,apart,2,0.86,,1,
+108,zQRF2sLK1vY,1612,ordinary,ordinary,near,2,0.93,,1,
+109,zQRF2sLK1vY,1704,ordinary,ordinary,apart,2,0.7,,1,
+110,zQRF2sLK1vY,1798,ordinary,ordinary,apart,2,0.65,,1,

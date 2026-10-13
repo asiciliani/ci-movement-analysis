@@ -100,3 +100,7 @@ outputs/**/*.pkl
 outputs/review/
 outputs/falls/urfall/
 outputs/falls/*.log
+outputs/pose_models/frames/
+outputs/pose_models/sheets/
+outputs/pose_models/compare*/
+logs/pose_models_*.log
