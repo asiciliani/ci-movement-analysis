@@ -1,5 +1,9 @@
 # Audit and restructuring — October 2026
 
+> Layout note (13 Oct 2026): the repository was reorganised. Script names in the tables below are bare file
+> names; they now live in `pipeline/` (tracking, features, audits, dataset) and `analyses/` (everything else),
+> and the documents in `docs/`. `review/` is `analyses/review/`.
+
 A code and methodology audit of the proof-of-concept found that none of the four claims presented
 to the thesis director were supported by the code or the data. This file records what was wrong,
 what was changed, and what remains open. The old scripts live in git history (commit before

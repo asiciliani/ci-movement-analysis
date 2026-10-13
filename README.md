@@ -14,57 +14,57 @@ salsa), measured on public footage and checked against datasets with a known ans
 coupling question ("do the dancers listen to each other without touching?") is kept as a Phase-2 design
 that needs new recordings.
 
-This repository was audited and restructured in October 2026. `AUDIT.md` lists what was wrong
-before and what changed; `METHODS.md` is the normative definition of every feature.
+This repository was audited and restructured in October 2026. `docs/AUDIT.md` lists what was wrong
+before and what changed; `docs/METHODS.md` is the normative definition of every feature.
 
 ## Pipeline
 
 ```
-video ──► run_tracking.py ──► <stem>_tracks.npz          (YOLOv8-pose + BoT-SORT/ReID + 2-dancer assignment,
+video ──► pipeline/run_tracking.py ──► <stem>_tracks.npz          (YOLOv8-pose + BoT-SORT/ReID + 2-dancer assignment,
                                <stem>_detections.csv      camera ego-motion, tracking diagnostics)
                                <stem>_tracking_quality.json
-       ──► run_features.py ──► <stem>_features.csv        (per frame: positions, gap-aware derivatives in px and
+       ──► pipeline/run_features.py ──► <stem>_features.csv        (per frame: positions, gap-aware derivatives in px and
                                <stem>_windows.csv          calibrated units, contact state, dir. similarity)
                                <stem>_feature_info.json   (per window: SPARC, LDLJ, KE-transfer r, contact fraction)
-       ──► audit_identity.py ──► contact sheets  ──► human verdicts in videos/curation.csv (content, pair_ok)
-       ──► aggregate_dataset.py ──► outputs/dataset/{videos,frames,windows}.csv   (inclusion rules applied)
-       ──► analyze_coupling.py ──► outputs/coupling/coupling_report.md            (coupling vs a battery of nulls)
-       ──► analyze_claims.py ──► outputs/claims/claims_report.md                  (smoothness / within-video tests)
+       ──► pipeline/audit_identity.py ──► contact sheets  ──► human verdicts in videos/curation.csv (content, pair_ok)
+       ──► pipeline/aggregate_dataset.py ──► outputs/dataset/{videos,frames,windows}.csv   (inclusion rules applied)
+       ──► analyses/analyze_coupling.py ──► outputs/coupling/coupling_report.md            (coupling vs a battery of nulls)
+       ──► analyses/analyze_claims.py ──► outputs/claims/claims_report.md                  (smoothness / within-video tests)
 ```
 
 Descriptive branch (on the pair-verified duets, full-length versions preferred):
 
 ```
-describe_duets.py      contact + body regions, weight sharing, levels, descents, 1-s pose vocabulary  -> outputs/describe/
-state_grammar.py       per-frame duet state (apart/near/contact/weight share/floor), transitions      -> outputs/grammar/
-hand_check_contacts.py check sheets for contact releases; verdicts behind the SEP_BL release rule      -> outputs/grammar/contact_check*.csv
-compare_genres.py      the same descriptors on CI vs salsa (CoMPAS3D renders, known answer)           -> outputs/compare_genres/
-rolling_3d.py          rolling vs gripping on salsa mocap markers (region yes, travel no)             -> outputs/rolling_3d/
-rolling_mesh.py        rolling vs gripping on SMPL-X body meshes (needs the licensed model files)     -> outputs/rolling_mesh/
-demo_video.py          one-minute demo: duet with skeletons + live panel of what is measured          -> outputs/demo/ (not in git)
+analyses/describe_duets.py      contact + body regions, weight sharing, levels, descents, 1-s pose vocabulary  -> outputs/describe/
+analyses/state_grammar.py       per-frame duet state (apart/near/contact/weight share/floor), transitions      -> outputs/grammar/
+analyses/hand_check_contacts.py check sheets for contact releases; verdicts behind the SEP_BL release rule      -> outputs/grammar/contact_check*.csv
+analyses/compare_genres.py      the same descriptors on CI vs salsa (CoMPAS3D renders, known answer)           -> outputs/compare_genres/
+analyses/rolling_3d.py          rolling vs gripping on salsa mocap markers (region yes, travel no)             -> outputs/rolling_3d/
+analyses/rolling_mesh.py        rolling vs gripping on SMPL-X body meshes (needs the licensed model files)     -> outputs/rolling_mesh/
+analyses/demo_video.py          one-minute demo: duet with skeletons + live panel of what is measured          -> outputs/demo/ (not in git)
 ```
 
-External ground truth: `analyze_external_bigand.py` (Bigand et al. 2024, free dance, known coupling),
-`analyze_external_compas.py` (CoMPAS3D salsa, known roles). Data are downloaded by the scripts in
+External ground truth: `analyses/analyze_external_bigand.py` (Bigand et al. 2024, free dance, known coupling),
+`analyses/analyze_external_compas.py` (CoMPAS3D salsa, known roles). Data are downloaded by the scripts in
 `data_external/*/` (not redistributed; the SMPL-X model files need a free academic licence from
 smpl-x.is.tue.mpg.de).
 
-`run_analysis.py` chains stage 1 + 2 and renders the dashboard, trajectory plot, annotated
-video and HTML report (same CLI as before). `run_group_analysis.py` builds a proximity graph
+`pipeline/run_analysis.py` chains stage 1 + 2 and renders the dashboard, trajectory plot, annotated
+video and HTML report (same CLI as before). `pipeline/run_group_analysis.py` builds a proximity graph
 over all detections of a multi-person clip.
 
 ```bash
-python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
-python run_tracking.py --video videos/ci_duet_sample.mp4
-python run_features.py --tracks outputs/ci_duet_sample/ci_duet_sample_tracks.npz
-python run_analysis.py --video videos/ci_duet_sample.mp4 --annotations annotations/ci_duet_sample.csv
-python audit_identity.py --tracks outputs/<stem>/<stem>_tracks.npz --video videos/<stem>.mp4   # then edit videos/curation.csv
-python aggregate_dataset.py && python analyze_coupling.py && python analyze_claims.py
+python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt && pip install -e .
+python pipeline/run_tracking.py --video videos/ci_duet_sample.mp4
+python pipeline/run_features.py --tracks outputs/ci_duet_sample/ci_duet_sample_tracks.npz
+python pipeline/run_analysis.py --video videos/ci_duet_sample.mp4 --annotations annotations/ci_duet_sample.csv
+python pipeline/audit_identity.py --tracks outputs/<stem>/<stem>_tracks.npz --video videos/<stem>.mp4   # then edit videos/curation.csv
+python pipeline/aggregate_dataset.py && python analyses/analyze_coupling.py && python analyses/analyze_claims.py
 python scripts/simulate_design.py      # Phase-2 design: naive-test false positives, N-S contrast power
 python -m pytest tests -q
 ```
 
-## What the features are (short version; see METHODS.md)
+## What the features are (short version; see docs/METHODS.md)
 
 * **Units.** Everything is stored in pixels (`*_speed`, `*_jerk`, `dist_*`) *and* in calibrated
   units (`*_u`): metres when `--px-per-meter` is given, otherwise body lengths (bl), one bl being
@@ -91,15 +91,19 @@ python -m pytest tests -q
 ## Layout
 
 ```
-src/pose/            YOLOv8-pose wrapper (default tracker: configs/botsort_reid.yaml)
-src/tracking/        two-dancer assignment with diagnostics; camera ego-motion
-src/features/        scale, kinematics, smoothness (SPARC/LDLJ), contact, LMA-shape descriptors
-src/analysis/        coupling_controls (gap-aware xcorr + null battery), audio (music covariate), coordination, claims, group_graph
-src/visualization/   dashboard, trajectories, overlay video, HTML report
-src/io/              tracks file format
-scripts/             process_queue.sh, acquire_*.sh, screen_candidates.py (full body, cuts, crowd), simulate_design.py
-tests/               synthetic tests for gap handling, noise floor, scale invariance, lag sign, surrogates
+pipeline/            video -> tracks -> features -> dataset (run_tracking, run_features, audit_identity, aggregate_dataset, ...)
+analyses/            one script per analysis; each writes outputs/<name>/report.md (see docs/AUDIT.md for the findings)
+analyses/review/     local page for a human to re-judge the detectors' events, and the agreement script
+src/                 shared library: pose wrapper, two-dancer tracking, features, analysis helpers, io
+scripts/             acquisition, screening, design simulation, re-tracking utilities (scripts/legacy/: pre-audit shell scripts)
+data_external/       fetch scripts for external datasets (data and licensed model files are not in git)
+docs/                AUDIT (numbered findings), METHODS (normative definitions), DATASET, protocol, plans, pre-registrations
+docs/archive/        pre-audit notes and literature-search dumps, kept for the record
+tests/               synthetic tests (gap handling, noise floor, scale invariance, lag sign, surrogates, mesh contact)
+outputs/             reports and tables that are in git; per-clip tracks, images and videos are not
 ```
+
+Everything is run from the repository root, e.g. `python analyses/state_grammar.py`.
 
 ## Status of the scientific claims
 
@@ -111,5 +115,5 @@ vocabulary does not yet identify duets ("signature" at chance).
 
 Coupling: none of the hypotheses is "proven" by this repository. On public footage the coupling question is
 not decidable (6 right-pair clips, almost all in contact; AUDIT 24-31); it is answered by the Phase-2 design with a
-solo-solo block as a nuisance-matched null (`DATA_COLLECTION_PROTOCOL.md`). Current results:
-`outputs/coupling/coupling_report.md`, `outputs/claims/claims_report.md`, discussed in `AUDIT.md`.
+solo-solo block as a nuisance-matched null (`docs/DATA_COLLECTION_PROTOCOL.md`). Current results:
+`outputs/coupling/coupling_report.md`, `outputs/claims/claims_report.md`, discussed in `docs/AUDIT.md`.

@@ -86,5 +86,5 @@ def main(seed: int = 0, per_clip: int = PER_CLIP, tag: str = ""):
 
 if __name__ == "__main__":
     import sys
-    # second round (after SEP_BL was chosen on the first): python hand_check_contacts.py 1 2 _v2
+    # second round (after SEP_BL was chosen on the first): python analyses/hand_check_contacts.py 1 2 _v2
     main(int(sys.argv[1]), int(sys.argv[2]), sys.argv[3]) if len(sys.argv) > 3 else main()

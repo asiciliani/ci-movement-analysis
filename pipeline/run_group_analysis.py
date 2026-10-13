@@ -1,8 +1,8 @@
 """
 Jam / multi-person analysis: proximity graph over the stage-1 detections table.
 
-    python run_tracking.py --video videos/jam.mp4            # stage 1 (all detections are saved)
-    python run_group_analysis.py --detections outputs/jam/jam_detections.csv --fps 30
+    python pipeline/run_tracking.py --video videos/jam.mp4            # stage 1 (all detections are saved)
+    python pipeline/run_group_analysis.py --detections outputs/jam/jam_detections.csv --fps 30
 
 Writes <stem>_graph_metrics.csv, <stem>_graph_pairs.csv, <stem>_graph_summary.json and a figure.
 """

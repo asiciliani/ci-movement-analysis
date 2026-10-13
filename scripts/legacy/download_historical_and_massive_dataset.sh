@@ -32,7 +32,7 @@ for VIDEO_FILE in videos/*.mp4; do
     if [ ! -d "outputs/$VID_ID" ]; then
         echo "Running analysis on $VID_ID..."
         mkdir -p "outputs/$VID_ID"
-        .venv/bin/python3 run_analysis.py --video "$VIDEO_FILE" --output-dir "outputs/$VID_ID"
+        .venv/bin/python3 pipeline/run_analysis.py --video "$VIDEO_FILE" --output-dir "outputs/$VID_ID"
     else
         echo "Skipping $VID_ID (already analyzed)."
     fi

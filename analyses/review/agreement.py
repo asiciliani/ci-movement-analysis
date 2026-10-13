@@ -3,7 +3,7 @@ Agreement between a human reviewer (CSV exported from outputs/review/index.html)
 verdicts (outputs/grammar/contact_check*.csv, outputs/roles/role_check.csv): raw agreement and Cohen's kappa,
 on the items both judged as decidable and on all items.
 
-Usage (repo root):  python review/agreement.py outputs/review/answers_<name>.csv
+Usage (repo root):  python analyses/review/agreement.py outputs/review/answers_<name>.csv
 Writes outputs/review_agreement/<name>.md (+ a merged CSV with both verdicts per item).
 """
 from __future__ import annotations

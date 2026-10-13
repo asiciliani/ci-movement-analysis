@@ -9,9 +9,9 @@ one at a time, without the earlier verdicts, and exports the reviewer's answers 
   weight_share   the 42 weight-sharing episodes of outputs/roles/episodes.csv
                  (1.5 s before to 1.5 s after; white border while the detector says "weight shared")
 
-Run from the repo root:  python review/build_review.py   then open outputs/review/index.html
+Run from the repo root:  python analyses/review/build_review.py   then open outputs/review/index.html
 Answers: "Exportar CSV" in the page -> save as outputs/review/answers_<name>.csv; compare with
-python review/agreement.py. Clips are third-party footage: outputs/review/ stays out of git.
+python analyses/review/agreement.py. Clips are third-party footage: outputs/review/ stays out of git.
 """
 from __future__ import annotations
 

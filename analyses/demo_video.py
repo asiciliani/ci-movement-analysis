@@ -7,7 +7,7 @@ Same measures as the reported results: states from state_grammar.frame_states (w
 contact regions from describe.contact_regions, weight sharing from describe.aerial_support, levels from
 describe.level. Labels in Spanish.
 
-Usage:  python demo_video.py [video_id] [start_s] [duration_s]
+Usage:  python analyses/demo_video.py [video_id] [start_s] [duration_s]
         (default: kMkJpfUGZz8_full 65 45, the most varied 45 s of the corpus by a state-mix score)
 Output: outputs/demo/<video_id>_<start>s.mp4 (gitignored: third-party footage, shown privately only)
 """

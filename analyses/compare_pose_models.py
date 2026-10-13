@@ -6,11 +6,11 @@ The current pipeline (YOLOv8n-pose + BoT-SORT) loses one dancer when the bodies 
 builds a small frame test set, runs one candidate model at a time on it and renders overlay
 contact sheets for a by-eye verdict.
 
-    .venv/bin/python compare_pose_models.py select              # pick frames, write frames/ + gt sheets
-    .venv/bin/python compare_pose_models.py run <model>         # one model per process (RAM)
-    .venv/bin/python compare_pose_models.py render <model>      # overlay sheets for the by-eye check
-    .venv/bin/python compare_pose_models.py compare hard <model> <model> ...   # one row per frame, for the verdicts
-    .venv/bin/python compare_pose_models.py score               # table from preds + verdicts.csv
+    .venv/bin/python analyses/compare_pose_models.py select              # pick frames, write frames/ + gt sheets
+    .venv/bin/python analyses/compare_pose_models.py run <model>         # one model per process (RAM)
+    .venv/bin/python analyses/compare_pose_models.py render <model>      # overlay sheets for the by-eye check
+    .venv/bin/python analyses/compare_pose_models.py compare hard <model> <model> ...   # one row per frame, for the verdicts
+    .venv/bin/python analyses/compare_pose_models.py score               # table from preds + verdicts.csv
 
 Ground truth and by-eye verdicts are typed by hand into outputs/pose_models/testset.csv
 (columns gt_ok / gt_note) and outputs/pose_models/verdicts.csv (frame id x model -> 2/1/0).

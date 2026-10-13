@@ -11,6 +11,6 @@ for id in $IDS; do
     ffmpeg -v quiet -y -i /tmp/${id}_raw.* -r 15 -an -c:v libx264 -preset veryfast -crf 23 "$out"; rm -f /tmp/${id}_raw.*
   fi
   stem=${id}_full
-  [ -s outputs/$stem/${stem}_tracks.npz ] || .venv/bin/python -u run_tracking.py --video "$out" --output-dir outputs/$stem 2>&1 | grep -E "\[track\] done|Error|Trace"
+  [ -s outputs/$stem/${stem}_tracks.npz ] || .venv/bin/python -u pipeline/run_tracking.py --video "$out" --output-dir outputs/$stem 2>&1 | grep -E "\[track\] done|Error|Trace"
   echo "=== $stem $(date +%H:%M)"
 done

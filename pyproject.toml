@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ci-movement-analysis"
+version = "0.1.0"
+description = "Video-based description of Contact Improvisation duets (licenciatura thesis, FCEN-UBA)"
+requires-python = ">=3.10"
+
+# `pip install -e .` makes the shared library `src` importable from pipeline/, analyses/ and scripts/.
+# Everything is run from the repository root (paths such as outputs/ and videos/ are relative to it).
+[tool.setuptools.packages.find]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

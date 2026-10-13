@@ -1,7 +1,7 @@
 """
 End-to-end runner (kept for backward compatibility with the old CLI):
 
-    python run_analysis.py --video videos/x.mp4 [--annotations a.csv] [--output-dir outputs/x] [--no-video]
+    python pipeline/run_analysis.py --video videos/x.mp4 [--annotations a.csv] [--output-dir outputs/x] [--no-video]
 
 It chains the two stages (run_tracking.py -> run_features.py), then produces the dashboard,
 trajectory plot, phase summary, annotated video and HTML report. Stage 1 is skipped when a

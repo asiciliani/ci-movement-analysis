@@ -10,7 +10,7 @@ while read -r stem; do
   [ -z "$v" ] && { echo "skip $stem (no video)"; continue; }
   if [ -f "outputs/$stem/${stem}_tracks.npz" ]; then echo "skip $stem (tracked)"; continue; fi
   echo "=== $stem $(date)"
-  .venv/bin/python -u run_tracking.py --video "$v" --output-dir "outputs/$stem" 2>&1 | grep -vi warning
-  .venv/bin/python -u run_features.py --tracks "outputs/$stem/${stem}_tracks.npz" 2>&1 | grep -vi warning
+  .venv/bin/python -u pipeline/run_tracking.py --video "$v" --output-dir "outputs/$stem" 2>&1 | grep -vi warning
+  .venv/bin/python -u pipeline/run_features.py --tracks "outputs/$stem/${stem}_tracks.npz" 2>&1 | grep -vi warning
 done < "$QUEUE"
 echo "=== queue finished $(date)"
