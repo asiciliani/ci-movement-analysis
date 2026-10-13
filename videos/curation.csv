@@ -53,3 +53,4 @@ kMkJpfUGZz8_full,ci_dance,duet,kMkJpfUGZz8,assistant_visual,full length; ends on
 uS1JQ-LY8Fs_full,ci_dance,duet,uS1JQ-LY8Fs,assistant_visual,full length; low-res stage,yes,24.0,1.0,consistent
 ZfdejcO5Sqw_full,ci_dance,duet,concrete_building_duet,assistant_visual,cinematic edit with tilted camera,no,24.0,,tilted camera invalidates up/down measures (levels / weight sharing)
 ul2LMUIuwno_full,ci_dance,duet,concrete_building_duet,assistant_visual,cinematic with tilted camera,no,24.0,,same as ZfdejcO5Sqw_full
+YR2QCf5cL6Q_full,ci_dance,duet,YR2QCf5cL6Q,assistant_visual,"Keogh & Chung performance, gym, one handheld shot with heavy zoom, audience heads in the foreground; YOLO11x + continuity assignment + edge-partial filter",partial,34.0,4.0,right pair when both are tracked (14/34 sampled frames have both); A/B cross in ~4 of those; audience heads removed by the edge filter; chosen by the author as the reference duet
