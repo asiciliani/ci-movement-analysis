@@ -90,3 +90,10 @@ outputs/*/*.png
 !outputs/compare_genres/*.png
 !outputs/grammar/*.png
 !outputs/rolling_3d/*.png
+!outputs/momentum/*.png
+!outputs/dimensionality/*.png
+!outputs/novelty/*.png
+!outputs/falls/*.png
+!outputs/rolling_mesh/*.png
+!outputs/pose_models/*.png
+outputs/**/*.pkl
