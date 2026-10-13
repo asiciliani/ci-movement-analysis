@@ -1,0 +1,43 @@
+id,video,real,top_eye,tracked_top_is,note
+0,zQRF2sLK1vY,unclear,,,floor pile both lying; cannot tell who is over whom
+1,zQRF2sLK1vY,no,,,bald man kneeling beside a partner lying on the floor (pelvis above a lying partner's shoulders)
+2,kxztAr2tQmE_full,yes,grey,grey,both crouched; man in grey shirt bent over the back of the woman in red trousers (lean); low confidence
+3,kxztAr2tQmE_full,yes,grey,grey,man in grey jumps onto the back/hip of the woman in red trousers
+4,swmrAJkYrlY_full,yes,orange,orange,man in orange shirt rolls over the back of the kneeling dark-clothed partner; tracked identity swaps right after (+1.5 s blue on orange)
+5,hJQgFDsAms4_full,yes,light,dark,ROLE ERROR: woman in light top folded over the standing man's back; detector says the man is on top (his pelvis is above her folded shoulders)
+6,hJQgFDsAms4_full,unclear,,,floor embrace sitting; cannot tell
+7,hJQgFDsAms4_full,yes,light,dark,ROLE ERROR: woman inverted on the standing man's front; skeletons merged; detector says the man
+8,iOEZ3i9rgYM_full,yes,woman,woman,woman leans over the bent man's back (feet on ground)
+9,iOEZ3i9rgYM_full,yes,woman,woman,same lean as #8
+10,iOEZ3i9rgYM_full,yes,,,backbend with the other body inverted above it; cannot tell who carries whom
+11,iOEZ3i9rgYM_full,yes,woman,woman,woman over the crouched man's back
+12,iOEZ3i9rgYM_full,yes,woman,woman,woman horizontal across the man's back legs in the air; skeletons cross
+13,iOEZ3i9rgYM_full,yes,woman,woman,woman horizontal across the man's back; tracked letter is now A = woman (identity swapped vs #8-12)
+14,dGPRMNAECKM_full,unclear,navy,navy,floor roll; woman in navy top lying over the partner; low confidence
+15,dGPRMNAECKM_full,yes,navy,navy,woman in navy rolls over the back of the partner in grey on all fours; tracked letter B (was A in #14: swap)
+16,dGPRMNAECKM_full,yes,grey,,partner in grey inverted (legs up) over the back of navy on all fours; skeletons mixed
+17,dGPRMNAECKM_full,yes,navy,navy,navy arches backwards over grey's back
+18,dGPRMNAECKM_full,yes,grey,,grey rolls inverted over navy lying on the mat; skeletons mixed
+19,dGPRMNAECKM_full,no,,,navy stands beside grey kneeling low (pelvis above a low partner's shoulders)
+20,Rc9vIJt00vs_full,yes,blue,blue,person in blue T-shirt straddles/sits on the back of the person in white top (all fours)
+21,Rc9vIJt00vs_full,yes,blue,blue,blue lies horizontal across white's back; tracked letter B (was A in #20: swap)
+22,Rc9vIJt00vs_full,yes,,,floor inversion; legs up; cannot tell whose
+23,Rc9vIJt00vs_full,yes,white,,white lies back over blue bridging; low confidence; skeletons mixed
+24,Rc9vIJt00vs_full,yes,white,white,white leans over blue's bent back
+25,Rc9vIJt00vs_full,yes,white,white,white lies across blue's back legs flying
+26,Rc9vIJt00vs_full,yes,blue,,blue inverted (legs up) over white on the floor
+27,Rc9vIJt00vs_full,unclear,,,blue kneels behind white on all fours; weight unclear
+28,Rc9vIJt00vs_full,yes,blue,blue,blue rolls over white's back
+29,Rc9vIJt00vs_full,no,,,close-up: white standing next to blue seated on the floor
+30,Rc9vIJt00vs_full,yes,white,white,white inverted (handstand-like) over blue on the floor
+31,vinlwkaIW4c_full,yes,black,black,person in black leans over the back of the person in white (all fours)
+32,vinlwkaIW4c_full,no,,,black stands straddling white lying on the floor
+33,vinlwkaIW4c_full,yes,black,black,black drapes over white's bent back
+34,vinlwkaIW4c_full,no,,,white seated on the floor; black stands behind
+35,vinlwkaIW4c_full,no,,,white stands; black on all fours beside
+36,vinlwkaIW4c_full,no,,,white leaps over black lying on the floor
+37,kMkJpfUGZz8_full,unclear,,,floor tangle with legs up
+38,kMkJpfUGZz8_full,yes,man,,man lies over the partner on the floor; low confidence
+39,kMkJpfUGZz8_full,unclear,,,man straddles the woman on all fours standing; weight unclear
+40,kMkJpfUGZz8_full,yes,man,man,man kneels behind and leans his trunk over the back of the woman in orange on all fours
+41,uS1JQ-LY8Fs_full,no,,,one stands next to a partner seated on the floor

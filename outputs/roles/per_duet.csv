@@ -1,0 +1,19 @@
+group,labels,n,share_first,binom_p,switches,switches_expected,p_alternate_more,p_alternate_less,main_flyer
+zQRF2sLK1vY,tracked (all detector episodes),2,0.5,1.0,1,,,,
+kxztAr2tQmE_full,tracked (all detector episodes),2,1.0,0.5,0,,,,
+swmrAJkYrlY_full,tracked (all detector episodes),1,0.0,1.0,0,,,,
+hJQgFDsAms4_full,tracked (all detector episodes),3,0.3333333333333333,1.0,1,1.3311,1.0,0.6689,
+iOEZ3i9rgYM_full,tracked (all detector episodes),6,0.16666666666666666,0.21875,1,1.66705,1.0,0.33295,
+dGPRMNAECKM_full,tracked (all detector episodes),6,0.16666666666666666,0.21875,1,1.67015,1.0,0.32985,
+Rc9vIJt00vs_full,tracked (all detector episodes),11,0.45454545454545453,1.0,5,5.4651,0.7406,0.5173,
+vinlwkaIW4c_full,tracked (all detector episodes),6,0.6666666666666666,0.6875,1,2.66185,1.0,0.1346,
+kMkJpfUGZz8_full,tracked (all detector episodes),4,0.0,0.125,0,,,,
+uS1JQ-LY8Fs_full,tracked (all detector episodes),1,0.0,1.0,0,,,,
+kxztAr2tQmE_full,"eye (real episodes, flyer known)",2,1.0,0.5,0,,,,grey
+swmrAJkYrlY_full,"eye (real episodes, flyer known)",1,1.0,1.0,0,,,,orange
+hJQgFDsAms4_full,"eye (real episodes, flyer known)",2,1.0,0.5,0,,,,light
+iOEZ3i9rgYM_full,"eye (real episodes, flyer known)",5,1.0,0.0625,0,,,,woman
+dGPRMNAECKM_full,"eye (real episodes, flyer known)",4,0.5,1.0,3,2.00435,0.33725,1.0,navy
+Rc9vIJt00vs_full,"eye (real episodes, flyer known)",8,0.5,1.0,3,3.9983,0.88385,0.3718,blue
+vinlwkaIW4c_full,"eye (real episodes, flyer known)",2,1.0,0.5,0,,,,black
+kMkJpfUGZz8_full,"eye (real episodes, flyer known)",2,1.0,0.5,0,,,,man

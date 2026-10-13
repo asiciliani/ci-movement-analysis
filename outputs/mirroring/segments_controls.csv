@@ -1,0 +1,81 @@
+unit,mode,frames,null,n,excess_deg,p
+zQRF2sLK1vY,same-side,full,shift>=5s,980,13.627690742785862,0.0
+zQRF2sLK1vY,same-side,full,local 1-3s,980,9.769403174152725,0.0
+zQRF2sLK1vY,same-side,full & IoU<0.2,shift>=5s,617,6.545477290923003,0.03
+zQRF2sLK1vY,same-side,full & IoU<0.2,local 1-3s,617,6.289926956485651,0.0
+zQRF2sLK1vY,mirror,full,shift>=5s,980,4.343737729524904,0.06
+zQRF2sLK1vY,mirror,full,local 1-3s,980,1.254950690793386,0.32
+zQRF2sLK1vY,mirror,full & IoU<0.2,shift>=5s,617,1.7154693935993777,0.35
+zQRF2sLK1vY,mirror,full & IoU<0.2,local 1-3s,617,1.878105388869031,0.37
+kxztAr2tQmE_full,same-side,full,shift>=5s,513,13.522855958785449,0.0
+kxztAr2tQmE_full,same-side,full,local 1-3s,513,5.601675178196903,0.0
+kxztAr2tQmE_full,same-side,full & IoU<0.2,shift>=5s,256,10.188586623994691,0.0
+kxztAr2tQmE_full,same-side,full & IoU<0.2,local 1-3s,256,3.037535672235631,0.0
+kxztAr2tQmE_full,mirror,full,shift>=5s,513,4.348327625387011,0.1
+kxztAr2tQmE_full,mirror,full,local 1-3s,513,0.8065808113882831,0.48
+kxztAr2tQmE_full,mirror,full & IoU<0.2,shift>=5s,256,7.254812322579578,0.07
+kxztAr2tQmE_full,mirror,full & IoU<0.2,local 1-3s,256,1.8447678374523555,0.48
+swmrAJkYrlY_full,same-side,full,shift>=5s,1859,6.955309915379226,0.0
+swmrAJkYrlY_full,same-side,full,local 1-3s,1859,4.235736665675768,0.0
+swmrAJkYrlY_full,same-side,full & IoU<0.2,shift>=5s,1408,4.890734346677014,0.0
+swmrAJkYrlY_full,same-side,full & IoU<0.2,local 1-3s,1408,2.098525425441249,0.0
+swmrAJkYrlY_full,mirror,full,shift>=5s,1859,3.467764088556116,0.0
+swmrAJkYrlY_full,mirror,full,local 1-3s,1859,1.1186664783627691,0.17
+swmrAJkYrlY_full,mirror,full & IoU<0.2,shift>=5s,1408,5.656363401972323,0.0
+swmrAJkYrlY_full,mirror,full & IoU<0.2,local 1-3s,1408,2.6134828922390714,0.0
+hJQgFDsAms4_full,same-side,full,shift>=5s,1566,16.456388749339286,0.0
+hJQgFDsAms4_full,same-side,full,local 1-3s,1566,5.041916753758798,0.0
+hJQgFDsAms4_full,same-side,full & IoU<0.2,shift>=5s,468,8.546457096959127,0.09
+hJQgFDsAms4_full,same-side,full & IoU<0.2,local 1-3s,468,-2.276407140107409,0.94
+hJQgFDsAms4_full,mirror,full,shift>=5s,1566,6.711248414742407,0.03
+hJQgFDsAms4_full,mirror,full,local 1-3s,1566,-5.545207791463348,1.0
+hJQgFDsAms4_full,mirror,full & IoU<0.2,shift>=5s,468,13.779498464318198,0.0
+hJQgFDsAms4_full,mirror,full & IoU<0.2,local 1-3s,468,-2.5960790063452777,0.86
+iOEZ3i9rgYM_full,same-side,full,shift>=5s,1909,11.31683010554061,0.0
+iOEZ3i9rgYM_full,same-side,full,local 1-3s,1909,4.5462820218586195,0.0
+iOEZ3i9rgYM_full,same-side,full & IoU<0.2,shift>=5s,710,4.384605685397773,0.11
+iOEZ3i9rgYM_full,same-side,full & IoU<0.2,local 1-3s,710,-1.609150243443274,0.87
+iOEZ3i9rgYM_full,mirror,full,shift>=5s,1909,4.944719182930729,0.03
+iOEZ3i9rgYM_full,mirror,full,local 1-3s,1909,-0.6140305294194732,1.0
+iOEZ3i9rgYM_full,mirror,full & IoU<0.2,shift>=5s,710,11.623499128008646,0.0
+iOEZ3i9rgYM_full,mirror,full & IoU<0.2,local 1-3s,710,2.848084852354148,0.0
+dGPRMNAECKM_full,same-side,full,shift>=5s,754,17.770980689106764,0.0
+dGPRMNAECKM_full,same-side,full,local 1-3s,754,9.029902078769688,0.0
+dGPRMNAECKM_full,same-side,full & IoU<0.2,shift>=5s,296,8.206076028085356,0.11
+dGPRMNAECKM_full,same-side,full & IoU<0.2,local 1-3s,296,0.12476975427894388,0.53
+dGPRMNAECKM_full,mirror,full,shift>=5s,754,11.80270424974023,0.0
+dGPRMNAECKM_full,mirror,full,local 1-3s,754,2.3876568576654194,0.09
+dGPRMNAECKM_full,mirror,full & IoU<0.2,shift>=5s,296,20.17546629463076,0.0
+dGPRMNAECKM_full,mirror,full & IoU<0.2,local 1-3s,296,8.866569272166302,0.0
+Rc9vIJt00vs_full,same-side,full,shift>=5s,1070,19.34548978388093,0.0
+Rc9vIJt00vs_full,same-side,full,local 1-3s,1070,8.12168378795289,0.0
+Rc9vIJt00vs_full,same-side,full & IoU<0.2,shift>=5s,479,17.697729436428613,0.0
+Rc9vIJt00vs_full,same-side,full & IoU<0.2,local 1-3s,479,1.0275194467909792,0.02
+Rc9vIJt00vs_full,mirror,full,shift>=5s,1070,5.0170100633539505,0.1
+Rc9vIJt00vs_full,mirror,full,local 1-3s,1070,-5.069013986515564,1.0
+Rc9vIJt00vs_full,mirror,full & IoU<0.2,shift>=5s,479,11.34378196769703,0.04
+Rc9vIJt00vs_full,mirror,full & IoU<0.2,local 1-3s,479,-3.025906400355396,1.0
+vinlwkaIW4c_full,same-side,full,shift>=5s,1626,10.799095404575972,0.0
+vinlwkaIW4c_full,same-side,full,local 1-3s,1626,8.138834653460243,0.0
+vinlwkaIW4c_full,same-side,full & IoU<0.2,shift>=5s,911,3.639613550745004,0.06
+vinlwkaIW4c_full,same-side,full & IoU<0.2,local 1-3s,911,1.1703176716866892,0.38
+vinlwkaIW4c_full,mirror,full,shift>=5s,1626,4.279924985767735,0.01
+vinlwkaIW4c_full,mirror,full,local 1-3s,1626,3.5949333953401634,0.0
+vinlwkaIW4c_full,mirror,full & IoU<0.2,shift>=5s,911,6.021943844794244,0.01
+vinlwkaIW4c_full,mirror,full & IoU<0.2,local 1-3s,911,4.692684972505575,0.0
+kMkJpfUGZz8_full,same-side,full,shift>=5s,1728,11.515369450464217,0.0
+kMkJpfUGZz8_full,same-side,full,local 1-3s,1728,2.5113095273195363,0.0
+kMkJpfUGZz8_full,same-side,full & IoU<0.2,shift>=5s,1029,9.727407878042808,0.0
+kMkJpfUGZz8_full,same-side,full & IoU<0.2,local 1-3s,1029,0.2529820366882589,0.34
+kMkJpfUGZz8_full,mirror,full,shift>=5s,1728,4.5755827648535785,0.05
+kMkJpfUGZz8_full,mirror,full,local 1-3s,1728,-2.2299022684567795,1.0
+kMkJpfUGZz8_full,mirror,full & IoU<0.2,shift>=5s,1029,7.3977789154720455,0.0
+kMkJpfUGZz8_full,mirror,full & IoU<0.2,local 1-3s,1029,0.6846180462200522,0.06
+uS1JQ-LY8Fs_full,same-side,full,shift>=5s,3868,2.510815474204742,0.0
+uS1JQ-LY8Fs_full,same-side,full,local 1-3s,3868,0.5602988610267481,0.0
+uS1JQ-LY8Fs_full,same-side,full & IoU<0.2,shift>=5s,3451,1.95090277342101,0.01
+uS1JQ-LY8Fs_full,same-side,full & IoU<0.2,local 1-3s,3451,0.16302558958345692,0.49
+uS1JQ-LY8Fs_full,mirror,full,shift>=5s,3868,0.6085498534064868,0.32
+uS1JQ-LY8Fs_full,mirror,full,local 1-3s,3868,-0.523082621767534,1.0
+uS1JQ-LY8Fs_full,mirror,full & IoU<0.2,shift>=5s,3451,0.8790845593920942,0.21
+uS1JQ-LY8Fs_full,mirror,full & IoU<0.2,local 1-3s,3451,-0.5511218917310359,1.0
