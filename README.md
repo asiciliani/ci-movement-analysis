@@ -5,8 +5,14 @@ Science (UBA / FCEN - Exactas). The pipeline extracts 2-D skeletons from ordinar
 tracks the two dancers through contact and occlusion, and derives calibrated, noise-aware
 kinematic and smoothness features together with within-dyad statistical tests.
 
-> Research question: how does interpersonal movement coordination emerge and change during
-> Contact Improvisation, and which of its qualities can be characterised from video?
+> Research question: which qualities of Contact Improvisation can be characterised from ordinary
+> video, without sensors or new recordings: how a duet touches, shares weight, uses the floor and moves
+> between these states, and how that differs from other partner dances?
+
+Since 8 Oct 2026 the main line is **descriptive** (contact, weight sharing, floor, state grammar, CI vs
+salsa), measured on public footage and checked against datasets with a known answer. The original
+coupling question ("do the dancers listen to each other without touching?") is kept as a Phase-2 design
+that needs new recordings.
 
 This repository was audited and restructured in October 2026. `AUDIT.md` lists what was wrong
 before and what changed; `METHODS.md` is the normative definition of every feature.
@@ -25,6 +31,23 @@ video ──► run_tracking.py ──► <stem>_tracks.npz          (YOLOv8-pos
        ──► analyze_coupling.py ──► outputs/coupling/coupling_report.md            (coupling vs a battery of nulls)
        ──► analyze_claims.py ──► outputs/claims/claims_report.md                  (smoothness / within-video tests)
 ```
+
+Descriptive branch (on the pair-verified duets, full-length versions preferred):
+
+```
+describe_duets.py      contact + body regions, weight sharing, levels, descents, 1-s pose vocabulary  -> outputs/describe/
+state_grammar.py       per-frame duet state (apart/near/contact/weight share/floor), transitions      -> outputs/grammar/
+hand_check_contacts.py check sheets for contact releases; verdicts behind the SEP_BL release rule      -> outputs/grammar/contact_check*.csv
+compare_genres.py      the same descriptors on CI vs salsa (CoMPAS3D renders, known answer)           -> outputs/compare_genres/
+rolling_3d.py          rolling vs gripping on salsa mocap markers (region yes, travel no)             -> outputs/rolling_3d/
+rolling_mesh.py        rolling vs gripping on SMPL-X body meshes (needs the licensed model files)     -> outputs/rolling_mesh/
+demo_video.py          one-minute demo: duet with skeletons + live panel of what is measured          -> outputs/demo/ (not in git)
+```
+
+External ground truth: `analyze_external_bigand.py` (Bigand et al. 2024, free dance, known coupling),
+`analyze_external_compas.py` (CoMPAS3D salsa, known roles). Data are downloaded by the scripts in
+`data_external/*/` (not redistributed; the SMPL-X model files need a free academic licence from
+smpl-x.is.tue.mpg.de).
 
 `run_analysis.py` chains stage 1 + 2 and renders the dashboard, trajectory plot, annotated
 video and HTML report (same CLI as before). `run_group_analysis.py` builds a proximity graph
@@ -80,7 +103,13 @@ tests/               synthetic tests for gap handling, noise floor, scale invari
 
 ## Status of the scientific claims
 
-None of the hypotheses is "proven" by this repository. On public footage the coupling question is
+Descriptive results (AUDIT 38-44): on 10 pair-verified duets (20.7 min) contact, weight sharing, levels
+and the state grammar pass checks by eye and the salsa known-answer check; contact releases were
+hand-checked (out-of-sample 71 % real after the release rule). Rolling vs gripping is not measurable from
+2-D skeletons, nor from sparse 3-D markers; the mesh version is being validated on salsa. The pose
+vocabulary does not yet identify duets ("signature" at chance).
+
+Coupling: none of the hypotheses is "proven" by this repository. On public footage the coupling question is
 not decidable (6 right-pair clips, almost all in contact; AUDIT 24-31); it is answered by the Phase-2 design with a
 solo-solo block as a nuisance-matched null (`DATA_COLLECTION_PROTOCOL.md`). Current results:
 `outputs/coupling/coupling_report.md`, `outputs/claims/claims_report.md`, discussed in `AUDIT.md`.
