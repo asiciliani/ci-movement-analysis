@@ -6,6 +6,9 @@ bystander on the floor), the detections of those people are removed before assig
   --exclude-ids 7,19          BoT-SORT track ids to drop (read them off the --id-sheet)
   --auto-static 0.12          also drop tracklets >= 3 s long whose median camera-compensated
                               centroid speed is below this many bbox heights per second
+  --spread-exclusion 3        also drop detections of other (short) tracklets whose box overlaps an excluded
+                              detection (IoU > 0.4) within this many seconds: a spectator re-detected under a new
+                              id for a few frames; for static or slowly moving cameras
   --drop-edge-partials        drop detections cut by the bottom of the frame with no visible hips: heads and
                               shoulders of spectators sitting in front of the camera
   --id-sheet                  only write <stem>_ids_sheet.jpg (all detections with their ids) and exit
@@ -62,7 +65,7 @@ def id_sheet(video: str, d: pd.DataFrame, out: Path, n: int = 12):
     cv2.imwrite(str(out), np.vstack(rows), [cv2.IMWRITE_JPEG_QUALITY, 80])
 
 
-def main(stem, video, exclude_ids=(), auto_static=None, sheet_only=False, appearance_weight=0.5, drop_edge_partials=False):
+def main(stem, video, exclude_ids=(), auto_static=None, sheet_only=False, appearance_weight=0.5, drop_edge_partials=False, spread_s=0.0):
     out = Path(f"outputs/{stem}"); d = pd.read_csv(out / f"{stem}_detections.csv")
     if sheet_only:
         id_sheet(video, d, out / f"{stem}_ids_sheet.jpg"); print(f"wrote {out / f'{stem}_ids_sheet.jpg'}"); return
@@ -71,7 +74,23 @@ def main(stem, video, exclude_ids=(), auto_static=None, sheet_only=False, appear
     act = tracklet_activity(d, old.camera_M, fps)
     if auto_static is not None:
         drop |= set(act[(act.seconds >= 3) & (act.activity < auto_static)].track_id.astype(int))
-    d = d[~d.track_id.isin(drop)]
+    n_spread = 0
+    if spread_s and drop:
+        ex = d[d.track_id.isin(drop)]; keep = d[~d.track_id.isin(drop)]; w = int(spread_s * fps)
+        exb = {f: g[["x1", "y1", "x2", "y2"]].to_numpy(float) for f, g in ex.groupby("frame")}
+        frames = np.array(sorted(exb))
+        bad = np.zeros(len(keep), bool)
+        for k, r in enumerate(keep[["frame", "x1", "y1", "x2", "y2"]].to_numpy(float)):
+            lo, hi = np.searchsorted(frames, [r[0] - w, r[0] + w + 1])
+            for f in frames[lo:hi]:
+                B = exb[f]; ix = np.clip(np.minimum(r[3], B[:, 2]) - np.maximum(r[1], B[:, 0]), 0, None)
+                iy = np.clip(np.minimum(r[4], B[:, 3]) - np.maximum(r[2], B[:, 1]), 0, None); inter = ix * iy
+                iou = inter / ((r[3] - r[1]) * (r[4] - r[2]) + (B[:, 2] - B[:, 0]) * (B[:, 3] - B[:, 1]) - inter)
+                if (iou > 0.4).any():
+                    bad[k] = True; break
+        n_spread = int(bad.sum()); d = keep[~bad]
+    else:
+        d = d[~d.track_id.isin(drop)]
     n_edge = 0
     if drop_edge_partials:
         edge = (d.y2 >= 0.975 * old.meta["height"]) & (d.kp11_c < 0.3) & (d.kp12_c < 0.3)
@@ -94,9 +113,9 @@ def main(stem, video, exclude_ids=(), auto_static=None, sheet_only=False, appear
                 tid[i, j] = -1 if det.track_id is None else det.track_id; conf[i, j] = det.bbox_conf
     cap.release()
     shutil.copy(out / f"{stem}_tracks.npz", out / f"{stem}_tracks_pre_retrack.npz")
-    meta = dict(old.meta); meta["retrack"] = {"excluded_track_ids": sorted(drop), "auto_static": auto_static, "edge_partials_dropped": n_edge}
+    meta = dict(old.meta); meta["retrack"] = {"excluded_track_ids": sorted(drop), "auto_static": auto_static, "edge_partials_dropped": n_edge, "spread_dropped": n_spread}
     save_tracks(out / f"{stem}_tracks.npz", Tracks(kpts, bbox, present, tid, conf, old.camera_motion, meta, camera_M=old.camera_M))
-    rep = {"excluded_track_ids": sorted(drop), "auto_static": auto_static, "edge_partials_dropped": n_edge, **tracker.quality_report()}
+    rep = {"excluded_track_ids": sorted(drop), "auto_static": auto_static, "edge_partials_dropped": n_edge, "spread_dropped": n_spread, **tracker.quality_report()}
     json.dump(rep, open(out / f"{stem}_retrack.json", "w"), indent=2, default=float)
     print(json.dumps({k: rep[k] for k in rep if k in ("excluded_track_ids", "detected_fraction_A", "detected_fraction_B", "suspected_identity_swaps")}, default=float))
 
@@ -106,6 +125,6 @@ if __name__ == "__main__":
     ap.add_argument("--stem", required=True); ap.add_argument("--video", required=True)
     ap.add_argument("--exclude-ids", default=""); ap.add_argument("--auto-static", type=float, default=None)
     ap.add_argument("--id-sheet", action="store_true"); ap.add_argument("--appearance-weight", type=float, default=0.5)
-    ap.add_argument("--drop-edge-partials", action="store_true")
+    ap.add_argument("--drop-edge-partials", action="store_true"); ap.add_argument("--spread-exclusion", type=float, default=0.0)
     a = ap.parse_args()
-    main(a.stem, a.video, [x for x in a.exclude_ids.split(",") if x], a.auto_static, a.id_sheet, a.appearance_weight, a.drop_edge_partials)
+    main(a.stem, a.video, [x for x in a.exclude_ids.split(",") if x], a.auto_static, a.id_sheet, a.appearance_weight, a.drop_edge_partials, a.spread_exclusion)
