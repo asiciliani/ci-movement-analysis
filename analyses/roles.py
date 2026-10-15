@@ -278,7 +278,7 @@ def salsa2d():
     from src.io.tracks import load_tracks
     from src.analysis import describe as D
     rows, idrows = [], []
-    for p in sorted(Path("outputs").glob("salsa_*/salsa_*_tracks.npz")):
+    for p in sorted(q for q in Path("outputs").glob("salsa_*/salsa_*_tracks.npz") if q.parent.name == q.name.replace("_tracks.npz", "")):
         seq = p.parent.name.replace("salsa_", ""); pair = seq.split("_")[0]; d = COMPAS / "trans" / pair / seq
         tr = load_tracks(p); fps = float(tr.meta["fps"])
         tl, tf = np.load(d / f"{seq}_leader.npz")["trans"], np.load(d / f"{seq}_follower.npz")["trans"]

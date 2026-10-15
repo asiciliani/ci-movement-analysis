@@ -1,33 +1,33 @@
-# CI vs salsa with the same video pipeline (12 CI clips, 3 salsa clips)
+# CI vs salsa with the same video pipeline (11 CI clips, 3 salsa clips)
 
 Medians per genre (each clip one observation). Salsa = CoMPAS3D renders (CC BY-NC 4.0), first 60 s.
 
 |                      |    CI |   salsa |   mann_whitney_p |
 |:---------------------|------:|--------:|-----------------:|
-| contact_frac         | 0.637 |   0.744 |           0.233  |
-| weight_share_per_min | 3.223 |   0     |           0.0526 |
-| frac_floor           | 0.107 |   0     |           0.0331 |
-| frac_standing        | 0.71  |   0.979 |           0.0484 |
-| hand_hand_share      | 0.128 |   0.158 |           0.633  |
-| torso_share          | 0.403 |   0.441 |           0.1802 |
-| roll_share           | 0.429 |   0.6   |           0.0501 |
-| hold_share           | 0     |   0     |           0.4898 |
+| contact_frac         | 0.609 |   0.801 |           0.1264 |
+| weight_share_per_min | 3.751 |   0     |           0.0286 |
+| frac_floor           | 0.206 |   0     |           0.0123 |
+| frac_standing        | 0.584 |   0.966 |           0.0055 |
+| hand_hand_share      | 0.113 |   0.115 |           0.7692 |
+| torso_share          | 0.455 |   0.49  |           0.456  |
+| roll_share           | 0.564 |   0.8   |           0.0125 |
+| hold_share           | 0     |   0     |           1      |
 
 
 ## Contact regions (pooled share of contact frames)
 
 |                    |    CI |   salsa |
 |:-------------------|------:|--------:|
-| ('arm', 'hand')    | 0.144 |   0.184 |
-| ('hand', 'hand')   | 0.138 |   0.158 |
-| ('arm', 'torso')   | 0.133 |   0.147 |
-| ('hand', 'torso')  | 0.124 |   0.219 |
-| ('torso', 'torso') | 0.082 |   0.054 |
-| ('arm', 'arm')     | 0.068 |   0.082 |
-| ('foot', 'foot')   | 0.067 |   0.006 |
-| ('leg', 'torso')   | 0.042 |   0.01  |
-| ('foot', 'leg')    | 0.031 |   0.01  |
-| ('head', 'head')   | 0.029 |   0.003 |
+| ('arm', 'torso')   | 0.122 |   0.16  |
+| ('hand', 'torso')  | 0.115 |   0.211 |
+| ('hand', 'hand')   | 0.115 |   0.135 |
+| ('torso', 'torso') | 0.109 |   0.066 |
+| ('arm', 'hand')    | 0.1   |   0.143 |
+| ('leg', 'torso')   | 0.057 |   0.011 |
+| ('foot', 'foot')   | 0.055 |   0.01  |
+| ('arm', 'arm')     | 0.054 |   0.079 |
+| ('foot', 'leg')    | 0.044 |   0.013 |
+| ('leg', 'leg')     | 0.032 |   0.01  |
 
 
 Known-answer expectations for salsa: hand-hand dominant, standing ~100 %, weight sharing ~0, HOLD > ROLL.

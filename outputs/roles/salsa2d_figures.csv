@@ -1,74 +1,74 @@
 seq,fig,start_s,label,track0_is_leader,truth,tracked,corrected
-Pair1_song1_take1,1,0.96,"Right turn for the follower, normal open hold",0.5,follower,track0,follower
-Pair1_song1_take1,2,3.316,Change of Directions (Swap Position),0.2028985507246377,follower,track0,follower
-Pair1_song1_take1,3,5.69,"Basic step, facing the line of dance",0.5,follower,track1,leader
-Pair1_song1_take1,4,8.24,"Basic step, facing the line of dance",,follower,track1,follower
-Pair1_song1_take1,5,10.83,"Right turn for the leader, right turn for the follower, normal open hold",0.11764705882352941,follower,track1,follower
-Pair1_song1_take1,6,13.37,"Basic step, facing the line of dance",0.23529411764705882,follower,track1,leader
-Pair1_song1_take1,7,15.93,"XBL with normal closed hold, the leader's right to the follower left, hands down",0.6190476190476191,follower,track0,leader
-Pair1_song1_take1,8,18.48,"Right turn for the leader, right turn for the follower, normal open hold, hands change on the back of the leader and then over the follower",0.47619047619047616,follower,track0,follower
-Pair1_song1_take1,9,21.04,"Right hand throw for the follower, crossed hold",0.717391304347826,leader,track1,leader
-Pair1_song1_take1,10,23.436,Double hand throw with normal open hold,0.1111111111111111,leader,track1,follower
+Pair1_song1_take1,1,0.96,"Right turn for the follower, normal open hold",0.8108108108108109,follower,track0,follower
+Pair1_song1_take1,2,3.316,Change of Directions (Swap Position),0.7887323943661971,follower,track1,follower
+Pair1_song1_take1,3,5.69,"Basic step, facing the line of dance",0.8484848484848485,follower,track0,follower
+Pair1_song1_take1,4,8.24,"Basic step, facing the line of dance",,follower,track0,leader
+Pair1_song1_take1,5,10.83,"Right turn for the leader, right turn for the follower, normal open hold",0.8571428571428571,follower,track0,leader
+Pair1_song1_take1,6,13.37,"Basic step, facing the line of dance",0.6285714285714286,follower,track0,follower
+Pair1_song1_take1,7,15.93,"XBL with normal closed hold, the leader's right to the follower left, hands down",0.6590909090909091,follower,track0,follower
+Pair1_song1_take1,8,18.48,"Right turn for the leader, right turn for the follower, normal open hold, hands change on the back of the leader and then over the follower",0.7818181818181819,follower,track1,leader
+Pair1_song1_take1,9,21.04,"Right hand throw for the follower, crossed hold",0.6923076923076923,leader,track0,follower
+Pair1_song1_take1,10,23.436,Double hand throw with normal open hold,0.32,leader,track1,follower
 Pair1_song1_take1,11,26.16,"Basic step, facing the line of dance",,follower,track1,follower
 Pair1_song1_take1,12,28.68,"Right turn for the follower, crossed hold",,follower,track1,follower
-Pair1_song1_take1,13,30.93,"Right turn for the leader, crossed hold",0.7592592592592593,follower,track1,follower
-Pair1_song1_take1,14,33.476,"Left hand throw for the follower, crossed hold",0.975609756097561,follower,track1,follower
-Pair1_song1_take1,15,36.05,"Basic step, facing the line of dance",0.6071428571428571,follower,track1,follower
-Pair1_song1_take1,16,38.516,XBL with a left (inside) turn for the follower,0.6521739130434783,follower,track0,leader
+Pair1_song1_take1,13,30.93,"Right turn for the leader, crossed hold",0.6440677966101694,follower,track1,follower
+Pair1_song1_take1,14,33.476,"Left hand throw for the follower, crossed hold",0.9375,follower,track1,follower
+Pair1_song1_take1,15,36.05,"Basic step, facing the line of dance",0.515625,follower,track1,follower
+Pair1_song1_take1,16,38.516,XBL with a left (inside) turn for the follower,0.7317073170731707,follower,track0,leader
 Pair1_song1_take1,17,41.09,"Basic step, facing the line of dance",1.0,follower,track0,leader
 Pair1_song1_take1,18,43.56,"Side basic step with normal open hold, facing the line of dance",,follower,track0,leader
-Pair1_song1_take1,19,46.15,"Side basic step with normal open hold, facing the line of dance",0.0,leader,track0,leader
-Pair1_song1_take1,20,48.636,"Side basic step with normal open hold, facing the line of dance",0.7714285714285715,follower,track0,leader
+Pair1_song1_take1,19,46.15,"Side basic step with normal open hold, facing the line of dance",0.7333333333333333,leader,track0,leader
+Pair1_song1_take1,20,48.636,"Side basic step with normal open hold, facing the line of dance",0.7111111111111111,follower,track0,leader
 Pair1_song1_take1,21,51.28,"Basic step, facing the line of dance",,follower,track0,leader
 Pair1_song1_take1,22,53.72,"Right turn for the follower, normal open hold",,follower,track0,leader
-Pair1_song1_take1,23,56.24,"Right turn for the leader, normal open hold, hands change behind the leader, change of directions",0.8421052631578947,follower,track0,leader
-Pair1_song1_take1,24,58.716,"Right hand throw for the follower, crossed hold",0.7666666666666667,follower,track1,follower
-Pair2_song2_take1,0,0.0,"Basic step, facing the line of dance",0.6190476190476191,leader,track0,follower
-Pair2_song2_take1,1,1.57,XBL with a right (outside) turn for the follower,0.8382352941176471,leader,track0,leader
+Pair1_song1_take1,23,56.24,"Right turn for the leader, normal open hold, hands change behind the leader, change of directions",0.94,follower,track0,follower
+Pair1_song1_take1,24,58.716,"Right hand throw for the follower, crossed hold",0.8918918918918919,follower,track1,follower
+Pair2_song2_take1,0,0.0,"Basic step, facing the line of dance",0.6764705882352942,leader,track0,follower
+Pair2_song2_take1,1,1.57,XBL with a right (outside) turn for the follower,0.8088235294117647,leader,track0,follower
 Pair2_song2_take1,3,3.87,"XBL with a left (inside) turn for the follower with normal open hold, hands down",1.0,follower,track0,leader
 Pair2_song2_take1,4,6.3,Change of Directions (Swap Position) for the follower with normal open hold,1.0,follower,track0,leader
 Pair2_song2_take1,5,8.75,"XBL with a right (outside) turn for the follower, on the right side of the leader, ends with comb for the follower",1.0,follower,track0,leader
 Pair2_song2_take1,6,11.21,"XBL with a left (inside) turn for the follower, ends with Check on the follower's shoulder by the leader's right hand",1.0,follower,track0,leader
 Pair2_song2_take1,7,13.66,"Right turn for the follower, left turn for the leader, crossed hold",1.0,follower,track1,follower
-Pair2_song2_take1,8,16.11,Left turn for the follower,0.890625,leader,track0,leader
-Pair2_song2_take1,9,18.54,"Right turn for the follower, comb on the follower with the leader's right hand, normal onen hold",0.7068965517241379,leader,track1,follower
+Pair2_song2_take1,8,16.11,Left turn for the follower,1.0,leader,track0,leader
+Pair2_song2_take1,9,18.54,"Right turn for the follower, comb on the follower with the leader's right hand, normal onen hold",1.0,leader,track0,leader
 Pair2_song2_take1,10,20.89,Change of Directions (Swap Position) for the follower with normal open hold ends with open break,1.0,follower,track0,leader
-Pair2_song2_take1,11,23.31,"XBL with a right (outside) turn for the follower, on the right side of the leader, ends with comb for the follower",1.0,follower,track0,leader
-Pair2_song2_take1,12,25.72,Walking around the leader for the follower by  doing Lasso on the follower with the leader's right hand and check on the follower's shoulder,0.953125,follower,track0,follower
-Pair2_song2_take1,13,28.14,"XBL with a left (inside) turn for the follower, facing the same direction with the leader in front",0.6166666666666667,leader,track1,follower
-Pair2_song2_take1,14,30.56,"XBL with a right (outside) turn for the follower, ends with comb for the follower",0.0,follower,track1,leader
-Pair2_song2_take1,15,32.97,"XBL with a left (inside) turn for the follower while changing left hand to right hand for the leader, ends with Check on the follower's shoulder by the leader's left hand",0.20454545454545456,follower,track1,follower
-Pair2_song2_take1,16,35.39,"Right turn for the follower, normal open hold",0.0,leader,track1,follower
-Pair2_song2_take1,17,37.81,"XBL with a left (inside) turn for the follower, both hands hold, change of directions from facing one side perpendicular to the line of dance to another for the leader: to the left side of the of the follower",0.15625,follower,track1,leader
-Pair2_song2_take1,18,40.23,Change of Directions (Swap Position) for the follower with normal open hold ends with open break,0.18055555555555555,follower,track1,leader
-Pair2_song2_take1,19,42.64,"XBL with a right (outside) turn for the follower, ends with comb for the follower",0.0,follower,track1,leader
-Pair2_song2_take1,20,45.06,"Check by holding the follower's both hands (open hands down, Titanic for the lady in a shadow) after XBL with a left (inside) turn for the follower.",0.0,follower,track1,leader
-Pair2_song2_take1,21,47.48,Standard copa,0.028169014084507043,follower,track1,leader
-Pair2_song2_take1,22,49.89,XBL with a right (outside) turn for the follower,0.06976744186046512,follower,track1,leader
-Pair2_song2_take1,23,52.29,XBL with normal closed hold,0.0,follower,track1,leader
-Pair2_song2_take1,24,54.72,"XBL with a right (outside) turn for the follower, facing the same direction on the right side of the leader, ends with hand drop for the follower and late right half-turn for the leader",0.0,follower,track1,leader
-Pair2_song2_take1,25,57.13,Left turn for the follower with single hand throw,0.0,follower,track0,follower
-Pair5_song2_take1,0,0.0,"Basic step, facing the line of dance",0.10638297872340426,leader,track0,leader
-Pair5_song2_take1,1,1.96,XBL with normal open hold ends with break,0.0,follower,track1,leader
-Pair5_song2_take1,2,4.16,Natural top,0.07272727272727272,follower,track0,follower
-Pair5_song2_take1,3,6.52,Natural top followed by Natural Top,0.6153846153846154,follower,track0,follower
-Pair5_song2_take1,4,8.96,Natural top followed by Natural Top,0.4230769230769231,follower,track0,follower
-Pair5_song2_take1,5,11.4,Natural top,0.7352941176470589,follower,track0,leader
-Pair5_song2_take1,6,13.92,XBL with a left (inside) turn for the follower,0.8787878787878788,follower,track0,follower
-Pair5_song2_take1,7,16.2,"Right turn for the follower, crossed hold",0.2127659574468085,follower,track0,follower
-Pair5_song2_take1,8,18.64,"Change of Directions (Swap Position) for the follower with crossed hold, comb on the follower, late right turn for the leader",0.7346938775510204,follower,track0,follower
-Pair5_song2_take1,9,21.08,"Right turn for the follower, right turn for the leader, crossed hold, hands change over the follower and then behind the leader",0.9024390243902439,leader,track1,follower
-Pair5_song2_take1,10,23.52,XBL with a left (inside) turn for the follower with no hands holding the waist of the follower,0.5571428571428572,leader,track0,leader
-Pair5_song2_take1,11,25.92,XBL with normal open hold ends with break,0.7647058823529411,follower,track1,leader
-Pair5_song2_take1,12,28.36,"XBL with a right (outside) turn for the follower on the right side of the leader, both hands hold, ends with late left turn for the leader",0.8918918918918919,follower,track1,follower
-Pair5_song2_take1,13,30.8,XBL with a left (inside) turn for the follower with double hand throw,1.0,follower,track0,leader
-Pair5_song2_take1,14,35.64,XBL with normal open hold ends with break,0.3333333333333333,follower,track1,leader
-Pair5_song2_take1,15,38.12,"Right turn for the follower, crossed hold",0.14705882352941177,follower,track1,leader
-Pair5_song2_take1,16,40.52,Walking back in a circle with a partner in a right sombrero hold,0.15789473684210525,follower,track1,leader
-Pair5_song2_take1,17,42.92,Walking back in a circle with a partner in a right sombrero hold,0.41509433962264153,leader,track0,leader
-Pair5_song2_take1,18,45.32,Walking forward in a circle with a partner in a right sombrero hold,0.4883720930232558,follower,track0,leader
-Pair5_song2_take1,19,47.72,XBL with a right (outside) turn for the follower,0.5081967213114754,follower,track0,leader
-Pair5_song2_take1,20,50.06,"XBL with a left (inside) turn for the follower with crossed hold, ends with left hand throw for the follower and a right half-turn for the follower",0.8035714285714286,follower,track0,leader
-Pair5_song2_take1,21,52.58,"XBL with a left (inside) turn for the follower, late right turn for the leader",0.3076923076923077,follower,track0,follower
-Pair5_song2_take1,22,54.94,XBL with a left (inside) turn for the follower with no hands holding the waist of the follower,0.9130434782608695,follower,track0,leader
-Pair5_song2_take1,23,57.3,"XBL with a left (inside) turn for the follower with no hands holding the waist of the follower, ends with late half right turn for the leader still holding the waist of the follower",0.5,follower,track1,leader
+Pair2_song2_take1,11,23.31,"XBL with a right (outside) turn for the follower, on the right side of the leader, ends with comb for the follower",1.0,follower,track1,follower
+Pair2_song2_take1,12,25.72,Walking around the leader for the follower by  doing Lasso on the follower with the leader's right hand and check on the follower's shoulder,1.0,follower,track0,leader
+Pair2_song2_take1,13,28.14,"XBL with a left (inside) turn for the follower, facing the same direction with the leader in front",0.6811594202898551,leader,track0,leader
+Pair2_song2_take1,14,30.56,"XBL with a right (outside) turn for the follower, ends with comb for the follower",0.984375,follower,track0,leader
+Pair2_song2_take1,15,32.97,"XBL with a left (inside) turn for the follower while changing left hand to right hand for the leader, ends with Check on the follower's shoulder by the leader's left hand",0.9111111111111111,follower,track0,follower
+Pair2_song2_take1,16,35.39,"Right turn for the follower, normal open hold",1.0,leader,track0,follower
+Pair2_song2_take1,17,37.81,"XBL with a left (inside) turn for the follower, both hands hold, change of directions from facing one side perpendicular to the line of dance to another for the leader: to the left side of the of the follower",0.835820895522388,follower,track0,leader
+Pair2_song2_take1,18,40.23,Change of Directions (Swap Position) for the follower with normal open hold ends with open break,0.9041095890410958,follower,track0,leader
+Pair2_song2_take1,19,42.64,"XBL with a right (outside) turn for the follower, ends with comb for the follower",1.0,follower,track1,follower
+Pair2_song2_take1,20,45.06,"Check by holding the follower's both hands (open hands down, Titanic for the lady in a shadow) after XBL with a left (inside) turn for the follower.",1.0,follower,track0,leader
+Pair2_song2_take1,21,47.48,Standard copa,0.9861111111111112,follower,track0,leader
+Pair2_song2_take1,22,49.89,XBL with a right (outside) turn for the follower,1.0,follower,track0,leader
+Pair2_song2_take1,23,52.29,XBL with normal closed hold,1.0,follower,track0,leader
+Pair2_song2_take1,24,54.72,"XBL with a right (outside) turn for the follower, facing the same direction on the right side of the leader, ends with hand drop for the follower and late right half-turn for the leader",1.0,follower,track0,leader
+Pair2_song2_take1,25,57.13,Left turn for the follower with single hand throw,0.07894736842105263,follower,track0,leader
+Pair5_song2_take1,0,0.0,"Basic step, facing the line of dance",0.10344827586206896,leader,track1,leader
+Pair5_song2_take1,1,1.96,XBL with normal open hold ends with break,0.045454545454545456,follower,track1,leader
+Pair5_song2_take1,2,4.16,Natural top,0.11666666666666667,follower,track0,follower
+Pair5_song2_take1,3,6.52,Natural top followed by Natural Top,0.5483870967741935,follower,track0,follower
+Pair5_song2_take1,4,8.96,Natural top followed by Natural Top,0.5,follower,track0,leader
+Pair5_song2_take1,5,11.4,Natural top,0.7323943661971831,follower,track0,leader
+Pair5_song2_take1,6,13.92,XBL with a left (inside) turn for the follower,1.0,follower,track0,leader
+Pair5_song2_take1,7,16.2,"Right turn for the follower, crossed hold",0.8888888888888888,follower,track0,leader
+Pair5_song2_take1,8,18.64,"Change of Directions (Swap Position) for the follower with crossed hold, comb on the follower, late right turn for the leader",1.0,follower,track0,leader
+Pair5_song2_take1,9,21.08,"Right turn for the follower, right turn for the leader, crossed hold, hands change over the follower and then behind the leader",0.4423076923076923,leader,track0,leader
+Pair5_song2_take1,10,23.52,XBL with a left (inside) turn for the follower with no hands holding the waist of the follower,0.16901408450704225,leader,track1,leader
+Pair5_song2_take1,11,25.92,XBL with normal open hold ends with break,0.7971014492753623,follower,track1,follower
+Pair5_song2_take1,12,28.36,"XBL with a right (outside) turn for the follower on the right side of the leader, both hands hold, ends with late left turn for the leader",0.9459459459459459,follower,track1,follower
+Pair5_song2_take1,13,30.8,XBL with a left (inside) turn for the follower with double hand throw,1.0,follower,track1,follower
+Pair5_song2_take1,14,35.64,XBL with normal open hold ends with break,0.7142857142857143,follower,track0,leader
+Pair5_song2_take1,15,38.12,"Right turn for the follower, crossed hold",0.9305555555555556,follower,track0,leader
+Pair5_song2_take1,16,40.52,Walking back in a circle with a partner in a right sombrero hold,0.5625,follower,track0,leader
+Pair5_song2_take1,17,42.92,Walking back in a circle with a partner in a right sombrero hold,0.42857142857142855,leader,track0,leader
+Pair5_song2_take1,18,45.32,Walking forward in a circle with a partner in a right sombrero hold,0.49122807017543857,follower,track0,leader
+Pair5_song2_take1,19,47.72,XBL with a right (outside) turn for the follower,0.015151515151515152,follower,track1,leader
+Pair5_song2_take1,20,50.06,"XBL with a left (inside) turn for the follower with crossed hold, ends with left hand throw for the follower and a right half-turn for the follower",0.24242424242424243,follower,track1,leader
+Pair5_song2_take1,21,52.58,"XBL with a left (inside) turn for the follower, late right turn for the leader",0.671875,follower,track1,follower
+Pair5_song2_take1,22,54.94,XBL with a left (inside) turn for the follower with no hands holding the waist of the follower,0.11764705882352941,follower,track1,leader
+Pair5_song2_take1,23,57.3,"XBL with a left (inside) turn for the follower with no hands holding the waist of the follower, ends with late half right turn for the leader still holding the waist of the follower",0.7,follower,track0,leader

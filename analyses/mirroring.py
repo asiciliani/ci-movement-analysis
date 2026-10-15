@@ -176,7 +176,7 @@ def analyse(units, genre, cols, min_feats, label):
 
 def salsa_render_units():
     us = []
-    for p in sorted(Path("outputs").glob("salsa_*/salsa_*_tracks.npz")):
+    for p in sorted(q for q in Path("outputs").glob("salsa_*/salsa_*_tracks.npz") if q.parent.name == q.name.replace("_tracks.npz", "")):
         tr = load_tracks(p); fps = float(tr.meta["fps"])
         kA, kB = tr.kpts[:, 0].astype(float), tr.kpts[:, 1].astype(float)
         FA, FB = feats2d(kA, fps), feats2d(kB, fps); FA[~tr.present[:, 0]] = np.nan; FB[~tr.present[:, 1]] = np.nan
@@ -396,7 +396,7 @@ def segments():
     units = []
     for v in pd.read_csv("outputs/grammar/per_clip.csv").video.tolist():
         tr = load_tracks(f"outputs/{v}/{v}_tracks.npz"); units.append(("CI 2-D", v, tr))
-    for p in sorted(Path("outputs").glob("salsa_*/salsa_*_tracks.npz")):
+    for p in sorted(q for q in Path("outputs").glob("salsa_*/salsa_*_tracks.npz") if q.parent.name == q.name.replace("_tracks.npz", "")):
         units.append(("salsa 2-D render", p.parent.name, load_tracks(p)))
     data = []
     for g, v, tr in units:

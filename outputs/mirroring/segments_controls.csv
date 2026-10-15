@@ -1,81 +1,89 @@
 unit,mode,frames,null,n,excess_deg,p
-zQRF2sLK1vY,same-side,full,shift>=5s,980,13.627690742785862,0.0
-zQRF2sLK1vY,same-side,full,local 1-3s,980,9.769403174152725,0.0
-zQRF2sLK1vY,same-side,full & IoU<0.2,shift>=5s,617,6.545477290923003,0.03
-zQRF2sLK1vY,same-side,full & IoU<0.2,local 1-3s,617,6.289926956485651,0.0
-zQRF2sLK1vY,mirror,full,shift>=5s,980,4.343737729524904,0.06
-zQRF2sLK1vY,mirror,full,local 1-3s,980,1.254950690793386,0.32
-zQRF2sLK1vY,mirror,full & IoU<0.2,shift>=5s,617,1.7154693935993777,0.35
-zQRF2sLK1vY,mirror,full & IoU<0.2,local 1-3s,617,1.878105388869031,0.37
-kxztAr2tQmE_full,same-side,full,shift>=5s,513,13.522855958785449,0.0
-kxztAr2tQmE_full,same-side,full,local 1-3s,513,5.601675178196903,0.0
-kxztAr2tQmE_full,same-side,full & IoU<0.2,shift>=5s,256,10.188586623994691,0.0
-kxztAr2tQmE_full,same-side,full & IoU<0.2,local 1-3s,256,3.037535672235631,0.0
-kxztAr2tQmE_full,mirror,full,shift>=5s,513,4.348327625387011,0.1
-kxztAr2tQmE_full,mirror,full,local 1-3s,513,0.8065808113882831,0.48
-kxztAr2tQmE_full,mirror,full & IoU<0.2,shift>=5s,256,7.254812322579578,0.07
-kxztAr2tQmE_full,mirror,full & IoU<0.2,local 1-3s,256,1.8447678374523555,0.48
-swmrAJkYrlY_full,same-side,full,shift>=5s,1859,6.955309915379226,0.0
-swmrAJkYrlY_full,same-side,full,local 1-3s,1859,4.235736665675768,0.0
-swmrAJkYrlY_full,same-side,full & IoU<0.2,shift>=5s,1408,4.890734346677014,0.0
-swmrAJkYrlY_full,same-side,full & IoU<0.2,local 1-3s,1408,2.098525425441249,0.0
-swmrAJkYrlY_full,mirror,full,shift>=5s,1859,3.467764088556116,0.0
-swmrAJkYrlY_full,mirror,full,local 1-3s,1859,1.1186664783627691,0.17
-swmrAJkYrlY_full,mirror,full & IoU<0.2,shift>=5s,1408,5.656363401972323,0.0
-swmrAJkYrlY_full,mirror,full & IoU<0.2,local 1-3s,1408,2.6134828922390714,0.0
-hJQgFDsAms4_full,same-side,full,shift>=5s,1566,16.456388749339286,0.0
-hJQgFDsAms4_full,same-side,full,local 1-3s,1566,5.041916753758798,0.0
-hJQgFDsAms4_full,same-side,full & IoU<0.2,shift>=5s,468,8.546457096959127,0.09
-hJQgFDsAms4_full,same-side,full & IoU<0.2,local 1-3s,468,-2.276407140107409,0.94
-hJQgFDsAms4_full,mirror,full,shift>=5s,1566,6.711248414742407,0.03
-hJQgFDsAms4_full,mirror,full,local 1-3s,1566,-5.545207791463348,1.0
-hJQgFDsAms4_full,mirror,full & IoU<0.2,shift>=5s,468,13.779498464318198,0.0
-hJQgFDsAms4_full,mirror,full & IoU<0.2,local 1-3s,468,-2.5960790063452777,0.86
-iOEZ3i9rgYM_full,same-side,full,shift>=5s,1909,11.31683010554061,0.0
-iOEZ3i9rgYM_full,same-side,full,local 1-3s,1909,4.5462820218586195,0.0
-iOEZ3i9rgYM_full,same-side,full & IoU<0.2,shift>=5s,710,4.384605685397773,0.11
-iOEZ3i9rgYM_full,same-side,full & IoU<0.2,local 1-3s,710,-1.609150243443274,0.87
-iOEZ3i9rgYM_full,mirror,full,shift>=5s,1909,4.944719182930729,0.03
-iOEZ3i9rgYM_full,mirror,full,local 1-3s,1909,-0.6140305294194732,1.0
-iOEZ3i9rgYM_full,mirror,full & IoU<0.2,shift>=5s,710,11.623499128008646,0.0
-iOEZ3i9rgYM_full,mirror,full & IoU<0.2,local 1-3s,710,2.848084852354148,0.0
-dGPRMNAECKM_full,same-side,full,shift>=5s,754,17.770980689106764,0.0
-dGPRMNAECKM_full,same-side,full,local 1-3s,754,9.029902078769688,0.0
-dGPRMNAECKM_full,same-side,full & IoU<0.2,shift>=5s,296,8.206076028085356,0.11
-dGPRMNAECKM_full,same-side,full & IoU<0.2,local 1-3s,296,0.12476975427894388,0.53
-dGPRMNAECKM_full,mirror,full,shift>=5s,754,11.80270424974023,0.0
-dGPRMNAECKM_full,mirror,full,local 1-3s,754,2.3876568576654194,0.09
-dGPRMNAECKM_full,mirror,full & IoU<0.2,shift>=5s,296,20.17546629463076,0.0
-dGPRMNAECKM_full,mirror,full & IoU<0.2,local 1-3s,296,8.866569272166302,0.0
-Rc9vIJt00vs_full,same-side,full,shift>=5s,1070,19.34548978388093,0.0
-Rc9vIJt00vs_full,same-side,full,local 1-3s,1070,8.12168378795289,0.0
-Rc9vIJt00vs_full,same-side,full & IoU<0.2,shift>=5s,479,17.697729436428613,0.0
-Rc9vIJt00vs_full,same-side,full & IoU<0.2,local 1-3s,479,1.0275194467909792,0.02
-Rc9vIJt00vs_full,mirror,full,shift>=5s,1070,5.0170100633539505,0.1
-Rc9vIJt00vs_full,mirror,full,local 1-3s,1070,-5.069013986515564,1.0
-Rc9vIJt00vs_full,mirror,full & IoU<0.2,shift>=5s,479,11.34378196769703,0.04
-Rc9vIJt00vs_full,mirror,full & IoU<0.2,local 1-3s,479,-3.025906400355396,1.0
-vinlwkaIW4c_full,same-side,full,shift>=5s,1626,10.799095404575972,0.0
-vinlwkaIW4c_full,same-side,full,local 1-3s,1626,8.138834653460243,0.0
-vinlwkaIW4c_full,same-side,full & IoU<0.2,shift>=5s,911,3.639613550745004,0.06
-vinlwkaIW4c_full,same-side,full & IoU<0.2,local 1-3s,911,1.1703176716866892,0.38
-vinlwkaIW4c_full,mirror,full,shift>=5s,1626,4.279924985767735,0.01
-vinlwkaIW4c_full,mirror,full,local 1-3s,1626,3.5949333953401634,0.0
-vinlwkaIW4c_full,mirror,full & IoU<0.2,shift>=5s,911,6.021943844794244,0.01
-vinlwkaIW4c_full,mirror,full & IoU<0.2,local 1-3s,911,4.692684972505575,0.0
-kMkJpfUGZz8_full,same-side,full,shift>=5s,1728,11.515369450464217,0.0
-kMkJpfUGZz8_full,same-side,full,local 1-3s,1728,2.5113095273195363,0.0
-kMkJpfUGZz8_full,same-side,full & IoU<0.2,shift>=5s,1029,9.727407878042808,0.0
-kMkJpfUGZz8_full,same-side,full & IoU<0.2,local 1-3s,1029,0.2529820366882589,0.34
-kMkJpfUGZz8_full,mirror,full,shift>=5s,1728,4.5755827648535785,0.05
-kMkJpfUGZz8_full,mirror,full,local 1-3s,1728,-2.2299022684567795,1.0
-kMkJpfUGZz8_full,mirror,full & IoU<0.2,shift>=5s,1029,7.3977789154720455,0.0
-kMkJpfUGZz8_full,mirror,full & IoU<0.2,local 1-3s,1029,0.6846180462200522,0.06
-uS1JQ-LY8Fs_full,same-side,full,shift>=5s,3868,2.510815474204742,0.0
-uS1JQ-LY8Fs_full,same-side,full,local 1-3s,3868,0.5602988610267481,0.0
-uS1JQ-LY8Fs_full,same-side,full & IoU<0.2,shift>=5s,3451,1.95090277342101,0.01
-uS1JQ-LY8Fs_full,same-side,full & IoU<0.2,local 1-3s,3451,0.16302558958345692,0.49
-uS1JQ-LY8Fs_full,mirror,full,shift>=5s,3868,0.6085498534064868,0.32
-uS1JQ-LY8Fs_full,mirror,full,local 1-3s,3868,-0.523082621767534,1.0
-uS1JQ-LY8Fs_full,mirror,full & IoU<0.2,shift>=5s,3451,0.8790845593920942,0.21
-uS1JQ-LY8Fs_full,mirror,full & IoU<0.2,local 1-3s,3451,-0.5511218917310359,1.0
+zQRF2sLK1vY,same-side,full,shift>=5s,877,9.91018320261221,0.0
+zQRF2sLK1vY,same-side,full,local 1-3s,877,6.699012274061339,0.0
+zQRF2sLK1vY,same-side,full & IoU<0.2,shift>=5s,618,6.928970471841666,0.11
+zQRF2sLK1vY,same-side,full & IoU<0.2,local 1-3s,618,3.9792510177484033,0.08
+zQRF2sLK1vY,mirror,full,shift>=5s,877,3.116070776223772,0.14
+zQRF2sLK1vY,mirror,full,local 1-3s,877,2.835774284365648,0.18
+zQRF2sLK1vY,mirror,full & IoU<0.2,shift>=5s,618,2.1371263101003706,0.27
+zQRF2sLK1vY,mirror,full & IoU<0.2,local 1-3s,618,2.220200727117401,0.5
+kxztAr2tQmE_full,same-side,full,shift>=5s,485,10.914325526467362,0.0
+kxztAr2tQmE_full,same-side,full,local 1-3s,485,5.6174225183465545,0.0
+kxztAr2tQmE_full,same-side,full & IoU<0.2,shift>=5s,212,13.866201272431237,0.0
+kxztAr2tQmE_full,same-side,full & IoU<0.2,local 1-3s,212,2.144155227279402,0.36
+kxztAr2tQmE_full,mirror,full,shift>=5s,485,0.5452008157995678,0.45
+kxztAr2tQmE_full,mirror,full,local 1-3s,485,-2.88348896583787,0.91
+kxztAr2tQmE_full,mirror,full & IoU<0.2,shift>=5s,212,5.430726671735286,0.23
+kxztAr2tQmE_full,mirror,full & IoU<0.2,local 1-3s,212,-3.576815433043599,0.71
+swmrAJkYrlY_full,same-side,full,shift>=5s,887,8.186601500685569,0.0
+swmrAJkYrlY_full,same-side,full,local 1-3s,887,7.124530956381459,0.0
+swmrAJkYrlY_full,same-side,full & IoU<0.2,shift>=5s,638,7.992009291010447,0.0
+swmrAJkYrlY_full,same-side,full & IoU<0.2,local 1-3s,638,5.520059709902071,0.0
+swmrAJkYrlY_full,mirror,full,shift>=5s,887,3.8607867193443823,0.09
+swmrAJkYrlY_full,mirror,full,local 1-3s,887,2.583662846772409,0.01
+swmrAJkYrlY_full,mirror,full & IoU<0.2,shift>=5s,638,8.791772346858963,0.0
+swmrAJkYrlY_full,mirror,full & IoU<0.2,local 1-3s,638,5.281276425259062,0.0
+hJQgFDsAms4_full,same-side,full,shift>=5s,2279,10.477150030988312,0.0
+hJQgFDsAms4_full,same-side,full,local 1-3s,2279,3.304124217686038,0.0
+hJQgFDsAms4_full,same-side,full & IoU<0.2,shift>=5s,1037,2.5893393232670903,0.3
+hJQgFDsAms4_full,same-side,full & IoU<0.2,local 1-3s,1037,-3.753952361281648,1.0
+hJQgFDsAms4_full,mirror,full,shift>=5s,2279,7.5101077042718245,0.05
+hJQgFDsAms4_full,mirror,full,local 1-3s,2279,-1.815846754348918,1.0
+hJQgFDsAms4_full,mirror,full & IoU<0.2,shift>=5s,1037,8.644528135425922,0.09
+hJQgFDsAms4_full,mirror,full & IoU<0.2,local 1-3s,1037,-3.6379471663127916,1.0
+iOEZ3i9rgYM_full,same-side,full,shift>=5s,1478,5.820767122645805,0.03
+iOEZ3i9rgYM_full,same-side,full,local 1-3s,1478,5.2221405342506415,0.0
+iOEZ3i9rgYM_full,same-side,full & IoU<0.2,shift>=5s,426,5.625679162804708,0.22
+iOEZ3i9rgYM_full,same-side,full & IoU<0.2,local 1-3s,426,1.0908504815617306,0.13
+iOEZ3i9rgYM_full,mirror,full,shift>=5s,1478,1.7185420888942105,0.21
+iOEZ3i9rgYM_full,mirror,full,local 1-3s,1478,1.3214782272319638,0.04
+iOEZ3i9rgYM_full,mirror,full & IoU<0.2,shift>=5s,426,10.293162111582127,0.02
+iOEZ3i9rgYM_full,mirror,full & IoU<0.2,local 1-3s,426,3.96436697560722,0.0
+dGPRMNAECKM_full,same-side,full,shift>=5s,697,9.058778363389926,0.03
+dGPRMNAECKM_full,same-side,full,local 1-3s,697,2.327714546359644,0.07
+dGPRMNAECKM_full,same-side,full & IoU<0.2,shift>=5s,289,4.36215684283146,0.25
+dGPRMNAECKM_full,same-side,full & IoU<0.2,local 1-3s,289,-3.7856652164835154,1.0
+dGPRMNAECKM_full,mirror,full,shift>=5s,697,8.166742011826358,0.02
+dGPRMNAECKM_full,mirror,full,local 1-3s,697,0.9073892959348342,0.21
+dGPRMNAECKM_full,mirror,full & IoU<0.2,shift>=5s,289,15.30202141792774,0.0
+dGPRMNAECKM_full,mirror,full & IoU<0.2,local 1-3s,289,4.915675621138959,0.0
+Rc9vIJt00vs_full,same-side,full,shift>=5s,1549,10.575611296443363,0.0
+Rc9vIJt00vs_full,same-side,full,local 1-3s,1549,5.872202968964892,0.0
+Rc9vIJt00vs_full,same-side,full & IoU<0.2,shift>=5s,869,7.657037585194615,0.01
+Rc9vIJt00vs_full,same-side,full & IoU<0.2,local 1-3s,869,1.3073888369161324,0.46
+Rc9vIJt00vs_full,mirror,full,shift>=5s,1549,5.396838315027239,0.02
+Rc9vIJt00vs_full,mirror,full,local 1-3s,1549,-1.0472847831205172,0.76
+Rc9vIJt00vs_full,mirror,full & IoU<0.2,shift>=5s,869,11.723743367435972,0.0
+Rc9vIJt00vs_full,mirror,full & IoU<0.2,local 1-3s,869,1.0539557727351578,0.28
+vinlwkaIW4c_full,same-side,full,shift>=5s,2051,7.027614577455914,0.0
+vinlwkaIW4c_full,same-side,full,local 1-3s,2051,5.999575942262048,0.0
+vinlwkaIW4c_full,same-side,full & IoU<0.2,shift>=5s,1219,3.4012832166414384,0.08
+vinlwkaIW4c_full,same-side,full & IoU<0.2,local 1-3s,1219,1.889004035441019,0.41
+vinlwkaIW4c_full,mirror,full,shift>=5s,2051,7.28185019216135,0.0
+vinlwkaIW4c_full,mirror,full,local 1-3s,2051,4.802879639856592,0.0
+vinlwkaIW4c_full,mirror,full & IoU<0.2,shift>=5s,1219,9.305742441164668,0.0
+vinlwkaIW4c_full,mirror,full & IoU<0.2,local 1-3s,1219,5.497787361529177,0.0
+kMkJpfUGZz8_full,same-side,full,shift>=5s,1213,13.34292192630189,0.0
+kMkJpfUGZz8_full,same-side,full,local 1-3s,1213,1.9397053651083525,0.0
+kMkJpfUGZz8_full,same-side,full & IoU<0.2,shift>=5s,810,14.474692931990884,0.0
+kMkJpfUGZz8_full,same-side,full & IoU<0.2,local 1-3s,810,0.7598874675831091,0.26
+kMkJpfUGZz8_full,mirror,full,shift>=5s,1213,3.850416735563975,0.18
+kMkJpfUGZz8_full,mirror,full,local 1-3s,1213,-0.9943793667554672,1.0
+kMkJpfUGZz8_full,mirror,full & IoU<0.2,shift>=5s,810,5.896387081223313,0.06
+kMkJpfUGZz8_full,mirror,full & IoU<0.2,local 1-3s,810,1.657555174452515,0.0
+uS1JQ-LY8Fs_full,same-side,full,shift>=5s,2519,3.381188899216177,0.01
+uS1JQ-LY8Fs_full,same-side,full,local 1-3s,2519,-0.19947407206227652,0.56
+uS1JQ-LY8Fs_full,same-side,full & IoU<0.2,shift>=5s,2176,2.639499834527296,0.02
+uS1JQ-LY8Fs_full,same-side,full & IoU<0.2,local 1-3s,2176,-0.3803750248339508,0.61
+uS1JQ-LY8Fs_full,mirror,full,shift>=5s,2519,1.5838247921194935,0.17
+uS1JQ-LY8Fs_full,mirror,full,local 1-3s,2519,-1.4902816254701552,1.0
+uS1JQ-LY8Fs_full,mirror,full & IoU<0.2,shift>=5s,2176,2.3079913348055037,0.12
+uS1JQ-LY8Fs_full,mirror,full & IoU<0.2,local 1-3s,2176,-1.2876857417733998,1.0
+YR2QCf5cL6Q_full,same-side,full,shift>=5s,1470,5.525374023094869,0.06
+YR2QCf5cL6Q_full,same-side,full,local 1-3s,1470,4.482663367362385,0.0
+YR2QCf5cL6Q_full,same-side,full & IoU<0.2,shift>=5s,742,0.7189252631958496,0.42
+YR2QCf5cL6Q_full,same-side,full & IoU<0.2,local 1-3s,742,1.859064583982743,0.02
+YR2QCf5cL6Q_full,mirror,full,shift>=5s,1470,5.015558849466821,0.05
+YR2QCf5cL6Q_full,mirror,full,local 1-3s,1470,0.029460947910223467,0.51
+YR2QCf5cL6Q_full,mirror,full & IoU<0.2,shift>=5s,742,7.748232977462287,0.05
+YR2QCf5cL6Q_full,mirror,full & IoU<0.2,local 1-3s,742,0.3126194863508971,0.55

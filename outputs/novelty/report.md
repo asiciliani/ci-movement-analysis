@@ -1,6 +1,6 @@
 # Idea C: predictability and novelty of the improvisation
 
-Vocabulary refitted exactly as describe_duets.py: max |usage difference| vs outputs/describe/vocabulary_usage.csv = 0.000.
+Vocabulary refitted exactly as describe_duets.py: max |usage difference| vs outputs/describe/vocabulary_usage.csv = nan.
 
 H0/H1/H2 = entropy of the next symbol given 0/1/2 previous symbols (bits, Miller-Madow), collapsed sequences. `_shuffle` / `_markov1` = surrogate means (same length and frequencies / same first-order transitions). `nov3` = share of 3-grams in the second half never seen before.
 
@@ -24,16 +24,17 @@ H0/H1/H2 = entropy of the next symbol given 0/1/2 previous symbols (bits, Miller
 
 | set       | unit             |   n_symbols |   n_distinct |    H0 |    H1 |   H1_shuffle |   H1_shuffle_p_low |    H2 |   H2_markov1 |   H2_markov1_p_low |   nov2 |   nov2_markov1 |   nov3 |   nov3_shuffle |   nov3_markov1 |   nov3_markov1_p_low |   nov3_markov1_p_high |
 |:----------|:-----------------|------------:|-------------:|------:|------:|-------------:|-------------------:|------:|-------------:|-------------------:|-------:|---------------:|-------:|---------------:|---------------:|---------------------:|----------------------:|
-| states_CI | zQRF2sLK1vY      |          26 |            5 | 2.276 | 1.724 |        1.602 |              0.801 | 1.128 |        0.791 |              0.973 |  0.8   |          0.293 |  1     |          0.84  |          0.703 |                1     |                 0.136 |
-| states_CI | kxztAr2tQmE_full |          25 |            5 | 2.1   | 1.308 |        1.338 |              0.412 | 0.204 |        0.726 |              0.013 |  0.333 |          0.259 |  0.8   |          0.827 |          0.714 |                0.86  |                 0.558 |
-| states_CI | swmrAJkYrlY_full |          51 |            5 | 1.855 | 0.912 |        1.522 |              0.007 | 0.839 |        0.766 |              0.664 |  0.095 |          0.065 |  0.267 |          0.542 |          0.216 |                0.754 |                 0.432 |
-| states_CI | hJQgFDsAms4_full |          26 |            4 | 1.996 | 0.809 |        1.421 |              0.003 | 0.626 |        0.538 |              0.694 |  0.1   |          0.111 |  0.429 |          0.727 |          0.348 |                0.781 |                 0.442 |
-| states_CI | iOEZ3i9rgYM_full |          18 |            4 | 1.816 | 1.076 |        1.084 |              0.485 | 0.669 |        0.521 |              0.734 |  0.5   |          0.33  |  1     |          0.972 |          0.92  |                1     |                 0.841 |
-| states_CI | dGPRMNAECKM_full |          38 |            5 | 2.073 | 1.194 |        1.493 |              0.007 | 0.859 |        0.851 |              0.512 |  0.143 |          0.11  |  0.875 |          0.745 |          0.548 |                0.993 |                 0.037 |
-| states_CI | Rc9vIJt00vs_full |          63 |            5 | 2.196 | 1.709 |        1.735 |              0.352 | 1.039 |        1.159 |              0.206 |  0.25  |          0.118 |  0.8   |          0.682 |          0.551 |                0.983 |                 0.06  |
-| states_CI | vinlwkaIW4c_full |          93 |            5 | 2.154 | 1.487 |        1.722 |              0.003 | 1.142 |        1.206 |              0.282 |  0.026 |          0.059 |  0.207 |          0.458 |          0.307 |                0.183 |                 0.92  |
-| states_CI | kMkJpfUGZz8_full |          46 |            5 | 2.351 | 1.612 |        1.933 |              0.003 | 0.865 |        1.049 |              0.133 |  0.15  |          0.152 |  0.625 |          0.768 |          0.52  |                0.854 |                 0.302 |
-| states_CI | uS1JQ-LY8Fs_full |         103 |            5 | 1.875 | 1.01  |        1.557 |              0.003 | 0.884 |        0.874 |              0.551 |  0.065 |          0.033 |  0.162 |          0.284 |          0.114 |                0.841 |                 0.272 |
+| states_CI | zQRF2sLK1vY      |          26 |            5 | 2.418 | 1.592 |        1.836 |              0.073 | 0.756 |        0.778 |              0.452 |  0.273 |          0.269 |  0.444 |          0.896 |          0.623 |                0.262 |                 0.89  |
+| states_CI | kxztAr2tQmE_full |          22 |            5 | 2.155 | 0.935 |        1.402 |              0.003 | 0.716 |        0.633 |              0.681 |  0.333 |          0.154 |  0.714 |          0.768 |          0.418 |                0.967 |                 0.133 |
+| states_CI | swmrAJkYrlY_full |          65 |            5 | 2.119 | 1.337 |        1.694 |              0.003 | 0.876 |        1.088 |              0.027 |  0.069 |          0.042 |  0.25  |          0.491 |          0.26  |                0.535 |                 0.625 |
+| states_CI | hJQgFDsAms4_full |          86 |            5 | 2.02  | 1.466 |        1.554 |              0.169 | 0.91  |        1.172 |              0.017 |  0.034 |          0.087 |  0.214 |          0.564 |          0.478 |                0.043 |                 0.987 |
+| states_CI | iOEZ3i9rgYM_full |          25 |            4 | 1.678 | 0.907 |        1.137 |              0.309 | 0.415 |        0.518 |              0.322 |  0.1   |          0.161 |  0.5   |          0.681 |          0.427 |                0.728 |                 0.495 |
+| states_CI | dGPRMNAECKM_full |          49 |            4 | 1.958 | 1.38  |        1.483 |              0.15  | 1.127 |        1.112 |              0.538 |  0.048 |          0.06  |  0.312 |          0.499 |          0.4   |                0.336 |                 0.841 |
+| states_CI | Rc9vIJt00vs_full |         128 |            5 | 2.239 | 1.656 |        1.859 |              0.003 | 1.469 |        1.454 |              0.568 |  0.057 |          0.037 |  0.375 |          0.41  |          0.295 |                0.894 |                 0.179 |
+| states_CI | vinlwkaIW4c_full |          99 |            5 | 2.196 | 1.574 |        1.786 |              0.003 | 1.227 |        1.343 |              0.159 |  0.021 |          0.031 |  0.205 |          0.331 |          0.213 |                0.522 |                 0.654 |
+| states_CI | kMkJpfUGZz8_full |          61 |            5 | 2.347 | 1.537 |        1.979 |              0.003 | 1.005 |        1.159 |              0.146 |  0.037 |          0.078 |  0.348 |          0.676 |          0.382 |                0.458 |                 0.701 |
+| states_CI | uS1JQ-LY8Fs_full |          93 |            4 | 1.803 | 1.053 |        1.597 |              0.003 | 0.903 |        0.921 |              0.435 |  0.045 |          0.031 |  0.075 |          0.229 |          0.096 |                0.465 |                 0.674 |
+| states_CI | YR2QCf5cL6Q_full |          87 |            5 | 2.049 | 1.466 |        1.586 |              0.04  | 1.196 |        1.222 |              0.405 |  0.088 |          0.059 |  0.409 |          0.462 |          0.352 |                0.771 |                 0.392 |
 
 ## words_salsa_CIvocab
 
@@ -53,22 +54,21 @@ H0/H1/H2 = entropy of the next symbol given 0/1/2 previous symbols (bits, Miller
 
 ## states_salsa
 
-| set          | unit                    |   n_symbols |   n_distinct |      H0 |   H1 |   H1_shuffle |   H1_shuffle_p_low |   H2 |   H2_markov1 |   H2_markov1_p_low |   nov2 |   nov2_markov1 |   nov3 |   nov3_shuffle |   nov3_markov1 |   nov3_markov1_p_low |   nov3_markov1_p_high |
-|:-------------|:------------------------|------------:|-------------:|--------:|-----:|-------------:|-------------------:|-----:|-------------:|-------------------:|-------:|---------------:|-------:|---------------:|---------------:|---------------------:|----------------------:|
-| states_salsa | salsa_Pair2_song2_take1 |          10 |            2 |   1.072 |  nan |          nan |                nan |  nan |          nan |                nan |    0   |            0   |      0 |           0.26 |              0 |                    1 |                     1 |
-| states_salsa | salsa_Pair5_song2_take1 |           5 |            2 | nan     |  nan |          nan |                nan |  nan |          nan |                nan |    0.5 |            0.5 |      1 |           1    |              1 |                    1 |                     1 |
+| set          | unit                    |   n_symbols |   n_distinct |   H0 |   H1 |   H1_shuffle |   H1_shuffle_p_low |   H2 |   H2_markov1 |   H2_markov1_p_low |   nov2 |   nov2_markov1 |   nov3 |   nov3_shuffle |   nov3_markov1 |   nov3_markov1_p_low |   nov3_markov1_p_high |
+|:-------------|:------------------------|------------:|-------------:|-----:|-----:|-------------:|-------------------:|-----:|-------------:|-------------------:|-------:|---------------:|-------:|---------------:|---------------:|---------------------:|----------------------:|
+| states_salsa | salsa_Pair2_song2_take1 |           7 |            2 |  nan |  nan |          nan |                nan |  nan |          nan |                nan |      0 |              0 |    0.5 |          0.572 |            0.5 |                    1 |                     1 |
 
 
 ## Summary (median over units; counts of units with surrogate p < 0.05)
 
-| set                  |   units |   n_symbols |    H0 |      H1 |   gain_H1_vs_shuffle |   H1_sig_lower_than_shuffle |   gain_H2_vs_markov1 |   H2_sig_lower_than_markov1 |   nov3 |   nov3_minus_markov1 |   nov3_sig_low |   nov3_sig_high |
-|:---------------------|--------:|------------:|------:|--------:|---------------------:|----------------------------:|---------------------:|----------------------------:|-------:|---------------------:|---------------:|----------------:|
-| states_CI            |      10 |        42   | 2.086 |   1.251 |                0.267 |                           6 |               -0.008 |                           1 |  0.712 |                0.083 |              0 |               1 |
-| states_salsa         |       2 |         7.5 | 1.072 | nan     |              nan     |                           0 |              nan     |                           0 |  0.5   |                0     |              0 |               0 |
-| words_CI             |      10 |       179   | 3.083 |   2.088 |                0.476 |                           9 |                0.072 |                           1 |  0.619 |                0.039 |              0 |               2 |
-| words_CI_seg         |      14 |        86   | 2.874 |   1.901 |                0.429 |                          14 |               -0     |                           0 |  0.793 |                0.063 |              0 |               2 |
-| words_salsa_CIvocab  |       3 |        80   | 1.987 |   1.408 |                0.11  |                           1 |               -0.063 |                           0 |  0.478 |                0.072 |              0 |               0 |
-| words_salsa_ownvocab |       3 |        86   | 3.03  |   2.152 |                0.23  |                           2 |                0.12  |                           1 |  0.828 |                0.083 |              0 |               0 |
+| set                  |   units |   n_symbols |      H0 |      H1 |   gain_H1_vs_shuffle |   H1_sig_lower_than_shuffle |   gain_H2_vs_markov1 |   H2_sig_lower_than_markov1 |   nov3 |   nov3_minus_markov1 |   nov3_sig_low |   nov3_sig_high |
+|:---------------------|--------:|------------:|--------:|--------:|---------------------:|----------------------------:|---------------------:|----------------------------:|-------:|---------------------:|---------------:|----------------:|
+| states_CI            |      11 |          65 |   2.119 |   1.466 |                0.23  |                           7 |                0.026 |                           2 |  0.348 |               -0.01  |              1 |               0 |
+| states_salsa         |       1 |           7 | nan     | nan     |              nan     |                           0 |              nan     |                           0 |  0.5   |                0     |              0 |               0 |
+| words_CI             |      10 |         179 |   3.083 |   2.088 |                0.476 |                           9 |                0.072 |                           1 |  0.619 |                0.039 |              0 |               2 |
+| words_CI_seg         |      14 |          86 |   2.874 |   1.901 |                0.429 |                          14 |               -0     |                           0 |  0.793 |                0.063 |              0 |               2 |
+| words_salsa_CIvocab  |       3 |          80 |   1.987 |   1.408 |                0.11  |                           1 |               -0.063 |                           0 |  0.478 |                0.072 |              0 |               0 |
+| words_salsa_ownvocab |       3 |          86 |   3.03  |   2.152 |                0.23  |                           2 |                0.12  |                           1 |  0.828 |                0.083 |              0 |               0 |
 
 
 ## CI vs salsa at equal length (80 collapsed word symbols per segment; CI segments from the same duet are not independent)
@@ -130,16 +130,17 @@ Salsa word usage with the CI vocabulary (alphabet collapse check):
 | uS1JQ-LY8Fs_full |         2.969 | 214 |         2.188 |         2.281 | words_CI  |
 | vinlwkaIW4c_full |         3.232 | 134 |         2.759 |         2.745 | words_CI  |
 | zQRF2sLK1vY      |         3.339 |  57 |         3.034 |         3.31  | words_CI  |
-| zQRF2sLK1vY      |         2.243 |  20 |         1.614 |         1.855 | states_CI |
-| kxztAr2tQmE_full |         1.963 |  17 |         1.64  |         1.196 | states_CI |
-| swmrAJkYrlY_full |         1.984 |  39 |         1.324 |         1.35  | states_CI |
-| hJQgFDsAms4_full |         2.394 |  20 |         2.325 |         1.859 | states_CI |
-| iOEZ3i9rgYM_full |         2.101 |  10 |         1.616 |         1.377 | states_CI |
-| dGPRMNAECKM_full |         2.325 |  26 |         1.677 |         1.568 | states_CI |
-| Rc9vIJt00vs_full |         2.251 |  45 |         2.008 |         1.856 | states_CI |
-| vinlwkaIW4c_full |         2.117 |  73 |         1.539 |         1.865 | states_CI |
-| kMkJpfUGZz8_full |         2.315 |  38 |         1.777 |         2.044 | states_CI |
-| uS1JQ-LY8Fs_full |         2.25  |  85 |         1.486 |         1.571 | states_CI |
+| zQRF2sLK1vY      |         2.407 |  22 |         1.717 |         1.902 | states_CI |
+| kxztAr2tQmE_full |         2.077 |  18 |         1.423 |         1.168 | states_CI |
+| swmrAJkYrlY_full |         2.273 |  55 |         1.688 |         1.767 | states_CI |
+| hJQgFDsAms4_full |         2.176 |  56 |         1.635 |         1.345 | states_CI |
+| iOEZ3i9rgYM_full |         2.121 |  17 |         1.381 |         1.099 | states_CI |
+| dGPRMNAECKM_full |         2.071 |  39 |         1.48  |         1.584 | states_CI |
+| Rc9vIJt00vs_full |         2.236 | 102 |         1.729 |         1.701 | states_CI |
+| vinlwkaIW4c_full |         2.192 |  93 |         1.58  |         1.616 | states_CI |
+| kMkJpfUGZz8_full |         2.327 |  53 |         1.611 |         1.847 | states_CI |
+| uS1JQ-LY8Fs_full |         2.571 |  85 |         1.55  |         1.456 | states_CI |
+| YR2QCf5cL6Q_full |         2.163 |  63 |         1.495 |         1.493 | states_CI |
 
 
-Median held-out gain order0 -> order1: words 0.485 bits, states 0.558 bits; order1 -> order2: words -0.154, states 0.042.
+Median held-out gain order0 -> order1: words 0.485 bits, states 0.654 bits; order1 -> order2: words -0.154, states 0.002.

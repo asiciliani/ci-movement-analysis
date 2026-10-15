@@ -27,7 +27,7 @@ def ci_videos():
 
 
 def salsa_videos():
-    return sorted(p.parent.name for p in Path("outputs").glob("salsa_*/salsa_*_tracks.npz"))
+    return sorted(p.parent.name for p in Path("outputs").glob("salsa_*/salsa_*_tracks.npz") if p.parent.name == p.name.replace("_tracks.npz", ""))
 
 
 def tracks(vid):

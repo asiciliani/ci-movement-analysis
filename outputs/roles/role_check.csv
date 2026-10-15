@@ -1,43 +1,136 @@
 id,video,real,top_eye,tracked_top_is,note
-0,zQRF2sLK1vY,unclear,,,floor pile both lying; cannot tell who is over whom
-1,zQRF2sLK1vY,no,,,bald man kneeling beside a partner lying on the floor (pelvis above a lying partner's shoulders)
-2,kxztAr2tQmE_full,yes,grey,grey,both crouched; man in grey shirt bent over the back of the woman in red trousers (lean); low confidence
-3,kxztAr2tQmE_full,yes,grey,grey,man in grey jumps onto the back/hip of the woman in red trousers
-4,swmrAJkYrlY_full,yes,orange,orange,man in orange shirt rolls over the back of the kneeling dark-clothed partner; tracked identity swaps right after (+1.5 s blue on orange)
-5,hJQgFDsAms4_full,yes,light,dark,ROLE ERROR: woman in light top folded over the standing man's back; detector says the man is on top (his pelvis is above her folded shoulders)
-6,hJQgFDsAms4_full,unclear,,,floor embrace sitting; cannot tell
-7,hJQgFDsAms4_full,yes,light,dark,ROLE ERROR: woman inverted on the standing man's front; skeletons merged; detector says the man
-8,iOEZ3i9rgYM_full,yes,woman,woman,woman leans over the bent man's back (feet on ground)
-9,iOEZ3i9rgYM_full,yes,woman,woman,same lean as #8
-10,iOEZ3i9rgYM_full,yes,,,backbend with the other body inverted above it; cannot tell who carries whom
-11,iOEZ3i9rgYM_full,yes,woman,woman,woman over the crouched man's back
-12,iOEZ3i9rgYM_full,yes,woman,woman,woman horizontal across the man's back legs in the air; skeletons cross
-13,iOEZ3i9rgYM_full,yes,woman,woman,woman horizontal across the man's back; tracked letter is now A = woman (identity swapped vs #8-12)
-14,dGPRMNAECKM_full,unclear,navy,navy,floor roll; woman in navy top lying over the partner; low confidence
-15,dGPRMNAECKM_full,yes,navy,navy,woman in navy rolls over the back of the partner in grey on all fours; tracked letter B (was A in #14: swap)
-16,dGPRMNAECKM_full,yes,grey,,partner in grey inverted (legs up) over the back of navy on all fours; skeletons mixed
-17,dGPRMNAECKM_full,yes,navy,navy,navy arches backwards over grey's back
-18,dGPRMNAECKM_full,yes,grey,,grey rolls inverted over navy lying on the mat; skeletons mixed
-19,dGPRMNAECKM_full,no,,,navy stands beside grey kneeling low (pelvis above a low partner's shoulders)
-20,Rc9vIJt00vs_full,yes,blue,blue,person in blue T-shirt straddles/sits on the back of the person in white top (all fours)
-21,Rc9vIJt00vs_full,yes,blue,blue,blue lies horizontal across white's back; tracked letter B (was A in #20: swap)
-22,Rc9vIJt00vs_full,yes,,,floor inversion; legs up; cannot tell whose
-23,Rc9vIJt00vs_full,yes,white,,white lies back over blue bridging; low confidence; skeletons mixed
-24,Rc9vIJt00vs_full,yes,white,white,white leans over blue's bent back
-25,Rc9vIJt00vs_full,yes,white,white,white lies across blue's back legs flying
-26,Rc9vIJt00vs_full,yes,blue,,blue inverted (legs up) over white on the floor
-27,Rc9vIJt00vs_full,unclear,,,blue kneels behind white on all fours; weight unclear
-28,Rc9vIJt00vs_full,yes,blue,blue,blue rolls over white's back
-29,Rc9vIJt00vs_full,no,,,close-up: white standing next to blue seated on the floor
-30,Rc9vIJt00vs_full,yes,white,white,white inverted (handstand-like) over blue on the floor
-31,vinlwkaIW4c_full,yes,black,black,person in black leans over the back of the person in white (all fours)
-32,vinlwkaIW4c_full,no,,,black stands straddling white lying on the floor
-33,vinlwkaIW4c_full,yes,black,black,black drapes over white's bent back
-34,vinlwkaIW4c_full,no,,,white seated on the floor; black stands behind
-35,vinlwkaIW4c_full,no,,,white stands; black on all fours beside
-36,vinlwkaIW4c_full,no,,,white leaps over black lying on the floor
-37,kMkJpfUGZz8_full,unclear,,,floor tangle with legs up
-38,kMkJpfUGZz8_full,yes,man,,man lies over the partner on the floor; low confidence
-39,kMkJpfUGZz8_full,unclear,,,man straddles the woman on all fours standing; weight unclear
-40,kMkJpfUGZz8_full,yes,man,man,man kneels behind and leans his trunk over the back of the woman in orange on all fours
-41,uS1JQ-LY8Fs_full,no,,,one stands next to a partner seated on the floor
+0,zQRF2sLK1vY,yes,white,white,"first pass (Claude, YOLO11x tracks)"
+1,zQRF2sLK1vY,yes,white,white,"first pass (Claude, YOLO11x tracks)"
+2,zQRF2sLK1vY,yes,bald,bald,"first pass (Claude, YOLO11x tracks)"
+3,zQRF2sLK1vY,unclear,,,"first pass (Claude, YOLO11x tracks)"
+4,zQRF2sLK1vY,no,,,"first pass (Claude, YOLO11x tracks): standing next to a partner lying on the floor"
+5,kxztAr2tQmE_full,yes,grey,grey,"first pass (Claude, YOLO11x tracks)"
+6,kxztAr2tQmE_full,yes,grey,grey,"first pass (Claude, YOLO11x tracks)"
+7,swmrAJkYrlY_full,yes,black,black,"first pass (Claude, YOLO11x tracks)"
+8,swmrAJkYrlY_full,yes,red,red,"first pass (Claude, YOLO11x tracks)"
+9,swmrAJkYrlY_full,no,,,"first pass (Claude, YOLO11x tracks)"
+10,swmrAJkYrlY_full,yes,black,,"first pass (Claude, YOLO11x tracks)"
+11,hJQgFDsAms4_full,no,,,"first pass (Claude, YOLO11x tracks)"
+12,hJQgFDsAms4_full,no,,,"first pass (Claude, YOLO11x tracks)"
+13,hJQgFDsAms4_full,unclear,,,"first pass (Claude, YOLO11x tracks)"
+14,hJQgFDsAms4_full,yes,dark,dark,"first pass (Claude, YOLO11x tracks)"
+15,hJQgFDsAms4_full,yes,dark,dark,"first pass (Claude, YOLO11x tracks)"
+16,hJQgFDsAms4_full,yes,dark,dark,"first pass (Claude, YOLO11x tracks): same event as 15-19 (fragments < 1 s apart)"
+17,hJQgFDsAms4_full,yes,dark,dark,"first pass (Claude, YOLO11x tracks)"
+18,hJQgFDsAms4_full,yes,dark,dark,"first pass (Claude, YOLO11x tracks)"
+19,hJQgFDsAms4_full,yes,dark,dark,"first pass (Claude, YOLO11x tracks)"
+20,hJQgFDsAms4_full,unclear,,,"first pass (Claude, YOLO11x tracks)"
+21,hJQgFDsAms4_full,yes,light,dark,"first pass (Claude, YOLO11x tracks): light carried at dark's hip; tracked top is the base"
+22,hJQgFDsAms4_full,yes,light,dark,"first pass (Claude, YOLO11x tracks)"
+23,hJQgFDsAms4_full,yes,light,light,"first pass (Claude, YOLO11x tracks)"
+24,hJQgFDsAms4_full,unclear,,,"first pass (Claude, YOLO11x tracks)"
+25,hJQgFDsAms4_full,no,,,"first pass (Claude, YOLO11x tracks)"
+26,hJQgFDsAms4_full,no,,,"first pass (Claude, YOLO11x tracks)"
+27,iOEZ3i9rgYM_full,yes,woman,man,"first pass (Claude, YOLO11x tracks)"
+28,iOEZ3i9rgYM_full,yes,woman,man,"first pass (Claude, YOLO11x tracks)"
+29,iOEZ3i9rgYM_full,yes,woman,woman,"first pass (Claude, YOLO11x tracks)"
+30,iOEZ3i9rgYM_full,yes,woman,woman,"first pass (Claude, YOLO11x tracks)"
+31,iOEZ3i9rgYM_full,yes,woman,woman,"first pass (Claude, YOLO11x tracks)"
+32,iOEZ3i9rgYM_full,no,,,"first pass (Claude, YOLO11x tracks)"
+33,iOEZ3i9rgYM_full,unclear,,,"first pass (Claude, YOLO11x tracks)"
+34,iOEZ3i9rgYM_full,no,,,"first pass (Claude, YOLO11x tracks)"
+35,iOEZ3i9rgYM_full,yes,woman,woman,"first pass (Claude, YOLO11x tracks)"
+36,iOEZ3i9rgYM_full,yes,woman,woman,"first pass (Claude, YOLO11x tracks)"
+37,iOEZ3i9rgYM_full,yes,woman,woman,"first pass (Claude, YOLO11x tracks)"
+38,dGPRMNAECKM_full,yes,grey,grey,"first pass (Claude, YOLO11x tracks)"
+39,dGPRMNAECKM_full,yes,navy,navy,"first pass (Claude, YOLO11x tracks)"
+40,dGPRMNAECKM_full,yes,navy,navy,"first pass (Claude, YOLO11x tracks)"
+41,dGPRMNAECKM_full,no,,,"first pass (Claude, YOLO11x tracks)"
+42,dGPRMNAECKM_full,unclear,,,"first pass (Claude, YOLO11x tracks)"
+43,dGPRMNAECKM_full,yes,grey,grey,"first pass (Claude, YOLO11x tracks)"
+44,dGPRMNAECKM_full,yes,navy,navy,"first pass (Claude, YOLO11x tracks)"
+45,dGPRMNAECKM_full,no,,,"first pass (Claude, YOLO11x tracks)"
+46,Rc9vIJt00vs_full,yes,red,red,"first pass (Claude, YOLO11x tracks)"
+47,Rc9vIJt00vs_full,unclear,,,"first pass (Claude, YOLO11x tracks)"
+48,Rc9vIJt00vs_full,yes,red,red,"first pass (Claude, YOLO11x tracks)"
+49,Rc9vIJt00vs_full,unclear,,,"first pass (Claude, YOLO11x tracks)"
+50,Rc9vIJt00vs_full,no,,,"first pass (Claude, YOLO11x tracks)"
+51,Rc9vIJt00vs_full,yes,blue,blue,"first pass (Claude, YOLO11x tracks)"
+52,Rc9vIJt00vs_full,yes,blue,blue,"first pass (Claude, YOLO11x tracks)"
+53,Rc9vIJt00vs_full,yes,red,red,"first pass (Claude, YOLO11x tracks)"
+54,Rc9vIJt00vs_full,yes,red,,"first pass (Claude, YOLO11x tracks)"
+55,Rc9vIJt00vs_full,yes,red,red,"first pass (Claude, YOLO11x tracks)"
+56,Rc9vIJt00vs_full,yes,blue,blue,"first pass (Claude, YOLO11x tracks)"
+57,Rc9vIJt00vs_full,yes,red,blue,"first pass (Claude, YOLO11x tracks): red over blue's shoulders; tracked top is the base"
+58,Rc9vIJt00vs_full,yes,red,red,"first pass (Claude, YOLO11x tracks)"
+59,Rc9vIJt00vs_full,yes,red,red,"first pass (Claude, YOLO11x tracks)"
+60,Rc9vIJt00vs_full,yes,red,red,"first pass (Claude, YOLO11x tracks)"
+61,Rc9vIJt00vs_full,yes,blue,blue,"first pass (Claude, YOLO11x tracks)"
+62,Rc9vIJt00vs_full,yes,blue,blue,"first pass (Claude, YOLO11x tracks)"
+63,Rc9vIJt00vs_full,unclear,,,"first pass (Claude, YOLO11x tracks)"
+64,Rc9vIJt00vs_full,yes,blue,blue,"first pass (Claude, YOLO11x tracks)"
+65,Rc9vIJt00vs_full,yes,blue,red,"first pass (Claude, YOLO11x tracks)"
+66,Rc9vIJt00vs_full,no,,,"first pass (Claude, YOLO11x tracks)"
+67,Rc9vIJt00vs_full,no,,,"first pass (Claude, YOLO11x tracks)"
+68,Rc9vIJt00vs_full,yes,blue,blue,"first pass (Claude, YOLO11x tracks)"
+69,Rc9vIJt00vs_full,yes,blue,red,"first pass (Claude, YOLO11x tracks)"
+70,Rc9vIJt00vs_full,yes,red,red,"first pass (Claude, YOLO11x tracks)"
+71,Rc9vIJt00vs_full,no,,,"first pass (Claude, YOLO11x tracks)"
+72,vinlwkaIW4c_full,no,,,"first pass (Claude, YOLO11x tracks)"
+73,vinlwkaIW4c_full,no,,,"first pass (Claude, YOLO11x tracks)"
+74,vinlwkaIW4c_full,yes,black,black,"first pass (Claude, YOLO11x tracks)"
+75,vinlwkaIW4c_full,yes,black,white,"first pass (Claude, YOLO11x tracks)"
+76,vinlwkaIW4c_full,yes,black,black,"first pass (Claude, YOLO11x tracks)"
+77,vinlwkaIW4c_full,yes,black,black,"first pass (Claude, YOLO11x tracks)"
+78,vinlwkaIW4c_full,unclear,,,"first pass (Claude, YOLO11x tracks)"
+79,vinlwkaIW4c_full,no,,,"first pass (Claude, YOLO11x tracks)"
+80,vinlwkaIW4c_full,unclear,,,"first pass (Claude, YOLO11x tracks)"
+81,vinlwkaIW4c_full,unclear,,,"first pass (Claude, YOLO11x tracks)"
+82,vinlwkaIW4c_full,no,,,"first pass (Claude, YOLO11x tracks)"
+83,vinlwkaIW4c_full,no,,,"first pass (Claude, YOLO11x tracks)"
+84,vinlwkaIW4c_full,no,,,"first pass (Claude, YOLO11x tracks)"
+85,vinlwkaIW4c_full,yes,white,white,"first pass (Claude, YOLO11x tracks)"
+86,kMkJpfUGZz8_full,no,,,"first pass (Claude, YOLO11x tracks)"
+87,kMkJpfUGZz8_full,yes,bun,bun,"first pass (Claude, YOLO11x tracks)"
+88,kMkJpfUGZz8_full,unclear,,,"first pass (Claude, YOLO11x tracks)"
+89,kMkJpfUGZz8_full,unclear,,,"first pass (Claude, YOLO11x tracks)"
+90,kMkJpfUGZz8_full,yes,bald,bald,"first pass (Claude, YOLO11x tracks)"
+91,kMkJpfUGZz8_full,yes,bun,bun,"first pass (Claude, YOLO11x tracks)"
+92,kMkJpfUGZz8_full,yes,bun,bun,"first pass (Claude, YOLO11x tracks)"
+93,kMkJpfUGZz8_full,yes,bun,bun,"first pass (Claude, YOLO11x tracks)"
+94,kMkJpfUGZz8_full,no,,,"first pass (Claude, YOLO11x tracks)"
+95,kMkJpfUGZz8_full,unclear,,,"first pass (Claude, YOLO11x tracks)"
+96,kMkJpfUGZz8_full,unclear,,,"first pass (Claude, YOLO11x tracks)"
+97,kMkJpfUGZz8_full,unclear,,,"first pass (Claude, YOLO11x tracks)"
+98,kMkJpfUGZz8_full,yes,bun,bun,"first pass (Claude, YOLO11x tracks)"
+99,kMkJpfUGZz8_full,yes,bald,bald,"first pass (Claude, YOLO11x tracks)"
+100,YR2QCf5cL6Q_full,yes,grey,grey,"first pass (Claude, YOLO11x tracks)"
+101,YR2QCf5cL6Q_full,yes,white,grey,"first pass (Claude, YOLO11x tracks)"
+102,YR2QCf5cL6Q_full,yes,white,white,"first pass (Claude, YOLO11x tracks)"
+103,YR2QCf5cL6Q_full,yes,white,white,"first pass (Claude, YOLO11x tracks)"
+104,YR2QCf5cL6Q_full,yes,white,white,"first pass (Claude, YOLO11x tracks)"
+105,YR2QCf5cL6Q_full,yes,white,grey,"first pass (Claude, YOLO11x tracks)"
+106,YR2QCf5cL6Q_full,yes,white,white,"first pass (Claude, YOLO11x tracks)"
+107,YR2QCf5cL6Q_full,yes,white,white,"first pass (Claude, YOLO11x tracks)"
+108,YR2QCf5cL6Q_full,yes,white,white,"first pass (Claude, YOLO11x tracks)"
+109,YR2QCf5cL6Q_full,yes,white,white,"first pass (Claude, YOLO11x tracks)"
+110,YR2QCf5cL6Q_full,yes,white,white,"first pass (Claude, YOLO11x tracks)"
+111,YR2QCf5cL6Q_full,yes,white,white,"first pass (Claude, YOLO11x tracks)"
+112,YR2QCf5cL6Q_full,no,,,"first pass (Claude, YOLO11x tracks): standing next to a partner lying on the floor"
+113,YR2QCf5cL6Q_full,no,,,"first pass (Claude, YOLO11x tracks)"
+114,YR2QCf5cL6Q_full,no,,,"first pass (Claude, YOLO11x tracks)"
+115,YR2QCf5cL6Q_full,no,,,"first pass (Claude, YOLO11x tracks)"
+116,YR2QCf5cL6Q_full,yes,white,white,"first pass (Claude, YOLO11x tracks)"
+117,YR2QCf5cL6Q_full,no,,,"first pass (Claude, YOLO11x tracks)"
+118,YR2QCf5cL6Q_full,no,,,"first pass (Claude, YOLO11x tracks)"
+119,YR2QCf5cL6Q_full,no,,,"first pass (Claude, YOLO11x tracks)"
+120,YR2QCf5cL6Q_full,yes,white,white,"first pass (Claude, YOLO11x tracks)"
+121,YR2QCf5cL6Q_full,yes,white,white,"first pass (Claude, YOLO11x tracks)"
+122,YR2QCf5cL6Q_full,yes,white,white,"first pass (Claude, YOLO11x tracks)"
+123,YR2QCf5cL6Q_full,yes,white,white,"first pass (Claude, YOLO11x tracks)"
+124,YR2QCf5cL6Q_full,yes,white,white,"first pass (Claude, YOLO11x tracks)"
+125,YR2QCf5cL6Q_full,yes,white,white,"first pass (Claude, YOLO11x tracks)"
+126,YR2QCf5cL6Q_full,yes,white,white,"first pass (Claude, YOLO11x tracks)"
+127,YR2QCf5cL6Q_full,yes,white,grey,"first pass (Claude, YOLO11x tracks): white held upside down on grey's back; tracked top is the base"
+128,YR2QCf5cL6Q_full,yes,white,grey,"first pass (Claude, YOLO11x tracks)"
+129,YR2QCf5cL6Q_full,yes,white,grey,"first pass (Claude, YOLO11x tracks)"
+130,YR2QCf5cL6Q_full,yes,white,grey,"first pass (Claude, YOLO11x tracks)"
+131,YR2QCf5cL6Q_full,yes,,,"first pass (Claude, YOLO11x tracks): white held head-down by grey, head on the floor: who is 'on top' is undefined"
+132,YR2QCf5cL6Q_full,yes,,,"first pass (Claude, YOLO11x tracks): same hold"
+133,YR2QCf5cL6Q_full,yes,,,"first pass (Claude, YOLO11x tracks): same hold"
+134,YR2QCf5cL6Q_full,yes,,,"first pass (Claude, YOLO11x tracks): same hold"

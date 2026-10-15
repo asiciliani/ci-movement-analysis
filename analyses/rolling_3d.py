@@ -178,7 +178,7 @@ def compare_2d(cache):
     """2-D ROLL/HOLD labels (rolling_contact.py on the rendered salsa video) vs 3-D travel in the same bouts."""
     import rolling_contact as RC
     rows = []
-    for p in sorted(Path("outputs").glob("salsa_*/salsa_*_tracks.npz")):
+    for p in sorted(q for q in Path("outputs").glob("salsa_*/salsa_*_tracks.npz") if q.parent.name == q.name.replace("_tracks.npz", "")):
         vid = p.parent.name; seq = vid.replace("salsa_", "")
         if seq not in cache:
             continue

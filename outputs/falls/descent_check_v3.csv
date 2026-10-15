@@ -1,0 +1,34 @@
+id,video,dancer,start_s,end_s,dur_s,present,max_jump_bl,stab_drop_bl,valid,reject,f0,f1,verdict,note
+0,vinlwkaIW4c_full,B,33.46666666666667,34.53333333333333,1.0666666666666669,1.0,0.467958510725992,0.6934490871018657,True,,502,518,real_floor,first pass (Claude): goes down into a floor tangle with partner
+1,vinlwkaIW4c_full,B,199.53333333333333,200.2,0.6666666666666666,1.0,0.3692637080606216,1.0986353561742122,True,,2993,3003,real_low,"first pass (Claude): crouches over lying partner, rises again"
+2,kxztAr2tQmE_full,A,22.2,24.73333333333333,2.533333333333333,1.0,0.1330683109176841,0.6146515543451343,True,,333,371,real_floor,first pass (Claude): from standing over partner to lying
+3,Rc9vIJt00vs_full,B,254.86666666666667,255.8,0.9333333333333332,1.0,0.266196379827894,-0.2796204876995942,False,no_drop,3823,3837,real_low,"first pass (Claude): pulled into a backbend onto partner's back, not the floor"
+4,YR2QCf5cL6Q_full,A,169.26666666666668,169.93333333333334,0.6666666666666666,0.9444444444444444,0.6852903596892537,2.040331216325134,False,jump,2539,2549,false,first pass (Claude): identity swap: track jumps from the standing man to the partner
+5,Rc9vIJt00vs_full,B,310.26666666666665,312.46666666666664,2.2,0.8292682926829268,0.735311736618736,1.6816900102938166,False,gap;jump,4654,4687,unclear,first pass (Claude): inversion and track jumps; ends on the floor
+6,kMkJpfUGZz8_full,B,29.133333333333333,30.53333333333333,1.4,1.0,0.4229631447391108,0.8841967557988376,True,,437,458,false,first pass (Claude): cartwheel/handstand read as a descent
+7,YR2QCf5cL6Q_full,A,133.26666666666668,135.4,2.1333333333333333,0.95,0.6597194727577592,1.850647666675193,False,jump,1999,2031,real_floor,first pass (Claude): standing to all fours beside partner
+8,zQRF2sLK1vY,B,44.711333333333336,47.18046666666667,2.469133333333333,0.5056179775280899,0.616506876096633,0.3388085753683579,False,gap;jump;no_drop,1340,1414,unclear,first pass (Claude): carry with partner inverted; track lost mid
+9,kMkJpfUGZz8_full,B,156.66666666666666,159.46666666666667,2.8,0.82,0.4936123798300238,0.6962395991007942,False,gap,2350,2392,real_floor,first pass (Claude): lean over partner to the floor
+10,vinlwkaIW4c_full,B,146.6,147.66666666666666,1.0666666666666669,1.0,0.4186137708824844,0.5857268714251638,True,,2199,2215,real_floor,first pass (Claude): slides off partner's back to sitting
+11,YR2QCf5cL6Q_full,A,280.2,281.4,1.2,1.0,0.2130575844966752,1.0527347397490654,True,,4203,4221,real_floor,first pass (Claude): standing to lying beside partner
+12,kxztAr2tQmE_full,B,35.2,35.8,0.6,1.0,0.1541845701064857,0.5838050775837452,True,,528,537,real_low,first pass (Claude): standing to kneeling while pulling partner
+13,zQRF2sLK1vY,B,29.162466666666667,31.031,1.8685333333333332,1.0,0.4420233641745332,0.7863172177193145,True,,874,930,real_floor,"first pass (Claude): walk, squat, all fours, lying"
+14,uS1JQ-LY8Fs_full,A,326.93333333333334,329.53333333333336,2.6,1.0,0.2459417028276658,1.3625738553021662,True,,4904,4943,real_floor,first pass (Claude): standing to sitting on the floor
+15,Rc9vIJt00vs_full,B,228.53333333333333,232.33333333333331,3.8,0.3230769230769231,0.6872395199037493,0.3017629928927866,False,gap;jump;no_drop,3428,3485,unclear,first pass (Claude): both end on the floor tangled; skeletons merged
+16,Rc9vIJt00vs_full,A,273.26666666666665,273.6,0.3333333333333333,1.0,0.1720778717197887,0.5308020323406164,True,,4099,4104,unclear,first pass (Claude): skeletons cross; ends half-squat
+17,vinlwkaIW4c_full,A,119.0,120.93333333333334,1.9333333333333331,0.8378378378378378,1.2579294637640663,0.7797884642229536,False,gap;jump,1785,1814,false,first pass (Claude): identity swap mid-sequence
+18,YR2QCf5cL6Q_full,A,289.8,292.06666666666666,2.2666666666666666,0.7619047619047619,0.3064018963064937,0.7381242187287644,False,gap,4347,4381,false,first pass (Claude): identity swap: track moves to the base under a lift
+19,vinlwkaIW4c_full,B,187.8,190.6,2.8,1.0,0.2798213425165825,1.2364572171956938,True,,2817,2859,real_floor,first pass (Claude): standing to kneel to sitting
+20,hJQgFDsAms4_full,B,224.0,225.8,1.8,1.0,0.1086661946957266,0.764102338414428,True,,3360,3387,unclear,"first pass (Claude): close-up, both crouched, skeletons crossed"
+21,vinlwkaIW4c_full,A,190.4,191.33333333333331,0.9333333333333332,1.0,0.4109776327186855,0.6911904687866653,True,,2856,2870,kneel_to_floor,first pass (Claude): kneeling to lying
+22,hJQgFDsAms4_full,B,468.73333333333335,470.8666666666667,2.1333333333333333,1.0,0.5109678678246407,0.8345971901755943,True,,7031,7063,real_floor,first pass (Claude): standing to lying on top of partner
+23,Rc9vIJt00vs_full,A,77.06666666666666,77.93333333333334,0.8666666666666667,0.8095238095238095,0.3414869939050434,-0.7304536147295911,False,gap;no_drop,1156,1169,false,first pass (Claude): partner lifted horizontally; not a descent
+24,zQRF2sLK1vY,A,54.42103333333333,54.921533333333336,0.5005000000000001,1.0,0.2127240519080359,1.0108998998278331,True,,1631,1646,real_low,first pass (Claude): standing to squat
+25,vinlwkaIW4c_full,B,84.4,84.8,0.4,1.0,0.2958246508142992,0.7925887807455245,True,,1266,1272,real_floor,first pass (Claude): standing to kneel to sitting
+26,zQRF2sLK1vY,A,30.096733333333333,30.49713333333333,0.4004,1.0,0.1575802102601099,0.7244532088584428,True,,902,914,real_low,"first pass (Claude): standing to kneel, then over partner"
+27,vinlwkaIW4c_full,B,73.33333333333333,73.6,0.2666666666666666,1.0,0.374044277158879,0.9326385499631498,True,,1100,1104,real_floor,first pass (Claude): falls to sitting
+28,hJQgFDsAms4_full,B,102.4,102.8,0.4,1.0,0.392817903563416,0.8415876322143635,True,,1536,1542,false,"first pass (Claude): starts kneeling over partner, then inverted"
+29,Rc9vIJt00vs_full,B,285.7333333333333,286.46666666666664,0.7333333333333333,1.0,0.1501623017049025,0.6797545785745943,True,,4286,4297,real_low,first pass (Claude): lunge to crouch over partner
+30,Rc9vIJt00vs_full,A,90.2,90.66666666666669,0.4666666666666667,1.0,0.2060326250101934,0.9117894471811144,True,,1353,1360,real_low,first pass (Claude): steps over partner into a squat
+31,iOEZ3i9rgYM_full,A,174.0,175.53333333333333,1.5333333333333334,1.0,0.0920636870788495,0.6539282651006867,True,,2610,2633,real_low,first pass (Claude): squats down behind partner
+32,vinlwkaIW4c_full,A,25.53333333333333,29.53333333333333,4.0,1.0,0.463666572922621,1.2026612777804733,True,,383,443,real_low,first pass (Claude): backbend down to kneeling

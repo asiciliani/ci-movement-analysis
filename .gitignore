@@ -104,3 +104,4 @@ outputs/pose_models/frames/
 outputs/pose_models/sheets/
 outputs/pose_models/compare*/
 logs/pose_models_*.log
+outputs/_v8n_runs/
