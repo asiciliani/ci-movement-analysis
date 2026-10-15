@@ -1,6 +1,6 @@
 """
 Agreement between a human reviewer (CSV exported from outputs/review/index.html) and the assistant's by-eye
-verdicts (outputs/grammar/contact_check*.csv, outputs/roles/role_check.csv): raw agreement and Cohen's kappa,
+verdicts (outputs/grammar/contact_check_v3.csv, outputs/roles/role_check.csv, outputs/falls/descent_check_v3.csv): raw agreement and Cohen's kappa,
 on the items both judged as decidable and on all items.
 
 Usage (repo root):  python analyses/review/agreement.py outputs/review/answers_<name>.csv
@@ -18,13 +18,14 @@ OUT = Path("outputs/review_agreement"); OUT.mkdir(parents=True, exist_ok=True)
 
 def reference() -> pd.DataFrame:
     rows = []
-    for rnd, f in ((1, "outputs/grammar/contact_check.csv"), (2, "outputs/grammar/contact_check_v2.csv")):
-        for r in pd.read_csv(f).itertuples():
-            rows.append(dict(key=f"rel_r{rnd}_{r.id:02d}", ref=r.verdict, ref_top=""))
+    for r in pd.read_csv("outputs/grammar/contact_check_v3.csv").itertuples():
+        rows.append(dict(key=f"rel_r3_{r.id:02d}", ref=r.verdict, ref_top=""))
+    for r in pd.read_csv("outputs/falls/descent_check_v3.csv").itertuples():
+        rows.append(dict(key=f"desc_{r.id:02d}", ref=r.verdict, ref_top=""))
     rc = pd.read_csv("outputs/roles/role_check.csv")
     for r in rc.itertuples():
         top = r.tracked_top_is if isinstance(r.tracked_top_is, str) else ""
-        rows.append(dict(key=f"ws_{r.id:02d}", ref=r.real, ref_top=top))
+        rows.append(dict(key=f"ws11x_{r.id:03d}", ref=r.real, ref_top=top))
     return pd.DataFrame(rows)
 
 
@@ -48,7 +49,8 @@ def main(path):
     m.to_csv(OUT / f"{name}_merged.csv", index=False)
     md = [f"# Human vs assistant verdicts ({name})\n",
           block(m[m.set == "releases"], "a1", "ref", "Contact releases"),
-          "\n" + block(m[m.set == "weight_share"], "a1", "ref", "Weight sharing: is it real?")]
+          "\n" + block(m[m.set == "weight_share"], "a1", "ref", "Weight sharing: is it real?"),
+          "\n" + block(m[m.set == "descents"], "a1", "ref", "Descents to the floor")]
     (OUT / f"{name}.md").write_text("\n".join(md)); print("\n".join(md))
 
 

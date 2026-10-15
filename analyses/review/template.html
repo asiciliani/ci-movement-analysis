@@ -25,9 +25,11 @@ const SETS = {
    q1:"¿Se sueltan de verdad en ese momento?", a1:[["real","Sí, se separan"],["false_release","No, siguen en contacto"],["false_contact","Nunca estuvieron en contacto"],["unclear","No se puede saber"]], q2:null},
  weight_share: {title:"Peso compartido", help:"El borde blanco marca cuando el programa dice que uno carga peso del otro.",
    q1:"¿Uno está cargando peso del otro (encima del otro)?", a1:[["yes","Sí"],["no","No"],["unclear","No se puede saber"]],
-   q2:"Si es que sí: ¿quién está arriba?", a2:[["A","A (azul)"],["B","B (naranja)"],["unknown","No se ve / esqueletos mal"]]}
+   q2:"Si es que sí: ¿quién está arriba?", a2:[["A","A (azul)"],["B","B (naranja)"],["unknown","No se ve / esqueletos mal"]]},
+ descents: {title:"Bajadas al piso", help:"El borde blanco marca la bajada que detectó el programa (la persona que se indica).",
+   q1:"¿Esa persona baja de verdad?", a1:[["real_floor","Sí, hasta el piso"],["real_low","Sí, a cuclillas o de rodillas"],["false","No (error del esqueleto o del seguimiento)"],["unclear","No se puede saber"]], q2:null}
 };
-const KEY="ci_review_v1"; let ans=JSON.parse(localStorage.getItem(KEY)||"{}"); let i=0;
+const KEY="ci_review_v2"; let ans=JSON.parse(localStorage.getItem(KEY)||"{}"); let i=0;
 for(let k=0;k<ITEMS.length;k++){ if(!ans[ITEMS[k].key]){i=k;break;} }
 const $=id=>document.getElementById(id);
 function save(){localStorage.setItem(KEY,JSON.stringify(ans));}
@@ -35,7 +37,7 @@ function btns(el,opts,field){el.innerHTML="";(opts||[]).forEach(([v,l],n)=>{cons
   if((ans[ITEMS[i].key]||{})[field]==v)b.className="sel";b.onclick=()=>{set(field,v)};el.appendChild(b);});}
 function set(field,v){const k=ITEMS[i].key;ans[k]=ans[k]||{};ans[k][field]=v;save();const s=SETS[ITEMS[i].set];
   if(field=="a1"&&!(s.q2&&v=="yes")){go(1)}else if(field=="a2"){go(1)}else render();}
-function render(){const it=ITEMS[i],s=SETS[it.set];$("title").textContent=s.title;$("help").textContent=s.help;
+function render(){const it=ITEMS[i],s=SETS[it.set];$("title").textContent=s.title;$("help").textContent=s.help+(it.who?(" Persona: "+(it.who=="A"?"A (azul)":"B (naranja)")+"."):"");
   $("prog").textContent=(i+1)+" / "+ITEMS.length+"  ·  respondidos: "+Object.keys(ans).filter(k=>ans[k].a1).length;
   if(!$("v").src.endsWith(it.clip))$("v").src=it.clip;$("q1").textContent=s.q1;btns($("a1"),s.a1,"a1");
   $("q2").textContent=s.q2||"";btns($("a2"),s.q2?s.a2:[],"a2");$("note").value=(ans[it.key]||{}).note||"";}

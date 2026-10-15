@@ -4,10 +4,15 @@ Human review page for the detectors (independent of the assistant's by-eye verdi
 Builds short looping clips with both skeletons for every sampled event and one local HTML page that shows them
 one at a time, without the earlier verdicts, and exports the reviewer's answers as CSV:
 
-  releases       the 48 contact releases of outputs/grammar/contact_check.csv + contact_check_v2.csv
+  releases       the 32 contact releases of round 3 on the YOLO11x tracks (outputs/grammar/contact_check_v3.csv)
                  (4 s around the release; the frame border turns white when the detector says "released")
-  weight_share   the 42 weight-sharing episodes of outputs/roles/episodes.csv
+  weight_share   the 135 weight-sharing episodes of outputs/roles/episodes.csv (YOLO11x)
                  (1.5 s before to 1.5 s after; white border while the detector says "weight shared")
+  descents       the 33 descents of outputs/falls/descent_check_v3.csv (23 the rule accepts + 10 it rejects, mixed)
+                 (1.5 s before to 1.5 s after; white border during the detected drop)
+
+Rounds 1-2 of the release check (contact_check.csv, _v2) were drawn on the YOLOv8n tracks and are not shown:
+their release times do not exist on the current tracks.
 
 Run from the repo root:  python analyses/review/build_review.py   then open outputs/review/index.html
 Answers: "Exportar CSV" in the page -> save as outputs/review/answers_<name>.csv; compare with
@@ -65,17 +70,18 @@ def clip(vid, t0, t1, on0, on1, name, tracks={}):
 
 def main():
     items = []
-    rel = pd.concat([pd.read_csv("outputs/grammar/contact_check.csv").assign(round=1),
-                     pd.read_csv("outputs/grammar/contact_check_v2.csv").assign(round=2)])
-    rel = rel.drop_duplicates(subset=["video", "release_s"], keep="first")
-    for r in rel.itertuples():
-        name = f"rel_r{r.round}_{r.id:02d}"
+    for r in pd.read_csv("outputs/grammar/contact_check_v3.csv").itertuples():
+        name = f"rel_r3_{r.id:02d}"
         clip(r.video, r.release_s - 2, r.release_s + 2, r.release_s, r.release_s + 2, name)
         items.append(dict(set="releases", key=name, clip=f"clips/{name}.mp4"))
     for r in pd.read_csv("outputs/roles/episodes.csv").itertuples():
-        name = f"ws_{r.id:02d}"
+        name = f"ws11x_{r.id:03d}"
         clip(r.video, r.start_s - 1.5, r.end_s + 1.5, r.start_s, r.end_s, name)
         items.append(dict(set="weight_share", key=name, clip=f"clips/{name}.mp4"))
+    for r in pd.read_csv("outputs/falls/descent_check_v3.csv").itertuples():
+        name = f"desc_{r.id:02d}"
+        clip(r.video, r.start_s - 1.5, r.end_s + 1.5, r.start_s, r.end_s, name)
+        items.append(dict(set="descents", key=name, clip=f"clips/{name}.mp4", who=r.dancer))
     rng = np.random.default_rng(7); order = rng.permutation(len(items)); items = [items[i] for i in order]
     items.sort(key=lambda x: x["set"])
     html = (Path(__file__).parent / "template.html").read_text().replace("__ITEMS__", json.dumps(items))
